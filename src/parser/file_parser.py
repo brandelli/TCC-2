@@ -3,7 +3,7 @@ import csv
 def parse_iberlef_input(file_name):
     input_dict = {}
     key_dict = {}
-    with open("../data/"+file_name) as tsvfile:
+    with open(file_name) as tsvfile:
         tsvreader = csv.reader(tsvfile, delimiter="\t")
         keys = tsvreader.__next__()
         for index, key in enumerate(keys, start=0):
