@@ -13,3 +13,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [TensorFlow RNN Tutorial](https://www.svds.com/tensorflow-rnn-tutorial/)
 * [RNN w/ LSTM cell example in TensorFlow and Python](https://pythonprogramming.net/rnn-tensorflow-python-machine-learning-tutorial/)
 * [Recurrent Neural Networks (RNNs)](https://www.easy-tensorflow.com/tf-tutorials/recurrent-neural-networks)
+* [thunlp/OpenNRE](https://github.com/thunlp/OpenNRE)
