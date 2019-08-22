@@ -3,4 +3,8 @@
 * Estrutura -> dicionario com listas em cada chave
 
 21/08/2019
-* Realizar teste com OpenNRE para verificar se pode ser utilizado no TCC
+* Realizar teste com OpenNRE para verificar se pode ser utilizado no TCC - Não realizado
+* Formatado o computador, para atender os requisitos básicos necessários ao desenvolvimento do TCC
+
+22/08/2019
+* Criação de função para atribuir relacionar os relcionamentos e ids existentes no arquivo de treino
