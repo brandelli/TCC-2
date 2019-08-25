@@ -35,3 +35,24 @@ def parse_dict_input_into_relation_id_mapping(input_dict):
     with open(file_name, 'w') as json_file:
         json.dump(relation_dict, json_file)
 
+
+def parse_word_embeddings_input_to_json(file_name):
+    word_list = []
+    with open(file_name, 'r') as word_embeddings_file:
+        lines, _ = word_embeddings_file.readline().strip().split(' ')
+        print(lines)
+        for x in range(0, int(lines)):
+            print(x)
+            word_dict = {}
+            line = word_embeddings_file.readline().strip().split(' ')
+            word_dict['word'] = line.pop(0)
+            vector_list = []
+            for val in line:
+                vector_list.append(float(val))
+            
+            word_dict['vec'] = vector_list
+            word_list.append(word_dict)
+
+    with open('data/word_embeddings/word_embeddings.json', 'w') as json_file:
+        json.dump(word_list, json_file, indent=0)
+                 
