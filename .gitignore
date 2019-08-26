@@ -107,4 +107,4 @@ venv.bak/
 *.json
 
 # word embeddings
-/src/data/word_embeddings/
+/src/data/word_embeddings/real/
