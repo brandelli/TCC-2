@@ -1,5 +1,5 @@
 import csv
-from helpers import file_helper, validator_helper, data_process_helper
+from helpers import file_helper, validator_helper, data_process_helper, dictionary_creator_helper
 
 class Parser:
 
@@ -33,7 +33,7 @@ class Parser:
             
             # para as outras linhas do arquivo vai adicionando cada campo em seu respectivo lugar
             for line in tsvreader:
-                cur_dict = self.create_dataset_dict()
+                cur_dict = dictionary_creator_helper.create_dataset_dict()
                 for index, value in enumerate(line):
                     self.process_dataset_data(cur_dict, keys_dict.get(index), value)
 
@@ -41,29 +41,10 @@ class Parser:
                     
         file_helper.dict_to_json(path, file_name, dataset_list, 4)
 
-    
-    def create_dataset_dict(self):
-        return {
-            'sentence_id': None,
-            'sentence': None,
-            'head': {
-                'word': None,
-                'id': None,
-                'category': None
-            },
-            'tail': {
-                'word': None,
-                'id': None,
-                'category': None
-            },
-            'relation': None,
-            'relation_id': None
-        }
-
 
     def process_dataset_data(self, cur_dict, key, value):
-        if validator_helper.key_doesnt_need_change(key):
-            cur_dict[key] = value
+        if validator_helper.is_id_data(key):
+            data_process_helper.process_id_data(cur_dict, key, value)
         elif validator_helper.is_entity(key):
             data_process_helper.process_entity_data(cur_dict, key, value)
         elif validator_helper.is_category(key):

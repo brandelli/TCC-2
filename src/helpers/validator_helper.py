@@ -10,5 +10,5 @@ def is_sentence(key):
 def is_relation(key):
     return key == 'relation'
 
-def key_doesnt_need_change(key):
+def is_id_data(key):
     return key == 'sentence_id' or key == 'relation_id'
