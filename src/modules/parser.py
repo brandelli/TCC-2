@@ -79,17 +79,16 @@ class Parser:
                 
         file_helper.dict_to_json(path, file_name, word_embeddings_list, 4)
 
-    # vai ter que mudar essa função
     def relation_to_id(self, path, file_name):
         '''
         Função para atribuir um id para cada uma das relações encontradas no dataset de treino
         '''
         treino_json = file_helper.get_json_file_data(path, file_name)
-        relation_list = treino_json.get('relation')
         relation_dict = {}
         # primeira relação deve ser NA e o id 0
         relation_dict['NA'] = self.relation_id
-        for relation in relation_list:
+        for line in treino_json:
+            relation = line.get('relation')
             if relation_dict.get(relation) is None:
                 self.increment_relation_id()
                 relation_dict[relation] = self.relation_id

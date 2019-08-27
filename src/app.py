@@ -8,7 +8,7 @@ def main():
     parser.dataset_to_json(dataset_path,'treino')
     parser.dataset_to_json(dataset_path, 'teste_1')
     parser.word_embeddings_to_json('data/word_embeddings/exemplo/', 'word_embeddings')
-    #parser.relation_to_id('data/dataset/', 'treino')
+    parser.relation_to_id('data/dataset/', 'treino')
 
 if __name__ == '__main__':
     main()
