@@ -9,16 +9,18 @@ class Parser:
     def increment_relation_id(self, inc=1):
         self.relation_id += inc
 
+
     def increment_word_id(self, inc=1):
         self.word_id += inc
 
-    def tsv_to_json(self, path, file_name, extension='.tsv'):
+    
+    def dataset_to_json(self, path, file_name, extension='.tsv'):
         '''
         Função para transformar os inputs tabulares em json
         '''
         # vai guardar o index de cada uma das chaves presentes no cabeçalho do arquivo
         keys_dict = {}
-        input_dict = {}
+        dataset_list = []
         with open(f"{path}{file_name}{extension}") as tsvfile:
             # faz a leitura do arquivo, utilizando a tabulação como separeador
             tsvreader = csv.reader(tsvfile, delimiter="\t")
@@ -28,15 +30,40 @@ class Parser:
             # preenche o dicionario de chaves com o indice
             for index, value in enumerate(keys, start=0):
                 keys_dict[index] = value.lower()
-                input_dict[value.lower()] = []
             
             # para as outras linhas do arquivo vai adicionando cada campo em seu respectivo lugar
             for line in tsvreader:
+                cur_dict = self.create_dataset_dict()
+                cur_dict = {}
                 for index, value in enumerate(line):
-                    input_dict[keys_dict.get(index)].append(value)
-            
-        file_helper.dict_to_json(path, file_name, input_dict, 4)
+                    self.process_dataset_data(cur_dict, keys_dict.get(index), value)
+                dataset_list.append(cur_dict)
+                    
+        file_helper.dict_to_json(path, file_name, dataset_list, 4)
 
+    
+    def create_dataset_dict(self):
+        return {
+            'sentence_id': None,
+            'sentence': None,
+            'head': {
+                'word': None,
+                'id': None,
+                'category': None
+            },
+            'tail': {
+                'word': None,
+                'id': None,
+                'category': None
+            },
+            'relation': None,
+            'relation_id': None
+        }
+
+
+    def process_dataset_data(self, cur_dict, key, value):
+        cur_dict[key] = value
+        # lógica para verificação de qual key está sendo recebida
 
     def word_embeddings_to_json(self, path, file_name, extension='.txt'):
         '''
@@ -50,7 +77,7 @@ class Parser:
             lines = int(lines)
             print(f'Número de linhas: {lines}, tamanho do vetor: {vector_size}')
             # itera por todas linhas que contém dados do word embeddings
-            for x in range(0 ,lines):
+            for _ in range(0 ,lines):
                 current_word_dict = {}
                 # separa os dados presentes em cada linha, e realiza o pop para separar a word do vetor
                 data_list = fp.readline().strip().split(' ')
@@ -62,7 +89,7 @@ class Parser:
                 
         file_helper.dict_to_json(path, file_name, word_embeddings_list, 4)
 
-
+    # vai ter que mudar essa função
     def relation_to_id(self, path, file_name):
         '''
         Função para atribuir um id para cada uma das relações encontradas no dataset de treino
