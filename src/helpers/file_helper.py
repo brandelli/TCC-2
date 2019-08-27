@@ -9,6 +9,9 @@ def dict_to_json(path, file_name, my_data, indent=0):
 
 
 def get_json_file_data(path, file_name):
+    '''
+    Função para retornar um arquivo json em uma estrutura de dicionário
+    '''
     json_data = {}    
     with open(f'{path}{file_name}.json') as json_file:
         json_data = json.load(json_file)

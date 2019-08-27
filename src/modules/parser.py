@@ -7,16 +7,22 @@ class Parser:
     word_id = 1
 
     def increment_relation_id(self, inc=1):
+        '''
+        Função para incrementar o relation_id
+        '''
         self.relation_id += inc
 
 
     def increment_word_id(self, inc=1):
+        '''
+        Função para incrementar o word_id
+        '''
         self.word_id += inc
 
     
     def dataset_to_json(self, path, file_name, extension='.tsv'):
         '''
-        Função para transformar os inputs tabulares em json
+        Função para transformar os inputs do dataset em json
         '''
         # vai guardar o index de cada uma das chaves presentes no cabeçalho do arquivo
         keys_dict = {}
@@ -43,6 +49,9 @@ class Parser:
 
 
     def process_dataset_data(self, cur_dict, key, value):
+        '''
+        Função para processar os dados do dataset de acordo com os campos
+        '''
         if validator_helper.is_id_data(key):
             data_process_helper.process_id_data(cur_dict, key, value)
         elif validator_helper.is_entity(key):
@@ -94,5 +103,3 @@ class Parser:
                 relation_dict[relation] = self.relation_id
         
         file_helper.dict_to_json('data/relation/', 'relation_2_id', relation_dict, 4)
-        
-        

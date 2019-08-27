@@ -1,4 +1,7 @@
 def create_dataset_dict():
+    '''
+    Função para criar um dicionário padrão para os dados do dataset
+    '''
     return {
         'sentence_id': None,
         'sentence': None,
