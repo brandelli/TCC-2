@@ -1,5 +1,5 @@
 import csv
-from helpers import file_helper, validator_helper
+from helpers import file_helper, validator_helper, data_process_helper
 
 class Parser:
 
@@ -34,9 +34,9 @@ class Parser:
             # para as outras linhas do arquivo vai adicionando cada campo em seu respectivo lugar
             for line in tsvreader:
                 cur_dict = self.create_dataset_dict()
-                cur_dict = {}
                 for index, value in enumerate(line):
                     self.process_dataset_data(cur_dict, keys_dict.get(index), value)
+
                 dataset_list.append(cur_dict)
                     
         file_helper.dict_to_json(path, file_name, dataset_list, 4)
@@ -62,17 +62,16 @@ class Parser:
 
 
     def process_dataset_data(self, cur_dict, key, value):
-        cur_dict[key] = value
         if validator_helper.key_doesnt_need_change(key):
-            print(f'key_doesnt_need_change: {key}')
+            cur_dict[key] = value
         elif validator_helper.is_entity(key):
-            print(f'is_entity: {key}')
+            data_process_helper.process_entity_data(cur_dict, key, value)
         elif validator_helper.is_category(key):
-            print(f'is_category: {key}')
+            data_process_helper.process_category_data(cur_dict, key, value)
         elif validator_helper.is_sentence(key):
-            print(f'is_sentence: {key}')
+            data_process_helper.process_sentence_data(cur_dict, key, value)
         elif validator_helper.is_relation(key):
-            print(f'is_relation: {key}')
+            data_process_helper.process_relation_data(cur_dict, key, value)
 
 
     def word_embeddings_to_json(self, path, file_name, extension='.txt'):
