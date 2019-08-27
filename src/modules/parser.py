@@ -1,5 +1,5 @@
 import csv
-from helpers import file_helper
+from helpers import file_helper, validator_helper
 
 class Parser:
 
@@ -63,7 +63,17 @@ class Parser:
 
     def process_dataset_data(self, cur_dict, key, value):
         cur_dict[key] = value
-        # lógica para verificação de qual key está sendo recebida
+        if validator_helper.key_doesnt_need_change(key):
+            print(f'key_doesnt_need_change: {key}')
+        elif validator_helper.is_entity(key):
+            print(f'is_entity: {key}')
+        elif validator_helper.is_category(key):
+            print(f'is_category: {key}')
+        elif validator_helper.is_sentence(key):
+            print(f'is_sentence: {key}')
+        elif validator_helper.is_relation(key):
+            print(f'is_relation: {key}')
+
 
     def word_embeddings_to_json(self, path, file_name, extension='.txt'):
         '''
