@@ -83,7 +83,7 @@ class Parser:
                 word = data_list.pop(0)
                 current_word_dict['word'] = word
                 # transforma os dados do vetor em float
-                current_word_dict['vec'] = list(map(lambda x: float(x), data_list))
+                current_word_dict['vec'] = [float(x) for x in data_list]
                 word_embeddings_list.append(current_word_dict)
                 
         file_helper.dict_to_json(path, file_name, word_embeddings_list, 4)
