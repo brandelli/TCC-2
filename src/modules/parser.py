@@ -103,3 +103,49 @@ class Parser:
                 relation_dict[relation] = self.relation_id
         
         file_helper.dict_to_json('data/relation/', 'relation_2_id', relation_dict, 4)
+
+    def create_word_to_id(self):
+        '''
+        Função para criar a estrutura de word_to_id
+        '''
+        word_to_id_dict = {}
+        self.add_word_embeddings_to_word_to_id(word_to_id_dict)
+        self.process_dataset_to_word_to_id(word_to_id_dict)
+        file_helper.dict_to_json('data/word_to_id/', 'word_to_id', word_to_id_dict, 4)
+
+    def add_word_to_id(self, word, word_to_id_dict):
+        '''
+        Função para adicionar um id para uma palavra
+        '''
+        if word_to_id_dict.get(word) is None:
+            word_to_id_dict[word] = self.word_id
+            self.increment_word_id()
+
+    def add_word_embeddings_to_word_to_id(self, word_to_id_dict):
+        '''
+        Função para atribuir e adicionar ids das palavras encontradas no word embeddings
+        '''
+        word_embeddings = file_helper.get_json_file_data('data/word_embeddings/exemplo/', 'word_embeddings')
+        for line in word_embeddings:
+            self.add_word_to_id(line.get('word'), word_to_id_dict)
+        
+    def process_dataset_to_word_to_id(self, word_to_id_dict):
+        '''
+        Função para iniciar o processamento de todos os datasets (treino, teste)
+        para word_to_id
+        '''
+        path = 'data/dataset/'
+        treino = file_helper.get_json_file_data(path, 'treino')
+        self.add_dataset_to_word_to_id(treino, word_to_id_dict)
+        teste = file_helper.get_json_file_data(path, 'teste_1')
+        self.add_dataset_to_word_to_id(teste, word_to_id_dict)
+    
+    def add_dataset_to_word_to_id(self, dataset, word_to_id_dict):
+        '''
+        Função para transformar todas palavras das frases presentes 
+        no dataset em word_to_id
+        '''
+        for line in dataset:
+            sentence = line.get('sentence')
+            for word in sentence.split(' '):
+                self.add_word_to_id(word, word_to_id_dict)
