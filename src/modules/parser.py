@@ -110,9 +110,11 @@ class Parser:
         '''
         word_to_id_dict = {}
         reverse_dict = {}
+        path = 'data/word_to_id/'
         self.add_word_embeddings_to_word_to_id(word_to_id_dict, reverse_dict)
         self.process_dataset_to_word_to_id(word_to_id_dict, reverse_dict)
-        file_helper.dict_to_json('data/word_to_id/', 'word_to_id', word_to_id_dict, 4)
+        file_helper.dict_to_json(path, 'word_to_id', word_to_id_dict, 4)
+        file_helper.dict_to_json(path, 'reverse_dict', reverse_dict, 4)
 
     def add_word_to_id(self, word, word_to_id_dict, reverse_dict):
         '''
@@ -120,6 +122,7 @@ class Parser:
         '''
         if word_to_id_dict.get(word) is None:
             word_to_id_dict[word] = self.word_id
+            reverse_dict[self.word_id] = word
             self.increment_word_id()
 
     def add_word_embeddings_to_word_to_id(self, word_to_id_dict, reverse_dict):
