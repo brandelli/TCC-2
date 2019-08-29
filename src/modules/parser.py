@@ -141,8 +141,10 @@ class Parser:
         path = 'data/dataset/'
         treino = file_helper.get_json_file_data(path, 'treino')
         self.add_dataset_to_word_to_id(treino, word_to_id_dict, reverse_dict)
+        file_helper.dict_to_json(path, 'treino', treino, 4)
         teste = file_helper.get_json_file_data(path, 'teste_1')
         self.add_dataset_to_word_to_id(teste, word_to_id_dict, reverse_dict)
+        file_helper.dict_to_json(path, 'teste_1', teste, 4)
     
     def add_dataset_to_word_to_id(self, dataset, word_to_id_dict, reverse_dict):
         '''
@@ -153,3 +155,11 @@ class Parser:
             sentence = line.get('sentence')
             for word in sentence.split(' '):
                 self.add_word_to_id(word, word_to_id_dict, reverse_dict)
+            
+            self.set_word_id_to_entity_in_dataset(line, word_to_id_dict)
+    
+    def set_word_id_to_entity_in_dataset(self, dataset_line, word_to_id_dict):
+        head = dataset_line.get('head')
+        tail = dataset_line.get('tail')
+        head['id'] = word_to_id_dict.get(head.get('word'))
+        tail['id'] = word_to_id_dict.get(tail.get('word'))
