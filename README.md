@@ -14,3 +14,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [RNN w/ LSTM cell example in TensorFlow and Python](https://pythonprogramming.net/rnn-tensorflow-python-machine-learning-tutorial/)
 * [Recurrent Neural Networks (RNNs)](https://www.easy-tensorflow.com/tf-tutorials/recurrent-neural-networks)
 * [thunlp/OpenNRE](https://github.com/thunlp/OpenNRE)
+* [A simple deep learning model for stock price prediction using TensorFlow](https://medium.com/mlreview/a-simple-deep-learning-model-for-stock-price-prediction-using-tensorflow-30505541d877)
