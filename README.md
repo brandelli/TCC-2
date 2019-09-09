@@ -15,3 +15,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Recurrent Neural Networks (RNNs)](https://www.easy-tensorflow.com/tf-tutorials/recurrent-neural-networks)
 * [thunlp/OpenNRE](https://github.com/thunlp/OpenNRE)
 * [A simple deep learning model for stock price prediction using TensorFlow](https://medium.com/mlreview/a-simple-deep-learning-model-for-stock-price-prediction-using-tensorflow-30505541d877)
+* [TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/bidirectional_rnn.py)
