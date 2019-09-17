@@ -19,3 +19,5 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Recurrent Neural Networks by Example in Python](https://towardsdatascience.com/recurrent-neural-networks-by-example-in-python-ffd204f99470)
 * [The Most Intuitive and Easiest Guide for Recurrent Neural Network](https://towardsdatascience.com/the-most-intuitive-and-easiest-guide-for-recurrent-neural-network-873c29da73c7)
 * [Sequence Tagging With A LSTM-CRF](https://www.depends-on-the-definition.com/sequence-tagging-lstm-crf/)
+* [Text classification with an RNN](https://www.tensorflow.org/beta/tutorials/text/text_classification_rnn)
+* [How to Develop a Bidirectional LSTM For Sequence Classification in Python with Keras](https://machinelearningmastery.com/develop-bidirectional-lstm-sequence-classification-python-keras/)
