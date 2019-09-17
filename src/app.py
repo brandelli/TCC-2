@@ -13,8 +13,6 @@ def main():
 
     print('Rodando main')
     config = Config('data/configuration/', 'config')
-    geral_config = config.get_configuration()
-    print(geral_config)
     parser = Parser()
     model = Model(dict())
     print(f'Tempo de execução total: {elapsed_time(start)}')
