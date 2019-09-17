@@ -1,7 +1,9 @@
 import time
 from helpers import file_helper, time_helper
 from modules.parser import Parser
+from modules.model import Model
 def main():
+    model = Model(dict())
     start = time.time()
     elapsed_time = lambda start_time: time_helper.get_elapsed_time(start_time)
     print_elapsed_time = lambda process, start_time: print(f'Finalizou {process} {elapsed_time(start_time)}')
@@ -10,6 +12,8 @@ def main():
     # treino, teste_1, teste_2
     dataset_path = 'data/dataset/'
     parser = Parser()
+    configs = parser.get_configs('data/configuration/', 'config')
+    print(configs)
     start_process = get_time()
     parser.dataset_to_json(dataset_path,'treino')
     print_elapsed_time('dataset_treino', start_process)

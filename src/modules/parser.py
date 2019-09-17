@@ -163,3 +163,7 @@ class Parser:
         tail = dataset_line.get('tail')
         head['id'] = word_to_id_dict.get(head.get('word'))
         tail['id'] = word_to_id_dict.get(tail.get('word'))
+
+    def get_configs(self, path, file_name):
+        return file_helper.get_json_file_data(path, file_name)
+
