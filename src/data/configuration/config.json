@@ -1,0 +1,39 @@
+{
+    "parse" : {
+            "embeddings" : false,
+            "train" : false,
+            "test" : false
+    },
+
+    "dataset" : {
+        "path"       : "data/dataset/",
+        "train_tsv"  : "train.tsv",
+        "test_tsv"   : "test_1.tsv",
+        "train_json" : "train.json",
+        "test_json"  : "test.json"
+    },
+
+    "word_embeddings" : {
+        "real"         : false,
+        "path"         : "data/word_embeddings/",
+        "example_src"  : "example/word_embeddings.txt",
+        "example_json" : "example/word_embeddings.json",
+        "real_src"     : "real/word_embeddings.txt",
+        "real_json"    : "real/word_embeddings.json" 
+    },
+
+    "relation" : {
+        "path"      : "data/relation/",
+        "file_name" : "relation_to_id.json"
+    },
+
+    "word_to_id" : {
+        "path" : "data/word_to_id/",
+        "dict" : "word_to_id.json",
+        "reverse_dict" : "reverse_dict.json"
+    },
+
+    "model": {
+
+    }
+}
