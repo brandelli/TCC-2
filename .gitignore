@@ -106,8 +106,5 @@ venv.bak/
 *.pyc
 *.json
 
-# word embeddings
-/src/data/word_embeddings/real/
-
 # not ignore config.json
 !/src/data/configuration/*
