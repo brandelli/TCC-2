@@ -5,17 +5,11 @@ from modules.model import Model
 from modules.config import Config
 
 def main():
-    start = time.time()
-    elapsed_time = lambda start_time: time_helper.get_elapsed_time(start_time)
-    print_elapsed_time = lambda process, start_time: print(f'Finalizou {process} {elapsed_time(start_time)}')
-    get_time = lambda : time.time()
-
-
     print('Rodando main')
     config = Config('data/configuration/', 'config')
     parser = Parser()
-    model = Model(dict())
-    print(f'Tempo de execução total: {elapsed_time(start)}')
+    parser.run_initial_parse(config.get_configuration())
+    model = Model(config.get_configuration('model'))
 
 if __name__ == '__main__':
     main()

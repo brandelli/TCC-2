@@ -20,6 +20,10 @@ class Parser:
         self.word_id += inc
 
     
+    def run_initial_parse(self, config):
+        print('run_initial_parse')
+        
+    
     def dataset_to_json(self, path, file_name, extension='.tsv'):
         '''
         Função para transformar os inputs do dataset em json
