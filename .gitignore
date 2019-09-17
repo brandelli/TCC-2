@@ -108,3 +108,6 @@ venv.bak/
 
 # not ignore config.json
 !/src/data/configuration/*
+
+# word embeddings real, tem que ser ignorado devido ao tamanho
+/src/data/word_embeddings/real/word_embeddings.txt
