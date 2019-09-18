@@ -22,3 +22,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Text classification with an RNN](https://www.tensorflow.org/beta/tutorials/text/text_classification_rnn)
 * [How to Develop a Bidirectional LSTM For Sequence Classification in Python with Keras](https://machinelearningmastery.com/develop-bidirectional-lstm-sequence-classification-python-keras/)
 * [How to Use Word Embedding Layers for Deep Learning with Keras](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
+* [Attention-Based-BiLSTM-relation-extraction](https://github.com/SeoSangwoo/Attention-Based-BiLSTM-relation-extraction/blob/master/train.py)
