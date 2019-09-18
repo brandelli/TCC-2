@@ -225,7 +225,7 @@ class Parser:
         relation_config = config.get('relation')
         relation_dict = {}
         # primeira relação deve ser NA e o id 0
-        relation_dict['na'] = self.relation_id
+        relation_dict['NA'] = self.relation_id
         for line in treino_json:
             relation = line.get('relation')
             if relation_dict.get(relation) is None:

@@ -29,7 +29,9 @@ def process_relation_data(cur_dict, key, value):
     '''
     if(value == ''):
         value = 'NA'
-    cur_dict[key] = value.lower()
+        cur_dict[key] = value
+    else:
+        cur_dict[key] = value.lower()
 
 def process_id_data(cur_dict, key, value):
     '''
