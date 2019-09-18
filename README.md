@@ -23,3 +23,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [How to Develop a Bidirectional LSTM For Sequence Classification in Python with Keras](https://machinelearningmastery.com/develop-bidirectional-lstm-sequence-classification-python-keras/)
 * [How to Use Word Embedding Layers for Deep Learning with Keras](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
 * [Attention-Based-BiLSTM-relation-extraction](https://github.com/SeoSangwoo/Attention-Based-BiLSTM-relation-extraction/blob/master/train.py)
+* [emnlp2017-relation-extraction](https://github.com/UKPLab/emnlp2017-relation-extraction/blob/master/relation_extraction/core/keras_models.py)
