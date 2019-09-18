@@ -31,6 +31,67 @@ class Parser:
         # chamada para criação de dicionários: word_to_id e reverse_dict
         self.create_word_dicts(config)
 
+        # chamada para formatação de inputs que serão utilizados pelo modelo
+        self.parse_inputs_for_model(config)
+
+    
+    def parse_inputs_for_model(self, config):
+        '''
+        Função para parsear o input de palavras para numeros, tornando melhor para alimentar o modelo
+        '''
+        word_to_id_config = config.get('word_to_id')
+        word_to_id_path = word_to_id_config.get('path')
+        word_to_id_file_name = word_to_id_config.get('dict')
+        word_to_id = file_helper.get_json_file_data(word_to_id_path, word_to_id_file_name)
+        relation_config = config.get('relation')
+        relation_path = relation_config.get('path')
+        relation_file_name = relation_config.get('file_name')
+        relation_dict = file_helper.get_json_file_data(relation_path, relation_file_name)
+        self.parse_dataset_for_model(config, 'train', word_to_id, relation_dict)
+        self.parse_dataset_for_model(config, 'test', word_to_id, relation_dict)
+
+        # fazer função com logica da criação de matriz de pesos de word embeddings
+
+    
+    def parse_dataset_for_model(self, config, dataset_type, word_to_id, relation_dict):
+        '''
+        Função para iniciar o processo de parseamento dos datasets, para se adequar ao modelo
+        '''
+        input_for_model_config = config.get('input_for_model')
+        dataset_config = config.get('dataset')
+        input_for_model_path = input_for_model_config.get('path')
+        dataset_path = dataset_config.get('path')
+        if dataset_type == 'train':
+            input_file_name = input_for_model_config.get('train_sentence_input')
+            sentences_dict = file_helper.get_json_file_data(dataset_path, dataset_config.get('train_json'))
+            label_file_name = input_for_model_config.get('train_sentence_label')
+        else:
+            input_file_name = input_for_model_config.get('test_sentence_input')
+            sentences_dict = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
+            label_file_name = input_for_model_config.get('test_sentence_label')
+        
+        parsed_sentence_list, parsed_relation_list = self.parse_sentence_for_model(sentences_dict, word_to_id, relation_dict)
+        file_helper.dict_to_json(input_for_model_path, input_file_name, parsed_sentence_list, None)
+        file_helper.dict_to_json(input_for_model_path, label_file_name, parsed_relation_list, 4)
+
+    
+    def parse_sentence_for_model(self, sentences_dict, word_id, relation_dict):
+        '''
+        Função para recuperar o valor numérico de relacionamente e palavras presentes nas sentenças
+        '''
+        parsed_sentence_list = []
+        parsed_relation_list = []
+        for sentence_dict in sentences_dict:
+            words_list = []
+            sentence = sentence_dict.get('sentence')
+            relation = sentence_dict.get('relation')
+            for word in sentence.split(' '):
+                words_list.append(word_id.get(word))
+
+            parsed_sentence_list.append(words_list)
+            parsed_relation_list.append(relation_dict.get(relation))
+
+        return parsed_sentence_list, parsed_relation_list
     
     def create_word_dicts(self, config):
         '''
@@ -164,7 +225,7 @@ class Parser:
         relation_config = config.get('relation')
         relation_dict = {}
         # primeira relação deve ser NA e o id 0
-        relation_dict['NA'] = self.relation_id
+        relation_dict['na'] = self.relation_id
         for line in treino_json:
             relation = line.get('relation')
             if relation_dict.get(relation) is None:
@@ -228,7 +289,7 @@ class Parser:
             
             self.set_word_id_to_entity_in_dataset(line, word_to_id_dict)
     
-    
+
     def set_word_id_to_entity_in_dataset(self, dataset_line, word_to_id_dict):
         head = dataset_line.get('head')
         tail = dataset_line.get('tail')

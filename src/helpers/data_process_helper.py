@@ -27,6 +27,8 @@ def process_relation_data(cur_dict, key, value):
     '''
     Função para processar o relacionamento presente entre entidades no dataset
     '''
+    if(value == ''):
+        value = 'NA'
     cur_dict[key] = value.lower()
 
 def process_id_data(cur_dict, key, value):
