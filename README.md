@@ -21,3 +21,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Sequence Tagging With A LSTM-CRF](https://www.depends-on-the-definition.com/sequence-tagging-lstm-crf/)
 * [Text classification with an RNN](https://www.tensorflow.org/beta/tutorials/text/text_classification_rnn)
 * [How to Develop a Bidirectional LSTM For Sequence Classification in Python with Keras](https://machinelearningmastery.com/develop-bidirectional-lstm-sequence-classification-python-keras/)
+* [How to Use Word Embedding Layers for Deep Learning with Keras](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)

@@ -33,7 +33,12 @@
         "reverse_dict" : "reverse_dict.json"
     },
 
-    "model": {
-
+    "input_for_model" : {
+        "path"                   : "data/input_for_model",
+        "train_sentence_input"   : "train_sentence_input.json",
+        "train_sentence_label"   : "train_sentence_label.json",
+        "test_sentence_input"    : "test_sentence_input.json",
+        "test_input_label"       : "test_sentence_label.json",
+        "word_embeddings_weight" : "word_embeddings_weight.json"
     }
 }

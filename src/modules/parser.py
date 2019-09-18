@@ -228,6 +228,7 @@ class Parser:
             
             self.set_word_id_to_entity_in_dataset(line, word_to_id_dict)
     
+    
     def set_word_id_to_entity_in_dataset(self, dataset_line, word_to_id_dict):
         head = dataset_line.get('head')
         tail = dataset_line.get('tail')
