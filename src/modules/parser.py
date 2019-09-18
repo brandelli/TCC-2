@@ -25,21 +25,33 @@ class Parser:
         Função chamada ao iniciar o programa,
         realiza o parse dos arquivos conforme as configurações
         '''
+        # chamada para conversão de arquivos originais(txt, tsv) para json
+        self.convert_src_to_json_files(config)
+        
+    
+    def convert_src_to_json_files(self, config):
+        '''
+        Função que realiza a conversão dos arquivos de entrada para json
+        '''
         parse_config = config.get('parse')
 
+        # transforma o arquivo txt de word embeddings em um json
         if parse_config.get('embeddings'):
             self.word_embeddings_to_json(config.get('word_embeddings'))
 
+        # transforma o arquivo de dataset de treino em json
         if parse_config.get('train'):
             self.dataset_to_json(config.get('dataset'), 'train')
         
+        # transforma o arquivo de dataset de test em json
         if parse_config.get('test'):
             self.dataset_to_json(config.get('dataset'), 'test')
 
+        # cria um arquivo json com os relacionamentos presentes no dataset de treino
         if parse_config.get('relation'):
             self.relation_to_id_json(config)
-        
-    
+
+
     def dataset_to_json(self, dataset_config, dataset_type):
         '''
         Função para transformar os inputs do dataset em json
@@ -48,7 +60,6 @@ class Parser:
         keys_dict = {}
         dataset_list = []
         path = dataset_config.get('path')
-        extension = dataset_config.get('file_extension')
         if dataset_type == 'train':
             file_name = dataset_config.get('train_tsv')
             json_file_name = dataset_config.get('train_json')
