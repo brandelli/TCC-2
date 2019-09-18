@@ -27,6 +27,25 @@ class Parser:
         '''
         # chamada para conversão de arquivos originais(txt, tsv) para json
         self.convert_src_to_json_files(config)
+
+        # chamada para criação de dicionários: word_to_id e reverse_dict
+        self.create_word_dicts(config)
+
+    
+    def create_word_dicts(self, config):
+        '''
+        Função que cria os dicionários de palavras(word_to_id, reverse_dict) presentes nos dados de entrada
+        '''
+        word_to_id_config = config.get('word_to_id')
+        path = word_to_id_config.get('path')
+        word_to_id_file_name = word_to_id_config.get('dict')
+        reverse_dict_file_name = word_to_id_config.get('reverse_dict')
+        word_to_id_dict = {}
+        reverse_dict = {}
+        self.add_word_embeddings_to_word_to_id(config.get('word_embeddings'), word_to_id_dict, reverse_dict)
+        self.process_all_dataset_to_word_to_id(config.get('dataset'), word_to_id_dict, reverse_dict)
+        file_helper.dict_to_json(path, word_to_id_file_name, word_to_id_dict, 4)
+        file_helper.dict_to_json(path, reverse_dict_file_name, reverse_dict, 4)
         
     
     def convert_src_to_json_files(self, config):
@@ -154,17 +173,6 @@ class Parser:
         
         file_helper.dict_to_json(relation_config.get('path'), relation_config.get('file_name'), relation_dict, 4)
 
-    def create_word_to_id(self):
-        '''
-        Função para criar a estrutura de word_to_id
-        '''
-        word_to_id_dict = {}
-        reverse_dict = {}
-        path = 'data/word_to_id/'
-        self.add_word_embeddings_to_word_to_id(word_to_id_dict, reverse_dict)
-        self.process_dataset_to_word_to_id(word_to_id_dict, reverse_dict)
-        file_helper.dict_to_json(path, 'word_to_id', word_to_id_dict, 4)
-        file_helper.dict_to_json(path, 'reverse_dict', reverse_dict, 4)
 
     def add_word_to_id(self, word, word_to_id_dict, reverse_dict):
         '''
@@ -175,27 +183,39 @@ class Parser:
             reverse_dict[self.word_id] = word
             self.increment_word_id()
 
-    def add_word_embeddings_to_word_to_id(self, word_to_id_dict, reverse_dict):
+
+    def add_word_embeddings_to_word_to_id(self, word_embeddings_config, word_to_id_dict, reverse_dict):
         '''
         Função para atribuir e adicionar ids das palavras encontradas no word embeddings
         '''
-        word_embeddings = file_helper.get_json_file_data('data/word_embeddings/exemplo/', 'word_embeddings')
+        path = word_embeddings_config.get('path')
+        file_name = word_embeddings_config.get('word_embeddings_json')
+        word_embeddings = file_helper.get_json_file_data(path, file_name)
         for line in word_embeddings:
             self.add_word_to_id(line.get('word'), word_to_id_dict, reverse_dict)
-        
-    def process_dataset_to_word_to_id(self, word_to_id_dict, reverse_dict):
+    
+
+    def process_all_dataset_to_word_to_id(self, dataset_config, word_to_id_dict, reverse_dict):
         '''
         Função para iniciar o processamento de todos os datasets (treino, teste)
         para word_to_id
         '''
-        path = 'data/dataset/'
-        treino = file_helper.get_json_file_data(path, 'treino')
-        self.add_dataset_to_word_to_id(treino, word_to_id_dict, reverse_dict)
-        file_helper.dict_to_json(path, 'treino', treino, 4)
-        teste = file_helper.get_json_file_data(path, 'teste_1')
-        self.add_dataset_to_word_to_id(teste, word_to_id_dict, reverse_dict)
-        file_helper.dict_to_json(path, 'teste_1', teste, 4)
+        path = dataset_config.get('path')
+        train_file_name = dataset_config.get('train_json')
+        test_file_name = dataset_config.get('test_json')
+        self.process_individual_dataset_to_word_to_id(path, train_file_name, word_to_id_dict, reverse_dict)
+        self.process_individual_dataset_to_word_to_id(path, test_file_name, word_to_id_dict, reverse_dict)
+
     
+    def process_individual_dataset_to_word_to_id(self, path, file_name, word_to_id_dict, reverse_dict):
+        '''
+        Função para processar individualmente cada um dos datasets em word_to_id e reverse_dict
+        '''
+        dict_data = file_helper.get_json_file_data(path, file_name)
+        self.add_dataset_to_word_to_id(dict_data, word_to_id_dict, reverse_dict)
+        file_helper.dict_to_json(path, file_name, dict_data, 4)
+    
+
     def add_dataset_to_word_to_id(self, dataset, word_to_id_dict, reverse_dict):
         '''
         Função para transformar todas palavras das frases presentes 
@@ -213,7 +233,4 @@ class Parser:
         tail = dataset_line.get('tail')
         head['id'] = word_to_id_dict.get(head.get('word'))
         tail['id'] = word_to_id_dict.get(tail.get('word'))
-
-    def get_configs(self, path, file_name):
-        return file_helper.get_json_file_data(path, file_name)
 
