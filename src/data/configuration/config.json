@@ -1,8 +1,9 @@
 {
     "parse" : {
-            "embeddings" : false,
-            "train"      : false,
-            "test"       : false
+            "embeddings" : true,
+            "train"      : true,
+            "test"       : true,
+            "relation"   : true
     },
 
     "dataset" : {
@@ -14,10 +15,11 @@
     },
 
     "word_embeddings" : {
-        "real"         : false,
-        "path"         : "data/word_embeddings/",
-        "example_src"  : "example/word_embeddings.txt",
-        "real_src"     : "real/word_embeddings.txt"
+        "real"                 : false,
+        "path"                 : "data/word_embeddings/",
+        "example_src"          : "example/word_embeddings.txt",
+        "real_src"             : "real/word_embeddings.txt",
+        "word_embeddings_json" : "word_embeddings.json"
     },
 
     "relation" : {

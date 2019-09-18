@@ -21,35 +21,57 @@ class Parser:
 
     
     def run_initial_parse(self, config):
-        print('run_initial_parse')
+        '''
+        Função chamada ao iniciar o programa,
+        realiza o parse dos arquivos conforme as configurações
+        '''
+        parse_config = config.get('parse')
+
+        if parse_config.get('embeddings'):
+            self.word_embeddings_to_json(config.get('word_embeddings'))
+
+        if parse_config.get('train'):
+            self.dataset_to_json(config.get('dataset'), 'train')
+        
+        if parse_config.get('test'):
+            self.dataset_to_json(config.get('dataset'), 'test')
         
     
-    def dataset_to_json(self, path, file_name, extension='.tsv'):
+    def dataset_to_json(self, dataset_config, dataset_type):
         '''
         Função para transformar os inputs do dataset em json
         '''
         # vai guardar o index de cada uma das chaves presentes no cabeçalho do arquivo
         keys_dict = {}
         dataset_list = []
-        with open(f"{path}{file_name}{extension}") as tsvfile:
+        path = dataset_config.get('path')
+        extension = dataset_config.get('file_extension')
+        if dataset_type == 'train':
+            file_name = dataset_config.get('train_tsv')
+            json_file_name = dataset_config.get('train_json')
+        else:
+            file_name = dataset_config.get('test_tsv')
+            json_file_name = dataset_config.get('test_json')
+        
+        with open(f"{path}{file_name}") as fp:
             # faz a leitura do arquivo, utilizando a tabulação como separeador
-            tsvreader = csv.reader(tsvfile, delimiter="\t")
+            reader = csv.reader(fp, delimiter="\t")
             # a primeira linha contém as chaves de cada um dos campos
-            keys = tsvreader.__next__()
+            keys = reader.__next__()
 
             # preenche o dicionario de chaves com o indice
             for index, value in enumerate(keys, start=0):
                 keys_dict[index] = value.lower()
             
             # para as outras linhas do arquivo vai adicionando cada campo em seu respectivo lugar
-            for line in tsvreader:
+            for line in reader:
                 cur_dict = dictionary_creator_helper.create_dataset_dict()
                 for index, value in enumerate(line):
                     self.process_dataset_data(cur_dict, keys_dict.get(index), value)
 
                 dataset_list.append(cur_dict)
                     
-        file_helper.dict_to_json(path, file_name, dataset_list, 4)
+        file_helper.dict_to_json(path, json_file_name, dataset_list, 4)
 
 
     def process_dataset_data(self, cur_dict, key, value):
@@ -68,13 +90,20 @@ class Parser:
             data_process_helper.process_relation_data(cur_dict, key, value)
 
 
-    def word_embeddings_to_json(self, path, file_name, extension='.txt'):
+    def word_embeddings_to_json(self, word_embeddings_config):
         '''
         Função para transformar o arquivo de word_embeddings em json
         '''
         # lista de dicionarios com dados processados de word embeddings
         word_embeddings_list = []
-        with open(f"{path}{file_name}{extension}") as fp:
+        path = word_embeddings_config.get('path')
+        # seta o arquivo que vai ser utilizado de word embeddings
+        if word_embeddings_config.get('real'):
+            file_name = word_embeddings_config.get('real_src')
+        else:
+            file_name = word_embeddings_config.get('example_src')
+  
+        with open(f"{path}{file_name}") as fp:
             # primeira linha do arquivo contém o número de linhas e a dimensionalidade do vetor
             lines, vector_size = fp.readline().strip().split(' ')
             lines = int(lines)
@@ -89,8 +118,9 @@ class Parser:
                 # transforma os dados do vetor em float
                 current_word_dict['vec'] = [float(x) for x in data_list]
                 word_embeddings_list.append(current_word_dict)
-                
-        file_helper.dict_to_json(path, file_name, word_embeddings_list, 4)
+        
+        json_file_name = word_embeddings_config.get('word_embeddings_json')
+        file_helper.dict_to_json(path, json_file_name, word_embeddings_list, 4)
 
     def relation_to_id(self, path, file_name):
         '''
