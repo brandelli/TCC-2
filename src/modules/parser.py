@@ -35,6 +35,9 @@ class Parser:
         
         if parse_config.get('test'):
             self.dataset_to_json(config.get('dataset'), 'test')
+
+        if parse_config.get('relation'):
+            self.relation_to_id_json(config)
         
     
     def dataset_to_json(self, dataset_config, dataset_type):
@@ -122,11 +125,13 @@ class Parser:
         json_file_name = word_embeddings_config.get('word_embeddings_json')
         file_helper.dict_to_json(path, json_file_name, word_embeddings_list, 4)
 
-    def relation_to_id(self, path, file_name):
+    def relation_to_id_json(self, config):
         '''
         Função para atribuir um id para cada uma das relações encontradas no dataset de treino
         '''
-        treino_json = file_helper.get_json_file_data(path, file_name)
+        dataset_config = config.get('dataset')
+        treino_json = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get('train_json'))
+        relation_config = config.get('relation')
         relation_dict = {}
         # primeira relação deve ser NA e o id 0
         relation_dict['NA'] = self.relation_id
@@ -136,7 +141,7 @@ class Parser:
                 self.increment_relation_id()
                 relation_dict[relation] = self.relation_id
         
-        file_helper.dict_to_json('data/relation/', 'relation_2_id', relation_dict, 4)
+        file_helper.dict_to_json(relation_config.get('path'), relation_config.get('file_name'), relation_dict, 4)
 
     def create_word_to_id(self):
         '''
