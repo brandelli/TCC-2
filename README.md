@@ -24,3 +24,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [How to Use Word Embedding Layers for Deep Learning with Keras](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/)
 * [Attention-Based-BiLSTM-relation-extraction](https://github.com/SeoSangwoo/Attention-Based-BiLSTM-relation-extraction/blob/master/train.py)
 * [emnlp2017-relation-extraction](https://github.com/UKPLab/emnlp2017-relation-extraction/blob/master/relation_extraction/core/keras_models.py)
+* [A hybrid deep learning approach for medical relation extraction](https://arxiv.org/pdf/1806.11189.pdf)
