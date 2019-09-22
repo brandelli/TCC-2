@@ -34,7 +34,36 @@ class Parser:
         # chamada para formatação de inputs que serão utilizados pelo modelo
         self.parse_inputs_for_model(config)
 
+        # chamada para adicionar padding nas sentenças de treino, para que todas tenham o mesmo tamanho
+        self.prepare_dataset_for_padding(config)
+
     
+    def prepare_dataset_for_padding(self, config):
+        input_for_model_config = config.get('input_for_model')
+        path = input_for_model_config.get('path')
+        file_name = input_for_model_config.get('train_sentence_input')
+        input_data = file_helper.get_json_file_data(path, file_name)
+        lenght = self.get_longest_sentence_from_dataset(input_data)
+        self.include_padding(input_data, lenght)
+        file_helper.dict_to_json(path, file_name, input_data, 4)
+
+    
+    def include_padding(self, data, padding):
+        for sentence in data:
+            while len(sentence) < padding:
+                sentence.append(0)
+    
+
+    def get_longest_sentence_from_dataset(self, data):
+        longest = 0
+        for sentence in data:
+            lenght = len(sentence)
+            if lenght > longest:
+                longest = lenght
+        
+        return longest
+
+
     def parse_inputs_for_model(self, config):
         '''
         Função para parsear o input de palavras para numeros, tornando melhor para alimentar o modelo
