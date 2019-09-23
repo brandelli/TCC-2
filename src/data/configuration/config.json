@@ -42,5 +42,10 @@
         "word_embeddings_weight" : "word_embeddings_weight.json",
         "train_relations_input"  : "train_relations_input.json",
         "test_relations_input"   : "test_relations_input.json"
+    },
+
+    "output" : {
+        "path"                  : "data/output/",
+        "train_relation_output" : "train_relation_output.json"
     }
 }

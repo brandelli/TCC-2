@@ -37,10 +37,34 @@ class Parser:
         # chamada para adicionar padding nas sentenças de treino, para que todas tenham o mesmo tamanho
         self.prepare_dataset_for_padding(config)
 
-        # chamada para criar vetores de realcionamentos que vão ser utilizados no input
+        # chamada para criar vetores de relacionamentos que vão ser utilizados no input
         self.create_relations_input(config)
 
+        # chamada para criar o vetor de output que será utilizado no treino do modelo
+        self.create_output_for_model(config)
+
     
+    def create_output_for_model(self, config):
+        output_for_model_config = config.get('output')
+        path = output_for_model_config.get('path')
+        file_name = output_for_model_config.get('train_relation_output')
+        dataset_config = config.get('dataset')
+        output_data = self.create_relation_classification_output(dataset_config)
+        file_helper.dict_to_json(path, file_name, output_data, 4)
+
+
+    def create_relation_classification_output(self, dataset_config):
+        relation_classification = []
+        path = dataset_config.get('path')
+        file_name = dataset_config.get('train_json')
+        data = file_helper.get_json_file_data(path, file_name)
+        for sentence in data:
+            relation_classification.append(sentence.get('relation_id'))
+        
+        return relation_classification
+
+
+
     def create_relations_input(self, config):
         input_for_model_config = config.get('input_for_model')
         path = input_for_model_config.get('path')
