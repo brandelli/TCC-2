@@ -37,6 +37,38 @@ class Parser:
         # chamada para adicionar padding nas sentenças de treino, para que todas tenham o mesmo tamanho
         self.prepare_dataset_for_padding(config)
 
+        # chamada para criar vetores de realcionamentos que vão ser utilizados no input
+        self.create_relations_input(config)
+
+    
+    def create_relations_input(self, config):
+        input_for_model_config = config.get('input_for_model')
+        path = input_for_model_config.get('path')
+        dataset_config = config.get('dataset')
+        train_file_name = input_for_model_config.get('train_relations_input')
+        test_file_name = input_for_model_config.get('test_relations_input')
+        relations_input_train_data = self.create_individual_relations_input(dataset_config, 'train')
+        relations_input_test_data = self.create_individual_relations_input(dataset_config, 'test')
+        file_helper.dict_to_json(path, train_file_name, relations_input_train_data, 4)
+        file_helper.dict_to_json(path, test_file_name, relations_input_test_data, 4)
+
+    
+    def create_individual_relations_input(self, dataset_config, dataset_type):
+        relations_list = []
+        path = dataset_config.get('path')
+        if dataset_type == 'train':
+            data = file_helper.get_json_file_data(path, dataset_config.get('train_json'))
+        else:
+            data = file_helper.get_json_file_data(path, dataset_config.get('test_json'))
+        
+        for sentence in data:
+            entities = []
+            entities.append(sentence.get('head').get('id'))
+            entities.append(sentence.get('tail').get('id'))
+            relations_list.append(entities)
+        
+        return relations_list
+
     
     def prepare_dataset_for_padding(self, config):
         input_for_model_config = config.get('input_for_model')
