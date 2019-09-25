@@ -29,3 +29,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Sentiment detection with Keras, word embeddings and LSTM deep learning networks](https://www.liip.ch/en/blog/sentiment-detection-with-keras-word-embeddings-and-lstm-deep-learning-networks)
 * [Sentence classification using Bi-LSTM](https://towardsdatascience.com/sentence-classification-using-bi-lstm-b74151ffa565)
 * [Embeddings in Keras: Train vs. Pretrained](https://jovianlin.io/embeddings-in-keras/)
+* [Keras Models: Sequential vs. Functional](https://jovianlin.io/keras-models-sequential-vs-functional/)
