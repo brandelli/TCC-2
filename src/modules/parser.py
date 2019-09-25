@@ -286,6 +286,8 @@ class Parser:
             # primeira linha do arquivo contém o número de linhas e a dimensionalidade do vetor
             lines, vector_size = fp.readline().strip().split(' ')
             lines = int(lines)
+            word_embeddings_config['vocab_size'] = lines
+            word_embeddings_config['dimensions'] = vector_size
             print(f'Número de linhas: {lines}, tamanho do vetor: {vector_size}')
             # itera por todas linhas que contém dados do word embeddings
             for _ in range(0 ,lines):
@@ -300,6 +302,7 @@ class Parser:
         
         json_file_name = word_embeddings_config.get('word_embeddings_json')
         file_helper.dict_to_json(path, json_file_name, word_embeddings_list, 4)
+        print(word_embeddings_config)
 
     def relation_to_id_json(self, config):
         '''

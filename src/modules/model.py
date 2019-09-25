@@ -1,4 +1,6 @@
 import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
 
 class Model:
 
@@ -7,12 +9,12 @@ class Model:
         self.create_model()
 
     def create_model(self):
-        self.model = tf.keras.Sequential([
+        self.model = keras.Sequential([
             # tf.keras.layers.Embedding(tokenizer.vocab_size, 64),
-            tf.keras.layers.Embedding(150, 64),
-            tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(64)),
-            tf.keras.layers.Dense(64, activation='relu'),
-            tf.keras.layers.Dense(1, activation='sigmoid')
+            layers.Embedding(150, 64),
+            layers.Bidirectional(layers.LSTM(64)),
+            layers.Dense(64, activation='relu'),
+            layers.Dense(1, activation='sigmoid')
         ])
 
     def train_model(self):
