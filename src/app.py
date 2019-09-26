@@ -12,11 +12,15 @@ def main():
     except LookupError:
         nltk.download('punkt')
 
-    print('Rodando main')
+
     config = Config('data/configuration/', 'config.json')
-    parser = Parser(config)
-    parser.run_initial_parse()
-    model = Model(config.get_configuration('model'))
+    parse_config = config.get_configuration('parse')
+    if parse_config.get('parse'):
+        parser = Parser(config)
+        parser.run_initial_parse()
+
+    model = Model(config)
+    model.start_model_creation()
 
 if __name__ == '__main__':
     main()

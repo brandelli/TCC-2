@@ -1,5 +1,6 @@
 {
     "parse" : {
+            "parse"      : false,
             "embeddings" : true,
             "train"      : true,
             "test"       : true,
@@ -20,7 +21,6 @@
         "example_src"                 : "example/word_embeddings.txt",
         "real_src"                    : "real/word_embeddings.txt",
         "word_embeddings_json"        : "word_embeddings.json",
-        "word_embeddings_weight_json" : "word_embeddings_weight.json",
         "dimensions"                  : 0,
         "vocab_size"                  : 0
     },
