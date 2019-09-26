@@ -188,7 +188,6 @@ class Parser:
         reverse_dict_file_name = word_to_id_config.get('reverse_dict')
         word_to_id_dict = {}
         reverse_dict = {}
-        self.add_word_embeddings_to_word_to_id(config.get('word_embeddings'), word_to_id_dict, reverse_dict)
         self.process_all_dataset_to_word_to_id(config.get('dataset'), word_to_id_dict, reverse_dict)
         file_helper.dict_to_json(path, word_to_id_file_name, word_to_id_dict, 4)
         file_helper.dict_to_json(path, reverse_dict_file_name, reverse_dict, 4)
