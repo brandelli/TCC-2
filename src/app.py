@@ -14,8 +14,8 @@ def main():
 
     print('Rodando main')
     config = Config('data/configuration/', 'config.json')
-    parser = Parser()
-    parser.run_initial_parse(config.get_configuration())
+    parser = Parser(config)
+    parser.run_initial_parse()
     model = Model(config.get_configuration('model'))
 
 if __name__ == '__main__':
