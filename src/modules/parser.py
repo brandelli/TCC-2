@@ -43,7 +43,18 @@ class Parser:
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model(config)
 
+        # chamada para criar o vetor de pesos de word embeddings
+        self.create_word_embeddings_weight(config)
+
     
+    def create_word_embeddings_weight(self, config):
+        word_embeddings_config = config.get('word_embeddings')
+        word_embeddings = file_helper.get_json_file_data(word_embeddings_config.get('path'), word_embeddings_config.get('word_embeddings_json'))
+        word_to_id_config = config.get('word_to_id')
+        word_to_id = file_helper.get_json_file_data(word_to_id_config.get('path'), word_to_id_config.get('dict'))
+
+
+
     def create_output_for_model(self, config):
         output_for_model_config = config.get('output')
         path = output_for_model_config.get('path')
@@ -134,8 +145,6 @@ class Parser:
         relation_dict = file_helper.get_json_file_data(relation_path, relation_file_name)
         self.parse_dataset_for_model(config, 'train', word_to_id, relation_dict)
         self.parse_dataset_for_model(config, 'test', word_to_id, relation_dict)
-
-        # fazer função com logica da criação de matriz de pesos de word embeddings
 
     
     def parse_dataset_for_model(self, config, dataset_type, word_to_id, relation_dict):
@@ -273,7 +282,7 @@ class Parser:
         Função para transformar o arquivo de word_embeddings em json
         '''
         # lista de dicionarios com dados processados de word embeddings
-        word_embeddings_list = []
+        word_embeddings_dict = {}
         path = word_embeddings_config.get('path')
         # seta o arquivo que vai ser utilizado de word embeddings
         if word_embeddings_config.get('real'):
@@ -290,17 +299,14 @@ class Parser:
             print(f'Número de linhas: {lines}, tamanho do vetor: {vector_size}')
             # itera por todas linhas que contém dados do word embeddings
             for _ in range(0 ,lines):
-                current_word_dict = {}
                 # separa os dados presentes em cada linha, e realiza o pop para separar a word do vetor
                 data_list = fp.readline().strip().split(' ')
                 word = data_list.pop(0)
-                current_word_dict['word'] = word
                 # transforma os dados do vetor em float
-                current_word_dict['vec'] = [float(x) for x in data_list]
-                word_embeddings_list.append(current_word_dict)
+                word_embeddings_dict[word] = [float(x) for x in data_list]
         
         json_file_name = word_embeddings_config.get('word_embeddings_json')
-        file_helper.dict_to_json(path, json_file_name, word_embeddings_list, 4)
+        file_helper.dict_to_json(path, json_file_name, word_embeddings_dict, 4)
         print(word_embeddings_config)
 
     def relation_to_id_json(self, config):

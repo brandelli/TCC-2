@@ -35,7 +35,7 @@ print(padded_docs)
 embeddings_index = dict()
 print(t.word_index)
 
-f = open('data/word_embeddings/example/word_embeddings.txt')
+f = open('../data/word_embeddings/example/word_embeddings.txt')
 for line in f:
 	values = line.split()
 	word = values[0]
@@ -44,14 +44,17 @@ for line in f:
 f.close()
 print('Loaded %s word vectors.' % len(embeddings_index))
 # create a weight matrix for words in training docs
-embedding_matrix = zeros((vocab_size, 100))
+embedding_matrix = zeros((vocab_size, 50))
 for word, i in t.word_index.items():
+	print(f'word: {word} | index: {i}')
 	embedding_vector = embeddings_index.get(word)
 	if embedding_vector is not None:
 		embedding_matrix[i] = embedding_vector
+
+print(embedding_matrix)
 # define model
 model = Sequential()
-e = Embedding(vocab_size, 100, weights=[embedding_matrix], input_length=4, trainable=False)
+e = Embedding(vocab_size, 50, weights=[embedding_matrix], input_length=4, trainable=False)
 model.add(e)
 model.add(Flatten())
 model.add(Dense(1, activation='sigmoid'))
@@ -60,7 +63,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])
 # summarize the model
 print(model.summary())
 # fit the model
-model.fit(padded_docs, labels, epochs=50, verbose=1)
+model.fit(padded_docs, labels, epochs=50, verbose=0)
 # evaluate the model
-loss, accuracy = model.evaluate(padded_docs, labels, verbose=1)
+loss, accuracy = model.evaluate(padded_docs, labels, verbose=0)
 print('Accuracy: %f' % (accuracy*100))
