@@ -31,3 +31,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Embeddings in Keras: Train vs. Pretrained](https://jovianlin.io/embeddings-in-keras/)
 * [Keras Models: Sequential vs. Functional](https://jovianlin.io/keras-models-sequential-vs-functional/)
 * [Designing Your Neural Networks](https://towardsdatascience.com/designing-your-neural-networks-a5e4617027ed)
+* [A 6 Step Field Guide for Building Machine Learning Projects](https://towardsdatascience.com/a-6-step-field-guide-for-building-machine-learning-projects-6e4554f6e3a1)
