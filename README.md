@@ -30,3 +30,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Sentence classification using Bi-LSTM](https://towardsdatascience.com/sentence-classification-using-bi-lstm-b74151ffa565)
 * [Embeddings in Keras: Train vs. Pretrained](https://jovianlin.io/embeddings-in-keras/)
 * [Keras Models: Sequential vs. Functional](https://jovianlin.io/keras-models-sequential-vs-functional/)
+* [Designing Your Neural Networks](https://towardsdatascience.com/designing-your-neural-networks-a5e4617027ed)
