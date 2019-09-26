@@ -43,17 +43,30 @@ class Parser:
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model(config)
 
-        # chamada para criar o vetor de pesos de word embeddings
-        self.create_word_embeddings_weight(config)
-
     
     def create_word_embeddings_weight(self, config):
         word_embeddings_config = config.get('word_embeddings')
         word_embeddings = file_helper.get_json_file_data(word_embeddings_config.get('path'), word_embeddings_config.get('word_embeddings_json'))
+        word_embeddings_dimension = word_embeddings_config.get('dimensions')
         word_to_id_config = config.get('word_to_id')
         word_to_id = file_helper.get_json_file_data(word_to_id_config.get('path'), word_to_id_config.get('dict'))
+        word_embeddings_weight = self.create_empty_word_embeddings_weight_list(len(word_to_id) + 1, word_embeddings_dimension) 
+        for word, index in word_to_id.items():
+            weight_in_embeddings = word_embeddings.get(word)
+            if weight_in_embeddings is not None:
+                word_embeddings_weight[index] = weight_in_embeddings
+        
+        input_for_model_config = config.get('input_for_model')
+        file_helper.dict_to_json(input_for_model_config.get('path'), input_for_model_config.get('word_embeddings_weight'), word_embeddings_weight, 4)
 
-
+    
+    
+    def create_empty_word_embeddings_weight_list(self, vocab_size, embeddings_dimension):
+        embeddings_weight = []
+        for _ in range(vocab_size):
+            embeddings_weight.append([0] * int(embeddings_dimension))
+        
+        return embeddings_weight
 
     def create_output_for_model(self, config):
         output_for_model_config = config.get('output')
@@ -145,7 +158,8 @@ class Parser:
         relation_dict = file_helper.get_json_file_data(relation_path, relation_file_name)
         self.parse_dataset_for_model(config, 'train', word_to_id, relation_dict)
         self.parse_dataset_for_model(config, 'test', word_to_id, relation_dict)
-
+        self.create_word_embeddings_weight(config)
+        
     
     def parse_dataset_for_model(self, config, dataset_type, word_to_id, relation_dict):
         '''
