@@ -49,15 +49,20 @@ class Model:
         output_labels = params_dict.get('output_labels')
         input = tf.keras.layers.Input(shape=(sentences_lenght,))
         model = tf.keras.layers.Embedding(input_dim,output_dim,weights=np.array([embedding_matrix]),input_length=sentences_lenght)(input)
-        model =  tf.keras.layers.Bidirectional(tf.keras.layers.LSTM (input_dim,return_sequences=True,dropout=0.50),merge_mode='concat')(model)
+        model =  tf.keras.layers.Bidirectional(tf.keras.layers.LSTM (input_dim,return_sequences=True,dropout=0.2),merge_mode='concat')(model)
         model = tf.keras.layers.Flatten()(model)
         output = tf.keras.layers.Dense(54,activation='softmax')(model)
         model = tf.keras.Model(input,output)
-        model.compile(loss='sparse_categorical_crossentropy',optimizer='adam', metrics=['accuracy'])
+        model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
         model.fit(train_input_sentence,output_labels, epochs=30, verbose = 1)
+        print(model.summary())
         prediction_probas = model.predict(train_input_sentence)
         predictions = [np.argmax(pred) for pred in prediction_probas]
         print(predictions)
         for index in range(len(output_labels)):
             print(f'expected: {output_labels[index]} | predicted: {predictions[index]}')
+
+        
+        loss, accuracy = model.evaluate(train_input_sentence, output_labels, verbose=1)
+        print(f'loss: {loss} | accuracy: {accuracy}')
         
