@@ -35,7 +35,7 @@ print(padded_docs)
 embeddings_index = dict()
 print(t.word_index)
 
-f = open('../data/word_embeddings/example/word_embeddings.txt')
+f = open('data/word_embeddings/example/word_embeddings.txt')
 for line in f:
 	values = line.split()
 	word = values[0]
@@ -62,8 +62,10 @@ model.add(Dense(1, activation='sigmoid'))
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])
 # summarize the model
 print(model.summary())
+print(padded_docs)
+print(labels)
 # fit the model
-model.fit(padded_docs, labels, epochs=50, verbose=0)
+model.fit(padded_docs, labels, epochs=50, verbose=2)
 # evaluate the model
-loss, accuracy = model.evaluate(padded_docs, labels, verbose=0)
+loss, accuracy = model.evaluate(padded_docs, labels, verbose=2)
 print('Accuracy: %f' % (accuracy*100))
