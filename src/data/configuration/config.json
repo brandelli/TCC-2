@@ -1,6 +1,6 @@
 {
     "parse" : {
-            "parse"      : false,
+            "parse"      : true,
             "embeddings" : true,
             "train"      : true,
             "test"       : true,

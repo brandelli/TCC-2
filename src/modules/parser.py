@@ -86,18 +86,21 @@ class Parser:
         output_for_model_config = self.get_config('output')
         path = output_for_model_config.get('path')
         file_name = output_for_model_config.get('train_relation_output')
-        dataset_config = self.get_config('dataset')
-        output_data = self.create_relation_classification_output(dataset_config)
+        output_data = self.create_relation_classification_output()
         file_helper.dict_to_json(path, file_name, output_data, 4)
 
 
-    def create_relation_classification_output(self, dataset_config):
+    def create_relation_classification_output(self):
+        dataset_config = self.get_config('dataset')
+        relation_config = self.get_config('relation')
+        relation_data = file_helper.get_json_file_data(relation_config.get('path'), relation_config.get('file_name'))
         relation_classification = []
         path = dataset_config.get('path')
         file_name = dataset_config.get('train_json')
         data = file_helper.get_json_file_data(path, file_name)
         for sentence in data:
-            relation_classification.append(sentence.get('relation_id'))
+            relation = sentence.get('relation')
+            relation_classification.append(relation_data.get(relation))
         
         return relation_classification
 
