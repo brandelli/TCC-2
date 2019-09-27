@@ -38,3 +38,18 @@ def process_id_data(cur_dict, key, value):
     Função para processar os campos que contém ids no dataset
     '''
     cur_dict[key] = int(value)
+
+def get_embeddings_dimensions(data):
+    return len(data), len(data[0])
+
+def get_longest_sentence_from_dataset(data):
+    '''
+    Procura a maior sentença do dataset
+    '''
+    longest = 0
+    for sentence in data:
+        lenght = len(sentence)
+        if lenght > longest:
+            longest = lenght
+    
+    return longest

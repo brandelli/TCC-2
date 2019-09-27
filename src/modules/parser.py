@@ -143,7 +143,7 @@ class Parser:
         path = input_for_model_config.get('path')
         file_name = input_for_model_config.get('train_sentence_input')
         input_data = file_helper.get_json_file_data(path, file_name)
-        lenght = self.get_longest_sentence_from_dataset(input_data)
+        lenght = data_process_helper.get_longest_sentence_from_dataset(input_data)
         self.include_padding(input_data, lenght)
         file_helper.dict_to_json(path, file_name, input_data, 4)
 
@@ -156,19 +156,6 @@ class Parser:
             while len(sentence) < padding:
                 sentence.append(0)
     
-
-    def get_longest_sentence_from_dataset(self, data):
-        '''
-        Procura a maior sentença do dataset
-        '''
-        longest = 0
-        for sentence in data:
-            lenght = len(sentence)
-            if lenght > longest:
-                longest = lenght
-        
-        return longest
-
 
     def parse_inputs_for_model(self):
         '''
