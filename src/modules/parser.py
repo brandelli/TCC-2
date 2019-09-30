@@ -57,9 +57,27 @@ class Parser:
         self.create_positional_vector()
 
         # chamada para criar parametro com tupla contendo o tipo de cada entidadade
+        self.create_entities_type_input()
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model()
+
+
+    def create_entities_type_input(self):
+        '''
+        '''
+        input_config = self.get_config('input_for_model')
+        dataset_config = self.get_config('dataset')
+        entities_config = self.get_config('entities')
+        entities_type_id = file_helper.get_json_file_data(entities_config.get('path'), entities_config.get('entities_to_id'))
+        sentences = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get('train_json'))
+        entities_type_relation = []
+        for sentence in sentences:
+            head_type = sentence.get('head').get('category')
+            tail_type = sentence.get('tail').get('category')
+            entities_type_relation.append([entities_type_id.get(head_type), entities_type_id.get(tail_type)])
+
+        file_helper.dict_to_json(input_config.get('path'), input_config.get('entity_type_input'), entities_type_relation, 4)
 
 
     def create_positional_vector(self):

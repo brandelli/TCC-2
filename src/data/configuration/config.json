@@ -47,7 +47,8 @@
         "word_embeddings_weight"  : "word_embeddings_weight.json",
         "train_relations_input"   : "train_relations_input.json",
         "test_relations_input"    : "test_relations_input.json",
-        "positional_vector_input" : "positional_vector_input.json"
+        "positional_vector_input" : "positional_vector_input.json",
+        "entity_type_input"       : "entity_type_input.json"
     },
 
     "output" : {
