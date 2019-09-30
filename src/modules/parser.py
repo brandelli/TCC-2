@@ -54,33 +54,36 @@ class Parser:
         self.create_relations_input()
 
         # chamada para criar o vetor posicional que pode ser utilizado no input
-        self.create_positional_vector()
+        self.create_positional_vector(['train', 'test'])
 
         # chamada para criar parametro com tupla contendo o tipo de cada entidadade
-        self.create_entities_type_input()
+        self.create_entities_type_input(['train', 'test'])
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model()
 
 
-    def create_entities_type_input(self):
+    def create_entities_type_input(self, types_list):
         '''
         '''
         input_config = self.get_config('input_for_model')
         dataset_config = self.get_config('dataset')
         entities_config = self.get_config('entities')
         entities_type_id = file_helper.get_json_file_data(entities_config.get('path'), entities_config.get('entities_to_id'))
-        sentences = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get('train_json'))
-        entities_type_relation = []
-        for sentence in sentences:
-            head_type = sentence.get('head').get('category')
-            tail_type = sentence.get('tail').get('category')
-            entities_type_relation.append([entities_type_id.get(head_type), entities_type_id.get(tail_type)])
+        for str_type in types_list:
+            dataset_type = 'train_json' if str_type == 'train' else 'test_json'
+            entity_input_type = 'train_entity_type_input' if str_type == 'train' else 'test_entity_type_input'
+            sentences = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get(dataset_type))
+            entities_type_relation = []
+            for sentence in sentences:
+                head_type = sentence.get('head').get('category')
+                tail_type = sentence.get('tail').get('category')
+                entities_type_relation.append([entities_type_id.get(head_type), entities_type_id.get(tail_type)])
 
-        file_helper.dict_to_json(input_config.get('path'), input_config.get('entity_type_input'), entities_type_relation, 4)
+            file_helper.dict_to_json(input_config.get('path'), input_config.get(entity_input_type), entities_type_relation, 4)
 
 
-    def create_positional_vector(self):
+    def create_positional_vector(self, types_list):
         '''
         Cria o arquivo de vetor posicional de entidade, com a seguinte representação:
             * 0 -> palavra normal
@@ -91,16 +94,20 @@ class Parser:
         '''
         input_config = self.get_config('input_for_model')
         path = input_config.get('path')
-        relations_list = file_helper.get_json_file_data(path, input_config.get('train_relations_input'))
-        sentences_list = file_helper.get_json_file_data(path, input_config.get('train_sentence_input'))
-        positional_vector = []
-        for index, sentence in enumerate(sentences_list, start=0):
-            current_sentence = []
-            for word in sentence:
-                current_sentence.append(int(word in relations_list[index]))
-            positional_vector.append(current_sentence)
-        
-        file_helper.dict_to_json(path, input_config.get('positional_vector_input'), positional_vector, 4)
+        for str_type in types_list:
+            relations_type = 'train_relations_input' if str_type == 'train' else 'test_relations_input'
+            sentences_type = 'train_sentence_input' if str_type == 'train' else 'test_sentence_input'
+            positional_vector_type = 'train_positional_vector_input' if str_type == 'train' else 'test_positional_vector_input'
+            relations_list = file_helper.get_json_file_data(path, input_config.get(relations_type))
+            sentences_list = file_helper.get_json_file_data(path, input_config.get(sentences_type))
+            positional_vector = []
+            for index, sentence in enumerate(sentences_list, start=0):
+                current_sentence = []
+                for word in sentence:
+                    current_sentence.append(int(word in relations_list[index]))
+                positional_vector.append(current_sentence)
+            
+            file_helper.dict_to_json(path, input_config.get(positional_vector_type), positional_vector, 4)
 
 
     

@@ -39,16 +39,18 @@
     },
 
     "input_for_model" : {
-        "path"                    : "data/input_for_model/",
-        "train_sentence_input"    : "train_sentence_input.json",
-        "train_sentence_label"    : "train_sentence_label.json",
-        "test_sentence_input"     : "test_sentence_input.json",
-        "test_sentence_label"     : "test_sentence_label.json",
-        "word_embeddings_weight"  : "word_embeddings_weight.json",
-        "train_relations_input"   : "train_relations_input.json",
-        "test_relations_input"    : "test_relations_input.json",
-        "positional_vector_input" : "positional_vector_input.json",
-        "entity_type_input"       : "entity_type_input.json"
+        "path"                          : "data/input_for_model/",
+        "train_sentence_input"          : "train_sentence_input.json",
+        "train_sentence_label"          : "train_sentence_label.json",
+        "test_sentence_input"           : "test_sentence_input.json",
+        "test_sentence_label"           : "test_sentence_label.json",
+        "word_embeddings_weight"        : "word_embeddings_weight.json",
+        "train_relations_input"         : "train_relations_input.json",
+        "test_relations_input"          : "test_relations_input.json",
+        "train_positional_vector_input" : "train_positional_vector_input.json",
+        "test_positional_vector_input"  : "test_positional_vector_input.json",
+        "train_entity_type_input"       : "train_entity_type_input.json",
+        "test_entity_type_input"        : "test_entity_type_input.json"
     },
 
     "output" : {
