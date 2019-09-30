@@ -1,10 +1,6 @@
 {
     "parse" : {
-            "parse"      : true,
-            "embeddings" : true,
-            "train"      : true,
-            "test"       : true,
-            "relation"   : true
+            "parse" : true
     },
 
     "dataset" : {
@@ -28,6 +24,12 @@
     "relation" : {
         "path"      : "data/relation/",
         "file_name" : "relation_to_id.json"
+    },
+
+    "entities" : {
+        "path" : "data/entities/",
+        "entities_to_id" : "entities_to_id.json",
+        "reverse_entities_to_id" : "reverse_entities_to_id.json"
     },
 
     "word_to_id" : {

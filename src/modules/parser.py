@@ -5,6 +5,7 @@ class Parser:
 
     relation_id = 0
     word_id = 1
+    entity_type_id = 0
 
     def __init__(self, config):
         self.config = config
@@ -26,6 +27,10 @@ class Parser:
         Função para incrementar o word_id
         '''
         self.word_id += inc
+
+
+    def increment_entity_type_id(self, inc=1):
+        self.entity_type_id += inc
 
     
     def run_initial_parse(self):
@@ -51,6 +56,8 @@ class Parser:
         # chamada para criar o vetor posicional que pode ser utilizado no input
         self.create_positional_vector()
 
+        # chamada para criar parametro com tupla contendo o tipo de cada entidadade
+
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model()
 
@@ -73,7 +80,6 @@ class Parser:
             current_sentence = []
             for word in sentence:
                 current_sentence.append(int(word in relations_list[index]))
-            print(current_sentence)
             positional_vector.append(current_sentence)
         
         file_helper.dict_to_json(path, input_config.get('positional_vector_input'), positional_vector, 4)
@@ -262,24 +268,50 @@ class Parser:
         '''
         Função que realiza a conversão dos arquivos de entrada para json
         '''
-        parse_config = self.get_config('parse')
-
         # transforma o arquivo txt de word embeddings em um json
-        if parse_config.get('embeddings'):
-            self.word_embeddings_to_json()
+        self.word_embeddings_to_json()
 
         # transforma o arquivo de dataset de treino em json
-        if parse_config.get('train'):
-            self.dataset_to_json('train')
+        self.dataset_to_json('train')
         
         # transforma o arquivo de dataset de test em json
-        if parse_config.get('test'):
-            self.dataset_to_json('test')
+        self.dataset_to_json('test')
 
         # cria um arquivo json com os relacionamentos presentes no dataset de treino
-        if parse_config.get('relation'):
-            self.relation_to_id_json()
+        self.relation_to_id_json()
 
+        # cria im arquivo json com todos os tipos de entidades presente
+        self.entities_types_to_id()
+
+
+    def entities_types_to_id(self):
+        '''
+        Cria os dicionários para os tipos de entidades presentes no dataset de treino
+        '''
+        entities_type_dict = {}
+        reverse_entities_type_dict = {}
+        dataset_config = self.get_config('dataset')
+        train_dataset = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get('train_json'))
+        for sentence in train_dataset:
+            self.add_data_to_entities_dict('head', sentence, entities_type_dict, reverse_entities_type_dict)
+            self.add_data_to_entities_dict('tail', sentence, entities_type_dict, reverse_entities_type_dict)
+        
+        entities_config = self.get_config('entities')
+        path = entities_config.get('path')
+        file_helper.dict_to_json(path, entities_config.get('entities_to_id'), entities_type_dict, 4)
+        file_helper.dict_to_json(path, entities_config.get('reverse_entities_to_id'), reverse_entities_type_dict, 4)
+
+
+    def add_data_to_entities_dict(self, str_entity, sentence, entity_to_id_dict, reverse_dict):
+        '''
+        Adiciona os dados nos dicionarios de entidades
+        '''
+        entity = sentence.get(str_entity).get('category')
+        if entity_to_id_dict.get(entity) is None:
+            entity_to_id_dict[entity] = self.entity_type_id
+            reverse_dict[self.entity_type_id] = entity
+            self.increment_entity_type_id()
+        
 
     def dataset_to_json(self, dataset_type):
         '''
