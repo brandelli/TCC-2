@@ -48,8 +48,36 @@ class Parser:
         # chamada para criar vetores de relacionamentos que vão ser utilizados no input
         self.create_relations_input()
 
+        # chamada para criar o vetor posicional que pode ser utilizado no input
+        self.create_positional_vector()
+
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model()
+
+
+    def create_positional_vector(self):
+        '''
+        Cria o arquivo de vetor posicional de entidade, com a seguinte representação:
+            * 0 -> palavra normal
+            * 1 -> entidade
+
+        Resultando no seguinte exemplo:
+        [0, 0, 1, 0, 0, 1]
+        '''
+        input_config = self.get_config('input_for_model')
+        path = input_config.get('path')
+        relations_list = file_helper.get_json_file_data(path, input_config.get('train_relations_input'))
+        sentences_list = file_helper.get_json_file_data(path, input_config.get('train_sentence_input'))
+        positional_vector = []
+        for index, sentence in enumerate(sentences_list, start=0):
+            current_sentence = []
+            for word in sentence:
+                current_sentence.append(int(word in relations_list[index]))
+            print(current_sentence)
+            positional_vector.append(current_sentence)
+        
+        file_helper.dict_to_json(path, input_config.get('positional_vector_input'), positional_vector, 4)
+
 
     
     def create_word_embeddings_weight(self):

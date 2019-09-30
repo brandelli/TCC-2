@@ -20,7 +20,7 @@ def main():
         parser.run_initial_parse()
 
     model = Model(config)
-    model.start_model_creation()
+    #model.start_model_creation()
 
 if __name__ == '__main__':
     main()
