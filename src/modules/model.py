@@ -37,9 +37,6 @@ class Model:
         self.train_model(params_dict)
 
 
-
-        
-
     def train_model(self, params_dict):
         embedding_matrix = params_dict.get('embedding_matrix')
         input_dim = params_dict.get('input_dim')
