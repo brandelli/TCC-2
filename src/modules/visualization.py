@@ -13,4 +13,20 @@ class Visualization:
                 relation_dict[relation] = relation_dict[relation] + 1
         
         return relation_dict
+
+    def get_tuple_relation_data(self, data):
+        tuple_dict = {}
+        for sentence in data:
+            head = sentence.get('head').get('category')
+            tail = sentence.get('tail').get('category')
+            str_tuple = f'{head}-{tail}'
+            if tuple_dict.get(str_tuple) is None:
+                tuple_dict[str_tuple] = {'relation': [], 'acc': 0}
+            
+            tuple_dict[str_tuple].get('relation').append(sentence.get('relation'))
+            tuple_dict[str_tuple]['acc'] = tuple_dict[str_tuple].get('acc') + 1 
+        
+        return tuple_dict
+        
+
     

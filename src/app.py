@@ -32,7 +32,8 @@ def run_data_visualization(config):
     dataset_path = dataset_config.get('path')
     dataset_train = file_helper.get_json_file_data(dataset_path, dataset_config.get('train_json'))
     dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
-    print(visualization.get_relation_data(dataset_train))
+    visualization.get_relation_data(dataset_train)
+    print(visualization.get_tuple_relation_data(dataset_train))
 
 
 def run_model(config):
