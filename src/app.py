@@ -13,18 +13,32 @@ def main():
     except LookupError:
         nltk.download('punkt')
 
-
     config = Config('data/configuration/', 'config.json')
+    run_data_parse(config)
+    run_data_visualization(config)
+    run_model(config)
+
+
+def run_data_parse(config):
     parse_config = config.get_configuration('parse')
     if parse_config.get('parse'):
         parser = Parser(config)
         parser.run_initial_parse()
 
-    model = Model(config)
 
+def run_data_visualization(config):
     visualization = Visualization()
-    visualization.teste()
+    dataset_config = config.get_configuration('dataset')
+    dataset_path = dataset_config.get('path')
+    dataset_train = file_helper.get_json_file_data(dataset_path, dataset_config.get('train_json'))
+    dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
+    print(visualization.get_relation_data(dataset_train))
+
+
+def run_model(config):
+    model = Model(config)
     #model.start_model_creation()
+
 
 if __name__ == '__main__':
     main()
