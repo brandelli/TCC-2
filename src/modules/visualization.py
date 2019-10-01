@@ -10,7 +10,7 @@ class Visualization:
             if relation_dict.get(relation) is None:
                 relation_dict[relation] = 1
             else:
-                relation_dict[relation] = relation_dict[relation] + 1
+                relation_dict[relation] = relation_dict.get(relation) + 1
         
         return relation_dict
 
@@ -27,6 +27,19 @@ class Visualization:
             tuple_dict[str_tuple]['acc'] = tuple_dict[str_tuple].get('acc') + 1 
         
         return tuple_dict
+    
+    def get_entities_data(self, data):
+        entities_dict = {}
+        entities_position_list = ['head', 'tail']
+        for sentence in data:
+            for cur_position in entities_position_list:
+                entity = sentence.get(cur_position).get('category')
+                if entities_dict.get(entity) is None:
+                    entities_dict[entity] = 0
+                else:
+                    entities_dict[entity] = entities_dict.get(entity) + 1
         
+        return entities_dict
+
 
     
