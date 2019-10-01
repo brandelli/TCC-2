@@ -64,7 +64,7 @@ class Model:
         model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
         print(model.summary())
         model.fit([train_input_sentence, position_vector], output_labels, epochs=30, verbose = 1)
-        '''
+        
         prediction_probas = model.predict([train_input_sentence, position_vector])
         predictions = [np.argmax(pred) for pred in prediction_probas]
         print(predictions)
@@ -72,6 +72,6 @@ class Model:
             print(f'expected: {output_labels[index]} | predicted: {predictions[index]}')
 
         
-        loss, accuracy = model.evaluate(train_input_sentence, output_labels, verbose=1)
+        loss, accuracy = model.evaluate([train_input_sentence, position_vector], output_labels, verbose=1)
         print(f'loss: {loss} | accuracy: {accuracy}')
-        '''
+        
