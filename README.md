@@ -32,5 +32,5 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Keras Models: Sequential vs. Functional](https://jovianlin.io/keras-models-sequential-vs-functional/)
 * [Designing Your Neural Networks](https://towardsdatascience.com/designing-your-neural-networks-a5e4617027ed)
 * [A 6 Step Field Guide for Building Machine Learning Projects](https://towardsdatascience.com/a-6-step-field-guide-for-building-machine-learning-projects-6e4554f6e3a1)
-* [NLP at IEST 2018: BiLSTM-Attention and LSTM-Attention via Soft
-Voting in Emotion Classification](https://www.aclweb.org/anthology/W18-6226.pdf)
+* [NLP at IEST 2018: BiLSTM-Attention and LSTM-Attention via Soft Voting in Emotion Classification](https://www.aclweb.org/anthology/W18-6226.pdf)
+* [Display Deep Learning Model Training History in Keras](https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/)
