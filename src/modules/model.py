@@ -63,7 +63,7 @@ class Model:
         model = tf.keras.Model(inputs=[word_embeddings_input, position_vector_input],outputs=output)
         model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
         print(model.summary())
-        model.fit([train_input_sentence, position_vector], output_labels, epochs=30, verbose = 1)
+        model.fit([train_input_sentence, position_vector], output_labels, epochs=100, verbose = 1)
         
         prediction_probas = model.predict([train_input_sentence, position_vector])
         predictions = [np.argmax(pred) for pred in prediction_probas]
