@@ -42,6 +42,13 @@ class Model:
         '''
         return tf.keras.layers.Input(shape=(input_length,), name=str_name)
 
+    
+    def create_embedding_layer(self, str_name, embedding_matrix, input_length, trainable, model):
+        '''
+        Cria um layer de embedding para o modelo
+        '''
+        weights = None if trainable else [embedding_matrix]
+        return tf.keras.layers.Embedding(embedding_matrix.shape[0], embedding_matrix.shape[1], weights=[weights],input_length=input_length)(model)
 
     def train_model(self, params_dict):
         embedding_matrix = np.asarray(params_dict.get('embedding_matrix'))
