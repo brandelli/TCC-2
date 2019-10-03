@@ -71,6 +71,13 @@ class Model:
         '''
         return tf.keras.layers.Flatten(name=str_name)(model)
 
+    
+    def create_bidirectional_layer(self, str_name, model, merge_mode='concat'):
+        '''
+        Cria um layer Bidirectional para o modelo
+        '''
+        return tf.keras.layers.Bidirectional(model, merge_mode=merge_mode)
+
 
     def train_model(self, params_dict):
         embedding_matrix = np.asarray(params_dict.get('embedding_matrix'))
