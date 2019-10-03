@@ -78,6 +78,16 @@ class Model:
         '''
         return tf.keras.layers.Bidirectional(model, merge_mode=merge_mode)
 
+    
+    def create_lstm_layer(self, str_name, input_dim, dropout,  bidirectional, model):
+        '''
+        Cria um layer LSTM para o modelo
+        '''
+        if bidirectional:
+            return tf.keras.layers.LSTM(input_dim, return_sequences=True, dropout=dropout, name=str_name)
+        else:
+            return tf.keras.layers.LSTM(input_dim, return_sequences=True, dropout=dropout, name=str_name)(model)
+
 
     def train_model(self, params_dict):
         embedding_matrix = np.asarray(params_dict.get('embedding_matrix'))
