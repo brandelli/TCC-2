@@ -1,8 +1,8 @@
 import tensorflow as tf
 import matplotlib.pyplot as plt
+import numpy as np
 from tensorflow import keras
 from helpers import file_helper, data_process_helper
-import numpy as np
 from tensorflow.keras.utils import plot_model
 
 class Model:
@@ -15,7 +15,7 @@ class Model:
         return self.config.get_configuration(str_config)
 
 
-    def start_model_creation(self):
+    def create_model(self):
         # criar funções no helper para processar os dados necessários
         inputs_config = self.get_config('input_for_model')
         outputs_config = self.get_config('output')
@@ -31,8 +31,16 @@ class Model:
         params_dict['train_sentences'] = train_input_sentence
         params_dict['longest_sentence_size'] = longest_sentence_size
         params_dict['output_labels'] = output_relations
-        params_dict['train_positional_vector_input'] = file_helper.get_json_file_data(inputs_config.get('path'), inputs_config.get('train_positional_vector_input'))
-        self.train_model(params_dict)
+        #self.train_model(params_dict)
+        positional_input_layer = self.create_input_layer('positional_input_layer', longest_sentence_size)
+        word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', longest_sentence_size)
+
+
+    def create_input_layer(self, str_name, input_length):
+        '''
+        Cria um layer de input para o modelo
+        '''
+        return tf.keras.layers.Input(shape=(input_length,), name=str_name)
 
 
     def train_model(self, params_dict):

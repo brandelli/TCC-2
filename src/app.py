@@ -39,7 +39,7 @@ def run_data_visualization(config):
 
 def run_model(config):
     model = Model(config)
-    model.start_model_creation()
+    model.create_model()
 
 
 if __name__ == '__main__':
