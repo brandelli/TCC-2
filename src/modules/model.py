@@ -1,4 +1,5 @@
 import tensorflow as tf
+import matplotlib.pyplot as plt
 from tensorflow import keras
 from helpers import file_helper, data_process_helper
 import numpy as np
@@ -55,7 +56,7 @@ class Model:
         model = tf.keras.layers.concatenate([embed_word_embeddings, embed_position_vector])
 
         # camada de LSTM
-        model = tf.keras.layers.Bidirectional(tf.keras.layers.LSTM (input_dim,return_sequences=True,dropout=0.2),merge_mode='concat')(model)
+        model = tf.keras.layers.Bidirectional(tf.keras.layers.LSTM (input_dim,return_sequences=True,dropout=0.5),merge_mode='concat')(model)
 
         # algumas camadas extras
         model = tf.keras.layers.Flatten()(model)
@@ -63,7 +64,13 @@ class Model:
         model = tf.keras.Model(inputs=[word_embeddings_input, position_vector_input],outputs=output)
         model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
         print(model.summary())
-        model.fit([train_input_sentence, position_vector], output_labels, epochs=100, verbose = 1)
+        history = model.fit([train_input_sentence, position_vector], output_labels, epochs=40, verbose = 1)
+        plt.plot(history.history['accuracy'])
+        plt.title('Model accuracy')
+        plt.ylabel('Accuracy')
+        plt.xlabel('Epoch')
+        plt.legend(['Train'], loc='upper left')
+        plt.show()
         
         prediction_probas = model.predict([train_input_sentence, position_vector])
         predictions = [np.argmax(pred) for pred in prediction_probas]
