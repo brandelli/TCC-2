@@ -49,6 +49,14 @@ class Model:
         '''
         weights = None if trainable else [embedding_matrix]
         return tf.keras.layers.Embedding(embedding_matrix.shape[0], embedding_matrix.shape[1], weights=[weights],input_length=input_length)(model)
+    
+
+    def concatenate_layers(self, layers_list):
+        '''
+        Concatena uma lista de layers, fazendo merge deles
+        '''
+        return tf.keras.layers.concatenate(layers_list)
+
 
     def train_model(self, params_dict):
         embedding_matrix = np.asarray(params_dict.get('embedding_matrix'))
