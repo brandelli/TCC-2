@@ -48,14 +48,21 @@ class Model:
         Cria um layer de embedding para o modelo
         '''
         weights = None if trainable else [embedding_matrix]
-        return tf.keras.layers.Embedding(embedding_matrix.shape[0], embedding_matrix.shape[1], weights=[weights],input_length=input_length)(model)
+        return tf.keras.layers.Embedding(embedding_matrix.shape[0], embedding_matrix.shape[1], weights=[weights],input_length=input_length, name=str_name)(model)
     
 
-    def concatenate_layers(self, layers_list):
+    def concatenate_layers(self, str_name, layers_list):
         '''
         Concatena uma lista de layers, fazendo merge deles
         '''
-        return tf.keras.layers.concatenate(layers_list)
+        return tf.keras.layers.concatenate(layers_list, name=str_name)
+
+
+    def create_dense_layer(self, str_name, output_shape, str_activation, model):
+        '''
+        Cria um layer Dense para o modelo
+        '''
+        return tf.keras.layers.Dense(output_shape, activation=str_activation, name=str_name)(model)
 
 
     def train_model(self, params_dict):
