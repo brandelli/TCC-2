@@ -64,6 +64,13 @@ class Model:
         '''
         return tf.keras.layers.Dense(output_shape, activation=str_activation, name=str_name)(model)
 
+    
+    def create_flatten_layer(self, str_name, model):
+        '''
+        Cria um layer Flatten para o modelo
+        '''
+        return tf.keras.layers.Flatten(name=str_name)(model)
+
 
     def train_model(self, params_dict):
         embedding_matrix = np.asarray(params_dict.get('embedding_matrix'))
