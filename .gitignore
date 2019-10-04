@@ -104,7 +104,6 @@ venv.bak/
 
 # python extension
 *.pyc
-*.json
 
 # not ignore config.json
 !/src/data/configuration/*

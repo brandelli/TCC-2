@@ -56,11 +56,55 @@ class Parser:
         # chamada para criar o vetor posicional que pode ser utilizado no input
         self.create_positional_vector(['train', 'test'])
 
+        self.create_relative_position_entities_vector()
+
         # chamada para criar parametro com tupla contendo o tipo de cada entidadade
         self.create_entities_type_input(['train', 'test'])
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model()
+
+    
+    def create_relative_position_entities_vector(self):
+        input_config = self.get_config('input_for_model')
+        input_path = input_config.get('path')
+        dataset_config = self.get_config('dataset')
+        dataset_path = dataset_config.get('path')
+        data_types = ['train', 'test']
+        for data_type in data_types:
+            dataset_file = 'train_json' if data_type == 'train' else 'test_json'
+            input_e1_file = 'train_relative_position_e1_input' if data_type == 'train' else 'test_relative_position_e1_input'
+            input_e2_file = 'train_relative_position_e2_input' if data_type == 'train' else 'test_relative_position_e2_input'
+            dataset = file_helper.get_json_file_data(dataset_path, dataset_config.get(dataset_file))
+            position_e1, position_e2 = self.create_relative_vectors(dataset)
+            file_helper.dict_to_json(input_path, input_config.get(input_e1_file), position_e1, 4)
+            file_helper.dict_to_json(input_path, input_config.get(input_e2_file), position_e2, 4)
+
+
+    def create_relative_vectors(self, dataset):
+        position_e1 = []
+        position_e2 = []
+        for data in dataset:
+            sentence = data.get('sentence')
+            e1 = len(sentence) * [0]
+            e2 = len(sentence) * [0]
+            head = data.get('head').get('word')
+            tail = data.get('tail').get('word')
+            pos_e1 = (sentence.index(head) + 1) * (-1)
+            pos_e2 = (sentence.index(tail) + 1) * (-1)
+            cur_e1 = []
+            cur_e2 = []
+            for _ in e1:
+                pos_e1 += 1 
+                cur_e1.append(pos_e1)
+            for _ in e2:
+                pos_e2 += 1 
+                cur_e2.append(pos_e2)
+            position_e1.append(cur_e1)
+            position_e2.append(cur_e2)
+        
+        return position_e1, position_e2
+            
 
 
     def create_entities_type_input(self, types_list):
@@ -167,7 +211,6 @@ class Parser:
         for sentence in data:
             relation = sentence.get('relation')
             if(relation_data.get(relation) == None):
-                print(relation)
                 relation_classification.append(0)
             else:
                 relation_classification.append(relation_data.get(relation))

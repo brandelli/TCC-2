@@ -1,6 +1,6 @@
 {
     "parse" : {
-            "parse" : false
+            "parse" : true
     },
 
     "dataset" : {
@@ -39,18 +39,20 @@
     },
 
     "input_for_model" : {
-        "path"                          : "data/input_for_model/",
-        "train_sentence_input"          : "train_sentence_input.json",
-        "train_sentence_label"          : "train_sentence_label.json",
-        "test_sentence_input"           : "test_sentence_input.json",
-        "test_sentence_label"           : "test_sentence_label.json",
-        "word_embeddings_weight"        : "word_embeddings_weight.json",
-        "train_relations_input"         : "train_relations_input.json",
-        "test_relations_input"          : "test_relations_input.json",
-        "train_positional_vector_input" : "train_positional_vector_input.json",
-        "test_positional_vector_input"  : "test_positional_vector_input.json",
-        "train_entity_type_input"       : "train_entity_type_input.json",
-        "test_entity_type_input"        : "test_entity_type_input.json"
+        "path"                             : "data/input_for_model/",
+        "train_sentence_input"             : "train_sentence_input.json",
+        "train_positional_vector_input"    : "train_positional_vector_input.json",
+        "train_relations_input"            : "train_relations_input.json",
+        "train_entity_type_input"          : "train_entity_type_input.json",
+        "train_relative_position_e1_input" : "train_relative_position_e1.json",
+        "train_relative_position_e2_input" : "train_relative_position_e2.json",
+        "test_sentence_input"              : "test_sentence_input.json",
+        "test_relations_input"             : "test_relations_input.json",
+        "test_positional_vector_input"     : "test_positional_vector_input.json",
+        "test_entity_type_input"           : "test_entity_type_input.json",
+        "test_relative_position_e1_input"  : "test_relative_position_e1.json",
+        "test_relative_position_e2_input"  : "test_relative_position_e2.json",
+        "word_embeddings_weight"           : "word_embeddings_weight.json"
     },
 
     "output" : {
