@@ -9,6 +9,27 @@ class Model:
 
     def __init__(self, config):
         self.config = config
+        self.initialize_inputs()
+        self.initialize_outputs()
+    
+    def initialize_inputs(self):
+        '''
+        Inicializa todos os inputs que vão ser utilizados no modelo
+        '''
+        inputs_config = self.get_config('input_for_model')
+        path = inputs_config.get('path')
+        self.word_embeddings_matrix = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('word_embeddings_weight')))
+        self.train_positional_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_positional_vector_input')))
+        self.train_sentences = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_sentence_input')))
+    
+
+    def initialize_outputs(self):
+        '''
+        Inicializa todos os outputs que vão ser utilizados no modelo
+        '''
+        outputs_config = self.get_config('output')
+        path = outputs_config.get('path')
+        self.train_labels = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('train_relation_output')))
 
 
     def get_config(self, str_config=None):
@@ -17,23 +38,9 @@ class Model:
 
     def create_model(self):
         # criar funções no helper para processar os dados necessários
-        inputs_config = self.get_config('input_for_model')
-        outputs_config = self.get_config('output')
-        word_embeddings_weight = file_helper.get_json_file_data(inputs_config.get('path'), inputs_config.get('word_embeddings_weight'))
-        input_dim, output_dim = data_process_helper.get_embeddings_dimensions(word_embeddings_weight)
-        train_input_sentence = file_helper.get_json_file_data(inputs_config.get('path'), inputs_config.get('train_sentence_input'))
-        longest_sentence_size = data_process_helper.get_longest_sentence_from_dataset(train_input_sentence)
-        output_relations = file_helper.get_json_file_data(outputs_config.get('path'), outputs_config.get('train_relation_output'))
-        params_dict = {}
-        params_dict['embedding_matrix'] = word_embeddings_weight
-        params_dict['input_dim'] = input_dim
-        params_dict['output_dim'] = output_dim
-        params_dict['train_sentences'] = train_input_sentence
-        params_dict['longest_sentence_size'] = longest_sentence_size
-        params_dict['output_labels'] = output_relations
         #self.train_model(params_dict)
-        positional_input_layer = self.create_input_layer('positional_input_layer', longest_sentence_size)
-        word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', longest_sentence_size)
+        #positional_input_layer = self.create_input_layer('positional_input_layer', longest_sentence_size)
+        #word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', longest_sentence_size)
 
 
     def create_input_layer(self, str_name, input_length):
