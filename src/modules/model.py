@@ -116,18 +116,17 @@ class Model:
         model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
 
         # layer LSTM
-        lstm = self.create_lstm_layer('lstm_layer', input_length, 0.5, True, model)
+        lstm = self.create_lstm_layer('lstm_layer', input_length, 0.2, True, model)
 
         # layer BI-LSTM
         model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
 
         # layer Flatten
-        model = self.create_flatten_layer('flatten_layer', model)
+        model = self.create_flatten_layer('flatten_layer_1', model)
 
         # output layer
-        model = self.create_dense_layer('dense_layer_1', 54, 'relu', model)
-        model = self.create_dense_layer('dense_layer_2', 54, 'tanh', model)
-        
+        #model = self.create_dense_layer('dense_layer_1', 64, 'tanh', model)
+        #model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
         output = self.create_dense_layer('output_layer', 54, 'softmax', model)
 
         # criação do modelo
@@ -150,7 +149,7 @@ class Model:
         train_positional_input = self.train_positional_input
         train_output_labels = self.train_labels
         model = self.model
-        model.fit([train_positional_input, train_input_sentence], train_output_labels, epochs=40, verbose = 1)
+        model.fit([train_positional_input, train_input_sentence], train_output_labels, epochs=30, verbose = 1)
     
     
     def evaluate_model(self):
@@ -158,5 +157,9 @@ class Model:
         test_sentence_input = self.test_sentences
         test_positional_input = self.test_positional_input
         test_output = self.test_labels
+        train_input_sentence = self.train_sentences
+        train_positional_input = self.train_positional_input
+        train_output_labels = self.train_labels
+        model.evaluate([train_positional_input, train_input_sentence],train_output_labels)
         model.evaluate([test_positional_input, test_sentence_input],test_output)
         
