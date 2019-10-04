@@ -16,7 +16,7 @@ def main():
     config = Config('data/configuration/', 'config.json')
     run_data_parse(config)
     #run_data_visualization(config)
-    #run_model(config)
+    run_model(config)
 
 
 def run_data_parse(config):

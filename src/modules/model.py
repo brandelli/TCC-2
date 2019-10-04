@@ -23,6 +23,10 @@ class Model:
         self.word_embeddings_matrix = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('word_embeddings_weight')))
         self.train_positional_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_positional_vector_input')))
         self.test_positional_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_positional_vector_input')))
+        self.train_e1_relative = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_relative_position_e1_input')))
+        self.train_e2_relative = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_relative_position_e2_input')))
+        self.test_e1_relative = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_relative_position_e1_input')))
+        self.test_e2_relative = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_relative_position_e2_input')))
         self.train_sentences = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_sentence_input')))
         self.test_sentences = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_sentence_input')))
     
@@ -102,15 +106,22 @@ class Model:
         embeddings_layers = []
         
         # layer de input de posicional de entidades
-        positional_input_layer = self.create_input_layer('positional_input_layer', input_length)
-        embeddings_layers.append(self.create_embedding_layer('positional_embedding_layer', self.train_positional_input, input_length, True, positional_input_layer))
+        #positional_input_layer = self.create_input_layer('positional_input_layer', input_length)
+        #embeddings_layers.append(self.create_embedding_layer('positional_embedding_layer', self.train_positional_input, input_length, True, positional_input_layer))
+
+        # layer de input e1 relative position
+        e1_relative_position_input_layer = self.create_input_layer('e1_relative_input_layer', input_length)
+        embeddings_layers.append(self.create_embedding_layer('e1_relative_embedidng_layer', self.train_e1_relative, input_length, True, e1_relative_position_input_layer))
+
+        e2_relative_position_input_layer = self.create_input_layer('e2_relative_input_layer', input_length)
+        embeddings_layers.append(self.create_embedding_layer('e2_relative_embedidng_layer', self.train_e2_relative, input_length, True, e2_relative_position_input_layer))
 
         # layer de input de word embeddings
         word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', input_length)
-        embeddings_layers.append(self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, True, word_embeddings_input_layer))
+        embeddings_layers.append(self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer))
         
         # lista com os layers de input
-        input_layers = [positional_input_layer, word_embeddings_input_layer]
+        input_layers = [e1_relative_position_input_layer, e2_relative_position_input_layer, word_embeddings_input_layer]
 
         # layer para concatenar os embeddings do modelo
         model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
@@ -147,19 +158,25 @@ class Model:
         '''
         train_input_sentence = self.train_sentences
         train_positional_input = self.train_positional_input
+        train_e1_relative_input = self.train_e1_relative
+        train_e2_relative_input = self.train_e2_relative
         train_output_labels = self.train_labels
         model = self.model
-        model.fit([train_positional_input, train_input_sentence], train_output_labels, epochs=30, verbose = 1)
+        model.fit([train_e1_relative_input, train_e2_relative_input, train_input_sentence], train_output_labels, epochs=30, verbose = 1)
     
     
     def evaluate_model(self):
         model = self.model
         test_sentence_input = self.test_sentences
         test_positional_input = self.test_positional_input
+        test_e1_relative_input = self.test_e1_relative
+        test_e2_relative_input = self.test_e2_relative
         test_output = self.test_labels
         train_input_sentence = self.train_sentences
         train_positional_input = self.train_positional_input
+        train_e1_relative_input = self.train_e1_relative
+        train_e2_relative_input = self.train_e2_relative
         train_output_labels = self.train_labels
-        model.evaluate([train_positional_input, train_input_sentence],train_output_labels)
-        model.evaluate([test_positional_input, test_sentence_input],test_output)
+        model.evaluate([train_e1_relative_input, train_e2_relative_input, train_input_sentence],train_output_labels)
+        model.evaluate([test_e1_relative_input, test_e2_relative_input, test_sentence_input],test_output)
         
