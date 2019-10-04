@@ -12,6 +12,7 @@ class Model:
         self.initialize_inputs()
         self.initialize_outputs()
     
+
     def initialize_inputs(self):
         '''
         Inicializa todos os inputs que vão ser utilizados no modelo
@@ -36,13 +37,6 @@ class Model:
         return self.config.get_configuration(str_config)
 
 
-    def create_model(self):
-        # criar funções no helper para processar os dados necessários
-        #self.train_model(params_dict)
-        #positional_input_layer = self.create_input_layer('positional_input_layer', longest_sentence_size)
-        #word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', longest_sentence_size)
-
-
     def create_input_layer(self, str_name, input_length):
         '''
         Cria um layer de input para o modelo
@@ -55,7 +49,7 @@ class Model:
         Cria um layer de embedding para o modelo
         '''
         weights = None if trainable else [embedding_matrix]
-        return tf.keras.layers.Embedding(embedding_matrix.shape[0], embedding_matrix.shape[1], weights=[weights],input_length=input_length, name=str_name)(model)
+        return tf.keras.layers.Embedding(embedding_matrix.shape[0], embedding_matrix.shape[1], weights=weights,input_length=input_length, name=str_name)(model)
     
 
     def concatenate_layers(self, str_name, layers_list):
@@ -79,11 +73,11 @@ class Model:
         return tf.keras.layers.Flatten(name=str_name)(model)
 
     
-    def create_bidirectional_layer(self, str_name, model, merge_mode='concat'):
+    def create_bidirectional_layer(self, str_name, lstm, model, merge_mode='concat'):
         '''
         Cria um layer Bidirectional para o modelo
         '''
-        return tf.keras.layers.Bidirectional(model, merge_mode=merge_mode)
+        return tf.keras.layers.Bidirectional(lstm, merge_mode=merge_mode)(model)
 
     
     def create_lstm_layer(self, str_name, input_dim, dropout,  bidirectional, model):
@@ -94,6 +88,49 @@ class Model:
             return tf.keras.layers.LSTM(input_dim, return_sequences=True, dropout=dropout, name=str_name)
         else:
             return tf.keras.layers.LSTM(input_dim, return_sequences=True, dropout=dropout, name=str_name)(model)
+
+
+    def create_model(self):
+        '''
+        Cria o modelo que vai ser utilizado, definindo todas as suas camadas e compilação
+        '''
+        input_length = self.train_sentences.shape[1]
+        embeddings_layers = []
+        
+        # layer de input de posicional de entidades
+        positional_input_layer = self.create_input_layer('positional_input_layer', input_length)
+        embeddings_layers.append(self.create_embedding_layer('positional_embedding_layer', self.train_positional_input, input_length, True, positional_input_layer))
+
+        # layer de input de word embeddings
+        word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', input_length)
+        embeddings_layers.append(self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, True, word_embeddings_input_layer))
+        
+        # lista com os layers de input
+        input_layers = [positional_input_layer, word_embeddings_input_layer]
+
+        # layer para concatenar os embeddings do modelo
+        model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
+
+        # layer LSTM
+        lstm = self.create_lstm_layer('lstm_layer', input_length, 0.5, True, model)
+
+        # layer BI-LSTM
+        model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
+
+        # layer Flatten
+        model = self.create_flatten_layer('flatten_layer', model)
+
+        # output layer
+        output = self.create_dense_layer('output_layer', 54, 'softmax', model)
+
+        # criação do modelo
+        model = tf.keras.Model(inputs=input_layers, outputs=output)
+
+        # compilação do modelo
+        model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+
+        print(model.summary())
+        #plot_model(model, to_file='model.png')
 
 
     def train_model(self, params_dict):
