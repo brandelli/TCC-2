@@ -9,6 +9,7 @@ class Model:
 
     def __init__(self, config):
         self.config = config
+        self.model = None
         self.initialize_inputs()
         self.initialize_outputs()
     
@@ -130,53 +131,18 @@ class Model:
         model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
         print(model.summary())
+
+        self.model = model
         #plot_model(model, to_file='model.png')
 
 
-    def train_model(self, params_dict):
-        embedding_matrix = np.asarray(params_dict.get('embedding_matrix'))
-        input_dim = params_dict.get('input_dim')
-        output_dim = params_dict.get('output_dim')
-        sentences_lenght = params_dict.get('longest_sentence_size')
-        train_input_sentence = np.asarray(params_dict.get('train_sentences'))
-        output_labels = np.asarray(params_dict.get('output_labels'))
-        position_vector = np.asarray(params_dict['train_positional_vector_input'])
-
-        # input do vetor posicional
-        position_vector_input = tf.keras.layers.Input(shape=(sentences_lenght,))
-        embed_position_vector = tf.keras.layers.Embedding(input_dim,output_dim,input_length=sentences_lenght)(position_vector_input)
-
-        # input da sentença, que passa junto ao word embedding
-        word_embeddings_input = tf.keras.layers.Input(shape=(sentences_lenght,))
-        embed_word_embeddings = tf.keras.layers.Embedding(input_dim,output_dim,weights=[embedding_matrix],input_length=sentences_lenght)(word_embeddings_input)
-
-        # concatendo os dois embeddings
-        model = tf.keras.layers.concatenate([embed_word_embeddings, embed_position_vector])
-
-        # camada de LSTM
-        model = tf.keras.layers.Bidirectional(tf.keras.layers.LSTM (input_dim,return_sequences=True,dropout=0.5),merge_mode='concat')(model)
-
-        # algumas camadas extras
-        model = tf.keras.layers.Flatten()(model)
-        output = tf.keras.layers.Dense(54,activation='softmax')(model)
-        model = tf.keras.Model(inputs=[word_embeddings_input, position_vector_input],outputs=output)
-        model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-        print(model.summary())
-        history = model.fit([train_input_sentence, position_vector], output_labels, epochs=40, verbose = 1)
-        plt.plot(history.history['accuracy'])
-        plt.title('Model accuracy')
-        plt.ylabel('Accuracy')
-        plt.xlabel('Epoch')
-        plt.legend(['Train'], loc='upper left')
-        plt.show()
-        
-        prediction_probas = model.predict([train_input_sentence, position_vector])
-        predictions = [np.argmax(pred) for pred in prediction_probas]
-        print(predictions)
-        for index in range(len(output_labels)):
-            print(f'expected: {output_labels[index]} | predicted: {predictions[index]}')
-
-        
-        loss, accuracy = model.evaluate([train_input_sentence, position_vector], output_labels, verbose=1)
-        print(f'loss: {loss} | accuracy: {accuracy}')
+    def train_model(self):
+        '''
+        Realiza o treinamento do modelo
+        '''
+        train_input_sentence = self.train_sentences
+        train_positional_input = self.train_positional_input
+        train_output_labels = self.train_labels
+        model = self.model
+        model.fit([train_positional_input, train_input_sentence], train_output_labels, epochs=40, verbose = 1)
         
