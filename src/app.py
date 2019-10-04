@@ -41,6 +41,7 @@ def run_model(config):
     model = Model(config)
     model.create_model()
     model.train_model()
+    model.evaluate_model()
 
 
 if __name__ == '__main__':

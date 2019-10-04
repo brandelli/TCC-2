@@ -22,7 +22,9 @@ class Model:
         path = inputs_config.get('path')
         self.word_embeddings_matrix = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('word_embeddings_weight')))
         self.train_positional_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_positional_vector_input')))
+        self.test_positional_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_positional_vector_input')))
         self.train_sentences = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_sentence_input')))
+        self.test_sentences = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_sentence_input')))
     
 
     def initialize_outputs(self):
@@ -32,6 +34,7 @@ class Model:
         outputs_config = self.get_config('output')
         path = outputs_config.get('path')
         self.train_labels = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('train_relation_output')))
+        self.test_labels = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('test_relation_output')))
 
 
     def get_config(self, str_config=None):
@@ -122,6 +125,9 @@ class Model:
         model = self.create_flatten_layer('flatten_layer', model)
 
         # output layer
+        model = self.create_dense_layer('dense_layer_1', 54, 'relu', model)
+        model = self.create_dense_layer('dense_layer_2', 54, 'tanh', model)
+        
         output = self.create_dense_layer('output_layer', 54, 'softmax', model)
 
         # criação do modelo
@@ -145,4 +151,12 @@ class Model:
         train_output_labels = self.train_labels
         model = self.model
         model.fit([train_positional_input, train_input_sentence], train_output_labels, epochs=40, verbose = 1)
+    
+    
+    def evaluate_model(self):
+        model = self.model
+        test_sentence_input = self.test_sentences
+        test_positional_input = self.test_positional_input
+        test_output = self.test_labels
+        model.evaluate([test_positional_input, test_sentence_input],test_output)
         

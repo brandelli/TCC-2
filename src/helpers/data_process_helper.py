@@ -52,4 +52,4 @@ def get_longest_sentence_from_dataset(data):
         if lenght > longest:
             longest = lenght
     
-    return longest
+    return 100

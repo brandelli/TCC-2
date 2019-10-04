@@ -144,22 +144,33 @@ class Parser:
         '''
         output_for_model_config = self.get_config('output')
         path = output_for_model_config.get('path')
-        file_name = output_for_model_config.get('train_relation_output')
-        output_data = self.create_relation_classification_output()
-        file_helper.dict_to_json(path, file_name, output_data, 4)
+        dataset_types = ['train', 'test']
+        for str_type in dataset_types:
+            dataset_type = 'train_relation_output' if str_type == 'train' else 'test_relation_output'
+            file_name = output_for_model_config.get(dataset_type)
+            output_data = self.create_relation_classification_output(str_type)
+            file_helper.dict_to_json(path, file_name, output_data, 4)
 
 
-    def create_relation_classification_output(self):
+    def create_relation_classification_output(self, str_dataset_type):
+        '''
+        Cria uma estrutura com o relacionamento que deve ser apresentado como output do modelo
+        '''
         dataset_config = self.get_config('dataset')
         relation_config = self.get_config('relation')
         relation_data = file_helper.get_json_file_data(relation_config.get('path'), relation_config.get('file_name'))
         relation_classification = []
         path = dataset_config.get('path')
-        file_name = dataset_config.get('train_json')
+        dataset_type = 'train_json' if str_dataset_type == 'train' else 'test_json'
+        file_name = dataset_config.get(dataset_type)
         data = file_helper.get_json_file_data(path, file_name)
         for sentence in data:
             relation = sentence.get('relation')
-            relation_classification.append(relation_data.get(relation))
+            if(relation_data.get(relation) == None):
+                print(relation)
+                relation_classification.append(0)
+            else:
+                relation_classification.append(relation_data.get(relation))
         
         return relation_classification
 
@@ -203,11 +214,14 @@ class Parser:
         '''
         input_for_model_config = self.get_config('input_for_model')
         path = input_for_model_config.get('path')
-        file_name = input_for_model_config.get('train_sentence_input')
-        input_data = file_helper.get_json_file_data(path, file_name)
-        lenght = data_process_helper.get_longest_sentence_from_dataset(input_data)
-        self.include_padding(input_data, lenght)
-        file_helper.dict_to_json(path, file_name, input_data, 4)
+        input_types = ['train', 'test']
+        for str_type in input_types:
+            input_type = 'train_sentence_input' if str_type == 'train' else 'test_sentence_input'
+            file_name = input_for_model_config.get(input_type)
+            input_data = file_helper.get_json_file_data(path, file_name)
+            lenght = data_process_helper.get_longest_sentence_from_dataset(input_data)
+            self.include_padding(input_data, lenght)
+            file_helper.dict_to_json(path, file_name, input_data, 4)
 
     
     def include_padding(self, data, padding):
