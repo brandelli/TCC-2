@@ -37,3 +37,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [NLP at IEST 2018: BiLSTM-Attention and LSTM-Attention via Soft Voting in Emotion Classification](https://www.aclweb.org/anthology/W18-6226.pdf)
 * [Display Deep Learning Model Training History in Keras](https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/)
 * [Training Deep Learning based Named Entity Recognition from Scratch : Disease Extraction Hackathon](https://appliedmachinelearning.blog/2019/04/01/training-deep-learning-based-named-entity-recognition-from-scratch-disease-extraction-hackathon/)
+* [Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs](https://github.com/kamalkraj/Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs)
