@@ -38,3 +38,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Display Deep Learning Model Training History in Keras](https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/)
 * [Training Deep Learning based Named Entity Recognition from Scratch : Disease Extraction Hackathon](https://appliedmachinelearning.blog/2019/04/01/training-deep-learning-based-named-entity-recognition-from-scratch-disease-extraction-hackathon/)
 * [Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs](https://github.com/kamalkraj/Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs)
+* [Distant Supervision for Relation Extraction via Piecewise Convolutional Neural Networks](https://www.aclweb.org/anthology/D15-1203.pdf)
