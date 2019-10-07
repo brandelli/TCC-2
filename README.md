@@ -36,3 +36,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [A 6 Step Field Guide for Building Machine Learning Projects](https://towardsdatascience.com/a-6-step-field-guide-for-building-machine-learning-projects-6e4554f6e3a1)
 * [NLP at IEST 2018: BiLSTM-Attention and LSTM-Attention via Soft Voting in Emotion Classification](https://www.aclweb.org/anthology/W18-6226.pdf)
 * [Display Deep Learning Model Training History in Keras](https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/)
+* [Training Deep Learning based Named Entity Recognition from Scratch : Disease Extraction Hackathon](https://appliedmachinelearning.blog/2019/04/01/training-deep-learning-based-named-entity-recognition-from-scratch-disease-extraction-hackathon/)
