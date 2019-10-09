@@ -46,22 +46,22 @@ class Parser:
         self.create_word_dicts()
 
         # chamada para formatação de inputs que serão utilizados pelo modelo
-        self.parse_inputs_for_model()
+        #self.parse_inputs_for_model()
 
         # chamada para adicionar padding nas sentenças de treino, para que todas tenham o mesmo tamanho
-        self.prepare_dataset_for_padding()
+        #self.prepare_dataset_for_padding()
 
         # chamada para criar vetores de relacionamentos que vão ser utilizados no input
-        self.create_relations_input()
+        #self.create_relations_input()
 
         # chamada para criar o vetor posicional que pode ser utilizado no input
-        self.create_positional_vector()
+        #self.create_positional_vector()
 
         # chamada para criar parametro com tupla contendo o tipo de cada entidadade
-        self.create_entities_type_input()
+        #self.create_entities_type_input()
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
-        self.create_output_for_model()
+        #self.create_output_for_model()
 
 
     def create_entities_type_input(self):
@@ -332,13 +332,14 @@ class Parser:
         entities_type_dict = {}
         reverse_entities_type_dict = {}
         dataset_config = self.get_config('dataset')
-        train_dataset = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get('train_json'))
-        for sentence in train_dataset:
-            self.add_data_to_entities_dict('head', sentence, entities_type_dict, reverse_entities_type_dict)
-            self.add_data_to_entities_dict('tail', sentence, entities_type_dict, reverse_entities_type_dict)
-        
         entities_config = self.get_config('entities')
         path = entities_config.get('path')
+        train_dataset = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get('train_json'))
+
+        for sentence in train_dataset:
+            for str_type in ['head', 'tail']:
+                self.add_data_to_entities_dict(str_type, sentence, entities_type_dict, reverse_entities_type_dict)
+        
         file_helper.dict_to_json(path, entities_config.get('entities_to_id'), entities_type_dict, 4)
         file_helper.dict_to_json(path, entities_config.get('reverse_entities_to_id'), reverse_entities_type_dict, 4)
 
@@ -481,10 +482,12 @@ class Parser:
         '''
         dataset_config = self.get_config('dataset')
         path = dataset_config.get('path')
-        train_file_name = dataset_config.get('train_json')
-        test_file_name = dataset_config.get('test_json')
-        self.process_individual_dataset_to_word_to_id(path, train_file_name, word_to_id_dict, reverse_dict)
-        self.process_individual_dataset_to_word_to_id(path, test_file_name, word_to_id_dict, reverse_dict)
+        files_names = []
+        files_names.append(dataset_config.get('train_json'))
+        files_names.append(dataset_config.get('test_json'))
+
+        for file_name in files_names:
+            self.process_individual_dataset_to_word_to_id(path, file_name, word_to_id_dict, reverse_dict)
 
     
     def process_individual_dataset_to_word_to_id(self, path, file_name, word_to_id_dict, reverse_dict):
