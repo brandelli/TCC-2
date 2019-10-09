@@ -51,9 +51,6 @@ class Parser:
         # chamada para adicionar padding nas sentenças de treino, para que todas tenham o mesmo tamanho
         #self.prepare_dataset_for_padding()
 
-        # chamada para criar vetores de relacionamentos que vão ser utilizados no input
-        #self.create_relations_input()
-
         # chamada para criar o vetor posicional que pode ser utilizado no input
         #self.create_positional_vector()
 
@@ -180,36 +177,6 @@ class Parser:
                 relation_classification.append(relation_data.get(relation))
         
         return relation_classification
-
-
-    def create_relations_input(self):
-        '''
-        Cria o arquivo json com as relações presentes nas senteças, e devem ser utilizadas
-        como input no modelo
-        '''
-        input_config = self.get_config('input')
-        path = input_config.get('path')
-        dataset_config = self.get_config('dataset')
-        for dataset_type in self.dataset_types:
-            file_type = 'train_relations_input' if dataset_type == 'train' else 'test_relations_input'
-            file_name = input_config.get(file_type)
-            relations_input_data = self.create_individual_relations_input(dataset_config, dataset_type)
-            file_helper.dict_to_json(path, file_name, relations_input_data, 4)
-
-    
-    def create_individual_relations_input(self, dataset_config, dataset_type):
-        relations_list = []
-        path = dataset_config.get('path')
-        file_name = 'train_json' if dataset_type == 'train' else 'test_json'
-        data = file_helper.get_json_file_data(path, dataset_config.get(file_name))
-        
-        for sentence in data:
-            entities = []
-            entities.append(sentence.get('head').get('id'))
-            entities.append(sentence.get('tail').get('id'))
-            relations_list.append(entities)
-        
-        return relations_list
 
     
     def prepare_dataset_for_padding(self):
