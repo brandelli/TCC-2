@@ -276,25 +276,6 @@ class Parser:
         return entity_input
 
     
-    def parse_dataset_for_model(self, dataset_type, word_to_id, relation_dict):
-        '''
-        Função para iniciar o processo de parseamento dos datasets, para se adequar ao modelo
-        '''
-        input_config = self.get_config('input')
-        dataset_config = self.get_config('dataset')
-        input_for_model_path = input_config.get('path')
-        dataset_path = dataset_config.get('path')
-        str_input_file_name = 'train_sentence_input' if dataset_type == 'train' else 'test_sentence_input'
-        str_sentences_dict = 'train_json' if dataset_type == 'train' else 'test_json'
-        str_label_file_name = 'train_sentence_label' if dataset_type == 'train' else 'test_sentence_label'
-        input_file_name = input_config.get(str_input_file_name)
-        sentences_dict = file_helper.get_json_file_data(dataset_path, dataset_config.get(str_sentences_dict))
-        label_file_name = input_config.get(str_label_file_name)
-        parsed_sentence_list, parsed_relation_list = self.parse_sentence_for_model(sentences_dict, word_to_id, relation_dict)
-        file_helper.dict_to_json(input_for_model_path, input_file_name, parsed_sentence_list, None)
-        file_helper.dict_to_json(input_for_model_path, label_file_name, parsed_relation_list, 4)
-
-    
     def parse_sentence_for_model(self, sentences_dict, word_id, relation_dict):
         '''
         Função para recuperar o valor numérico de relacionamente e palavras presentes nas sentenças
