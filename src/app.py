@@ -13,10 +13,15 @@ def main():
     except LookupError:
         nltk.download('punkt')
 
+    try:
+        nltk.pos_tag(nltk.word_tokenize('Existe nltk averaged_perceptron_tagger'))
+    except LookupError:
+        nltk.download('averaged_perceptron_tagger')
+
     config = Config('data/configuration/', 'config.json')
     run_data_parse(config)
     #run_data_visualization(config)
-    run_model(config)
+    #run_model(config)
 
 
 def run_data_parse(config):
