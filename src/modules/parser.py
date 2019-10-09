@@ -9,6 +9,7 @@ class Parser:
 
     def __init__(self, config):
         self.config = config
+        self.dataset_types = ['train', 'test']
 
     
     def get_config(self, str_config_type=None):
@@ -54,12 +55,10 @@ class Parser:
         self.create_relations_input()
 
         # chamada para criar o vetor posicional que pode ser utilizado no input
-        self.create_positional_vector(['train', 'test'])
-
-        self.create_relative_position_entities_vector()
+        self.create_positional_vector()
 
         # chamada para criar parametro com tupla contendo o tipo de cada entidadade
-        self.create_entities_type_input(['train', 'test'])
+        self.create_entities_type_input()
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model()
@@ -70,8 +69,7 @@ class Parser:
         input_path = input_config.get('path')
         dataset_config = self.get_config('dataset')
         dataset_path = dataset_config.get('path')
-        data_types = ['train', 'test']
-        for data_type in data_types:
+        for data_type in self.dataset_types:
             dataset_file = 'train_json' if data_type == 'train' else 'test_json'
             input_sentences_file = 'train_sentence_input' if data_type == 'train' else 'test_sentence_input' 
             input_sentences_data = file_helper.get_json_file_data(input_path, input_config.get(input_sentences_file))
@@ -111,14 +109,14 @@ class Parser:
             
 
 
-    def create_entities_type_input(self, types_list):
+    def create_entities_type_input(self):
         '''
         '''
         input_config = self.get_config('input_for_model')
         dataset_config = self.get_config('dataset')
         entities_config = self.get_config('entities')
         entities_type_id = file_helper.get_json_file_data(entities_config.get('path'), entities_config.get('entities_to_id'))
-        for str_type in types_list:
+        for str_type in self.dataset_types:
             dataset_type = 'train_json' if str_type == 'train' else 'test_json'
             entity_input_type = 'train_entity_type_input' if str_type == 'train' else 'test_entity_type_input'
             sentences = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get(dataset_type))
@@ -131,7 +129,7 @@ class Parser:
             file_helper.dict_to_json(input_config.get('path'), input_config.get(entity_input_type), entities_type_relation, 4)
 
 
-    def create_positional_vector(self, types_list):
+    def create_positional_vector(self):
         '''
         Cria o arquivo de vetor posicional de entidade, com a seguinte representação:
             * 0 -> palavra normal
@@ -142,7 +140,7 @@ class Parser:
         '''
         input_config = self.get_config('input_for_model')
         path = input_config.get('path')
-        for str_type in types_list:
+        for str_type in self.dataset_types:
             relations_type = 'train_relations_input' if str_type == 'train' else 'test_relations_input'
             sentences_type = 'train_sentence_input' if str_type == 'train' else 'test_sentence_input'
             positional_vector_type = 'train_positional_vector_input' if str_type == 'train' else 'test_positional_vector_input'
@@ -192,8 +190,7 @@ class Parser:
         '''
         output_for_model_config = self.get_config('output')
         path = output_for_model_config.get('path')
-        dataset_types = ['train', 'test']
-        for str_type in dataset_types:
+        for str_type in self.dataset_types:
             dataset_type = 'train_relation_output' if str_type == 'train' else 'test_relation_output'
             file_name = output_for_model_config.get(dataset_type)
             output_data = self.create_relation_classification_output(str_type)
@@ -230,21 +227,18 @@ class Parser:
         input_for_model_config = self.get_config('input_for_model')
         path = input_for_model_config.get('path')
         dataset_config = self.get_config('dataset')
-        train_file_name = input_for_model_config.get('train_relations_input')
-        test_file_name = input_for_model_config.get('test_relations_input')
-        relations_input_train_data = self.create_individual_relations_input(dataset_config, 'train')
-        relations_input_test_data = self.create_individual_relations_input(dataset_config, 'test')
-        file_helper.dict_to_json(path, train_file_name, relations_input_train_data, 4)
-        file_helper.dict_to_json(path, test_file_name, relations_input_test_data, 4)
+        for dataset_type in self.dataset_types:
+            file_type = 'train_relations_input' if dataset_type == 'train' else 'test_relations_input'
+            file_name = input_for_model_config.get(file_type)
+            relations_input_data = self.create_individual_relations_input(dataset_config, dataset_type)
+            file_helper.dict_to_json(path, file_name, relations_input_data, 4)
 
     
     def create_individual_relations_input(self, dataset_config, dataset_type):
         relations_list = []
         path = dataset_config.get('path')
-        if dataset_type == 'train':
-            data = file_helper.get_json_file_data(path, dataset_config.get('train_json'))
-        else:
-            data = file_helper.get_json_file_data(path, dataset_config.get('test_json'))
+        file_name = 'train_json' if dataset_type == 'train' else 'test_json'
+        data = file_helper.get_json_file_data(path, dataset_config.get(file_name))
         
         for sentence in data:
             entities = []
@@ -261,8 +255,7 @@ class Parser:
         '''
         input_for_model_config = self.get_config('input_for_model')
         path = input_for_model_config.get('path')
-        input_types = ['train', 'test']
-        for str_type in input_types:
+        for str_type in self.dataset_types:
             input_type = 'train_sentence_input' if str_type == 'train' else 'test_sentence_input'
             file_name = input_for_model_config.get(input_type)
             input_data = file_helper.get_json_file_data(path, file_name)
@@ -292,8 +285,9 @@ class Parser:
         relation_path = relation_config.get('path')
         relation_file_name = relation_config.get('file_name')
         relation_dict = file_helper.get_json_file_data(relation_path, relation_file_name)
-        self.parse_dataset_for_model('train', word_to_id, relation_dict)
-        self.parse_dataset_for_model('test', word_to_id, relation_dict)
+        for dataset_type in self.dataset_types:
+            self.parse_dataset_for_model(dataset_type, word_to_id, relation_dict)
+
         self.create_word_embeddings_weight()
         
     
@@ -357,11 +351,9 @@ class Parser:
         # transforma o arquivo txt de word embeddings em um json
         self.word_embeddings_to_json()
 
-        # transforma o arquivo de dataset de treino em json
-        self.dataset_to_json('train')
-        
-        # transforma o arquivo de dataset de test em json
-        self.dataset_to_json('test')
+        # transforma os arquivos de dataset json
+        for dataset_type in self.dataset_types:
+            self.dataset_to_json(dataset_type)
 
         # cria um arquivo json com os relacionamentos presentes no dataset de treino
         self.relation_to_id_json()
