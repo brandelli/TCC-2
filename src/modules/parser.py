@@ -46,7 +46,7 @@ class Parser:
         self.create_word_dicts()
 
         # chamada para formatação de inputs que serão utilizados pelo modelo
-        #self.parse_inputs_for_model()
+        self.parse_inputs_for_model()
 
         # chamada para adicionar padding nas sentenças de treino, para que todas tenham o mesmo tamanho
         #self.prepare_dataset_for_padding()
@@ -75,7 +75,7 @@ class Parser:
         
         Inclusive seria bom testar isto nos dados que estão sendo chamados de positional vector erroneamente
         '''
-        input_config = self.get_config('input_for_model')
+        input_config = self.get_config('input')
         dataset_config = self.get_config('dataset')
         entities_config = self.get_config('entities')
         entities_type_id = file_helper.get_json_file_data(entities_config.get('path'), entities_config.get('entities_to_id'))
@@ -101,7 +101,7 @@ class Parser:
         Resultando no seguinte exemplo:
         [0, 0, 1, 0, 0, 1]
         '''
-        input_config = self.get_config('input_for_model')
+        input_config = self.get_config('input')
         path = input_config.get('path')
         for str_type in self.dataset_types:
             relations_type = 'train_relations_input' if str_type == 'train' else 'test_relations_input'
@@ -135,8 +135,8 @@ class Parser:
             if weight_in_embeddings is not None:
                 word_embeddings_weight[index] = weight_in_embeddings
         
-        input_for_model_config = self.get_config('input_for_model')
-        file_helper.dict_to_json(input_for_model_config.get('path'), input_for_model_config.get('word_embeddings_weight'), word_embeddings_weight, 4)
+        input_config = self.get_config('input')
+        file_helper.dict_to_json(input_config.get('path'), input_config.get('word_embeddings_weight'), word_embeddings_weight, 4)
 
 
     def create_empty_word_embeddings_weight_list(self, vocab_size, embeddings_dimension):
@@ -187,12 +187,12 @@ class Parser:
         Cria o arquivo json com as relações presentes nas senteças, e devem ser utilizadas
         como input no modelo
         '''
-        input_for_model_config = self.get_config('input_for_model')
-        path = input_for_model_config.get('path')
+        input_config = self.get_config('input')
+        path = input_config.get('path')
         dataset_config = self.get_config('dataset')
         for dataset_type in self.dataset_types:
             file_type = 'train_relations_input' if dataset_type == 'train' else 'test_relations_input'
-            file_name = input_for_model_config.get(file_type)
+            file_name = input_config.get(file_type)
             relations_input_data = self.create_individual_relations_input(dataset_config, dataset_type)
             file_helper.dict_to_json(path, file_name, relations_input_data, 4)
 
@@ -216,11 +216,11 @@ class Parser:
         '''
         Função para adicionar padding nas sentenças de treino, para que todas tenham o mesmo tamanho
         '''
-        input_for_model_config = self.get_config('input_for_model')
-        path = input_for_model_config.get('path')
+        input_config = self.get_config('input')
+        path = input_config.get('path')
         for str_type in self.dataset_types:
             input_type = 'train_sentence_input' if str_type == 'train' else 'test_sentence_input'
-            file_name = input_for_model_config.get(input_type)
+            file_name = input_config.get(input_type)
             input_data = file_helper.get_json_file_data(path, file_name)
             lenght = data_process_helper.get_longest_sentence_from_dataset(input_data)
             self.include_padding(input_data, lenght)
@@ -244,30 +244,57 @@ class Parser:
         word_to_id_path = word_to_id_config.get('path')
         word_to_id_file_name = word_to_id_config.get('dict')
         word_to_id = file_helper.get_json_file_data(word_to_id_path, word_to_id_file_name)
-        relation_config = self.get_config('relation')
-        relation_path = relation_config.get('path')
-        relation_file_name = relation_config.get('file_name')
-        relation_dict = file_helper.get_json_file_data(relation_path, relation_file_name)
-        for dataset_type in self.dataset_types:
-            self.parse_dataset_for_model(dataset_type, word_to_id, relation_dict)
 
+        self.create_sentence_input(word_to_id)
+        self.create_entity_input()
         self.create_word_embeddings_weight()
         
+    
+    def create_sentence_input(self, word_to_id):
+        '''
+        Cria o arquivo de sentence_input, que será utilizado como input no modelo
+        '''
+        dataset_config = self.get_config('dataset')
+        input_config = self.get_config('input')
+        dataset_path = dataset_config.get('path')
+        input_path = input_config.get('path')
+        for dataset_type in self.dataset_types:
+            dataset_type_filename = 'train_json' if dataset_type == 'train' else 'test_json'
+            input_type_filename = 'train_sentence_input' if dataset_type == 'train' else 'test_sentence_input'
+            dataset = file_helper.get_json_file_data(dataset_path, dataset_config.get(dataset_type_filename))
+            sentence_input = self.parse_sentence_input(dataset, word_to_id)
+            file_helper.dict_to_json(input_path, input_config.get(input_type_filename), sentence_input, 4)
+
+    
+    def parse_sentence_input(self, dataset, word_id):
+        '''
+        Faz a tradução das palavras para id's que são usados no sentence_input
+        '''
+        sentences_input = []
+        for data in dataset:
+            sentence = data.get('sentence')
+            sentences_input.append([word_id.get(word) for word in sentence.split(' ')])
+        return sentences_input
+
+
+    def create_entity_input(self):
+        print('create_entity_input')
+
     
     def parse_dataset_for_model(self, dataset_type, word_to_id, relation_dict):
         '''
         Função para iniciar o processo de parseamento dos datasets, para se adequar ao modelo
         '''
-        input_for_model_config = self.get_config('input_for_model')
+        input_config = self.get_config('input')
         dataset_config = self.get_config('dataset')
-        input_for_model_path = input_for_model_config.get('path')
+        input_for_model_path = input_config.get('path')
         dataset_path = dataset_config.get('path')
         str_input_file_name = 'train_sentence_input' if dataset_type == 'train' else 'test_sentence_input'
         str_sentences_dict = 'train_json' if dataset_type == 'train' else 'test_json'
         str_label_file_name = 'train_sentence_label' if dataset_type == 'train' else 'test_sentence_label'
-        input_file_name = input_for_model_config.get(str_input_file_name)
+        input_file_name = input_config.get(str_input_file_name)
         sentences_dict = file_helper.get_json_file_data(dataset_path, dataset_config.get(str_sentences_dict))
-        label_file_name = input_for_model_config.get(str_label_file_name)
+        label_file_name = input_config.get(str_label_file_name)
         parsed_sentence_list, parsed_relation_list = self.parse_sentence_for_model(sentences_dict, word_to_id, relation_dict)
         file_helper.dict_to_json(input_for_model_path, input_file_name, parsed_sentence_list, None)
         file_helper.dict_to_json(input_for_model_path, label_file_name, parsed_relation_list, 4)
@@ -462,17 +489,6 @@ class Parser:
             word_to_id_dict[word] = self.word_id
             reverse_dict[self.word_id] = word
             self.increment_word_id()
-
-
-    def add_word_embeddings_to_word_to_id(self, word_embeddings_config, word_to_id_dict, reverse_dict):
-        '''
-        Função para atribuir e adicionar ids das palavras encontradas no word embeddings
-        '''
-        path = word_embeddings_config.get('path')
-        file_name = word_embeddings_config.get('word_embeddings_json')
-        word_embeddings = file_helper.get_json_file_data(path, file_name)
-        for line in word_embeddings:
-            self.add_word_to_id(line.get('word'), word_to_id_dict, reverse_dict)
     
 
     def process_all_dataset_to_word_to_id(self, word_to_id_dict, reverse_dict):

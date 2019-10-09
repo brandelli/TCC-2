@@ -38,7 +38,7 @@
         "reverse_dict" : "reverse_dict.json"
     },
 
-    "input_for_model" : {
+    "input" : {
         "path"                             : "data/input_for_model/",
         "train_sentence_input"             : "train_sentence_input.json",
         "train_positional_vector_input"    : "train_positional_vector_input.json",
