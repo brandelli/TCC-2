@@ -245,7 +245,35 @@ class Parser:
 
 
     def create_entity_input(self):
-        print('create_entity_input')
+        '''
+        Cria o arquivo de entity_input, que será utilizado como input no modelo
+        '''
+        dataset_config = self.get_config('dataset')
+        input_config = self.get_config('input')
+        dataset_path = dataset_config.get('path')
+        input_path = input_config.get('path')
+        for dataset_type in self.dataset_types:
+            dataset_type_filename = 'train_json' if dataset_type == 'train' else 'test_json'
+            input_type_filename = 'train_entity_input' if dataset_type == 'train' else 'test_entity_input'
+            dataset = file_helper.get_json_file_data(dataset_path, dataset_config.get(dataset_type_filename))
+            entity_input = self.parse_entity_input(dataset)
+            file_helper.dict_to_json(input_path, input_config.get(input_type_filename), entity_input, 4)
+        
+
+    def parse_entity_input(self, dataset):
+        '''
+        Faz a tradução das entidades e palavras normais para vetor binario, onde:
+        0 -> palavra normal
+        1 -> entidade marcada na sentença
+        '''
+        entity_input = []
+        for data in dataset:
+            sentence = data.get('sentence')
+            head = data.get('head').get('word')
+            tail = data.get('tail').get('word')
+            fn_lambda = lambda head, tail, word: 1 if word == tail or word == head else 0
+            entity_input.append([fn_lambda(head, tail, word) for word in sentence.split(' ')])
+        return entity_input
 
     
     def parse_dataset_for_model(self, dataset_type, word_to_id, relation_dict):
