@@ -49,71 +49,8 @@ class Parser:
         # chamada para formatação de inputs que serão utilizados pelo modelo
         self.parse_inputs_for_model()
 
-
-        # chamada para criar o vetor posicional que pode ser utilizado no input
-        #self.create_positional_vector()
-
-        # chamada para criar parametro com tupla contendo o tipo de cada entidadade
-        #self.create_entities_type_input()
-
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         #self.create_output_for_model()
-
-
-    def create_entities_type_input(self):
-        '''
-        Este método tem que ser ajustado para funcionar como one-hot vector
-        onde os tipos de entidades serão classificados em:
-            0 - para palavras que não sejam entidades
-            1 - para PLC
-            2 - para LOC
-            3 - para PER
-        
-        Inclusive seria bom testar isto nos dados que estão sendo chamados de positional vector erroneamente
-        '''
-        input_config = self.get_config('input')
-        dataset_config = self.get_config('dataset')
-        entities_config = self.get_config('entities')
-        entities_type_id = file_helper.get_json_file_data(entities_config.get('path'), entities_config.get('entities_to_id'))
-        for str_type in self.dataset_types:
-            dataset_type = 'train_json' if str_type == 'train' else 'test_json'
-            entity_input_type = 'train_entity_type_input' if str_type == 'train' else 'test_entity_type_input'
-            sentences = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get(dataset_type))
-            entities_type_relation = []
-            for sentence in sentences:
-                head_type = sentence.get('head').get('category')
-                tail_type = sentence.get('tail').get('category')
-                entities_type_relation.append([entities_type_id.get(head_type), entities_type_id.get(tail_type)])
-
-            file_helper.dict_to_json(input_config.get('path'), input_config.get(entity_input_type), entities_type_relation, 4)
-
-
-    def create_positional_vector(self):
-        '''
-        Cria o arquivo de vetor posicional de entidade, com a seguinte representação:
-            * 0 -> palavra normal
-            * 1 -> entidade
-
-        Resultando no seguinte exemplo:
-        [0, 0, 1, 0, 0, 1]
-        '''
-        input_config = self.get_config('input')
-        path = input_config.get('path')
-        for str_type in self.dataset_types:
-            relations_type = 'train_relations_input' if str_type == 'train' else 'test_relations_input'
-            sentences_type = 'train_sentence_input' if str_type == 'train' else 'test_sentence_input'
-            positional_vector_type = 'train_positional_vector_input' if str_type == 'train' else 'test_positional_vector_input'
-            relations_list = file_helper.get_json_file_data(path, input_config.get(relations_type))
-            sentences_list = file_helper.get_json_file_data(path, input_config.get(sentences_type))
-            positional_vector = []
-            for index, sentence in enumerate(sentences_list, start=0):
-                current_sentence = []
-                for word in sentence:
-                    current_sentence.append(int(word in relations_list[index]))
-                positional_vector.append(current_sentence)
-            
-            file_helper.dict_to_json(path, input_config.get(positional_vector_type), positional_vector, 4)
-
 
     
     def create_word_embeddings_weight(self):
