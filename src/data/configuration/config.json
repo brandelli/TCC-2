@@ -49,7 +49,7 @@
 
     "output" : {
         "path"                  : "data/output/",
-        "train_relation_output" : "train_relation_output.json",
-        "test_relation_output"  : "test_relation_output.json"
+        "train_sentence_output" : "train_sentence_output.json",
+        "test_sentence_output"  : "test_sentence_output.json"
     }
 }

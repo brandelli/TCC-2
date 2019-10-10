@@ -84,7 +84,52 @@ class Parser:
         '''
         Cria o arquivo de output do modelo
         '''
-        print(f'create_output_for_model')
+        output_config = self.get_config('output')
+        dataset_config = self.get_config('dataset')
+        for dataset_type in self.dataset_types:
+            dataset_filename = 'train_json' if dataset_type == 'train' else 'test_json'
+            output_filename = 'train_sentence_output' if dataset_type == 'train' else 'test_sentence_output'
+            dataset = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get(dataset_filename))
+            sentences_output = self.parse_output_sentence(dataset)
+            file_helper.dict_to_json(output_config.get('path'), output_config.get(output_filename), sentences_output, 4)
+
+
+    def parse_output_sentence(self, dataset):
+        sentences_output = []
+        for data in dataset:
+            cur_sentence = [0] * self.padding_size
+            sentence = data.get('sentence')
+            head = data.get('head').get('word')
+            tail = data.get('tail').get('word')
+            relation = data.get('relation')
+            self.extract_relation_from_sentence(sentence, head, tail, relation)
+        return sentences_output
+    
+
+    def extract_relation_from_sentence(self, sentence, head, tail, relation):
+        split_sentence = sentence.split(' ')
+        begin, end = self.get_relation_boundaries(split_sentence, head, tail)
+        print(f'begin: {begin} | end: {end}')
+        
+    
+    def get_relation_boundaries(self, split_sentence, head, tail):
+        '''
+        Pega os indexes de onde as entidades se encontram,
+        criando o espaço onde o relacionamento deve ser procurado
+        '''
+        head_index_list = []
+        tail_index_list = []
+        for index, word in enumerate(split_sentence):
+            if word == head:
+                head_index_list.append(index)
+            
+            if word == tail:
+                tail_index_list.append(index)
+        # por simplicidade será utilizado:
+        #   * index_min para begin
+        #   * index_max para end
+        # porque desta forma o relacionamento vai ser capturado
+        return min(head_index_list), max(tail_index_list)
 
 
     def include_padding(self, sentence, padding=padding_size):
@@ -170,25 +215,6 @@ class Parser:
             self.include_padding(entity_input)
             entities_input.append(entity_input)
         return entities_input
-
-    
-    def parse_sentence_for_model(self, sentences_dict, word_id, relation_dict):
-        '''
-        Função para recuperar o valor numérico de relacionamente e palavras presentes nas sentenças
-        '''
-        parsed_sentence_list = []
-        parsed_relation_list = []
-        for sentence_dict in sentences_dict:
-            words_list = []
-            sentence = sentence_dict.get('sentence')
-            relation = sentence_dict.get('relation')
-            for word in sentence.split(' '):
-                words_list.append(word_id.get(word))
-
-            parsed_sentence_list.append(words_list)
-            parsed_relation_list.append(relation_dict.get(relation))
-
-        return parsed_sentence_list, parsed_relation_list
 
 
     def create_word_dicts(self):
