@@ -50,7 +50,7 @@ class Parser:
         self.parse_inputs_for_model()
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
-        #self.create_output_for_model()
+        self.create_output_for_model()
 
     
     def create_word_embeddings_weight(self):
@@ -84,37 +84,9 @@ class Parser:
         '''
         Cria o arquivo de output do modelo
         '''
-        output_for_model_config = self.get_config('output')
-        path = output_for_model_config.get('path')
-        for str_type in self.dataset_types:
-            dataset_type = 'train_relation_output' if str_type == 'train' else 'test_relation_output'
-            file_name = output_for_model_config.get(dataset_type)
-            output_data = self.create_relation_classification_output(str_type)
-            file_helper.dict_to_json(path, file_name, output_data, 4)
+        print(f'create_output_for_model')
 
 
-    def create_relation_classification_output(self, str_dataset_type):
-        '''
-        Cria uma estrutura com o relacionamento que deve ser apresentado como output do modelo
-        '''
-        dataset_config = self.get_config('dataset')
-        relation_config = self.get_config('relation')
-        relation_data = file_helper.get_json_file_data(relation_config.get('path'), relation_config.get('file_name'))
-        relation_classification = []
-        path = dataset_config.get('path')
-        dataset_type = 'train_json' if str_dataset_type == 'train' else 'test_json'
-        file_name = dataset_config.get(dataset_type)
-        data = file_helper.get_json_file_data(path, file_name)
-        for sentence in data:
-            relation = sentence.get('relation')
-            if(relation_data.get(relation) == None):
-                relation_classification.append(0)
-            else:
-                relation_classification.append(relation_data.get(relation))
-        
-        return relation_classification
-
-    
     def include_padding(self, sentence, padding=padding_size):
         '''
         Adiciona a representação de paddings na sentença -> word_to_id = 0
