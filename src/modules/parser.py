@@ -6,6 +6,7 @@ class Parser:
     relation_id = 0
     word_id = 1
     entity_type_id = 0
+    padding_size = 100
 
     def __init__(self, config):
         self.config = config
@@ -194,13 +195,12 @@ class Parser:
             file_helper.dict_to_json(path, file_name, input_data, 4)
 
     
-    def include_padding(self, data, padding):
+    def include_padding(self, sentence, padding=padding_size):
         '''
         Adiciona a representação de paddings na sentença -> word_to_id = 0
         '''
-        for sentence in data:
-            while len(sentence) < padding:
-                sentence.append(0)
+        while len(sentence) < padding:
+            sentence.append(0)
     
 
     def parse_inputs_for_model(self):
@@ -240,7 +240,9 @@ class Parser:
         sentences_input = []
         for data in dataset:
             sentence = data.get('sentence')
-            sentences_input.append([word_id.get(word) for word in sentence.split(' ')])
+            sentence_input = [word_id.get(word) for word in sentence.split(' ')]
+            self.include_padding(sentence_input)
+            sentences_input.append(sentence_input)
         return sentences_input
 
 
@@ -266,14 +268,16 @@ class Parser:
         0 -> palavra normal
         1 -> entidade marcada na sentença
         '''
-        entity_input = []
+        entities_input = []
         for data in dataset:
             sentence = data.get('sentence')
             head = data.get('head').get('word')
             tail = data.get('tail').get('word')
             fn_lambda = lambda head, tail, word: 1 if word == tail or word == head else 0
-            entity_input.append([fn_lambda(head, tail, word) for word in sentence.split(' ')])
-        return entity_input
+            entity_input = [fn_lambda(head, tail, word) for word in sentence.split(' ')]
+            self.include_padding(entity_input)
+            entities_input.append(entity_input)
+        return entities_input
 
     
     def parse_sentence_for_model(self, sentences_dict, word_id, relation_dict):
