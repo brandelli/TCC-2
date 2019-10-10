@@ -49,8 +49,6 @@ class Parser:
         # chamada para formatação de inputs que serão utilizados pelo modelo
         self.parse_inputs_for_model()
 
-        # chamada para adicionar padding nas sentenças de treino, para que todas tenham o mesmo tamanho
-        #self.prepare_dataset_for_padding()
 
         # chamada para criar o vetor posicional que pode ser utilizado no input
         #self.create_positional_vector()
@@ -178,21 +176,6 @@ class Parser:
                 relation_classification.append(relation_data.get(relation))
         
         return relation_classification
-
-    
-    def prepare_dataset_for_padding(self):
-        '''
-        Função para adicionar padding nas sentenças de treino, para que todas tenham o mesmo tamanho
-        '''
-        input_config = self.get_config('input')
-        path = input_config.get('path')
-        for str_type in self.dataset_types:
-            input_type = 'train_sentence_input' if str_type == 'train' else 'test_sentence_input'
-            file_name = input_config.get(input_type)
-            input_data = file_helper.get_json_file_data(path, file_name)
-            lenght = data_process_helper.get_longest_sentence_from_dataset(input_data)
-            self.include_padding(input_data, lenght)
-            file_helper.dict_to_json(path, file_name, input_data, 4)
 
     
     def include_padding(self, sentence, padding=padding_size):
