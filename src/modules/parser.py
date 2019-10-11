@@ -108,7 +108,7 @@ class Parser:
             tail = data.get('tail').get('word')
             relation = data.get('relation')
             begin, end = self.extract_relation_from_sentence(sentence, head, tail, relation)
-            fn_lambda = lambda index: 0 if index < begin or index > end else 1
+            fn_lambda = lambda index: 0 if index < begin or index >= end else 1
             cur_sentence = [fn_lambda(index) for index, _ in enumerate(cur_sentence)]
             sentences_output.append(cur_sentence)
         

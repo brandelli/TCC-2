@@ -191,7 +191,7 @@ class Model:
         train_inputs = [self.train_sentences_input, self.train_entities_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
-        model.fit(train_inputs, train_sentences_output, epochs=100, verbose = 1)
+        model.fit(train_inputs, train_sentences_output, epochs=50, verbose = 1)
     
     
     def evaluate_model(self):

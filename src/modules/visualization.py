@@ -43,22 +43,21 @@ class Visualization:
     
 
     def print_predicted_relation(self, dataset, prediction):
-        index = 0
-        for data in dataset:
+        for index, data in enumerate(dataset):
             cur_relation = []
             head = data.get('head').get('word')
             tail = data.get('tail').get('word')
+            sentence_id = data.get('sentence_id')
             relation = data.get('relation')
             split_sentence = data.get('sentence').split(' ')
-            print(f'{head} | {relation} | {tail}')
             pred = prediction[index]
             for i, word in enumerate(split_sentence):
                 if pred[i] == 1:
                     cur_relation.append(word)
-
+            print('==============================================')
+            print(f'{head} | {relation} | {tail}')
             print(cur_relation)
-
-            index =+ 1
+            print('==============================================')
 
 
 
