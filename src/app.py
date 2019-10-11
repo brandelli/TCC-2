@@ -21,7 +21,7 @@ def main():
     config = Config('data/configuration/', 'config.json')
     run_data_parse(config)
     #run_data_visualization(config)
-    #run_model(config)
+    run_model(config)
 
 
 def run_data_parse(config):
@@ -44,9 +44,9 @@ def run_data_visualization(config):
 
 def run_model(config):
     model = Model(config)
-    model.create_model()
-    model.train_model()
-    model.evaluate_model()
+    #model.create_model()
+    #model.train_model()
+    #model.evaluate_model()
 
 
 if __name__ == '__main__':

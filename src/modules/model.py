@@ -18,19 +18,35 @@ class Model:
         '''
         Inicializa todos os inputs que vão ser utilizados no modelo
         '''
-        inputs_config = self.get_config('input_for_model')
+        inputs_config = self.get_config('input')
         path = inputs_config.get('path')
-        
+
         # word embeddings pesos já treinados
         self.word_embeddings_matrix = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('word_embeddings_weight')))
-        
+        '''
+        print('word_embeddings_matrix')
+        print(self.word_embeddings_matrix)
+        '''
+
         # inputs de treino
         self.train_sentences_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_sentence_input')))
         self.train_entities_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_entity_input')))
+        '''
+        print('train_sentences_input')
+        print(self.train_sentences_input)
+        print('train_entities_input')
+        print(self.train_entities_input)
+        '''
 
         # inputs de teste
-        self.test_sentences = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_sentence_input')))
+        self.test_sentences_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_sentence_input')))
         self.test_entities_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_entity_input')))
+        '''
+        print('test_sentences_input')
+        print(self.test_sentences_input)
+        print('test_entities_input')
+        print(self.test_entities_input)
+        '''
     
 
     def initialize_outputs(self):
@@ -42,9 +58,17 @@ class Model:
 
         # output de treino
         self.train_sentences_output = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('train_sentence_output')))
+        '''
+        print('train_sentences_output')
+        print(self.train_sentences_output)
+        '''
 
         # output de teste
         self.test_sentences_output = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('test_sentence_output')))
+        '''
+        print('test_sentences_output')
+        print(self.test_sentences_output)
+        '''
 
 
     def get_config(self, str_config=None):
