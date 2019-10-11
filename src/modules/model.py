@@ -191,21 +191,20 @@ class Model:
         train_inputs = [self.train_sentences_input, self.train_entities_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
-        model.fit(train_inputs, train_sentences_output, epochs=30, verbose = 1)
+        model.fit(train_inputs, train_sentences_output, epochs=100, verbose = 1)
     
     
     def evaluate_model(self):
         model = self.model
-        test_sentence_input = self.test_sentences
-        test_positional_input = self.test_positional_input
-        test_e1_relative_input = self.test_e1_relative
-        test_e2_relative_input = self.test_e2_relative
-        test_output = self.test_labels
-        train_input_sentence = self.train_sentences
-        train_positional_input = self.train_positional_input
-        train_e1_relative_input = self.train_e1_relative
-        train_e2_relative_input = self.train_e2_relative
-        train_output_labels = self.train_labels
-        #model.evaluate([train_positional_input, train_input_sentence],train_output_labels)
-        #model.evaluate([test_positional_input, test_sentence_input],test_output)
+        train_inputs = [self.train_sentences_input, self.train_entities_input]
+        test_inputs = [self.test_sentences_input, self.test_entities_input]
+        train_sentences_output = self.train_sentences_output
+        test_sentences_output = self.test_sentences_output
+        model.evaluate(train_inputs, train_sentences_output)
+        model.evaluate(test_inputs, test_sentences_output)
+        prediction_probas = model.predict(test_inputs)
+        predictions = prediction_probas.argmax(axis=-1)
+        print(len(predictions))
+        for pred in predictions:
+            print(pred)
         
