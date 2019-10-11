@@ -40,6 +40,27 @@ class Visualization:
                     entities_dict[entity] = entities_dict.get(entity) + 1
         
         return entities_dict
+    
+
+    def print_predicted_relation(self, dataset, prediction):
+        index = 0
+        for data in dataset:
+            cur_relation = []
+            head = data.get('head').get('word')
+            tail = data.get('tail').get('word')
+            relation = data.get('relation')
+            split_sentence = data.get('sentence').split(' ')
+            print(f'{head} | {relation} | {tail}')
+            pred = prediction[index]
+            for i, word in enumerate(split_sentence):
+                if pred[i] == 1:
+                    cur_relation.append(word)
+
+            print(cur_relation)
+
+            index =+ 1
+
+
 
 
     

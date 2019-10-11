@@ -48,6 +48,13 @@ def run_model(config):
     model.train_model()
     model.evaluate_model()
     predict = model.predict()
+    visualization = Visualization()
+    dataset_config = config.get_configuration('dataset')
+    dataset_path = dataset_config.get('path')
+    dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
+
+    visualization.print_predicted_relation(dataset_test, predict)
+
     
 
 if __name__ == '__main__':
