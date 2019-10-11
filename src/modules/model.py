@@ -168,7 +168,7 @@ class Model:
         #model = self.create_flatten_layer('flatten_layer_1', model)
 
         model = self.create_dense_layer('dense_layer_1', 64, 'tanh', model)
-        #model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
+        model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
 
         output = self.create_time_distributed('time_distributed_layer', 2, 'softmax', model)
 
@@ -176,7 +176,7 @@ class Model:
         model = tf.keras.Model(inputs=input_layers, outputs=output)
 
         # compilação do modelo
-        model.compile(loss='categorical_crossentropy', metrics=['accuracy'])
+        model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
         print(model.summary())
 
@@ -188,14 +188,10 @@ class Model:
         '''
         Realiza o treinamento do modelo
         '''
-        train_input_sentence = self.train_sentences
-        train_positional_input = self.train_positional_input
-        train_e1_relative_input = self.train_e1_relative
-        train_e2_relative_input = self.train_e2_relative
-        train_output_labels = self.train_labels
+        train_inputs = [self.train_sentences_input, self.train_entities_input]
+        train_sentences_output = self.train_sentences_output
         model = self.model
-        #model.fit([train_positional_input, train_input_sentence], train_output_labels, epochs=30, verbose = 1)
-        model.fit([train_e1_relative_input, train_e2_relative_input, train_input_sentence], train_output_labels, epochs=30, verbose = 1)
+        model.fit(train_inputs, train_sentences_output, epochs=30, verbose = 1)
     
     
     def evaluate_model(self):

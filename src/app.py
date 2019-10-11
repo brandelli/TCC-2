@@ -45,7 +45,7 @@ def run_data_visualization(config):
 def run_model(config):
     model = Model(config)
     model.create_model()
-    #model.train_model()
+    model.train_model()
     #model.evaluate_model()
 
 
