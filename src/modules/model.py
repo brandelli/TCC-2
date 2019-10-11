@@ -126,60 +126,61 @@ class Model:
             return tf.keras.layers.LSTM(input_dim, return_sequences=True, dropout=dropout, name=str_name)
         else:
             return tf.keras.layers.LSTM(input_dim, return_sequences=True, dropout=dropout, name=str_name)(model)
+    
+
+    def create_time_distributed(self, str_name, output_dim, str_activation, model):
+        '''
+        Cria um layer Time Distributed para o modelo
+        '''
+        return tf.keras.layers.TimeDistributed(tf.keras.layers.Dense(output_dim, activation=str_activation), name=str_name)(model)
 
 
     def create_model(self):
         '''
         Cria o modelo que vai ser utilizado, definindo todas as suas camadas e compilação
         '''
-        input_length = self.train_sentences.shape[1]
+        input_length = self.train_sentences_input.shape[1]
         embeddings_layers = []
+        input_layers = []
         
         # layer de input de word embeddings
         word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', input_length)
+        input_layers.append(word_embeddings_input_layer)
         embeddings_layers.append(self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer))
 
-        # layer de input de posicional de entidades
-        #positional_input_layer = self.create_input_layer('positional_input_layer', input_length)
-        #embeddings_layers.append(self.create_embedding_layer('positional_embedding_layer', self.train_positional_input, input_length, True, positional_input_layer))
-
-        # layer de input e1 relative position
-        #e1_relative_position_input_layer = self.create_input_layer('e1_relative_input_layer', input_length)
-        #embeddings_layers.append(self.create_embedding_layer('e1_relative_embedidng_layer', self.train_e1_relative, input_length, True, e1_relative_position_input_layer))
-
-        #e2_relative_position_input_layer = self.create_input_layer('e2_relative_input_layer', input_length)
-        #embeddings_layers.append(self.create_embedding_layer('e2_relative_embedidng_layer', self.train_e2_relative, input_length, True, e2_relative_position_input_layer))
+        # layer de input de entidades
+        entity_input_layer = self.create_input_layer('entity_input_layer', input_length)
+        input_layers.append(entity_input_layer)
+        embeddings_layers.append(self.create_embedding_layer('entity_embedding_layer', self.train_entities_input, input_length, True, entity_input_layer))
         
-        # lista com os layers de input
-        #input_layers = [positional_input_layer, word_embeddings_input_layer]
-        #input_layers = [e1_relative_position_input_layer, e2_relative_position_input_layer, word_embeddings_input_layer]
+        print(input_layers)
 
         # layer para concatenar os embeddings do modelo
-        #model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
+        model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
 
         # layer LSTM
-        #lstm = self.create_lstm_layer('lstm_layer', input_length, 0.2, True, model)
+        lstm = self.create_lstm_layer('lstm_layer', input_length, 0.2, True, model)
 
         # layer BI-LSTM
-        #model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
+        model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
 
         # layer Flatten
         #model = self.create_flatten_layer('flatten_layer_1', model)
 
-        # output layer
-        #model = self.create_dense_layer('dense_layer_1', 64, 'tanh', model)
+        model = self.create_dense_layer('dense_layer_1', 64, 'tanh', model)
         #model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
-        #output = self.create_dense_layer('output_layer', 54, 'softmax', model)
+
+        output = self.create_time_distributed('time_distributed_layer', 2, 'softmax', model)
 
         # criação do modelo
-        #model = tf.keras.Model(inputs=input_layers, outputs=output)
+        model = tf.keras.Model(inputs=input_layers, outputs=output)
 
         # compilação do modelo
-        #model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+        model.compile(loss='categorical_crossentropy', metrics=['accuracy'])
 
-        #print(model.summary())
+        print(model.summary())
 
-        #self.model = model
+        self.model = model
         #plot_model(model, to_file='model.png')
 
 
