@@ -108,8 +108,20 @@ class Parser:
 
     def extract_relation_from_sentence(self, sentence, head, tail, relation):
         split_sentence = sentence.split(' ')
+        split_relation = relation.split(' ')
         begin, end = self.get_relation_boundaries(split_sentence, head, tail)
-        print(f'begin: {begin} | end: {end}')
+        relation_len = len(split_relation)
+        found = False
+        print(relation)
+        while found is not True and begin < end:
+            print(split_sentence[begin:begin+relation_len])
+            found = split_sentence[begin:begin+relation_len] == split_relation
+            if found is not True:
+                begin += 1
+            else:
+                print('achou relation')
+
+            
         
     
     def get_relation_boundaries(self, split_sentence, head, tail):
