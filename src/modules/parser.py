@@ -95,6 +95,11 @@ class Parser:
 
 
     def parse_output_sentence(self, dataset):
+        '''
+        Faz o parse do output das sentenças, onde é utilizado um vetor binário com  a seguinte representação:
+            0 -> palavra normal (não faz parte do relacionamento)
+            1 -> palavra do relacionamento
+        '''
         sentences_output = []
         for data in dataset:
             cur_sentence = [0] * self.padding_size
@@ -111,6 +116,11 @@ class Parser:
     
 
     def extract_relation_from_sentence(self, sentence, head, tail, relation):
+        '''
+        Extrai o trecho da sentença que contem o relacionamento, retornando os seguintes valores:
+            * begin -> inicio do relacionamento
+            * begin + relation_len -> onde acaba o relacionamento, visto que é o inicio mais o tamanho do relacionamento
+        '''
         split_sentence = sentence.split(' ')
         split_relation = relation.split(' ')
         begin, end = self.get_relation_boundaries(split_sentence, head, tail)
