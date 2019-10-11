@@ -144,42 +144,42 @@ class Model:
         #embeddings_layers.append(self.create_embedding_layer('positional_embedding_layer', self.train_positional_input, input_length, True, positional_input_layer))
 
         # layer de input e1 relative position
-        e1_relative_position_input_layer = self.create_input_layer('e1_relative_input_layer', input_length)
-        embeddings_layers.append(self.create_embedding_layer('e1_relative_embedidng_layer', self.train_e1_relative, input_length, True, e1_relative_position_input_layer))
+        #e1_relative_position_input_layer = self.create_input_layer('e1_relative_input_layer', input_length)
+        #embeddings_layers.append(self.create_embedding_layer('e1_relative_embedidng_layer', self.train_e1_relative, input_length, True, e1_relative_position_input_layer))
 
-        e2_relative_position_input_layer = self.create_input_layer('e2_relative_input_layer', input_length)
-        embeddings_layers.append(self.create_embedding_layer('e2_relative_embedidng_layer', self.train_e2_relative, input_length, True, e2_relative_position_input_layer))
+        #e2_relative_position_input_layer = self.create_input_layer('e2_relative_input_layer', input_length)
+        #embeddings_layers.append(self.create_embedding_layer('e2_relative_embedidng_layer', self.train_e2_relative, input_length, True, e2_relative_position_input_layer))
         
         # lista com os layers de input
         #input_layers = [positional_input_layer, word_embeddings_input_layer]
-        input_layers = [e1_relative_position_input_layer, e2_relative_position_input_layer, word_embeddings_input_layer]
+        #input_layers = [e1_relative_position_input_layer, e2_relative_position_input_layer, word_embeddings_input_layer]
 
         # layer para concatenar os embeddings do modelo
-        model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
+        #model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
 
         # layer LSTM
-        lstm = self.create_lstm_layer('lstm_layer', input_length, 0.2, True, model)
+        #lstm = self.create_lstm_layer('lstm_layer', input_length, 0.2, True, model)
 
         # layer BI-LSTM
-        model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
+        #model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
 
         # layer Flatten
-        model = self.create_flatten_layer('flatten_layer_1', model)
+        #model = self.create_flatten_layer('flatten_layer_1', model)
 
         # output layer
         #model = self.create_dense_layer('dense_layer_1', 64, 'tanh', model)
         #model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
-        output = self.create_dense_layer('output_layer', 54, 'softmax', model)
+        #output = self.create_dense_layer('output_layer', 54, 'softmax', model)
 
         # criação do modelo
-        model = tf.keras.Model(inputs=input_layers, outputs=output)
+        #model = tf.keras.Model(inputs=input_layers, outputs=output)
 
         # compilação do modelo
-        model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+        #model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-        print(model.summary())
+        #print(model.summary())
 
-        self.model = model
+        #self.model = model
         #plot_model(model, to_file='model.png')
 
 
