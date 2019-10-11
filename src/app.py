@@ -21,7 +21,7 @@ def main():
     config = Config('data/configuration/', 'config.json')
     run_data_parse(config)
     run_data_visualization(config)
-    run_model(config)
+    #run_model(config)
 
 
 def run_data_parse(config):
@@ -42,9 +42,9 @@ def run_data_visualization(config):
     output_train = file_helper.get_json_file_data(output_path, output_config.get('train_sentence_output'))
     output_test = file_helper.get_json_file_data(output_path, output_config.get('test_sentence_output'))
     print('=================visualizando output de treino================================')
-    #visualization.print_predicted_relation(dataset_train, output_train)
+    visualization.print_predicted_relation(dataset_train, output_train)
     print('=================visualizando output de teste=================================')
-    #visualization.print_predicted_relation(dataset_test, output_test)
+    visualization.print_predicted_relation(dataset_test, output_test)
 
 
 def run_model(config):

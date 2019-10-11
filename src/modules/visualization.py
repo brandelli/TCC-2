@@ -54,10 +54,11 @@ class Visualization:
             for i, word in enumerate(split_sentence):
                 if pred[i] == 1:
                     cur_relation.append(word)
-            print('==============================================')
-            print(f'{head} | {relation} | {tail}')
-            print(cur_relation)
-            print('==============================================')
+            
+            if cur_relation != relation.split(' '):
+                print(cur_relation)
+                print(relation.split(' '))
+                print(sentence_id)
 
 
 
