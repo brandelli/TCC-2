@@ -102,7 +102,11 @@ class Parser:
             head = data.get('head').get('word')
             tail = data.get('tail').get('word')
             relation = data.get('relation')
-            self.extract_relation_from_sentence(sentence, head, tail, relation)
+            begin, end = self.extract_relation_from_sentence(sentence, head, tail, relation)
+            fn_lambda = lambda index: 0 if index < begin or index > end else 1
+            cur_sentence = [fn_lambda(index) for index, _ in enumerate(cur_sentence)]
+            sentences_output.append(cur_sentence)
+        
         return sentences_output
     
 
@@ -112,14 +116,12 @@ class Parser:
         begin, end = self.get_relation_boundaries(split_sentence, head, tail)
         relation_len = len(split_relation)
         found = False
-        print(relation)
         while found is not True and begin < end:
-            print(split_sentence[begin:begin+relation_len])
             found = split_sentence[begin:begin+relation_len] == split_relation
             if found is not True:
                 begin += 1
-            else:
-                print('achou relation')
+        
+        return begin, begin+relation_len
 
             
         
