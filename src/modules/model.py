@@ -202,9 +202,11 @@ class Model:
         test_sentences_output = self.test_sentences_output
         model.evaluate(train_inputs, train_sentences_output)
         model.evaluate(test_inputs, test_sentences_output)
+    
+
+    def predict(self):
+        model = self.model
+        test_inputs = [self.test_sentences_input, self.test_entities_input]
         prediction_probas = model.predict(test_inputs)
-        predictions = prediction_probas.argmax(axis=-1)
-        print(len(predictions))
-        for pred in predictions:
-            print(pred)
+        return prediction_probas.argmax(axis=-1)
         

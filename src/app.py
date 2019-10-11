@@ -47,7 +47,8 @@ def run_model(config):
     model.create_model()
     model.train_model()
     model.evaluate_model()
-
+    predict = model.predict()
+    
 
 if __name__ == '__main__':
     main()
