@@ -20,18 +20,17 @@ class Model:
         '''
         inputs_config = self.get_config('input_for_model')
         path = inputs_config.get('path')
+        
+        # word embeddings pesos já treinados
         self.word_embeddings_matrix = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('word_embeddings_weight')))
-        self.train_positional_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_positional_vector_input')))
-        self.test_positional_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_positional_vector_input')))
-        self.train_e1_relative = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_relative_position_e1_input')))
-        self.train_e2_relative = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_relative_position_e2_input')))
-        self.test_e1_relative = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_relative_position_e1_input')))
-        self.test_e2_relative = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_relative_position_e2_input')))
-        self.train_sentences = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_sentence_input')))
+        
+        # inputs de treino
+        self.train_sentences_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_sentence_input')))
+        self.train_entities_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_entity_input')))
+
+        # inputs de teste
         self.test_sentences = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_sentence_input')))
-        print(self.word_embeddings_matrix)
-        print(self.train_positional_input)
-        print(self.train_e1_relative)
+        self.test_entities_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_entity_input')))
     
 
     def initialize_outputs(self):
@@ -40,8 +39,12 @@ class Model:
         '''
         outputs_config = self.get_config('output')
         path = outputs_config.get('path')
-        self.train_labels = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('train_relation_output')))
-        self.test_labels = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('test_relation_output')))
+
+        # output de treino
+        self.train_sentences_output = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('train_sentence_output')))
+
+        # output de teste
+        self.test_sentences_output = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('test_sentence_output')))
 
 
     def get_config(self, str_config=None):
