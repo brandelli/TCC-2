@@ -42,8 +42,10 @@
         "path"                             : "data/input/",
         "train_sentence_input"             : "train_sentence_input.json",
         "train_entity_input"               : "train_entity_input.json",
+        "train_pos_tagged_input"           : "train_pos_tagged_input.json",
         "test_sentence_input"              : "test_sentence_input.json",
         "test_entity_input"                : "test_entity_input.json",
+        "test_pos_tagged_input"            : "test_pos_tagged_input.json",
         "word_embeddings_weight"           : "word_embeddings_weight.json"
     },
 
@@ -51,5 +53,10 @@
         "path"                  : "data/output/",
         "train_sentence_output" : "train_sentence_output.json",
         "test_sentence_output"  : "test_sentence_output.json"
+    },
+
+    "part_of_speech" : {
+        "path" : "data/part_of_speech/",
+        "pos_tag_dict" : "pos_tag_dict.json"
     }
 }

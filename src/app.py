@@ -16,9 +16,9 @@ def main():
         nltk.download('punkt')
 
     try:
-        spacy.load('pt_core_news_sm')
+        spacy.load('pt')
     except IOError:
-        download('pt_core_news_sm')
+        download('pt')
 
     config = Config('data/configuration/', 'config.json')
     run_data_parse(config)

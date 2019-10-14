@@ -40,3 +40,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs](https://github.com/kamalkraj/Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs)
 * [Distant Supervision for Relation Extraction via Piecewise Convolutional Neural Networks](https://www.aclweb.org/anthology/D15-1203.pdf)
 * [Relation Classification via Convolutional Deep Neural Network](https://www.aclweb.org/anthology/C14-1220.pdf)
+* [Brincando de Processamento Natural de Linguagem com spaCy](https://leportella.com/pt-br/2017/11/30/brincando-de-nlp-com-spacy.html)

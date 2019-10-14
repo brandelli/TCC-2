@@ -1,6 +1,6 @@
 import csv
 import nltk
-import pickle
+import spacy
 from helpers import file_helper, validator_helper, data_process_helper, dictionary_creator_helper
 
 class Parser:
@@ -8,6 +8,7 @@ class Parser:
     relation_id = 0
     word_id = 1
     entity_type_id = 0
+    pos_tag_id = 1
     padding_size = 100
 
     def __init__(self, config):
@@ -35,6 +36,10 @@ class Parser:
 
     def increment_entity_type_id(self, inc=1):
         self.entity_type_id += inc
+    
+
+    def increment_pos_tag_id(self, inc=1):
+        self.pos_tag_id +=1
 
     
     def run_initial_parse(self):
@@ -48,9 +53,6 @@ class Parser:
         # chamada para criação de dicionários: word_to_id e reverse_dict
         self.create_word_dicts()
 
-        # chamada para criar dicionario com id para os tipos de pos tag presentes no dataset
-        self.create_pos_tag_dict()
-
         # chamada para formatação de inputs que serão utilizados pelo modelo
         self.parse_inputs_for_model()
 
@@ -58,15 +60,44 @@ class Parser:
         self.create_output_for_model()
 
 
-    def create_pos_tag_dict(self):
+    def create_pos_tag_input(self):
+        '''
+        Cria o input contendo as informações de part-of-speech dos dataset,
+        além de ir criando juntamente o dicionario de tags 
+        '''
         dataset_config = self.get_config('dataset')
-        path = dataset_config.get('path')
-        pos_tag_dict = {}
+        dataset_path = dataset_config.get('path')
+        pos_config = self.get_config('part_of_speech')
+        pos_path = pos_config.get('path')
+        input_config = self.get_config('input')
+        input_path = input_config.get('path')
+        pos_tag_dict = { 'PAD' : 0 }
+        nlp = spacy.load('pt')
         for dataset_type in self.dataset_types:
-            file_name = 'train_json' if dataset_type == 'train' else 'test_json'
-            dataset = file_helper.get_json_file_data(path, dataset_config.get(file_name))
+            input_list = []
+            dataset_file_name = 'train_json' if dataset_type == 'train' else 'test_json'
+            input_file_name = 'train_pos_tagged_input' if dataset_type == 'train' else 'test_pos_tagged_input'
+            dataset = file_helper.get_json_file_data(dataset_path, dataset_config.get(dataset_file_name))
             for data in dataset:
                 sentence = data.get('sentence')
+                tagged_sentence = [token.pos_ for token in nlp(sentence)]
+                for tag in tagged_sentence:
+                    self.add_tag_in_pos_tag_dict(pos_tag_dict, tag)
+                
+                input_data = self.include_padding([pos_tag_dict[tag] for tag in tagged_sentence])
+                input_list.append(input_data)
+                file_helper.dict_to_json(input_path, input_config.get(input_file_name), input_list, 4)
+        
+        file_helper.dict_to_json(pos_path, pos_config.get('pos_tag_dict'), pos_tag_dict, 4)
+
+
+    def add_tag_in_pos_tag_dict(self, pos_tag_dict, pos_tag):
+        '''
+        Adiciona tag no dicionario de tags
+        '''
+        if pos_tag_dict.get(pos_tag) is None:
+            pos_tag_dict[pos_tag] = self.pos_tag_id
+            self.increment_pos_tag_id()
 
     
     def create_word_embeddings_weight(self):
@@ -178,6 +209,8 @@ class Parser:
         '''
         while len(sentence) < padding:
             sentence.append(0)
+        
+        return sentence
     
 
     def parse_inputs_for_model(self):
@@ -191,6 +224,7 @@ class Parser:
 
         self.create_sentence_input(word_to_id)
         self.create_entity_input()
+        self.create_pos_tag_input()
         self.create_word_embeddings_weight()
         
     
