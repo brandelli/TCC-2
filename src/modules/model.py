@@ -31,6 +31,7 @@ class Model:
         # inputs de treino
         self.train_sentences_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_sentence_input')))
         self.train_entities_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_entity_input')))
+        self.train_pos_tagged_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('train_pos_tagged_input')))
         '''
         print('train_sentences_input')
         print(self.train_sentences_input)
@@ -41,6 +42,7 @@ class Model:
         # inputs de teste
         self.test_sentences_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_sentence_input')))
         self.test_entities_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_entity_input')))
+        self.test_pos_tagged_input = np.asarray(file_helper.get_json_file_data(path, inputs_config.get('test_pos_tagged_input')))
         '''
         print('test_sentences_input')
         print(self.test_sentences_input)
@@ -152,6 +154,11 @@ class Model:
         entity_input_layer = self.create_input_layer('entity_input_layer', input_length)
         input_layers.append(entity_input_layer)
         embeddings_layers.append(self.create_embedding_layer('entity_embedding_layer', self.train_entities_input, input_length, True, entity_input_layer))
+
+        # layer de input de entidades
+        pos_tagged_input_layer = self.create_input_layer('pos_tagged_input_layer', input_length)
+        input_layers.append(pos_tagged_input_layer)
+        embeddings_layers.append(self.create_embedding_layer('pos_tagged_embedding_layer', self.train_pos_tagged_input, input_length, True, pos_tagged_input_layer))
         
         print(input_layers)
 
@@ -188,7 +195,7 @@ class Model:
         '''
         Realiza o treinamento do modelo
         '''
-        train_inputs = [self.train_sentences_input, self.train_entities_input]
+        train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
         model.fit(train_inputs, train_sentences_output, epochs=50, verbose = 1)
@@ -196,8 +203,8 @@ class Model:
     
     def evaluate_model(self):
         model = self.model
-        train_inputs = [self.train_sentences_input, self.train_entities_input]
-        test_inputs = [self.test_sentences_input, self.test_entities_input]
+        train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
+        test_inputs = [self.test_sentences_input, self.test_entities_input, self.test_pos_tagged_input]
         train_sentences_output = self.train_sentences_output
         test_sentences_output = self.test_sentences_output
         model.evaluate(train_inputs, train_sentences_output)
@@ -206,7 +213,7 @@ class Model:
 
     def predict(self):
         model = self.model
-        test_inputs = [self.test_sentences_input, self.test_entities_input]
+        test_inputs = [self.test_sentences_input, self.test_entities_input, self.test_pos_tagged_input]
         prediction_probas = model.predict(test_inputs)
         return prediction_probas.argmax(axis=-1)
         
