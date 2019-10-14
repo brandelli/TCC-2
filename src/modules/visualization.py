@@ -56,9 +56,11 @@ class Visualization:
                     cur_relation.append(word)
             
             if cur_relation != relation.split(' '):
-                print(cur_relation)
-                print(relation.split(' '))
-                print(sentence_id)
+                print(f'sentence_id: {sentence_id}')
+                print(f'sentence_actual_relation: {relation}')
+                print(f'sentence_predicted_relation: {" ".join(cur_relation)}')
+                
+                
 
 
 

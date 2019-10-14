@@ -89,7 +89,8 @@ class Model:
         Cria um layer de embedding para o modelo
         '''
         weights = None if trainable else [embedding_matrix]
-        return tf.keras.layers.Embedding(embedding_matrix.shape[0], embedding_matrix.shape[1], weights=weights,input_length=input_length, name=str_name)(model)
+        output_dim = 5 if trainable else embedding_matrix.shape[1]
+        return tf.keras.layers.Embedding(embedding_matrix.shape[0], output_dim, weights=weights,input_length=input_length, name=str_name)(model)
     
 
     def concatenate_layers(self, str_name, layers_list):
@@ -166,7 +167,7 @@ class Model:
         model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
 
         # layer LSTM
-        lstm = self.create_lstm_layer('lstm_layer', input_length, 0.2, True, model)
+        lstm = self.create_lstm_layer('lstm_layer', input_length, 0.5, True, model)
 
         # layer BI-LSTM
         model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
@@ -174,7 +175,7 @@ class Model:
         # layer Flatten
         #model = self.create_flatten_layer('flatten_layer_1', model)
 
-        model = self.create_dense_layer('dense_layer_1', 64, 'tanh', model)
+        #model = self.create_dense_layer('dense_layer_1', 64, 'tanh', model)
         model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
 
         output = self.create_time_distributed('time_distributed_layer', 2, 'softmax', model)
@@ -198,7 +199,7 @@ class Model:
         train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
-        model.fit(train_inputs, train_sentences_output, epochs=50, verbose = 1)
+        model.fit(train_inputs, train_sentences_output, epochs=20, verbose = 1)
     
     
     def evaluate_model(self):
