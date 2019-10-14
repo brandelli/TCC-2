@@ -43,6 +43,8 @@ class Visualization:
     
 
     def print_predicted_relation(self, dataset, prediction):
+        print(f'prediction len: {len(prediction)}')
+        print(f'dataset len: {len(dataset)}')
         for index, data in enumerate(dataset):
             cur_relation = []
             head = data.get('head').get('word')
@@ -55,10 +57,10 @@ class Visualization:
                 if pred[i] == 1:
                     cur_relation.append(word)
             
-            if cur_relation != relation.split(' '):
-                print(f'sentence_id: {sentence_id}')
-                print(f'sentence_actual_relation: {relation}')
-                print(f'sentence_predicted_relation: {" ".join(cur_relation)}')
+            
+            print(f'sentence_id: {sentence_id}')
+            print(f'sentence_actual_relation: {relation}')
+            print(f'sentence_predicted_relation: {" ".join(cur_relation)}')
                 
                 
 

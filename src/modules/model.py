@@ -175,16 +175,21 @@ class Model:
         # layer Flatten
         #model = self.create_flatten_layer('flatten_layer_1', model)
 
-        #model = self.create_dense_layer('dense_layer_1', 64, 'tanh', model)
-        model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
+        model = self.create_dense_layer('dense_layer_1', 32, 'tanh', model)
+        model = self.create_dense_layer('dense_layer_2', 32, 'relu', model)
+        model = tf.keras.layers.Dropout(0.5)(model)
 
-        output = self.create_time_distributed('time_distributed_layer', 1, 'sigmoid', model)
+        output = self.create_time_distributed('time_distributed_layer', 1,'sigmoid', model)
 
         # criação do modelo
         model = tf.keras.Model(inputs=input_layers, outputs=output)
 
+        # otimzadores
+        #opt = tf.keras.optimizers.SGD(learning_rate=0.01, momentum=0.0, nesterov=False)
+        opt = tf.keras.optimizers.Adam(learning_rate=0.01, beta_1=0.9, beta_2=0.999, amsgrad=False)
+
         # compilação do modelo
-        model.compile(loss='categorical_crossentropy', metrics=['accuracy'])
+        model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
         print(model.summary())
 
@@ -199,7 +204,7 @@ class Model:
         train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
-        model.fit(train_inputs, train_sentences_output, epochs=20, verbose = 1)
+        model.fit(train_inputs, train_sentences_output, epochs=50, verbose=1, batch_size=10)
     
     
     def evaluate_model(self):

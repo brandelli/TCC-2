@@ -53,7 +53,6 @@ def run_model(config):
     model = Model(config)
     model.create_model()
     model.train_model()
-    model.evaluate_model()
     predict = model.predict()
     visualization = Visualization()
     dataset_config = config.get_configuration('dataset')
