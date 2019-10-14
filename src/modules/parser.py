@@ -1,4 +1,6 @@
 import csv
+import nltk
+import pickle
 from helpers import file_helper, validator_helper, data_process_helper, dictionary_creator_helper
 
 class Parser:
@@ -46,11 +48,25 @@ class Parser:
         # chamada para criação de dicionários: word_to_id e reverse_dict
         self.create_word_dicts()
 
+        # chamada para criar dicionario com id para os tipos de pos tag presentes no dataset
+        self.create_pos_tag_dict()
+
         # chamada para formatação de inputs que serão utilizados pelo modelo
         self.parse_inputs_for_model()
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model()
+
+
+    def create_pos_tag_dict(self):
+        dataset_config = self.get_config('dataset')
+        path = dataset_config.get('path')
+        pos_tag_dict = {}
+        for dataset_type in self.dataset_types:
+            file_name = 'train_json' if dataset_type == 'train' else 'test_json'
+            dataset = file_helper.get_json_file_data(path, dataset_config.get(file_name))
+            for data in dataset:
+                sentence = data.get('sentence')
 
     
     def create_word_embeddings_weight(self):

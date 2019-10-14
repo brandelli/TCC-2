@@ -1,5 +1,7 @@
 import time
 import nltk
+import spacy
+from spacy.cli.download import download
 from helpers import file_helper, time_helper
 from modules.parser import Parser
 from modules.model import Model
@@ -14,13 +16,13 @@ def main():
         nltk.download('punkt')
 
     try:
-        nltk.pos_tag(nltk.word_tokenize('Existe nltk averaged_perceptron_tagger'))
-    except LookupError:
-        nltk.download('averaged_perceptron_tagger')
+        spacy.load('pt_core_news_sm')
+    except IOError:
+        download('pt_core_news_sm')
 
     config = Config('data/configuration/', 'config.json')
     run_data_parse(config)
-    run_data_visualization(config)
+    #run_data_visualization(config)
     #run_model(config)
 
 
