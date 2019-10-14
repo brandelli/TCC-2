@@ -178,13 +178,13 @@ class Model:
         #model = self.create_dense_layer('dense_layer_1', 64, 'tanh', model)
         model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
 
-        output = self.create_time_distributed('time_distributed_layer', 2, 'softmax', model)
+        output = self.create_time_distributed('time_distributed_layer', 1, 'sigmoid', model)
 
         # criação do modelo
         model = tf.keras.Model(inputs=input_layers, outputs=output)
 
         # compilação do modelo
-        model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+        model.compile(loss='categorical_crossentropy', metrics=['accuracy'])
 
         print(model.summary())
 
@@ -215,6 +215,10 @@ class Model:
     def predict(self):
         model = self.model
         test_inputs = [self.test_sentences_input, self.test_entities_input, self.test_pos_tagged_input]
+        output = []
         prediction_probas = model.predict(test_inputs)
-        return prediction_probas.argmax(axis=-1)
+        for pred in prediction_probas:
+            output.append([1 if p >= 0.5 else 0 for p in pred])
+
+        return output
         
