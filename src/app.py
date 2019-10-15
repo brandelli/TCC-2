@@ -54,7 +54,7 @@ def run_model(config):
     model.create_model()
     model.train_model()
     predict = model.predict()
-    visualization = Visualization()
+    visualization = Visualization(config)
     dataset_config = config.get_configuration('dataset')
     dataset_path = dataset_config.get('path')
     dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))

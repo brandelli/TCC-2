@@ -3,6 +3,14 @@ import pandas as pd
 import numpy as np
 class Visualization:
 
+    def __init__(self, config):
+        self.config = config
+
+
+    def get_config(self, str_config=None):
+        return self.config.get_configuration(str_config)
+
+
     def get_relation_data(self, data):
         relation_dict = {}
         for sentence in data:
@@ -43,24 +51,35 @@ class Visualization:
     
 
     def print_predicted_relation(self, dataset, prediction):
-        print(f'prediction len: {len(prediction)}')
-        print(f'dataset len: {len(dataset)}')
-        for index, data in enumerate(dataset):
-            cur_relation = []
-            head = data.get('head').get('word')
-            tail = data.get('tail').get('word')
-            sentence_id = data.get('sentence_id')
-            relation = data.get('relation')
-            split_sentence = data.get('sentence').split(' ')
-            pred = prediction[index]
-            for i, word in enumerate(split_sentence):
-                if pred[i] == 1:
-                    cur_relation.append(word)
-            
-            
-            print(f'sentence_id: {sentence_id}')
-            print(f'sentence_actual_relation: {relation}')
-            print(f'sentence_predicted_relation: {" ".join(cur_relation)}')
+        output_file_config = self.get_config('output_files')
+        path = output_file_config.get('path')
+        file_name = output_file_config.get('debugging')
+        with open(f'{path}{file_name}', 'w') as output_file:
+            for index, data in enumerate(dataset):
+                cur_relation = []
+                head = data.get('head').get('word')
+                tail = data.get('tail').get('word')
+                sentence_id = data.get('sentence_id')
+                relation = data.get('relation')
+                sentence = data.get('sentence')
+                split_sentence = sentence.split(' ')
+                pred = prediction[index]
+                for i, word in enumerate(split_sentence):
+                    if pred[i] == 1:
+                        cur_relation.append(word)
+
+                output_file.write(f'========================================\n')
+                output_file.write(f'sentence_id: {sentence_id}\n')
+                output_file.write(f'sentence: {sentence}\n')
+                output_file.write(f'head: {head} | tail: {tail}\n')
+                output_file.write(f'expected_relation: {relation}\n')
+                output_file.write(f'predicted_relation: {" ".join(cur_relation)}\n')
+
+
+                print(f'sentence_id: {sentence_id}')
+                print(f'sentence_actual_relation: {relation}')
+                print(f'sentence_predicted_relation: {" ".join(cur_relation)}')
+
                 
                 
 

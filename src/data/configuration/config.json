@@ -58,5 +58,11 @@
     "part_of_speech" : {
         "path" : "data/part_of_speech/",
         "pos_tag_dict" : "pos_tag_dict.json"
+    },
+
+    "output_files" : {
+        "path" : "data/output_files/",
+        "debugging" : "debugging.txt",
+        "iberlef" : "iberlef.tsv"
     }
 }
