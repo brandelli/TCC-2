@@ -59,7 +59,8 @@ def run_model(config):
     dataset_path = dataset_config.get('path')
     dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
 
-    visualization.print_predicted_relation(dataset_test, predict)
+    #visualization.print_predicted_relation(dataset_test, predict)
+    visualization.print_iberlef_format(dataset_test, predict)
 
     
 

@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import csv
 class Visualization:
 
     def __init__(self, config):
@@ -79,11 +80,40 @@ class Visualization:
                 print(f'sentence_id: {sentence_id}')
                 print(f'sentence_actual_relation: {relation}')
                 print(f'sentence_predicted_relation: {" ".join(cur_relation)}')
+    
 
-                
-                
+    def print_iberlef_format(self, dataset, predicted):
+        output_config = self.get_config('output_files')
+        path = output_config.get('path')
+        file_name = output_config.get('iberlef')
+        with open(f'{path}{file_name}', mode='w') as csv_file:
+            fieldnames = ['SENTENCE_ID', 'RELATION_ID', 'SENTENCE', 'ARGUMENT_1', 'ARGUMENT_1_CATEGORY', 'RELATION', 'ARGUMENT_2', 'ARGUMENT_2_CATEGORY']
+            writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter='\t')
+            writer.writeheader()
+            for index, data in enumerate(dataset):
+                pred = predicted[index]
+                data_dict = {}
+                self.fill_dataset_info(data, data_dict)
+                self.fill_predicted_data(data, pred, data_dict)
 
-
-
+                writer.writerow(data_dict)
 
     
+    def fill_predicted_data(self, data, predicted, data_dict):
+        cur_relation = []
+        split_sentence = data.get('sentence').split(' ')
+        for index, word in enumerate(split_sentence):
+            if predicted[index] == 1:
+                cur_relation.append(word)
+
+        data_dict['RELATION'] = " ".join(cur_relation)
+
+
+    def fill_dataset_info(self, data, data_dict):
+        data_dict['SENTENCE_ID'] = data.get('sentence_id')
+        data_dict['RELATION_ID'] = data.get('relation_id')
+        data_dict['SENTENCE'] = data.get('sentence')
+        data_dict['ARGUMENT_1'] = data.get('head').get('word')
+        data_dict['ARGUMENT_1_CATEGORY'] = data.get('head').get('category')
+        data_dict['ARGUMENT_2'] = data.get('tail').get('word')
+        data_dict['ARGUMENT_2_CATEGORY'] = data.get('tail').get('category')
