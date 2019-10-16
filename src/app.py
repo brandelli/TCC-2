@@ -2,7 +2,7 @@ import time
 import nltk
 import spacy
 from spacy.cli.download import download
-from helpers import file_helper, time_helper
+from helpers import file_helper, time_helper, metrics_helper
 from modules.parser import Parser
 from modules.model import Model
 from modules.config import Config
@@ -31,7 +31,13 @@ def main():
     dataset_config = config.get_configuration('dataset')
     dataset_path = dataset_config.get('path')
     dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
-    parser.save_predicted_output(dataset_test, predict)
+    output = parser.save_predicted_output(dataset_test, predict)
+    number_of_relations = metrics_helper.get_number_of_relations_in_dataset(output)
+    correct_relations = metrics_helper.get_correct_relations(output)
+    number_predicted_relations = metrics_helper.get_number_of_relations_predicted(output)
+    print(f'number of relations in dataset: {number_of_relations}')
+    print(f'number of correct relations: {correct_relations}')
+    print(f'number of predicted relations: {number_predicted_relations}')
 
 
 def run_data_parse(config):

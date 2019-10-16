@@ -204,7 +204,7 @@ class Model:
         train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
-        model.fit(train_inputs, train_sentences_output, epochs=30, verbose=1, batch_size=10)
+        model.fit(train_inputs, train_sentences_output, epochs=100, verbose=1, batch_size=10)
     
     
     def evaluate_model(self):
