@@ -35,9 +35,15 @@ def main():
     number_of_relations = metrics_helper.get_number_of_relations_in_dataset(output)
     correct_relations = metrics_helper.get_correct_relations(output)
     number_predicted_relations = metrics_helper.get_number_of_relations_predicted(output)
+    precision = metrics_helper.get_exact_precision(output)
+    recall = metrics_helper.get_exact_recall(output)
+    f_measure = metrics_helper.get_exact_f_measure(output)
     print(f'number of relations in dataset: {number_of_relations}')
     print(f'number of correct relations: {correct_relations}')
     print(f'number of predicted relations: {number_predicted_relations}')
+    print(f'exact precision: {precision}')
+    print(f'exact recall: {recall}')
+    print(f'exact f-measure: {f_measure}')
 
 
 def run_data_parse(config):
