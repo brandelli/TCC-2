@@ -31,6 +31,7 @@ def main():
     dataset_config = config.get_configuration('dataset')
     dataset_path = dataset_config.get('path')
     dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
+    parser.save_predicted_output(dataset_test, predict)
 
 
 def run_data_parse(config):

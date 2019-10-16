@@ -508,4 +508,24 @@ class Parser:
 
 
     def save_predicted_output(self, dataset, predicted):
-        print('save_predicted_output') 
+        output_data = []
+        output_files_config = self.get_config('output_files')
+        output_path = output_files_config.get('path')
+        for index, data in enumerate(dataset):
+            pred = predicted[index]
+            sentence = data.get('sentence')
+            data['predicted_relation'] = self.parse_prediction_to_words(sentence, pred)
+            output_data.append(data)
+
+        file_helper.dict_to_json(output_path, output_files_config.get('predicted_output_json'), output_data, 4)
+
+
+    def parse_prediction_to_words(self, sentence, prediction):
+        cur_sentence = []
+        split_sentence = sentence.split(' ')
+        for index, word in enumerate(split_sentence):
+            if prediction[index] == 1:
+                cur_sentence.append(word)
+        
+        return " ".join(cur_sentence)
+

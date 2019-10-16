@@ -63,6 +63,7 @@
     "output_files" : {
         "path" : "data/output_files/",
         "debugging" : "debugging.txt",
-        "iberlef" : "iberlef.tsv"
+        "iberlef" : "iberlef.tsv",
+        "predicted_output_json" : "predicted_output.json"
     }
 }
