@@ -21,46 +21,32 @@ def main():
         download('pt')
 
     config = Config('data/configuration/', 'config.json')
-    run_data_parse(config)
-    #run_data_visualization(config)
-    run_model(config)
+    # executa as principais funções de cada classe, lendo arquivos de entrada e criando o modelo
+    parser = run_data_parse(config)
+    model = run_model(config)
+
+
+    # executa chamadas de predict no modelo
+    predict = model.predict()
+    dataset_config = config.get_configuration('dataset')
+    dataset_path = dataset_config.get('path')
+    dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
 
 
 def run_data_parse(config):
     parse_config = config.get_configuration('parse')
+    parser = Parser(config)
     if parse_config.get('parse'):
-        parser = Parser(config)
         parser.run_initial_parse()
-
-
-def run_data_visualization(config):
-    visualization = Visualization()
-    dataset_config = config.get_configuration('dataset')
-    dataset_path = dataset_config.get('path')
-    dataset_train = file_helper.get_json_file_data(dataset_path, dataset_config.get('train_json'))
-    dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
-    output_config = config.get_configuration('output')
-    output_path = output_config.get('path')
-    output_train = file_helper.get_json_file_data(output_path, output_config.get('train_sentence_output'))
-    output_test = file_helper.get_json_file_data(output_path, output_config.get('test_sentence_output'))
-    print('=================visualizando output de treino================================')
-    visualization.print_predicted_relation(dataset_train, output_train)
-    print('=================visualizando output de teste=================================')
-    visualization.print_predicted_relation(dataset_test, output_test)
+    
+    return parser
 
 
 def run_model(config):
     model = Model(config)
     model.create_model()
     model.train_model()
-    predict = model.predict()
-    visualization = Visualization(config)
-    dataset_config = config.get_configuration('dataset')
-    dataset_path = dataset_config.get('path')
-    dataset_test = file_helper.get_json_file_data(dataset_path, dataset_config.get('test_json'))
-
-    #visualization.print_predicted_relation(dataset_test, predict)
-    visualization.print_iberlef_format(dataset_test, predict)
+    return model
 
     
 

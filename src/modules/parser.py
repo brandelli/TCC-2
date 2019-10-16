@@ -506,3 +506,6 @@ class Parser:
         head['id'] = word_to_id_dict.get(head.get('word'))
         tail['id'] = word_to_id_dict.get(tail.get('word'))
 
+
+    def save_predicted_output(self, dataset, predicted):
+        print('save_predicted_output') 
