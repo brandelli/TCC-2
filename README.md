@@ -42,3 +42,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Relation Classification via Convolutional Deep Neural Network](https://www.aclweb.org/anthology/C14-1220.pdf)
 * [Brincando de Processamento Natural de Linguagem com spaCy](https://leportella.com/pt-br/2017/11/30/brincando-de-nlp-com-spacy.html)
 * [Visualizing RNNs](http://joshvarty.github.io/VisualizingRNNs/)
+* [Build a POS tagger with an LSTM using Keras - Modificação da função de precisão](https://nlpforhackers.io/lstm-pos-tagger-keras/)
