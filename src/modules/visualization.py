@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-import csv
 class Visualization:
 
     def __init__(self, config):

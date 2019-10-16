@@ -508,6 +508,10 @@ class Parser:
 
 
     def save_predicted_output(self, dataset, predicted):
+        '''
+        Função para salvar de forma legivel o predict do modelo,
+        para evitar uma nova leitura do arquivo, os dados gravados são retornados pela função
+        '''
         output_data = []
         output_files_config = self.get_config('output_files')
         output_path = output_files_config.get('path')
@@ -518,6 +522,7 @@ class Parser:
             output_data.append(data)
 
         file_helper.dict_to_json(output_path, output_files_config.get('predicted_output_json'), output_data, 4)
+        return output_data
 
 
     def parse_prediction_to_words(self, sentence, prediction):
