@@ -175,7 +175,6 @@ class Model:
         # layer Flatten
         #model = self.create_flatten_layer('flatten_layer_1', model)
 
-        model = self.create_dense_layer('dense_layer_1', 32, 'tanh', model)
         model = self.create_dense_layer('dense_layer_2', 32, 'relu', model)
         model = tf.keras.layers.Dropout(0.5)(model)
 
@@ -204,7 +203,7 @@ class Model:
         train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
-        model.fit(train_inputs, train_sentences_output, epochs=100, verbose=1, batch_size=10)
+        model.fit(train_inputs, train_sentences_output, epochs=30, verbose=1, batch_size=10)
     
     
     def evaluate_model(self):
