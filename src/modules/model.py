@@ -2,7 +2,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
 from tensorflow import keras
-from helpers import file_helper, data_process_helper
+from helpers import file_helper, data_process_helper, visualization_helper
 from tensorflow.keras.utils import plot_model
 from tensorflow.keras import backend as K
 
@@ -162,7 +162,6 @@ class Model:
         input_layers.append(pos_tagged_input_layer)
         embeddings_layers.append(self.create_embedding_layer('pos_tagged_embedding_layer', self.train_pos_tagged_input, input_length, True, pos_tagged_input_layer))
         
-        print(input_layers)
 
         # layer para concatenar os embeddings do modelo
         model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
@@ -204,7 +203,9 @@ class Model:
         train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
-        model.fit(train_inputs, train_sentences_output, epochs=30, verbose=1, batch_size=10)
+        history = model.fit(train_inputs, train_sentences_output, epochs=100, verbose=1, batch_size=10)
+        visualization_helper.plot_model_history_graph(history)
+        
     
     
     def evaluate_model(self):

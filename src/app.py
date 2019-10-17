@@ -6,7 +6,6 @@ from helpers import file_helper, time_helper, metrics_helper
 from modules.parser import Parser
 from modules.model import Model
 from modules.config import Config
-from modules.visualization import Visualization
 
 def main():
     # faz a veirificação da presença de complementos de linguagem necessários ao nltk
