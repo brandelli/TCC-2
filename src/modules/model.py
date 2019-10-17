@@ -4,6 +4,7 @@ import numpy as np
 from tensorflow import keras
 from helpers import file_helper, data_process_helper
 from tensorflow.keras.utils import plot_model
+from tensorflow.keras import backend as K
 
 class Model:
 
@@ -188,7 +189,7 @@ class Model:
         opt = tf.keras.optimizers.Adam(learning_rate=0.01, beta_1=0.9, beta_2=0.999, amsgrad=False)
 
         # compilação do modelo
-        model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
+        model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy', self.custom_accuracy_function()])
 
         print(model.summary())
 
@@ -203,7 +204,7 @@ class Model:
         train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
-        model.fit(train_inputs, train_sentences_output, epochs=30, verbose=1, batch_size=10)
+        model.fit(train_inputs, train_sentences_output, epochs=100, verbose=1, batch_size=10)
     
     
     def evaluate_model(self):
@@ -225,4 +226,20 @@ class Model:
             output.append([1 if p >= 0.5 else 0 for p in pred])
 
         return output
+    
+
+    def custom_accuracy_function(self):
+        '''
+        Função de precisão personalizada, para verificar a precisão somente no predict de relacionamento
+        '''
+        class_to_ignore = 0
+        def custom_accuracy(data_true, data_pred):
+            y_true_class = K.argmax(data_true, axis=-1)
+            y_pred_class = K.argmax(data_pred, axis=-1)
+    
+            ignore_mask = K.cast(K.not_equal(y_pred_class, class_to_ignore), 'int32')
+            matches = K.cast(K.equal(y_true_class, y_pred_class), 'int32') * ignore_mask
+            accuracy = K.sum(matches) / K.maximum(K.sum(ignore_mask), 1)
+            return accuracy
         
+        return custom_accuracy
