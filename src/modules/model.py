@@ -150,21 +150,21 @@ class Model:
         # layer de input de word embeddings
         word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', input_length)
         input_layers.append(word_embeddings_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer))
+        model = self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer)
 
         # layer de input de entidades
-        entity_input_layer = self.create_input_layer('entity_input_layer', input_length)
-        input_layers.append(entity_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('entity_embedding_layer', self.train_entities_input, input_length, True, entity_input_layer))
+        #entity_input_layer = self.create_input_layer('entity_input_layer', input_length)
+        #input_layers.append(entity_input_layer)
+        #embeddings_layers.append(self.create_embedding_layer('entity_embedding_layer', self.train_entities_input, input_length, True, entity_input_layer))
 
         # layer de input de entidades
-        pos_tagged_input_layer = self.create_input_layer('pos_tagged_input_layer', input_length)
-        input_layers.append(pos_tagged_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('pos_tagged_embedding_layer', self.train_pos_tagged_input, input_length, True, pos_tagged_input_layer))
+        #pos_tagged_input_layer = self.create_input_layer('pos_tagged_input_layer', input_length)
+        #input_layers.append(pos_tagged_input_layer)
+        #embeddings_layers.append(self.create_embedding_layer('pos_tagged_embedding_layer', self.train_pos_tagged_input, input_length, True, pos_tagged_input_layer))
         
 
         # layer para concatenar os embeddings do modelo
-        model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
+        #model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
 
         # layer LSTM
         lstm = self.create_lstm_layer('lstm_layer', input_length, 0.5, True, model)
@@ -193,14 +193,14 @@ class Model:
         print(model.summary())
 
         self.model = model
-        plot_model(model, to_file='model.png', show_shapes=True, show_layer_names=True)
+        plot_model(model, to_file='data/models/simple_decoder/model.png', show_shapes=True, show_layer_names=True)
 
 
     def train_model(self):
         '''
         Realiza o treinamento do modelo
         '''
-        train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
+        train_inputs = [self.train_sentences_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
         history = model.fit(train_inputs, train_sentences_output, epochs=50, verbose=1, batch_size=10)
@@ -210,8 +210,8 @@ class Model:
     
     def evaluate_model(self):
         model = self.model
-        train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
-        test_inputs = [self.test_sentences_input, self.test_entities_input, self.test_pos_tagged_input]
+        train_inputs = [self.train_sentences_input]
+        test_inputs = [self.test_sentences_input]
         train_sentences_output = self.train_sentences_output
         test_sentences_output = self.test_sentences_output
         model.evaluate(train_inputs, train_sentences_output)
@@ -220,7 +220,7 @@ class Model:
 
     def predict(self):
         model = self.model
-        test_inputs = [self.test_sentences_input, self.test_entities_input, self.test_pos_tagged_input]
+        test_inputs = [self.test_sentences_input]
         output = []
         prediction_probas = model.predict(test_inputs)
         for pred in prediction_probas:

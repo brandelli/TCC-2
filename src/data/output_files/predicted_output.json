@@ -31,7 +31,7 @@
         },
         "relation": "de",
         "relation_id": 3,
-        "predicted_relation": "de estudo em"
+        "predicted_relation": "de"
     },
     {
         "sentence_id": 9,
@@ -48,7 +48,7 @@
         },
         "relation": "(",
         "relation_id": 2,
-        "predicted_relation": "("
+        "predicted_relation": "uma aprovado por"
     },
     {
         "sentence_id": 10,
@@ -116,7 +116,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "secret\u00e1rio_de_pol\u00edtica_tecnol\u00f3gica_empresarial de"
+        "predicted_relation": "de ( \u00e9"
     },
     {
         "sentence_id": 12,
@@ -133,7 +133,7 @@
         },
         "relation": "de",
         "relation_id": 2,
-        "predicted_relation": "de"
+        "predicted_relation": "de ( \u00e9"
     },
     {
         "sentence_id": 12,
@@ -150,7 +150,7 @@
         },
         "relation": "(",
         "relation_id": 3,
-        "predicted_relation": "("
+        "predicted_relation": "de ( \u00e9"
     },
     {
         "sentence_id": 14,
@@ -167,7 +167,7 @@
         },
         "relation": "(",
         "relation_id": 4,
-        "predicted_relation": "("
+        "predicted_relation": "prefeito de ( assinou uma carta de com de municipal"
     },
     {
         "sentence_id": 20,
@@ -184,7 +184,7 @@
         },
         "relation": "\u00f3rg\u00e3o de",
         "relation_id": 5,
-        "predicted_relation": "\u00f3rg\u00e3o de"
+        "predicted_relation": "por de \u00f3rg\u00e3o de"
     },
     {
         "sentence_id": 22,
@@ -218,7 +218,7 @@
         },
         "relation": "pesquisadores de",
         "relation_id": 2,
-        "predicted_relation": "de"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 22,
@@ -269,7 +269,7 @@
         },
         "relation": "de",
         "relation_id": 5,
-        "predicted_relation": "de"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 22,
@@ -337,7 +337,7 @@
         },
         "relation": "pesquisadores de",
         "relation_id": 9,
-        "predicted_relation": "de ("
+        "predicted_relation": "de"
     },
     {
         "sentence_id": 22,
@@ -388,7 +388,7 @@
         },
         "relation": "(",
         "relation_id": 1,
-        "predicted_relation": "("
+        "predicted_relation": "isso \u00e9"
     },
     {
         "sentence_id": 27,
@@ -405,7 +405,7 @@
         },
         "relation": "de",
         "relation_id": 2,
-        "predicted_relation": "( de"
+        "predicted_relation": "isso \u00e9"
     },
     {
         "sentence_id": 27,
@@ -422,7 +422,7 @@
         },
         "relation": "de",
         "relation_id": 3,
-        "predicted_relation": "de"
+        "predicted_relation": "isso \u00e9"
     },
     {
         "sentence_id": 28,
@@ -439,7 +439,7 @@
         },
         "relation": "de",
         "relation_id": 4,
-        "predicted_relation": "de"
+        "predicted_relation": "a"
     },
     {
         "sentence_id": 28,
@@ -456,7 +456,7 @@
         },
         "relation": "(",
         "relation_id": 5,
-        "predicted_relation": "("
+        "predicted_relation": "a"
     },
     {
         "sentence_id": 28,
@@ -473,7 +473,7 @@
         },
         "relation": "de",
         "relation_id": 6,
-        "predicted_relation": "( de"
+        "predicted_relation": "a"
     },
     {
         "sentence_id": 28,
@@ -490,7 +490,7 @@
         },
         "relation": "de",
         "relation_id": 7,
-        "predicted_relation": "de"
+        "predicted_relation": "a"
     },
     {
         "sentence_id": 28,
@@ -507,7 +507,7 @@
         },
         "relation": "de",
         "relation_id": 9,
-        "predicted_relation": "de ("
+        "predicted_relation": "a"
     },
     {
         "sentence_id": 37,
@@ -558,7 +558,7 @@
         },
         "relation": "(",
         "relation_id": 1,
-        "predicted_relation": "onu ("
+        "predicted_relation": "de ("
     },
     {
         "sentence_id": 39,
@@ -575,7 +575,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 39,
@@ -592,7 +592,7 @@
         },
         "relation": "em",
         "relation_id": 2,
-        "predicted_relation": "em"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 40,
@@ -609,7 +609,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 40,
@@ -626,7 +626,7 @@
         },
         "relation": "em",
         "relation_id": 2,
-        "predicted_relation": "em"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 40,
@@ -643,7 +643,7 @@
         },
         "relation": "em",
         "relation_id": 3,
-        "predicted_relation": "em ("
+        "predicted_relation": "("
     },
     {
         "sentence_id": 42,
@@ -694,7 +694,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 48,
@@ -711,7 +711,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 48,
@@ -728,7 +728,7 @@
         },
         "relation": "de",
         "relation_id": 2,
-        "predicted_relation": "de"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 49,
@@ -745,7 +745,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 49,
@@ -813,7 +813,7 @@
         },
         "relation": "em",
         "relation_id": 1,
-        "predicted_relation": "em"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 64,
@@ -847,7 +847,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": "de ("
     },
     {
         "sentence_id": 66,
@@ -864,7 +864,7 @@
         },
         "relation": "(",
         "relation_id": 2,
-        "predicted_relation": "("
+        "predicted_relation": "de ("
     },
     {
         "sentence_id": 69,
@@ -915,7 +915,7 @@
         },
         "relation": "em",
         "relation_id": 1,
-        "predicted_relation": "em"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 80,
@@ -932,7 +932,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 81,
@@ -949,7 +949,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": "escolhido"
     },
     {
         "sentence_id": 93,
@@ -983,7 +983,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": "\u00e9"
     },
     {
         "sentence_id": 108,
@@ -1000,7 +1000,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de pcp ."
+        "predicted_relation": "de"
     },
     {
         "sentence_id": 119,
@@ -1017,7 +1017,7 @@
         },
         "relation": "em",
         "relation_id": 1,
-        "predicted_relation": "ficar em"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 120,
@@ -1034,7 +1034,7 @@
         },
         "relation": "defender",
         "relation_id": 2,
-        "predicted_relation": "as tropas de"
+        "predicted_relation": "apoiar uma de"
     },
     {
         "sentence_id": 120,
@@ -1051,7 +1051,7 @@
         },
         "relation": "vai apoiar uma a\u00e7\u00e3o de",
         "relation_id": 3,
-        "predicted_relation": "apoiar uma a\u00e7\u00e3o de"
+        "predicted_relation": "apoiar uma de"
     },
     {
         "sentence_id": 126,
@@ -1068,7 +1068,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": "feito em"
     },
     {
         "sentence_id": 127,
@@ -1085,7 +1085,7 @@
         },
         "relation": "em",
         "relation_id": 1,
-        "predicted_relation": "em"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 127,
@@ -1102,7 +1102,7 @@
         },
         "relation": "diretor de",
         "relation_id": 2,
-        "predicted_relation": "diretor de"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 134,
@@ -1119,7 +1119,7 @@
         },
         "relation": "em",
         "relation_id": 1,
-        "predicted_relation": "em passado m\u00eas de"
+        "predicted_relation": "em de"
     },
     {
         "sentence_id": 135,
@@ -1136,7 +1136,7 @@
         },
         "relation": "condena a guerra em",
         "relation_id": 1,
-        "predicted_relation": "condena a guerra em de"
+        "predicted_relation": "precisa"
     },
     {
         "sentence_id": 139,
@@ -1153,7 +1153,7 @@
         },
         "relation": "presidente de",
         "relation_id": 1,
-        "predicted_relation": "presidente de"
+        "predicted_relation": "de"
     },
     {
         "sentence_id": 139,
@@ -1170,7 +1170,7 @@
         },
         "relation": "presidente de",
         "relation_id": 2,
-        "predicted_relation": "presidente de"
+        "predicted_relation": "de"
     },
     {
         "sentence_id": 142,
@@ -1187,7 +1187,7 @@
         },
         "relation": "n\u00e3o se pronunciou a favor de o retorno de a paz em",
         "relation_id": 1,
-        "predicted_relation": "paz em em"
+        "predicted_relation": "em em de"
     },
     {
         "sentence_id": 142,
@@ -1204,7 +1204,7 @@
         },
         "relation": "n\u00e3o se pronunciou a favor de o retorno de a paz em",
         "relation_id": 2,
-        "predicted_relation": "em ."
+        "predicted_relation": "em em de"
     },
     {
         "sentence_id": 147,
@@ -1221,7 +1221,7 @@
         },
         "relation": "aberto por",
         "relation_id": 1,
-        "predicted_relation": "aberto por"
+        "predicted_relation": "gostaria de"
     },
     {
         "sentence_id": 147,
@@ -1238,7 +1238,7 @@
         },
         "relation": "gerido por",
         "relation_id": 2,
-        "predicted_relation": "gerido por"
+        "predicted_relation": "gostaria de"
     },
     {
         "sentence_id": 164,
@@ -1289,7 +1289,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de pent\u00e1gono ."
+        "predicted_relation": ""
     },
     {
         "sentence_id": 165,
@@ -1306,7 +1306,7 @@
         },
         "relation": "de",
         "relation_id": 2,
-        "predicted_relation": "de pent\u00e1gono ."
+        "predicted_relation": ""
     },
     {
         "sentence_id": 165,
@@ -1323,7 +1323,7 @@
         },
         "relation": "(",
         "relation_id": 3,
-        "predicted_relation": "("
+        "predicted_relation": ""
     },
     {
         "sentence_id": 171,
@@ -1340,7 +1340,7 @@
         },
         "relation": "a a frente de",
         "relation_id": 1,
-        "predicted_relation": "a frente de ps ."
+        "predicted_relation": "de ."
     },
     {
         "sentence_id": 177,
@@ -1357,7 +1357,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": ""
+        "predicted_relation": "plen\u00e1ria extraordin\u00e1ria presid\u00eancia portuguesa de"
     },
     {
         "sentence_id": 177,
@@ -1374,7 +1374,7 @@
         },
         "relation": "discursava em",
         "relation_id": 2,
-        "predicted_relation": "em"
+        "predicted_relation": "plen\u00e1ria extraordin\u00e1ria presid\u00eancia portuguesa de"
     },
     {
         "sentence_id": 180,
@@ -1391,7 +1391,7 @@
         },
         "relation": "a decis\u00e3o de criar",
         "relation_id": 2,
-        "predicted_relation": "decis\u00e3o de criar"
+        "predicted_relation": "acrescentou"
     },
     {
         "sentence_id": 185,
@@ -1408,7 +1408,7 @@
         },
         "relation": "destacou para",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 188,
@@ -1442,7 +1442,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": "de de de"
     },
     {
         "sentence_id": 198,
@@ -1476,7 +1476,7 @@
         },
         "relation": "de",
         "relation_id": 2,
-        "predicted_relation": "de"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 210,
@@ -1493,7 +1493,7 @@
         },
         "relation": "licenciada por",
         "relation_id": 1,
-        "predicted_relation": "licenciada por"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 210,
@@ -1510,7 +1510,7 @@
         },
         "relation": "de",
         "relation_id": 2,
-        "predicted_relation": "de"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 214,
@@ -1527,7 +1527,7 @@
         },
         "relation": "reconheciam o governo",
         "relation_id": 1,
-        "predicted_relation": "de ."
+        "predicted_relation": ""
     },
     {
         "sentence_id": 214,
@@ -1544,7 +1544,7 @@
         },
         "relation": "em",
         "relation_id": 2,
-        "predicted_relation": "em afeganist\u00e3o , o"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 214,
@@ -1561,7 +1561,7 @@
         },
         "relation": "o governo",
         "relation_id": 3,
-        "predicted_relation": "afeganist\u00e3o , o governo"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 216,
@@ -1578,7 +1578,7 @@
         },
         "relation": "trabalha para",
         "relation_id": 1,
-        "predicted_relation": "trabalha para"
+        "predicted_relation": "de"
     },
     {
         "sentence_id": 217,
@@ -1595,7 +1595,7 @@
         },
         "relation": "presidente de",
         "relation_id": 2,
-        "predicted_relation": "presidente de"
+        "predicted_relation": "de \u00e9 ("
     },
     {
         "sentence_id": 217,
@@ -1612,7 +1612,7 @@
         },
         "relation": "rosto de",
         "relation_id": 3,
-        "predicted_relation": "de ("
+        "predicted_relation": "de \u00e9 ("
     },
     {
         "sentence_id": 225,
@@ -1629,7 +1629,7 @@
         },
         "relation": "pesquisando em",
         "relation_id": 1,
-        "predicted_relation": "liberdade em"
+        "predicted_relation": "de liberdade em"
     },
     {
         "sentence_id": 228,
@@ -1646,7 +1646,7 @@
         },
         "relation": "editor de",
         "relation_id": 2,
-        "predicted_relation": "de de obras"
+        "predicted_relation": "de editor de"
     },
     {
         "sentence_id": 235,
@@ -1663,7 +1663,7 @@
         },
         "relation": "liderada por",
         "relation_id": 1,
-        "predicted_relation": "por"
+        "predicted_relation": "uma"
     },
     {
         "sentence_id": 244,
@@ -1680,7 +1680,7 @@
         },
         "relation": "em",
         "relation_id": 1,
-        "predicted_relation": "em"
+        "predicted_relation": "chefia de"
     },
     {
         "sentence_id": 247,
@@ -1697,7 +1697,7 @@
         },
         "relation": "presidente de",
         "relation_id": 2,
-        "predicted_relation": "presidente de"
+        "predicted_relation": "por de"
     },
     {
         "sentence_id": 249,
@@ -1714,7 +1714,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": "por"
     },
     {
         "sentence_id": 249,
@@ -1731,7 +1731,7 @@
         },
         "relation": "recomenda\u00e7\u00e3o a",
         "relation_id": 2,
-        "predicted_relation": "de por autoriza\u00e7\u00e3o"
+        "predicted_relation": "por"
     },
     {
         "sentence_id": 256,
@@ -1748,7 +1748,7 @@
         },
         "relation": "o fundador",
         "relation_id": 1,
-        "predicted_relation": "( advogado ("
+        "predicted_relation": "( pai de"
     },
     {
         "sentence_id": 259,
@@ -1782,7 +1782,7 @@
         },
         "relation": "fundada por",
         "relation_id": 4,
-        "predicted_relation": "em"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 269,
@@ -1799,7 +1799,7 @@
         },
         "relation": "em declara\u00e7\u00f5es a",
         "relation_id": 2,
-        "predicted_relation": "em declara\u00e7\u00f5es a"
+        "predicted_relation": "em nunca"
     },
     {
         "sentence_id": 272,
@@ -1816,7 +1816,7 @@
         },
         "relation": "referiu a",
         "relation_id": 1,
-        "predicted_relation": "de a"
+        "predicted_relation": "vereador substituto de de"
     },
     {
         "sentence_id": 284,
@@ -1833,7 +1833,7 @@
         },
         "relation": "elei\u00e7\u00f5es para",
         "relation_id": 2,
-        "predicted_relation": "em"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 284,
@@ -1850,7 +1850,7 @@
         },
         "relation": "elei\u00e7\u00f5es para",
         "relation_id": 3,
-        "predicted_relation": "em elei\u00e7\u00f5es"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 289,
@@ -1884,7 +1884,7 @@
         },
         "relation": "criou",
         "relation_id": 2,
-        "predicted_relation": "("
+        "predicted_relation": "criou"
     },
     {
         "sentence_id": 289,
@@ -1901,7 +1901,7 @@
         },
         "relation": "(",
         "relation_id": 3,
-        "predicted_relation": "("
+        "predicted_relation": "criou"
     },
     {
         "sentence_id": 294,
@@ -1918,7 +1918,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "montepio de"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 294,
@@ -1935,7 +1935,7 @@
         },
         "relation": "de",
         "relation_id": 2,
-        "predicted_relation": "de"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 295,
@@ -1952,7 +1952,7 @@
         },
         "relation": "criticado",
         "relation_id": 1,
-        "predicted_relation": "com ."
+        "predicted_relation": "com"
     },
     {
         "sentence_id": 295,
@@ -1969,7 +1969,7 @@
         },
         "relation": "criticado",
         "relation_id": 2,
-        "predicted_relation": "com ."
+        "predicted_relation": "com"
     },
     {
         "sentence_id": 295,
@@ -1986,7 +1986,7 @@
         },
         "relation": "criticado",
         "relation_id": 3,
-        "predicted_relation": "com ."
+        "predicted_relation": "com"
     },
     {
         "sentence_id": 295,
@@ -2003,7 +2003,7 @@
         },
         "relation": "concordando com",
         "relation_id": 4,
-        "predicted_relation": "com ."
+        "predicted_relation": "com"
     },
     {
         "sentence_id": 295,
@@ -2020,7 +2020,7 @@
         },
         "relation": "concordando com",
         "relation_id": 5,
-        "predicted_relation": "socr\u00e1tico ps ."
+        "predicted_relation": "com"
     },
     {
         "sentence_id": 296,
@@ -2037,7 +2037,7 @@
         },
         "relation": "est\u00e1 onde est\u00e1",
         "relation_id": 1,
-        "predicted_relation": "onde ps ."
+        "predicted_relation": "quando"
     },
     {
         "sentence_id": 304,
@@ -2054,7 +2054,7 @@
         },
         "relation": "sucessora de",
         "relation_id": 1,
-        "predicted_relation": "("
+        "predicted_relation": "( \u00e9 sucessora de com ficado em"
     },
     {
         "sentence_id": 304,
@@ -2071,7 +2071,7 @@
         },
         "relation": "(",
         "relation_id": 2,
-        "predicted_relation": "("
+        "predicted_relation": "( \u00e9 sucessora de com ficado em"
     },
     {
         "sentence_id": 306,
@@ -2088,7 +2088,7 @@
         },
         "relation": "prende assessor de deputado de",
         "relation_id": 1,
-        "predicted_relation": "assessor de deputado de"
+        "predicted_relation": "de um funcion\u00e1rio de suspeita de ("
     },
     {
         "sentence_id": 308,
@@ -2105,7 +2105,7 @@
         },
         "relation": "primeiro-ministro e presidente de",
         "relation_id": 1,
-        "predicted_relation": "primeiro-ministro em exerc\u00edcio de"
+        "predicted_relation": "em exerc\u00edcio de ("
     },
     {
         "sentence_id": 314,
@@ -2139,7 +2139,7 @@
         },
         "relation": "em",
         "relation_id": 1,
-        "predicted_relation": "( em"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 332,
@@ -2156,7 +2156,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 332,
@@ -2173,7 +2173,7 @@
         },
         "relation": "o",
         "relation_id": 2,
-        "predicted_relation": ","
+        "predicted_relation": ""
     },
     {
         "sentence_id": 342,
@@ -2190,7 +2190,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de assassino em"
+        "predicted_relation": "de de assassino em"
     },
     {
         "sentence_id": 342,
@@ -2207,7 +2207,7 @@
         },
         "relation": "de",
         "relation_id": 2,
-        "predicted_relation": "de assassino em"
+        "predicted_relation": "de de assassino em"
     },
     {
         "sentence_id": 347,
@@ -2224,7 +2224,7 @@
         },
         "relation": "n\u00e3o enfrentou",
         "relation_id": 1,
-        "predicted_relation": "por raz\u00f5es de"
+        "predicted_relation": "de"
     },
     {
         "sentence_id": 359,
@@ -2241,7 +2241,7 @@
         },
         "relation": "apresentou a o p\u00fablico de",
         "relation_id": 1,
-        "predicted_relation": "apresentou p\u00fablico de"
+        "predicted_relation": "companhia de \u00f3pera de"
     },
     {
         "sentence_id": 363,
@@ -2258,7 +2258,7 @@
         },
         "relation": "n\u00e3o pode devolver",
         "relation_id": 1,
-        "predicted_relation": "devolver"
+        "predicted_relation": "prescindir de"
     },
     {
         "sentence_id": 364,
@@ -2309,7 +2309,7 @@
         },
         "relation": "presidente de",
         "relation_id": 2,
-        "predicted_relation": "presidente de"
+        "predicted_relation": "presidente de ("
     },
     {
         "sentence_id": 390,
@@ -2326,7 +2326,7 @@
         },
         "relation": "\u00f3rg\u00e3o filiado a",
         "relation_id": 2,
-        "predicted_relation": "\u00f3rg\u00e3o filiado a"
+        "predicted_relation": "( \u00f3rg\u00e3o ("
     },
     {
         "sentence_id": 401,
@@ -2343,7 +2343,7 @@
         },
         "relation": "toma",
         "relation_id": 1,
-        "predicted_relation": "toma"
+        "predicted_relation": "uma"
     },
     {
         "sentence_id": 401,
@@ -2360,7 +2360,7 @@
         },
         "relation": "uma for\u00e7a de",
         "relation_id": 2,
-        "predicted_relation": "uma for\u00e7a de"
+        "predicted_relation": "uma"
     },
     {
         "sentence_id": 408,
@@ -2394,7 +2394,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "presid\u00eancia de"
+        "predicted_relation": "de pior de"
     },
     {
         "sentence_id": 413,
@@ -2411,7 +2411,7 @@
         },
         "relation": "amea\u00e7a de",
         "relation_id": 1,
-        "predicted_relation": "amea\u00e7a de"
+        "predicted_relation": "pois a de"
     },
     {
         "sentence_id": 419,
@@ -2428,7 +2428,7 @@
         },
         "relation": "\u00f3rg\u00e3o respons\u00e1vel por a representa\u00e7\u00e3o e encaminhamento cient\u00edfico de os alunos de",
         "relation_id": 1,
-        "predicted_relation": ""
+        "predicted_relation": "( respons\u00e1vel"
     },
     {
         "sentence_id": 422,
@@ -2445,7 +2445,7 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "de"
+        "predicted_relation": ""
     },
     {
         "sentence_id": 425,
@@ -2462,7 +2462,7 @@
         },
         "relation": "atribuiu",
         "relation_id": 1,
-        "predicted_relation": "diploma de"
+        "predicted_relation": "("
     },
     {
         "sentence_id": 441,
@@ -2479,7 +2479,7 @@
         },
         "relation": "constitui",
         "relation_id": 1,
-        "predicted_relation": "de de"
+        "predicted_relation": "com ( de de"
     },
     {
         "sentence_id": 441,
@@ -2496,7 +2496,7 @@
         },
         "relation": "constitui",
         "relation_id": 2,
-        "predicted_relation": ""
+        "predicted_relation": "com ( de de"
     },
     {
         "sentence_id": 457,
