@@ -193,7 +193,7 @@ class Model:
         print(model.summary())
 
         self.model = model
-        plot_model(model, to_file='model.png', show_shapes=True, show_layer_names=True)
+        plot_model(model, to_file='data/models/full_decoder/model.png', show_shapes=True, show_layer_names=True)
 
 
     def train_model(self):
