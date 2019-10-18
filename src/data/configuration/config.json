@@ -52,7 +52,9 @@
     "output" : {
         "path"                  : "data/output/",
         "train_sentence_output" : "train_sentence_output.json",
-        "test_sentence_output"  : "test_sentence_output.json"
+        "train_label_output"    : "train_label_output.json",
+        "test_sentence_output"  : "test_sentence_output.json",
+        "test_label_output"     : "test_label_output.json"
     },
 
     "part_of_speech" : {

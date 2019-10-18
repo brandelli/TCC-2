@@ -6,11 +6,10 @@ def plot_model_history_graph(history):
 
 def plot_model_accuracy(history):
     plt.plot(history.history['accuracy'])
-    plt.plot(history.history['custom_accuracy'])
     plt.title('Acurácia do Modelo')
     plt.ylabel('Acurácia')
     plt.xlabel('Época')
-    plt.legend(['Acurácia', 'Acurácia Customizada'], loc='bottom right')
+    plt.legend(['Acurácia'], loc='bottom right')
     plt.show()
 
 def plot_model_loss(history):

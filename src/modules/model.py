@@ -50,6 +50,9 @@ class Model:
         print('test_entities_input')
         print(self.test_entities_input)
         '''
+
+        relations_config = self.get_config('relation')
+        self.relations_dict = file_helper.get_json_file_data(relations_config.get('path'), relations_config.get('file_name'))
     
 
     def initialize_outputs(self):
@@ -61,6 +64,7 @@ class Model:
 
         # output de treino
         self.train_sentences_output = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('train_sentence_output')))
+        self.train_labels_output = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('train_label_output')))
         '''
         print('train_sentences_output')
         print(self.train_sentences_output)
@@ -68,6 +72,7 @@ class Model:
 
         # output de teste
         self.test_sentences_output = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('test_sentence_output')))
+        self.test_labels_output = np.asarray(file_helper.get_json_file_data(path, outputs_config.get('test_label_output')))
         '''
         print('test_sentences_output')
         print(self.test_sentences_output)
@@ -144,27 +149,12 @@ class Model:
         Cria o modelo que vai ser utilizado, definindo todas as suas camadas e compilação
         '''
         input_length = self.train_sentences_input.shape[1]
-        embeddings_layers = []
         input_layers = []
         
         # layer de input de word embeddings
         word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', input_length)
         input_layers.append(word_embeddings_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer))
-
-        # layer de input de entidades
-        entity_input_layer = self.create_input_layer('entity_input_layer', input_length)
-        input_layers.append(entity_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('entity_embedding_layer', self.train_entities_input, input_length, True, entity_input_layer))
-
-        # layer de input de entidades
-        pos_tagged_input_layer = self.create_input_layer('pos_tagged_input_layer', input_length)
-        input_layers.append(pos_tagged_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('pos_tagged_embedding_layer', self.train_pos_tagged_input, input_length, True, pos_tagged_input_layer))
-        
-
-        # layer para concatenar os embeddings do modelo
-        model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
+        model = self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer)
 
         # layer LSTM
         lstm = self.create_lstm_layer('lstm_layer', input_length, 0.5, True, model)
@@ -173,12 +163,11 @@ class Model:
         model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
 
         # layer Flatten
-        #model = self.create_flatten_layer('flatten_layer_1', model)
+        model = self.create_flatten_layer('flatten_layer_1', model)
 
-        model = self.create_dense_layer('dense_layer_2', 32, 'relu', model)
+        model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
         model = tf.keras.layers.Dropout(0.5)(model)
-
-        output = self.create_time_distributed('time_distributed_layer', 1,'sigmoid', model)
+        output = self.create_dense_layer('output_layer', len(self.relations_dict), 'softmax', model)
 
         # criação do modelo
         model = tf.keras.Model(inputs=input_layers, outputs=output)
@@ -188,20 +177,20 @@ class Model:
         opt = tf.keras.optimizers.Adam(learning_rate=0.01, beta_1=0.9, beta_2=0.999, amsgrad=False)
 
         # compilação do modelo
-        model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy', self.custom_accuracy_function()])
+        model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
         print(model.summary())
 
         self.model = model
-        plot_model(model, to_file='model.png', show_shapes=True, show_layer_names=True)
+        plot_model(model, to_file='data/models/classification_model/model.png', show_shapes=True, show_layer_names=True)
 
 
     def train_model(self):
         '''
         Realiza o treinamento do modelo
         '''
-        train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
-        train_sentences_output = self.train_sentences_output
+        train_inputs = [self.train_sentences_input]
+        train_sentences_output = self.train_labels_output
         model = self.model
         history = model.fit(train_inputs, train_sentences_output, epochs=50, verbose=1, batch_size=10)
         visualization_helper.plot_model_history_graph(history)
@@ -210,8 +199,8 @@ class Model:
     
     def evaluate_model(self):
         model = self.model
-        train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
-        test_inputs = [self.test_sentences_input, self.test_entities_input, self.test_pos_tagged_input]
+        train_inputs = [self.train_sentences_input]
+        test_inputs = [self.test_sentences_input]
         train_sentences_output = self.train_sentences_output
         test_sentences_output = self.test_sentences_output
         model.evaluate(train_inputs, train_sentences_output)
@@ -220,7 +209,7 @@ class Model:
 
     def predict(self):
         model = self.model
-        test_inputs = [self.test_sentences_input, self.test_entities_input, self.test_pos_tagged_input]
+        test_inputs = [self.test_sentences_input]
         output = []
         prediction_probas = model.predict(test_inputs)
         for pred in prediction_probas:
