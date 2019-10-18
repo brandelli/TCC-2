@@ -201,10 +201,10 @@ class Model:
         model = self.model
         train_inputs = [self.train_sentences_input]
         test_inputs = [self.test_sentences_input]
-        train_sentences_output = self.train_sentences_output
-        test_sentences_output = self.test_sentences_output
-        model.evaluate(train_inputs, train_sentences_output)
-        model.evaluate(test_inputs, test_sentences_output)
+        train_sentences_output = self.train_labels_output
+        test_sentences_output = self.test_labels_output
+        model.evaluate(train_inputs, train_sentences_output, verbose=2)
+        model.evaluate(test_inputs, test_sentences_output, verbose=2)
     
 
     def predict(self):
