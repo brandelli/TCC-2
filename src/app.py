@@ -22,10 +22,40 @@ def main():
     config = Config('data/configuration/', 'config.json')
     # executa as principais funções de cada classe, lendo arquivos de entrada e criando o modelo
     parser = run_data_parse(config)
-    model = run_model(config)
+    #model = run_model(config)
 
+    # salva as principais informações do dataset
+    create_dataset_info(parser)
 
     # executa chamadas de predict no modelo
+    #predict(model, parser, config)
+
+def create_dataset_info(parser):
+    # numero de cada tipo de entidade presente no dataset
+    parser.save_number_of_entities_in_dataset()
+    # tipo de relacionamento entre entidades na sentença PER-PER, PER-ORG
+    parser.save_entities_relation()
+    # relacionamentos completos na sentença
+    parser.save_full_relation_in_sentence()
+    # palavras presentes no relacionamento
+    parser.save_words_in_relation()
+
+def run_data_parse(config):
+    parse_config = config.get_configuration('parse')
+    parser = Parser(config)
+    if parse_config.get('parse'):
+        parser.run_initial_parse()
+    
+    return parser
+
+
+def run_model(config):
+    model = Model(config)
+    model.create_model()
+    model.train_model()
+    return model
+
+def predict(model, parser, config):
     predict = model.predict()
     dataset_config = config.get_configuration('dataset')
     dataset_path = dataset_config.get('path')
@@ -49,24 +79,6 @@ def main():
     print(f'partial precision: {partial_precision}')
     print(f'partial recall: {partial_recall}')
     print(f'partial f-measure: {partial_f_measure}')
-
-
-def run_data_parse(config):
-    parse_config = config.get_configuration('parse')
-    parser = Parser(config)
-    if parse_config.get('parse'):
-        parser.run_initial_parse()
     
-    return parser
-
-
-def run_model(config):
-    model = Model(config)
-    model.create_model()
-    model.train_model()
-    return model
-
-    
-
 if __name__ == '__main__':
     main()

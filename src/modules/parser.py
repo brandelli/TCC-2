@@ -534,3 +534,57 @@ class Parser:
         
         return " ".join(cur_sentence)
 
+
+    def save_number_of_entities_in_dataset(self):
+        dataset_config = self.get_config('dataset')
+        path = dataset_config.get('path')
+        for dataset_type in self.dataset_types:
+            dataset_file = 'train_json' if dataset_type == 'train' else 'test_json'
+            entities_number_file = 'train_entities_number' if dataset_type == 'train' else 'test_entities_number'
+            dataset = file_helper.get_json_file_data(path, dataset_config.get(dataset_file))
+            local_dict = {}
+            for data in dataset:
+                for position in ['head', 'tail']:
+                    entity = data.get(position).get('category')
+                    if local_dict.get(entity) is None:
+                        local_dict[entity] = 1
+                    else:
+                        local_dict[entity] += 1
+            
+            file_helper.dict_to_json(path, dataset_config.get(entities_number_file), local_dict, 4)
+
+
+    def save_entities_relation(self):
+        dataset_config = self.get_config('dataset')
+        path = dataset_config.get('path')
+        for dataset_type in self.dataset_types:
+            dataset_file = 'train_json' if dataset_type == 'train' else 'test_json'
+            entities_relation_file = 'train_entities_relation' if dataset_type == 'train' else 'test_entities_relation'
+            dataset = file_helper.get_json_file_data(path, dataset_config.get(dataset_file))
+            local_dict = {}
+            for data in dataset:
+                head = data.get('head').get('category')
+                tail = data.get('tail').get('category')
+                relation = f'{head}-{tail}'
+                if local_dict.get(relation) is None:
+                    local_dict[relation] = 1
+                else:
+                    local_dict[relation] += 1
+                    
+            file_helper.dict_to_json(path, dataset_config.get(entities_relation_file), local_dict, 4)
+
+    
+
+    def save_full_relation_in_sentence(self):
+        dataset_config = self.get_config('dataset')
+        path = dataset_config.get('path')
+        for dataset_type in self.dataset_types:
+            dataset_file = 'train_json' if dataset_type == 'train' else 'test_json'
+
+
+    def save_words_in_relation(self):
+        dataset_config = self.get_config('dataset')
+        path = dataset_config.get('path')
+        for dataset_type in self.dataset_types:
+            dataset_file = 'train_json' if dataset_type == 'train' else 'test_json'
+

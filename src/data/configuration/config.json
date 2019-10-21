@@ -8,7 +8,11 @@
         "train_tsv"  : "train.tsv",
         "test_tsv"   : "test_1.tsv",
         "train_json" : "train.json",
-        "test_json"  : "test.json"
+        "test_json"  : "test.json",
+        "train_entities_number" : "train_entities_number.json",
+        "test_entities_number" : "test_entities_number.json",
+        "train_entities_relation" : "train_entities_relation.json",
+        "test_entities_relation" : "test_entities_relation.json"
     },
 
     "word_embeddings" : {
