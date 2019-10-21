@@ -598,4 +598,15 @@ class Parser:
         path = dataset_config.get('path')
         for dataset_type in self.dataset_types:
             dataset_file = 'train_json' if dataset_type == 'train' else 'test_json'
+            words_in_relation_file = 'train_words_in_relation' if dataset_type == 'train' else 'test_words_in_relation'
+            dataset = file_helper.get_json_file_data(path, dataset_config.get(dataset_file))
+            local_dict = {}
+            for data in dataset:
+                for word in data.get('relation').split(' '):
+                    if local_dict.get(word) is None:
+                        local_dict[word] = 1
+                    else:
+                        local_dict[word] += 1
+                    
+            file_helper.dict_to_json(path, dataset_config.get(words_in_relation_file), local_dict, 4)
 

@@ -14,7 +14,9 @@
         "train_entities_relation" : "train_entities_relation.json",
         "test_entities_relation" : "test_entities_relation.json",
         "train_full_relation" : "train_full_relation.json",
-        "test_full_relation" : "test_full_relation.json"
+        "test_full_relation" : "test_full_relation.json",
+        "train_words_in_relation" : "train_words_in_relation.json",
+        "test_words_in_relation" : "test_words_in_relation.json"
     },
 
     "word_embeddings" : {
