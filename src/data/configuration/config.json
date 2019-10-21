@@ -9,14 +9,14 @@
         "test_tsv"   : "test_1.tsv",
         "train_json" : "train.json",
         "test_json"  : "test.json",
-        "train_entities_number" : "train_entities_number.json",
-        "test_entities_number" : "test_entities_number.json",
-        "train_entities_relation" : "train_entities_relation.json",
-        "test_entities_relation" : "test_entities_relation.json",
-        "train_full_relation" : "train_full_relation.json",
-        "test_full_relation" : "test_full_relation.json",
-        "train_words_in_relation" : "train_words_in_relation.json",
-        "test_words_in_relation" : "test_words_in_relation.json"
+        "train_entities_number" : "train_entities_number.txt",
+        "test_entities_number" : "test_entities_number.txt",
+        "train_entities_relation" : "train_entities_relation.txt",
+        "test_entities_relation" : "test_entities_relation.txt",
+        "train_full_relation" : "train_full_relation.txt",
+        "test_full_relation" : "test_full_relation.txt",
+        "train_words_in_relation" : "train_words_in_relation.txt",
+        "test_words_in_relation" : "test_words_in_relation.txt"
     },
 
     "word_embeddings" : {

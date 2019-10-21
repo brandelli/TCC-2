@@ -17,3 +17,8 @@ def get_json_file_data(path, file_name):
         json_data = json.load(json_file)
     
     return json_data
+
+
+def save_txt_file(path, file_name, data):
+    with open(f'{path}{file_name}', 'w') as txt_file:
+        txt_file.write(data)

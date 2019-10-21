@@ -550,8 +550,9 @@ class Parser:
                         local_dict[entity] = 1
                     else:
                         local_dict[entity] += 1
-            
-            file_helper.dict_to_json(path, dataset_config.get(entities_number_file), local_dict, 4)
+
+            local_str = self.sort_data_to_txt(local_dict)
+            file_helper.save_txt_file(path, dataset_config.get(entities_number_file), local_str)
 
 
     def save_entities_relation(self):
@@ -570,10 +571,9 @@ class Parser:
                     local_dict[relation] = 1
                 else:
                     local_dict[relation] += 1
-                    
-            file_helper.dict_to_json(path, dataset_config.get(entities_relation_file), local_dict, 4)
+            local_str = self.sort_data_to_txt(local_dict)  
+            file_helper.save_txt_file(path, dataset_config.get(entities_relation_file), local_str)
 
-    
 
     def save_full_relation_in_sentence(self):
         dataset_config = self.get_config('dataset')
@@ -589,8 +589,8 @@ class Parser:
                     local_dict[relation] = 1
                 else:
                     local_dict[relation] += 1
-                    
-            file_helper.dict_to_json(path, dataset_config.get(full_relation_file), local_dict, 4)
+            local_str = self.sort_data_to_txt(local_dict)
+            file_helper.save_txt_file(path, dataset_config.get(full_relation_file), local_str)
 
 
     def save_words_in_relation(self):
@@ -607,6 +607,19 @@ class Parser:
                         local_dict[word] = 1
                     else:
                         local_dict[word] += 1
-                    
-            file_helper.dict_to_json(path, dataset_config.get(words_in_relation_file), local_dict, 4)
+            local_str = self.sort_data_to_txt(local_dict)
+            file_helper.save_txt_file(path, dataset_config.get(words_in_relation_file), local_str)
+
+        
+    def sort_data_to_txt(self, dict_data):
+        acc = 0
+        local_str = ''
+        sorted_data = sorted(dict_data, key=dict_data.__getitem__, reverse=True)
+        for data in sorted_data:
+            value = dict_data.get(data)
+            local_str += f'{data} : {value} \n'
+            acc += value
+
+        local_str += f'Total: {acc}\n'
+        return local_str
 
