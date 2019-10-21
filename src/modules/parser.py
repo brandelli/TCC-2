@@ -580,6 +580,17 @@ class Parser:
         path = dataset_config.get('path')
         for dataset_type in self.dataset_types:
             dataset_file = 'train_json' if dataset_type == 'train' else 'test_json'
+            full_relation_file = 'train_full_relation' if dataset_type == 'train' else 'test_full_relation'
+            dataset = file_helper.get_json_file_data(path, dataset_config.get(dataset_file))
+            local_dict = {}
+            for data in dataset:
+                relation = data.get('relation')
+                if local_dict.get(relation) is None:
+                    local_dict[relation] = 1
+                else:
+                    local_dict[relation] += 1
+                    
+            file_helper.dict_to_json(path, dataset_config.get(full_relation_file), local_dict, 4)
 
 
     def save_words_in_relation(self):

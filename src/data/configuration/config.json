@@ -12,7 +12,9 @@
         "train_entities_number" : "train_entities_number.json",
         "test_entities_number" : "test_entities_number.json",
         "train_entities_relation" : "train_entities_relation.json",
-        "test_entities_relation" : "test_entities_relation.json"
+        "test_entities_relation" : "test_entities_relation.json",
+        "train_full_relation" : "train_full_relation.json",
+        "test_full_relation" : "test_full_relation.json"
     },
 
     "word_embeddings" : {
