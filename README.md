@@ -1,6 +1,9 @@
 # TCC2
+
 Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Repositório TCC 1](https://github.com/brandelli/TCC-1)
+* [Documento do TCC 2](https://www.overleaf.com/read/hkzjkcqxzvdb)
+
 
 ### Materiais Relevantes
 * [Repositório com datasets do iberlef](https://github.com/brandelli/iberlef-2019) 
