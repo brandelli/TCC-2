@@ -5,6 +5,10 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Documento do TCC 2](https://www.overleaf.com/read/hkzjkcqxzvdb)
 
 
+### Referencias
+* [IberLEF: Iberian Languages Evaluation Forum](https://sites.google.com/view/iberlef-2019/)
+
+
 ### Materiais Relevantes
 * [Repositório com datasets do iberlef](https://github.com/brandelli/iberlef-2019) 
 * [Overview das tasks do Iberlef](http://ceur-ws.org/Vol-2421/NER_Portuguese_overview.pdf)
