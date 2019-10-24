@@ -9,6 +9,7 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [IberLEF: Iberian Languages Evaluation Forum](https://sites.google.com/view/iberlef-2019/)
 * [TASS](http://www.sepln.org/workshops/tass/)
 * [tarefa iberlef](http://www.inf.pucrs.br/linatural/wordpress/iberlef-2019/)
+* [Anotação POS spaCy](https://spacy.io/api/annotation)
 
 ### Materiais Relevantes
 * [Repositório com datasets do iberlef](https://github.com/brandelli/iberlef-2019) 
