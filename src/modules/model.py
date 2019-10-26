@@ -152,22 +152,22 @@ class Model:
         input_layers = []
         
         # layer de input de word embeddings
-        word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', input_length)
+        word_embeddings_input_layer = self.create_input_layer('camada_entrada_word_embeddings', input_length)
         input_layers.append(word_embeddings_input_layer)
-        model = self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer)
+        model = self.create_embedding_layer('camada_word_embedding', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer)
 
         # layer LSTM
-        lstm = self.create_lstm_layer('lstm_layer', input_length, 0.5, True, model)
+        lstm = self.create_lstm_layer('camada_lstm', input_length, 0.5, True, model)
 
         # layer BI-LSTM
-        model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
+        model = self.create_bidirectional_layer('camada_bi_lstm', lstm, model)
 
         # layer Flatten
-        model = self.create_flatten_layer('flatten_layer_1', model)
+        model = self.create_flatten_layer('camada_de_achatamento', model)
 
-        model = self.create_dense_layer('dense_layer_2', 64, 'relu', model)
+        model = self.create_dense_layer('camada_densa', 64, 'relu', model)
         model = tf.keras.layers.Dropout(0.5)(model)
-        output = self.create_dense_layer('output_layer', len(self.relations_dict), 'softmax', model)
+        output = self.create_dense_layer('camada_de_saida', len(self.relations_dict), 'softmax', model)
 
         # criação do modelo
         model = tf.keras.Model(inputs=input_layers, outputs=output)
