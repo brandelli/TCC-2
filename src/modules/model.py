@@ -158,9 +158,9 @@ class Model:
         embeddings_layers.append(self.create_embedding_layer('camada_posicao_entidades', self.train_entities_input, input_length, True, entity_input_layer))
 
         # layer de input de entidades
-        pos_tagged_input_layer = self.create_input_layer('entrada_pos_tag', input_length)
-        input_layers.append(pos_tagged_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('camada_pos_tag', self.train_pos_tagged_input, input_length, True, pos_tagged_input_layer))
+        #pos_tagged_input_layer = self.create_input_layer('entrada_pos_tag', input_length)
+        #input_layers.append(pos_tagged_input_layer)
+        #embeddings_layers.append(self.create_embedding_layer('camada_pos_tag', self.train_pos_tagged_input, input_length, True, pos_tagged_input_layer))
         
 
         # layer para concatenar os embeddings do modelo
@@ -200,7 +200,7 @@ class Model:
         '''
         Realiza o treinamento do modelo
         '''
-        train_inputs = [self.train_sentences_input, self.train_entities_input, self.train_pos_tagged_input]
+        train_inputs = [self.train_sentences_input, self.train_entities_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
         history = model.fit(train_inputs, train_sentences_output, epochs=50, verbose=1, batch_size=10)
@@ -220,7 +220,7 @@ class Model:
 
     def predict(self):
         model = self.model
-        test_inputs = [self.test_sentences_input, self.test_entities_input, self.test_pos_tagged_input]
+        test_inputs = [self.test_sentences_input, self.test_entities_input]
         output = []
         prediction_probas = model.predict(test_inputs)
         for pred in prediction_probas:
