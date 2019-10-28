@@ -53,3 +53,4 @@ Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Visualizing RNNs](http://joshvarty.github.io/VisualizingRNNs/)
 * [Build a POS tagger with an LSTM using Keras - Modificação da função de precisão](https://nlpforhackers.io/lstm-pos-tagger-keras/)
 * [How Much Training Data is Required for Machine Learning?](https://machinelearningmastery.com/much-training-data-required-machine-learning/)
+* [Know your Activation Functions](https://medium.com/analytics-vidhya/know-your-activation-functions-949a42781f5c)
