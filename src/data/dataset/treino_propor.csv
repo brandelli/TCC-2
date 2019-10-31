@@ -1,3 +1,4 @@
+SENTENCE	POSITION_ARGUMENT_1	ARGUMENT_1	ARGUMENT_1_CATEGORY	RELATION_POSITION	RELATION	POSITION_ARGUMENT_2	ARGUMENT_2	ARGUMENT_2_CATEGORY
 A equipe de Peter_Savolainen, de o Instituto_Real_de_Tecnologia, de Estocolmo, Suécia, constatou que a diversidade genética era maior entre os cães de o leste asiático.	7	Instituto_Real_de_Tecnologia	ORG	5	de	3	Peter_Savolainen	PER
 A equipe de Peter_Savolainen, de o Instituto_Real_de_Tecnologia, de Estocolmo, Suécia, constatou que a diversidade genética era maior entre os cães de o leste asiático.	7	Instituto_Real_de_Tecnologia	ORG	9	de	10	Estocolmo	PLC
 A equipe de Peter_Savolainen, de o Instituto_Real_de_Tecnologia, de Estocolmo, Suécia, constatou que a diversidade genética era maior entre os cães de o leste asiático.	7	Instituto_Real_de_Tecnologia	ORG	9	de	12	Suécia	PLC

@@ -25,7 +25,7 @@ def main():
     #model = run_model(config)
 
     # salva as principais informações do dataset
-    create_dataset_info(parser)
+    #create_dataset_info(parser)
 
     # executa chamadas de predict no modelo
     #predict(model, parser, config)
