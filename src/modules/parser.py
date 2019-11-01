@@ -318,10 +318,10 @@ class Parser:
             self.dataset_to_json(dataset_type)
 
         # cria um arquivo json com os relacionamentos presentes no dataset de treino
-        #self.relation_to_id_json()
+        self.relation_to_id_json()
 
         # cria im arquivo json com todos os tipos de entidades presente
-        #self.entities_types_to_id()
+        self.entities_types_to_id()
 
 
     def entities_types_to_id(self):
