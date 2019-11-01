@@ -1,14 +1,12 @@
 {
     "parse" : {
-            "parse" : false
+            "parse" : true
     },
 
     "dataset" : {
         "path"       : "data/dataset/",
-        "train_tsv"  : "train.tsv",
-        "test_tsv"   : "test_1.tsv",
-        "train_propor" : "treino_propor.txt",
-        "test_propor" : "teste_propor.xlsx",
+        "train_tsv"  : "treino_propor.csv",
+        "test_tsv"   : "teste_propor.csv",
         "train_json" : "train.json",
         "test_json"  : "test.json",
         "train_entities_number" : "train_entities_number.txt",

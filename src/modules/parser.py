@@ -51,13 +51,13 @@ class Parser:
         self.convert_src_to_json_files()
 
         # chamada para criação de dicionários: word_to_id e reverse_dict
-        self.create_word_dicts()
+        #self.create_word_dicts()
 
         # chamada para formatação de inputs que serão utilizados pelo modelo
-        self.parse_inputs_for_model()
+        #self.parse_inputs_for_model()
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
-        self.create_output_for_model()
+        #self.create_output_for_model()
 
 
     def create_pos_tag_input(self):
@@ -318,10 +318,10 @@ class Parser:
             self.dataset_to_json(dataset_type)
 
         # cria um arquivo json com os relacionamentos presentes no dataset de treino
-        self.relation_to_id_json()
+        #self.relation_to_id_json()
 
         # cria im arquivo json com todos os tipos de entidades presente
-        self.entities_types_to_id()
+        #self.entities_types_to_id()
 
 
     def entities_types_to_id(self):
@@ -369,6 +369,8 @@ class Parser:
         json_file_name = dataset_config.get(str_json_file_name)
         
         with open(f"{path}{file_name}") as fp:
+            print('dataset_to_json')
+            print(file_name)
             # faz a leitura do arquivo, utilizando a tabulação como separeador
             reader = csv.reader(fp, delimiter="\t")
             # a primeira linha contém as chaves de cada um dos campos
