@@ -54,7 +54,7 @@ class Parser:
         self.create_word_dicts()
 
         # chamada para formatação de inputs que serão utilizados pelo modelo
-        #self.parse_inputs_for_model()
+        self.parse_inputs_for_model()
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         #self.create_output_for_model()
@@ -223,9 +223,9 @@ class Parser:
         word_to_id = file_helper.get_json_file_data(word_to_id_path, word_to_id_file_name)
 
         self.create_sentence_input(word_to_id)
-        self.create_entity_input()
-        self.create_pos_tag_input()
-        self.create_word_embeddings_weight()
+        #self.create_entity_input()
+        #self.create_pos_tag_input()
+        #self.create_word_embeddings_weight()
         
     
     def create_sentence_input(self, word_to_id):
