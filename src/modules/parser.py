@@ -222,8 +222,8 @@ class Parser:
         word_to_id_file_name = word_to_id_config.get('dict')
         word_to_id = file_helper.get_json_file_data(word_to_id_path, word_to_id_file_name)
 
-        self.create_sentence_input(word_to_id)
-        #self.create_entity_input()
+        dict_input_sentences = self.create_sentence_input(word_to_id)
+        self.create_entity_input(word_to_id, dict_input_sentences)
         self.create_pos_tag_input()
         self.create_word_embeddings_weight()
         
@@ -236,13 +236,16 @@ class Parser:
         input_config = self.get_config('input')
         dataset_path = dataset_config.get('path')
         input_path = input_config.get('path')
+        dict_input_sentences = {}
         for dataset_type in self.dataset_types:
             dataset_type_filename = 'train_json' if dataset_type == 'train' else 'test_json'
             input_type_filename = 'train_sentence_input' if dataset_type == 'train' else 'test_sentence_input'
             dataset = file_helper.get_json_file_data(dataset_path, dataset_config.get(dataset_type_filename))
             sentence_input = self.parse_sentence_input(dataset, word_to_id)
+            dict_input_sentences[dataset_type] = sentence_input
             file_helper.dict_to_json(input_path, input_config.get(input_type_filename), sentence_input, 4)
 
+        return dict_input_sentences
     
     def parse_sentence_input(self, dataset, word_id):
         '''
@@ -257,7 +260,7 @@ class Parser:
         return sentences_input
 
 
-    def create_entity_input(self):
+    def create_entity_input(self, word_id, dict_input_sentences):
         '''
         Cria o arquivo de entity_input, que será utilizado como input no modelo
         '''
@@ -269,24 +272,39 @@ class Parser:
             dataset_type_filename = 'train_json' if dataset_type == 'train' else 'test_json'
             input_type_filename = 'train_entity_input' if dataset_type == 'train' else 'test_entity_input'
             dataset = file_helper.get_json_file_data(dataset_path, dataset_config.get(dataset_type_filename))
-            entity_input = self.parse_entity_input(dataset)
+            entity_input = self.parse_entity_input(dataset, word_id, dict_input_sentences.get(dataset_type))
             file_helper.dict_to_json(input_path, input_config.get(input_type_filename), entity_input, 4)
         
 
-    def parse_entity_input(self, dataset):
+    def parse_entity_input(self, dataset, word_id, input_sentences):
         '''
         Faz a tradução das entidades e palavras normais para vetor binario, onde:
         0 -> palavra normal
         1 -> entidade marcada na sentença
         '''
         entities_input = []
-        for data in dataset:
+        for index, data in enumerate(dataset):
+            print(f'--------------------{index}--------------------------')
             sentence = data.get('sentence')
             head = data.get('head').get('word')
             tail = data.get('tail').get('word')
-            fn_lambda = lambda head, tail, word: 1 if word == tail or word == head else 0
-            entity_input = [fn_lambda(head, tail, word) for word in sentence.split(' ')]
-            self.include_padding(entity_input)
+            print(f'head: {head}')
+            print(f'tail: {tail}')
+            entity_input = []
+            list_head = [word_id.get(val) for val in head.split(' ')]
+            list_tail = [word_id.get(val) for val in tail.split(' ')]
+            input_sentence = input_sentences[index]
+            list_head_tuple = [(i, i+len(list_head)) for i in range(len(input_sentence)) if input_sentence[i:i+len(list_head)] == list_head]
+            list_tail_tuple = [(i, i+len(list_tail)) for i in range(len(input_sentence)) if input_sentence[i:i+len(list_tail)] == list_tail]
+            
+            print(list_head_tuple)
+            print(list_tail_tuple)
+            print(list_head)
+            print(list_tail)
+            print(input_sentence)
+            print(list_head_tuple[0][0])
+            print(list_head_tuple[0][1])
+            
             entities_input.append(entity_input)
         return entities_input
 

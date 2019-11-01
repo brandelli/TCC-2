@@ -67,6 +67,7 @@ def convert_teste_propor_to_csv(original_file_path, new_file_path):
 	data_list = []
 	for index in range(1, sheet.nrows):
 		local_dict = {}
+		print(len(sheet.row_values(index)))
 		for i, column in enumerate(sheet.row_values(index)):
 			field = fields[i]
 			if i < 2:
@@ -79,7 +80,6 @@ def convert_teste_propor_to_csv(original_file_path, new_file_path):
 			
 		data_list.append(local_dict)
 	
-	print(data_list)
 
 	with open(f'{new_file_path}', 'w') as fp:
 		writer = csv.DictWriter(fp, fields, delimiter = '\t')

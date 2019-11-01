@@ -4,12 +4,12 @@
         "sentence": "a kroton anunciou uma parceria com o cubo_ita\u00fa , que dar\u00e1 origem \u00e0 vertical \u201c cubo education \u201d , um espa\u00e7o dedicado ao fomento de edtechs \u2013 tecnologia aplicada \u00e0 educa\u00e7\u00e3o .",
         "head": {
             "word": "kroton",
-            "id": 4950,
+            "id": 4947,
             "category": "ORG"
         },
         "tail": {
             "word": "cubo_ita\u00fa",
-            "id": 4742,
+            "id": 4740,
             "category": "ORG"
         },
         "relation": "anunciou uma parceria com",
@@ -20,12 +20,12 @@
         "sentence": "o evento summit_agrihub reuniu nesta quinta-feira ( 19/04 ) , em cuiab\u00e1 , produtores rurais vindos de v\u00e1rios munic\u00edpios de mato_grosso , pesquisadores e empresas de tecnologias do brasil para debater as novidades incorporadas aos sistemas de produ\u00e7\u00e3o .",
         "head": {
             "word": "summit_agrihub",
-            "id": 4958,
+            "id": 4955,
             "category": "ORG"
         },
         "tail": {
             "word": "cuiab\u00e1",
-            "id": 4961,
+            "id": 4958,
             "category": "PLC"
         },
         "relation": "reuniu em",
@@ -36,12 +36,12 @@
         "sentence": "o evento summit_agrihub reuniu nesta quinta-feira ( 19/04 ) , em cuiab\u00e1 , produtores rurais vindos de v\u00e1rios munic\u00edpios de mato_grosso , pesquisadores e empresas de tecnologias do brasil para debater as novidades incorporadas aos sistemas de produ\u00e7\u00e3o .",
         "head": {
             "word": "summit_agrihub",
-            "id": 4958,
+            "id": 4955,
             "category": "ORG"
         },
         "tail": {
             "word": "mato_grosso",
-            "id": 4964,
+            "id": 4961,
             "category": "PLC"
         },
         "relation": "none",
@@ -52,7 +52,7 @@
         "sentence": "o evento summit_agrihub reuniu nesta quinta-feira ( 19/04 ) , em cuiab\u00e1 , produtores rurais vindos de v\u00e1rios munic\u00edpios de mato_grosso , pesquisadores e empresas de tecnologias do brasil para debater as novidades incorporadas aos sistemas de produ\u00e7\u00e3o .",
         "head": {
             "word": "summit_agrihub",
-            "id": 4958,
+            "id": 4955,
             "category": "ORG"
         },
         "tail": {
@@ -68,12 +68,12 @@
         "sentence": "o su\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "bradesco",
-            "id": 4748,
+            "id": 4746,
             "category": "ORG"
         },
         "tail": {
-            "word": " banco_do_brasil",
-            "id": null,
+            "word": "banco_do_brasil",
+            "id": 4747,
             "category": "ORG"
         },
         "relation": "none",
@@ -84,12 +84,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "bradesco",
-            "id": 4748,
+            "id": 4746,
             "category": "ORG"
         },
         "tail": {
             "word": "ita\u00fa",
-            "id": 4737,
+            "id": 4735,
             "category": "ORG"
         },
         "relation": "none",
@@ -100,12 +100,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "bradesco",
-            "id": 4748,
+            "id": 4746,
             "category": "ORG"
         },
         "tail": {
             "word": "safra",
-            "id": 4764,
+            "id": 4762,
             "category": "ORG"
         },
         "relation": "none",
@@ -116,12 +116,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "banco_do_brasil",
-            "id": 4749,
+            "id": 4747,
             "category": "ORG"
         },
         "tail": {
             "word": "ita\u00fa",
-            "id": 4737,
+            "id": 4735,
             "category": "ORG"
         },
         "relation": "none",
@@ -132,12 +132,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "banco_do_brasil",
-            "id": 4749,
+            "id": 4747,
             "category": "ORG"
         },
         "tail": {
             "word": "safra",
-            "id": 4764,
+            "id": 4762,
             "category": "ORG"
         },
         "relation": "none",
@@ -148,12 +148,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "ita\u00fa",
-            "id": 4737,
+            "id": 4735,
             "category": "ORG"
         },
         "tail": {
             "word": "safra",
-            "id": 4764,
+            "id": 4762,
             "category": "ORG"
         },
         "relation": "none",
@@ -164,12 +164,12 @@
         "sentence": "agrotools promove painel sobre transforma\u00e7\u00e3o digital do seguro rural e o cr\u00e9dito no agroneg\u00f3cio ; evento \u00e9 restrito a convidados o que o setor de fintech tem a ver com o agtech ?",
         "head": {
             "word": "agrotools",
-            "id": 4980,
+            "id": 4977,
             "category": "ORG"
         },
         "tail": {
-            "word": " agtech",
-            "id": null,
+            "word": "agtech",
+            "id": 4660,
             "category": "ORG"
         },
         "relation": "none",
@@ -180,12 +180,12 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "agfintech",
-            "id": 4987,
+            "id": 4984,
             "category": "ORG"
         },
         "tail": {
             "word": "casa_do_saber",
-            "id": 4989,
+            "id": 4986,
             "category": "ORG"
         },
         "relation": " vai reunir em ",
@@ -196,7 +196,7 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "agfintech",
-            "id": 4987,
+            "id": 4984,
             "category": "ORG"
         },
         "tail": {
@@ -212,12 +212,12 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "agfintech",
-            "id": 4987,
+            "id": 4984,
             "category": "ORG"
         },
         "tail": {
             "word": "banco_central",
-            "id": 4993,
+            "id": 4990,
             "category": "ORG"
         },
         "relation": "none",
@@ -228,12 +228,12 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "agfintech",
-            "id": 4987,
+            "id": 4984,
             "category": "ORG"
         },
         "tail": {
             "word": "casa_do_saber",
-            "id": 4989,
+            "id": 4986,
             "category": "ORG"
         },
         "relation": "none",
@@ -244,7 +244,7 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "banco_central",
-            "id": 4993,
+            "id": 4990,
             "category": "ORG"
         },
         "tail": {
@@ -259,13 +259,13 @@
         "sentence_id": 17,
         "sentence": "ap\u00f3s tr\u00eas meses , a regula\u00e7\u00e3o n\u00e3o gerou um impacto imediato nos neg\u00f3cios , mas deve garantir maior autonomia \u00e0s fintechs , segundo sergio_furio , fundador de uma das maiores fintechs de cr\u00e9dito do pa\u00eds , a creditas , que oferece cr\u00e9dito com garantia de im\u00f3vel e autom\u00f3vel .",
         "head": {
-            "word": "creditas ",
-            "id": null,
+            "word": "creditas",
+            "id": 5004,
             "category": "ORG"
         },
         "tail": {
             "word": "sergio_furio",
-            "id": 5006,
+            "id": 5003,
             "category": "PER"
         },
         "relation": "fundador de uma das maiores fintechs de cr\u00e9dito do pa\u00eds",
@@ -275,8 +275,8 @@
         "sentence_id": 18,
         "sentence": "ap\u00f3s tr\u00eas meses , a regula\u00e7\u00e3o n\u00e3o gerou um impacto imediato nos neg\u00f3cios , mas deve garantir maior autonomia \u00e0s fintechs , segundo sergio_furio , fundador de uma das maiores fintechs de cr\u00e9dito do pa\u00eds , a creditas , que oferece cr\u00e9dito com garantia de im\u00f3vel e autom\u00f3vel .",
         "head": {
-            "word": "creditas ",
-            "id": null,
+            "word": "creditas",
+            "id": 5004,
             "category": "ORG"
         },
         "tail": {
@@ -292,12 +292,12 @@
         "sentence": "nossa meta \u00e9 alcan\u00e7ar 10_mil empr\u00e9stimos por m\u00eas \u201d , contou mellissa_penteado , ceo do bancoin .",
         "head": {
             "word": "ceo",
-            "id": 4932,
+            "id": 4929,
             "category": "ORG"
         },
         "tail": {
             "word": "mellissa_penteado",
-            "id": 5012,
+            "id": 5009,
             "category": "PER"
         },
         "relation": "none",
@@ -308,12 +308,12 @@
         "sentence": "nossa meta \u00e9 alcan\u00e7ar 10_mil empr\u00e9stimos por m\u00eas \u201d , contou mellissa_penteado , ceo do bancoin .",
         "head": {
             "word": "ceo",
-            "id": 4932,
+            "id": 4929,
             "category": "PER"
         },
         "tail": {
             "word": "bancoin",
-            "id": 5013,
+            "id": 5010,
             "category": "ORG"
         },
         "relation": "de",
@@ -323,13 +323,13 @@
         "sentence_id": 21,
         "sentence": "nossa meta \u00e9 alcan\u00e7ar 10_mil empr\u00e9stimos por m\u00eas \u201d , contou mellissa_penteado , ceo do bancoin .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Bancoin"
+            "word": "bancoin",
+            "id": 5010,
+            "category": "ORG"
         },
         "tail": {
             "word": "mellissa_penteado",
-            "id": 5012,
+            "id": 5009,
             "category": "PER"
         },
         "relation": "ceo de",
@@ -339,13 +339,13 @@
         "sentence_id": 23,
         "sentence": "a pesquisa fintech deep dive 2018 , feita pela associa\u00e7\u00e3o_brasileira_de_fintechs_ ( a_b_fintechs ) e pela consultoria pwc_brasil , divulgada esta semana , registrou otimismo das startups financeiras .",
         "head": {
-            "word": "org",
+            "word": "associa\u00e7\u00e3o_brasileira_de_fintechs_ ( a_b_fintechs",
             "id": null,
-            "category": "Associa\u00e7\u00e3o_Brasileira_de_Fintechs_(A_B_Fintechs"
+            "category": "ORG"
         },
         "tail": {
             "word": "pwc_brasil",
-            "id": 5019,
+            "id": 5016,
             "category": "ORG"
         },
         "relation": "none",
@@ -355,13 +355,13 @@
         "sentence_id": 24,
         "sentence": "a agrimart catalisa os processos de compra e venda de produtos agr\u00edcolas ( co m foco em hortifr\u00fati ) por meio de uma plataforma web de e-procurement para os compradores e de um chatbot negociador ( whatsapp ) para os produtores . a agrimart usa tecnologia de ponta para viabilizar uma comunica\u00e7\u00e3o acess\u00edvel e simples com o produtor rural , tendo em vista a negocia\u00e7\u00e3o/compra dos seus produtos : um chatbot via whatsapp .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Agrimart"
+            "word": "agrimart",
+            "id": 5020,
+            "category": "ORG"
         },
         "tail": {
             "word": "agrimart",
-            "id": 5023,
+            "id": 5020,
             "category": "ORG"
         },
         "relation": "none",
@@ -371,13 +371,13 @@
         "sentence_id": 25,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "IBM"
+            "word": "ibm",
+            "id": 5040,
+            "category": "ORG"
         },
         "tail": {
             "word": "percival_lucena",
-            "id": 5042,
+            "id": 5039,
             "category": "PER"
         },
         "relation": "pesquisador de",
@@ -387,13 +387,13 @@
         "sentence_id": 26,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "IBM"
+            "word": "ibm",
+            "id": 5040,
+            "category": "ORG"
         },
         "tail": {
             "word": "fernando_martins",
-            "id": 5044,
+            "id": 5041,
             "category": "PER"
         },
         "relation": "none",
@@ -403,13 +403,13 @@
         "sentence_id": 27,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "IBM"
+            "word": "ibm",
+            "id": 5040,
+            "category": "ORG"
         },
         "tail": {
             "word": "jacto",
-            "id": 5046,
+            "id": 5043,
             "category": "ORG"
         },
         "relation": "none",
@@ -419,13 +419,13 @@
         "sentence_id": 28,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "IBM"
+            "word": "ibm",
+            "id": 5040,
+            "category": "ORG"
         },
         "tail": {
             "word": "agtech",
-            "id": 4662,
+            "id": 4660,
             "category": "ORG"
         },
         "relation": "none",
@@ -435,13 +435,13 @@
         "sentence_id": 29,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "IBM"
+            "word": "ibm",
+            "id": 5040,
+            "category": "ORG"
         },
         "tail": {
             "word": "rodrigo_iafelice_dos_santos",
-            "id": 5047,
+            "id": 5044,
             "category": "PER"
         },
         "relation": "none",
@@ -451,13 +451,13 @@
         "sentence_id": 30,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "IBM"
+            "word": "ibm",
+            "id": 5040,
+            "category": "ORG"
         },
         "tail": {
             "word": "ennexas_agribusiness",
-            "id": 5048,
+            "id": 5045,
             "category": "ORG"
         },
         "relation": "none",
@@ -467,13 +467,13 @@
         "sentence_id": 31,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Jacto"
+            "word": "jacto",
+            "id": 5043,
+            "category": "ORG"
         },
         "tail": {
-            "word": "percival_lucena ",
-            "id": null,
+            "word": "percival_lucena",
+            "id": 5039,
             "category": "PER"
         },
         "relation": "none",
@@ -483,13 +483,13 @@
         "sentence_id": 32,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Jacto"
+            "word": "jacto",
+            "id": 5043,
+            "category": "ORG"
         },
         "tail": {
-            "word": " fernando_martins",
-            "id": null,
+            "word": "fernando_martins",
+            "id": 5041,
             "category": "PER"
         },
         "relation": "conselheiro de",
@@ -499,13 +499,13 @@
         "sentence_id": 33,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Jacto"
+            "word": "jacto",
+            "id": 5043,
+            "category": "ORG"
         },
         "tail": {
             "word": "agtech",
-            "id": 4662,
+            "id": 4660,
             "category": "ORG"
         },
         "relation": "none",
@@ -515,13 +515,13 @@
         "sentence_id": 34,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Jacto"
+            "word": "jacto",
+            "id": 5043,
+            "category": "ORG"
         },
         "tail": {
             "word": "rodrigo_iafelice_dos_santos",
-            "id": 5047,
+            "id": 5044,
             "category": "PER"
         },
         "relation": "none",
@@ -531,13 +531,13 @@
         "sentence_id": 35,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Jacto"
+            "word": "jacto",
+            "id": 5043,
+            "category": "ORG"
         },
         "tail": {
             "word": "ennexas_agribusiness",
-            "id": 5048,
+            "id": 5045,
             "category": "ORG"
         },
         "relation": "none",
@@ -547,13 +547,13 @@
         "sentence_id": 36,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "AgTech"
+            "word": "agtech",
+            "id": 4660,
+            "category": "ORG"
         },
         "tail": {
             "word": "percival_lucena",
-            "id": 5042,
+            "id": 5039,
             "category": "PER"
         },
         "relation": "none",
@@ -563,13 +563,13 @@
         "sentence_id": 37,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "AgTech"
+            "word": "agtech",
+            "id": 4660,
+            "category": "ORG"
         },
         "tail": {
             "word": "fernando_martins",
-            "id": 5044,
+            "id": 5041,
             "category": "PER"
         },
         "relation": "none",
@@ -579,13 +579,13 @@
         "sentence_id": 38,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "AgTech"
+            "word": "agtech",
+            "id": 4660,
+            "category": "ORG"
         },
         "tail": {
             "word": "rodrigo_iafelice_dos_santos",
-            "id": 5047,
+            "id": 5044,
             "category": "PER"
         },
         "relation": "none",
@@ -595,13 +595,13 @@
         "sentence_id": 39,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Ennexas_Agribusiness"
+            "word": "ennexas_agribusiness",
+            "id": 5045,
+            "category": "ORG"
         },
         "tail": {
             "word": "percival_lucena",
-            "id": 5042,
+            "id": 5039,
             "category": "PER"
         },
         "relation": "none",
@@ -611,13 +611,13 @@
         "sentence_id": 40,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Ennexas_Agribusiness"
+            "word": "ennexas_agribusiness",
+            "id": 5045,
+            "category": "ORG"
         },
         "tail": {
             "word": "fernando_martins",
-            "id": 5044,
+            "id": 5041,
             "category": "PER"
         },
         "relation": "none",
@@ -627,13 +627,13 @@
         "sentence_id": 41,
         "sentence": "realizado no lounge plant , o debate contou com a participa\u00e7\u00e3o de percival_lucena , pesquisador da ibm , fernando_martins , conselheiro da jacto e de startups agtech , e rodrigo_iafelice_dos_santos , presidente da ennexas_agribusiness .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Ennexas_Agribusiness"
+            "word": "ennexas_agribusiness",
+            "id": 5045,
+            "category": "ORG"
         },
         "tail": {
             "word": "rodrigo_iafelice_dos_santos",
-            "id": 5047,
+            "id": 5044,
             "category": "PER"
         },
         "relation": "presidente de",
@@ -643,13 +643,13 @@
         "sentence_id": 42,
         "sentence": "o lounge_plant contou com patroc\u00ednio de sap , clube_agro_e_azul_linhas_a\u00e9reas .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Lounge_Plant"
+            "word": "lounge_plant",
+            "id": 5046,
+            "category": "ORG"
         },
         "tail": {
             "word": "sap",
-            "id": 5051,
+            "id": 5048,
             "category": "ORG"
         },
         "relation": "contou com patroc\u00ednio de",
@@ -659,13 +659,13 @@
         "sentence_id": 43,
         "sentence": "o lounge_plant contou com patroc\u00ednio de sap , clube_agro_e_azul_linhas_a\u00e9reas .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Lounge_Plant"
+            "word": "lounge_plant",
+            "id": 5046,
+            "category": "ORG"
         },
         "tail": {
             "word": "clube_agro_e_azul_linhas_a\u00e9reas",
-            "id": 5052,
+            "id": 5049,
             "category": "ORG"
         },
         "relation": "contou com patroc\u00ednio de",
@@ -675,13 +675,13 @@
         "sentence_id": 44,
         "sentence": "o lounge_plant contou com patroc\u00ednio de sap , clube_agro_e_azul_linhas_a\u00e9reas .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "SAP"
+            "word": "sap",
+            "id": 5048,
+            "category": "ORG"
         },
         "tail": {
             "word": "clube_agro_e_azul_linhas_a\u00e9reas",
-            "id": 5052,
+            "id": 5049,
             "category": "ORG"
         },
         "relation": "none",
@@ -691,13 +691,13 @@
         "sentence_id": 45,
         "sentence": "as fintechs interessadas em apresentar suas solu\u00e7\u00f5es ao p\u00fablico que estar\u00e1 presente na 12\u00aa edi\u00e7\u00e3o do concred , o maior congresso cooperativista da am\u00e9rica_latina , ganharam mais alguns dias para garantir a participa\u00e7\u00e3o .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "CONCRED"
+            "word": "concred",
+            "id": 5051,
+            "category": "ORG"
         },
         "tail": {
             "word": "am\u00e9rica_latina",
-            "id": 4586,
+            "id": 4584,
             "category": "PLC"
         },
         "relation": "o maior congresso cooperativista da",
@@ -707,13 +707,13 @@
         "sentence_id": 46,
         "sentence": "no pr\u00f3ximo domingo , dia 23_de_setembro termina o prazo de inscri\u00e7\u00f5es para o espa\u00e7o fintechcooplab , iniciativa coordenada pelo fintechlab e pelo torq em parceria com a confebras , realizadora do evento .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "FintechLab "
+            "word": "fintechlab",
+            "id": 5058,
+            "category": "ORG"
         },
         "tail": {
             "word": "torq",
-            "id": 5062,
+            "id": 5059,
             "category": "ORG"
         },
         "relation": "none",
@@ -723,13 +723,13 @@
         "sentence_id": 47,
         "sentence": "no pr\u00f3ximo domingo , dia 23_de_setembro termina o prazo de inscri\u00e7\u00f5es para o espa\u00e7o fintechcooplab , iniciativa coordenada pelo fintechlab e pelo torq em parceria com a confebras , realizadora do evento .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "FintechLab "
+            "word": "fintechlab",
+            "id": 5058,
+            "category": "ORG"
         },
         "tail": {
             "word": "confebras",
-            "id": 5063,
+            "id": 5060,
             "category": "ORG"
         },
         "relation": "em parceria com",
@@ -739,13 +739,13 @@
         "sentence_id": 48,
         "sentence": "no pr\u00f3ximo domingo , dia 23_de_setembro termina o prazo de inscri\u00e7\u00f5es para o espa\u00e7o fintechcooplab , iniciativa coordenada pelo fintechlab e pelo torq em parceria com a confebras , realizadora do evento .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Torq"
+            "word": "torq",
+            "id": 5059,
+            "category": "ORG"
         },
         "tail": {
             "word": "confebras",
-            "id": 5063,
+            "id": 5060,
             "category": "ORG"
         },
         "relation": "em parceria com",
@@ -755,13 +755,13 @@
         "sentence_id": 49,
         "sentence": "o concred ser\u00e1 realizado entre os dias 21 e 23_de_novembro , em florian\u00f3polis ( sc ) .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "CONCRED"
+            "word": "concred",
+            "id": 5051,
+            "category": "ORG"
         },
         "tail": {
             "word": "florian\u00f3polis",
-            "id": 5065,
+            "id": 5062,
             "category": "PLC"
         },
         "relation": "em",
@@ -771,13 +771,13 @@
         "sentence_id": 50,
         "sentence": "segundo mazieiro , todo o processo \u00e9 feito por meio de tokens ( e-mail , sms e chats ) e a planetun trabalha em integra\u00e7\u00f5es e chatbots que v\u00e3o permitir ao cliente solicitar o token por diversos canais de comunica\u00e7\u00e3o com as seguradoras .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Planetun"
+            "word": "planetun",
+            "id": 5068,
+            "category": "ORG"
         },
         "tail": {
             "word": "mazieiro",
-            "id": 5067,
+            "id": 5064,
             "category": "PER"
         },
         "relation": "none",
@@ -787,13 +787,13 @@
         "sentence_id": 51,
         "sentence": "a insurtech ciclic recebeu um aporte de capital no valor de r $ _20,2_5_milh\u00f5es_de_reais da bb_seguridade , bra\u00e7o de seguros e previd\u00eancia do banco_do_brasil .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Ciclic"
+            "word": "ciclic",
+            "id": 4553,
+            "category": "ORG"
         },
         "tail": {
             "word": "bb_seguridade",
-            "id": 5079,
+            "id": 5076,
             "category": "ORG"
         },
         "relation": "recebeu um aporte de capital no valor de r$_20,2_5_milh\u00f5es_de_reais de",
@@ -803,13 +803,13 @@
         "sentence_id": 52,
         "sentence": "a insurtech ciclic recebeu um aporte de capital no valor de r $ _20,2_5_milh\u00f5es_de_reais da bb_seguridade , bra\u00e7o de seguros e previd\u00eancia do banco_do_brasil .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Ciclic"
+            "word": "ciclic",
+            "id": 4553,
+            "category": "ORG"
         },
         "tail": {
             "word": "banco_do_brasil",
-            "id": 4749,
+            "id": 4747,
             "category": "ORG"
         },
         "relation": "none",
@@ -819,13 +819,13 @@
         "sentence_id": 53,
         "sentence": "a insurtech ciclic recebeu um aporte de capital no valor de r $ _20,2_5_milh\u00f5es_de_reais da bb_seguridade , bra\u00e7o de seguros e previd\u00eancia do banco_do_brasil .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "BB_Seguridade"
+            "word": "bb_seguridade",
+            "id": 5076,
+            "category": "ORG"
         },
         "tail": {
             "word": "banco_do_brasil",
-            "id": 4749,
+            "id": 4747,
             "category": "ORG"
         },
         "relation": "bra\u00e7o de seguros e previd\u00eancia de",
@@ -835,13 +835,13 @@
         "sentence_id": 54,
         "sentence": "com o investimento , a bb_seguridade assumir\u00e1 participa\u00e7\u00e3o na insurtech , que se dar\u00e1 por meio da bb_corretora_de_seguros .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "BB_Seguridade"
+            "word": "bb_seguridade",
+            "id": 5076,
+            "category": "ORG"
         },
         "tail": {
             "word": "bb_corretora_de_seguros",
-            "id": 5083,
+            "id": 5080,
             "category": "ORG"
         },
         "relation": "assumir\u00e1 participa\u00e7\u00e3o na insurtech ,",
@@ -851,13 +851,13 @@
         "sentence_id": 55,
         "sentence": "com a proposta de fazer uso da tecnologia para inovar na gest\u00e3o de receb\u00edveis para agroind\u00fastrias , distribuidores de insumos agr\u00edcolas , cooperativas e tradings , a gira_ ( gest\u00e3_o_integrada_de_receb\u00edveis_do_agron\u00e9g\u00f3cio ) acaba de receber um aporte do fundo venture_brasil_central , gerido pela cedro_capital .",
         "head": {
-            "word": "org",
+            "word": "gira_ ( gest\u00e3_o_integrada_de_receb\u00edveis_do_agron\u00e9g\u00f3cio )",
             "id": null,
-            "category": "GIRA_(Gest\u00e3_o_Integrada_de_Receb\u00edveis_do_Agron\u00e9g\u00f3cio)"
+            "category": "ORG"
         },
         "tail": {
             "word": "venture_brasil_central",
-            "id": 5092,
+            "id": 5089,
             "category": "ORG"
         },
         "relation": ", acaba de receber um aporte de",
@@ -867,13 +867,13 @@
         "sentence_id": 56,
         "sentence": "com a proposta de fazer uso da tecnologia para inovar na gest\u00e3o de receb\u00edveis para agroind\u00fastrias , distribuidores de insumos agr\u00edcolas , cooperativas e tradings , a gira_ ( gest\u00e3_o_integrada_de_receb\u00edveis_do_agron\u00e9g\u00f3cio ) acaba de receber um aporte do fundo venture_brasil_central , gerido pela cedro_capital .",
         "head": {
-            "word": "org",
+            "word": "gira_ ( gest\u00e3_o_integrada_de_receb\u00edveis_do_agron\u00e9g\u00f3cio )",
             "id": null,
-            "category": "GIRA_(Gest\u00e3_o_Integrada_de_Receb\u00edveis_do_Agron\u00e9g\u00f3cio)"
+            "category": "ORG"
         },
         "tail": {
-            "word": " cedro_capital",
-            "id": null,
+            "word": "cedro_capital",
+            "id": 5090,
             "category": "ORG"
         },
         "relation": "none",
@@ -883,13 +883,13 @@
         "sentence_id": 57,
         "sentence": "com a proposta de fazer uso da tecnologia para inovar na gest\u00e3o de receb\u00edveis para agroind\u00fastrias , distribuidores de insumos agr\u00edcolas , cooperativas e tradings , a gira_ ( gest\u00e3_o_integrada_de_receb\u00edveis_do_agron\u00e9g\u00f3cio ) acaba de receber um aporte do fundo venture_brasil_central , gerido pela cedro_capital .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Venture_Brasil_Central"
+            "word": "venture_brasil_central",
+            "id": 5089,
+            "category": "ORG"
         },
         "tail": {
-            "word": " cedro_capital",
-            "id": null,
+            "word": "cedro_capital",
+            "id": 5090,
             "category": "ORG"
         },
         "relation": "gerido por",
@@ -899,13 +899,13 @@
         "sentence_id": 58,
         "sentence": "o fintechlab , o torq e a confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras ) , acabam de anunciar a lista das startups financeiras que ir\u00e3o apresentar suas solu\u00e7\u00f5es para o p\u00fablico presente na 12\u00aa edi\u00e7\u00e3o do concred , o maior congresso cooperativista da am\u00e9rica_latina .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "FintechLab"
+            "word": "fintechlab",
+            "id": 5058,
+            "category": "ORG"
         },
         "tail": {
             "word": "torq",
-            "id": 5062,
+            "id": 5059,
             "category": "ORG"
         },
         "relation": "none",
@@ -915,12 +915,12 @@
         "sentence_id": 59,
         "sentence": "o fintechlab , o torq e a confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras ) , acabam de anunciar a lista das startups financeiras que ir\u00e3o apresentar suas solu\u00e7\u00f5es para o p\u00fablico presente na 12\u00aa edi\u00e7\u00e3o do concred , o maior congresso cooperativista da am\u00e9rica_latina .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "FintechLab"
+            "word": "fintechlab",
+            "id": 5058,
+            "category": "ORG"
         },
         "tail": {
-            "word": "confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_(confebras)",
+            "word": "confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras )",
             "id": null,
             "category": "ORG"
         },
@@ -931,13 +931,13 @@
         "sentence_id": 60,
         "sentence": "o fintechlab , o torq e a confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras ) , acabam de anunciar a lista das startups financeiras que ir\u00e3o apresentar suas solu\u00e7\u00f5es para o p\u00fablico presente na 12\u00aa edi\u00e7\u00e3o do concred , o maior congresso cooperativista da am\u00e9rica_latina .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "FintechLab"
+            "word": "fintechlab",
+            "id": 5058,
+            "category": "ORG"
         },
         "tail": {
             "word": "am\u00e9rica_latina",
-            "id": 4586,
+            "id": 4584,
             "category": "PLC"
         },
         "relation": "none",
@@ -947,12 +947,12 @@
         "sentence_id": 61,
         "sentence": "o fintechlab , o torq e a confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras ) , acabam de anunciar a lista das startups financeiras que ir\u00e3o apresentar suas solu\u00e7\u00f5es para o p\u00fablico presente na 12\u00aa edi\u00e7\u00e3o do concred , o maior congresso cooperativista da am\u00e9rica_latina .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Torq"
+            "word": "torq",
+            "id": 5059,
+            "category": "ORG"
         },
         "tail": {
-            "word": "confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_(confebras)",
+            "word": "confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras )",
             "id": null,
             "category": "ORG"
         },
@@ -963,13 +963,13 @@
         "sentence_id": 62,
         "sentence": "o fintechlab , o torq e a confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras ) , acabam de anunciar a lista das startups financeiras que ir\u00e3o apresentar suas solu\u00e7\u00f5es para o p\u00fablico presente na 12\u00aa edi\u00e7\u00e3o do concred , o maior congresso cooperativista da am\u00e9rica_latina .",
         "head": {
-            "word": "org",
-            "id": null,
-            "category": "Torq"
+            "word": "torq",
+            "id": 5059,
+            "category": "ORG"
         },
         "tail": {
             "word": "am\u00e9rica_latina",
-            "id": 4586,
+            "id": 4584,
             "category": "PLC"
         },
         "relation": "none",
@@ -979,13 +979,13 @@
         "sentence_id": 63,
         "sentence": "o fintechlab , o torq e a confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras ) , acabam de anunciar a lista das startups financeiras que ir\u00e3o apresentar suas solu\u00e7\u00f5es para o p\u00fablico presente na 12\u00aa edi\u00e7\u00e3o do concred , o maior congresso cooperativista da am\u00e9rica_latina .",
         "head": {
-            "word": "org",
+            "word": "confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras )",
             "id": null,
-            "category": "Confedera\u00e7\u00e3o_Brasileira_das_Cooperativas_de_Cr\u00e9dito_(Confebras)"
+            "category": "ORG"
         },
         "tail": {
             "word": "am\u00e9rica_latina",
-            "id": 4586,
+            "id": 4584,
             "category": "PLC"
         },
         "relation": "none",

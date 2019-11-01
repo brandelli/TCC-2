@@ -6,7 +6,7 @@ def process_entity_data(cur_dict, key, value):
     '''
     # Necessário verificar a qual argumento a entidade pertence
     entity = cur_dict.get('head') if key == 'argument_1' else cur_dict.get('tail')
-    entity['word'] = value.lower().replace("'", '')
+    entity['word'] = ' '.join(tokenize.word_tokenize(value.lower().replace("'", ''), language='portuguese'))
 
 def process_category_data(cur_dict, key, value):
     '''
