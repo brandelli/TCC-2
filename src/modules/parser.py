@@ -224,7 +224,7 @@ class Parser:
 
         self.create_sentence_input(word_to_id)
         #self.create_entity_input()
-        #self.create_pos_tag_input()
+        self.create_pos_tag_input()
         #self.create_word_embeddings_weight()
         
     
