@@ -4,12 +4,12 @@
         "sentence": "a kroton anunciou uma parceria com o cubo_ita\u00fa , que dar\u00e1 origem \u00e0 vertical \u201c cubo education \u201d , um espa\u00e7o dedicado ao fomento de edtechs \u2013 tecnologia aplicada \u00e0 educa\u00e7\u00e3o .",
         "head": {
             "word": "kroton",
-            "id": null,
+            "id": 4950,
             "category": "ORG"
         },
         "tail": {
             "word": "cubo_ita\u00fa",
-            "id": null,
+            "id": 4742,
             "category": "ORG"
         },
         "relation": "anunciou uma parceria com",
@@ -20,12 +20,12 @@
         "sentence": "o evento summit_agrihub reuniu nesta quinta-feira ( 19/04 ) , em cuiab\u00e1 , produtores rurais vindos de v\u00e1rios munic\u00edpios de mato_grosso , pesquisadores e empresas de tecnologias do brasil para debater as novidades incorporadas aos sistemas de produ\u00e7\u00e3o .",
         "head": {
             "word": "summit_agrihub",
-            "id": null,
+            "id": 4958,
             "category": "ORG"
         },
         "tail": {
             "word": "cuiab\u00e1",
-            "id": null,
+            "id": 4961,
             "category": "PLC"
         },
         "relation": "reuniu em",
@@ -36,12 +36,12 @@
         "sentence": "o evento summit_agrihub reuniu nesta quinta-feira ( 19/04 ) , em cuiab\u00e1 , produtores rurais vindos de v\u00e1rios munic\u00edpios de mato_grosso , pesquisadores e empresas de tecnologias do brasil para debater as novidades incorporadas aos sistemas de produ\u00e7\u00e3o .",
         "head": {
             "word": "summit_agrihub",
-            "id": null,
+            "id": 4958,
             "category": "ORG"
         },
         "tail": {
             "word": "mato_grosso",
-            "id": null,
+            "id": 4964,
             "category": "PLC"
         },
         "relation": "none",
@@ -52,12 +52,12 @@
         "sentence": "o evento summit_agrihub reuniu nesta quinta-feira ( 19/04 ) , em cuiab\u00e1 , produtores rurais vindos de v\u00e1rios munic\u00edpios de mato_grosso , pesquisadores e empresas de tecnologias do brasil para debater as novidades incorporadas aos sistemas de produ\u00e7\u00e3o .",
         "head": {
             "word": "summit_agrihub",
-            "id": null,
+            "id": 4958,
             "category": "ORG"
         },
         "tail": {
             "word": "brasil",
-            "id": null,
+            "id": 857,
             "category": "PLC"
         },
         "relation": "none",
@@ -68,7 +68,7 @@
         "sentence": "o su\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "bradesco",
-            "id": null,
+            "id": 4748,
             "category": "ORG"
         },
         "tail": {
@@ -84,12 +84,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "bradesco",
-            "id": null,
+            "id": 4748,
             "category": "ORG"
         },
         "tail": {
             "word": "ita\u00fa",
-            "id": null,
+            "id": 4737,
             "category": "ORG"
         },
         "relation": "none",
@@ -100,12 +100,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "bradesco",
-            "id": null,
+            "id": 4748,
             "category": "ORG"
         },
         "tail": {
             "word": "safra",
-            "id": null,
+            "id": 4764,
             "category": "ORG"
         },
         "relation": "none",
@@ -116,12 +116,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "banco_do_brasil",
-            "id": null,
+            "id": 4749,
             "category": "ORG"
         },
         "tail": {
             "word": "ita\u00fa",
-            "id": null,
+            "id": 4737,
             "category": "ORG"
         },
         "relation": "none",
@@ -132,12 +132,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "banco_do_brasil",
-            "id": null,
+            "id": 4749,
             "category": "ORG"
         },
         "tail": {
             "word": "safra",
-            "id": null,
+            "id": 4764,
             "category": "ORG"
         },
         "relation": "none",
@@ -148,12 +148,12 @@
         "sentence": "o usu\u00e1rio consegue comparar prazos , condi\u00e7\u00f5es , juros dessa modalidade de cr\u00e9dito de diversosbancos , como bradesco , banco_do_brasil , ita\u00fa , safra , e faz a contrata\u00e7\u00e3o ali mesmo , de acordocom a sua necessidde.pr a os bancos , a plataforma \u00e9 um meio de atra\u00e7\u00e3o de clientes , mas principalmente , umdegrau para acelerar a corrida pela digitaliza\u00e7\u00e3o de servi\u00e7os .",
         "head": {
             "word": "ita\u00fa",
-            "id": null,
+            "id": 4737,
             "category": "ORG"
         },
         "tail": {
             "word": "safra",
-            "id": null,
+            "id": 4764,
             "category": "ORG"
         },
         "relation": "none",
@@ -164,7 +164,7 @@
         "sentence": "agrotools promove painel sobre transforma\u00e7\u00e3o digital do seguro rural e o cr\u00e9dito no agroneg\u00f3cio ; evento \u00e9 restrito a convidados o que o setor de fintech tem a ver com o agtech ?",
         "head": {
             "word": "agrotools",
-            "id": null,
+            "id": 4980,
             "category": "ORG"
         },
         "tail": {
@@ -180,12 +180,12 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "agfintech",
-            "id": null,
+            "id": 4987,
             "category": "ORG"
         },
         "tail": {
             "word": "casa_do_saber",
-            "id": null,
+            "id": 4989,
             "category": "ORG"
         },
         "relation": " vai reunir em ",
@@ -196,12 +196,12 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "agfintech",
-            "id": null,
+            "id": 4987,
             "category": "ORG"
         },
         "tail": {
             "word": "s\u00e3o_paulo",
-            "id": null,
+            "id": 379,
             "category": "PLC"
         },
         "relation": "em",
@@ -212,12 +212,12 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "agfintech",
-            "id": null,
+            "id": 4987,
             "category": "ORG"
         },
         "tail": {
             "word": "banco_central",
-            "id": null,
+            "id": 4993,
             "category": "ORG"
         },
         "relation": "none",
@@ -228,12 +228,12 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "agfintech",
-            "id": null,
+            "id": 4987,
             "category": "ORG"
         },
         "tail": {
             "word": "casa_do_saber",
-            "id": null,
+            "id": 4989,
             "category": "ORG"
         },
         "relation": "none",
@@ -244,12 +244,12 @@
         "sentence": "o agfintech \u2013 a nova era do seguro e cr\u00e9dito rural vai reunir , na casa_do_saber , em s\u00e3o_paulo , especialistas de institui\u00e7\u00f5es financeiras , al\u00e9m de representante do banco_central , para falar sobre temas como a resolu\u00e7\u00e3o 4.42 7 do bacen , que permite a utiliza\u00e7\u00e3o do sensoriamento remoto para fins de fiscaliza\u00e7\u00e3o de opera\u00e7\u00f5es de cr\u00e9dito rural .",
         "head": {
             "word": "banco_central",
-            "id": null,
+            "id": 4993,
             "category": "ORG"
         },
         "tail": {
             "word": "s\u00e3o_paulo",
-            "id": null,
+            "id": 379,
             "category": "PLC"
         },
         "relation": "none",
@@ -265,7 +265,7 @@
         },
         "tail": {
             "word": "sergio_furio",
-            "id": null,
+            "id": 5006,
             "category": "PER"
         },
         "relation": "fundador de uma das maiores fintechs de cr\u00e9dito do pa\u00eds",
@@ -281,7 +281,7 @@
         },
         "tail": {
             "word": "pa\u00eds",
-            "id": null,
+            "id": 1469,
             "category": "PLC"
         },
         "relation": "none",
@@ -292,12 +292,12 @@
         "sentence": "nossa meta \u00e9 alcan\u00e7ar 10_mil empr\u00e9stimos por m\u00eas \u201d , contou mellissa_penteado , ceo do bancoin .",
         "head": {
             "word": "ceo",
-            "id": null,
+            "id": 4932,
             "category": "ORG"
         },
         "tail": {
             "word": "mellissa_penteado",
-            "id": null,
+            "id": 5012,
             "category": "PER"
         },
         "relation": "none",
@@ -308,12 +308,12 @@
         "sentence": "nossa meta \u00e9 alcan\u00e7ar 10_mil empr\u00e9stimos por m\u00eas \u201d , contou mellissa_penteado , ceo do bancoin .",
         "head": {
             "word": "ceo",
-            "id": null,
+            "id": 4932,
             "category": "PER"
         },
         "tail": {
             "word": "bancoin",
-            "id": null,
+            "id": 5013,
             "category": "ORG"
         },
         "relation": "de",
@@ -329,7 +329,7 @@
         },
         "tail": {
             "word": "mellissa_penteado",
-            "id": null,
+            "id": 5012,
             "category": "PER"
         },
         "relation": "ceo de",
@@ -345,7 +345,7 @@
         },
         "tail": {
             "word": "pwc_brasil",
-            "id": null,
+            "id": 5019,
             "category": "ORG"
         },
         "relation": "none",
@@ -361,7 +361,7 @@
         },
         "tail": {
             "word": "agrimart",
-            "id": null,
+            "id": 5023,
             "category": "ORG"
         },
         "relation": "none",
@@ -377,7 +377,7 @@
         },
         "tail": {
             "word": "percival_lucena",
-            "id": null,
+            "id": 5042,
             "category": "PER"
         },
         "relation": "pesquisador de",
@@ -393,7 +393,7 @@
         },
         "tail": {
             "word": "fernando_martins",
-            "id": null,
+            "id": 5044,
             "category": "PER"
         },
         "relation": "none",
@@ -409,7 +409,7 @@
         },
         "tail": {
             "word": "jacto",
-            "id": null,
+            "id": 5046,
             "category": "ORG"
         },
         "relation": "none",
@@ -425,7 +425,7 @@
         },
         "tail": {
             "word": "agtech",
-            "id": null,
+            "id": 4662,
             "category": "ORG"
         },
         "relation": "none",
@@ -441,7 +441,7 @@
         },
         "tail": {
             "word": "rodrigo_iafelice_dos_santos",
-            "id": null,
+            "id": 5047,
             "category": "PER"
         },
         "relation": "none",
@@ -457,7 +457,7 @@
         },
         "tail": {
             "word": "ennexas_agribusiness",
-            "id": null,
+            "id": 5048,
             "category": "ORG"
         },
         "relation": "none",
@@ -505,7 +505,7 @@
         },
         "tail": {
             "word": "agtech",
-            "id": null,
+            "id": 4662,
             "category": "ORG"
         },
         "relation": "none",
@@ -521,7 +521,7 @@
         },
         "tail": {
             "word": "rodrigo_iafelice_dos_santos",
-            "id": null,
+            "id": 5047,
             "category": "PER"
         },
         "relation": "none",
@@ -537,7 +537,7 @@
         },
         "tail": {
             "word": "ennexas_agribusiness",
-            "id": null,
+            "id": 5048,
             "category": "ORG"
         },
         "relation": "none",
@@ -553,7 +553,7 @@
         },
         "tail": {
             "word": "percival_lucena",
-            "id": null,
+            "id": 5042,
             "category": "PER"
         },
         "relation": "none",
@@ -569,7 +569,7 @@
         },
         "tail": {
             "word": "fernando_martins",
-            "id": null,
+            "id": 5044,
             "category": "PER"
         },
         "relation": "none",
@@ -585,7 +585,7 @@
         },
         "tail": {
             "word": "rodrigo_iafelice_dos_santos",
-            "id": null,
+            "id": 5047,
             "category": "PER"
         },
         "relation": "none",
@@ -601,7 +601,7 @@
         },
         "tail": {
             "word": "percival_lucena",
-            "id": null,
+            "id": 5042,
             "category": "PER"
         },
         "relation": "none",
@@ -617,7 +617,7 @@
         },
         "tail": {
             "word": "fernando_martins",
-            "id": null,
+            "id": 5044,
             "category": "PER"
         },
         "relation": "none",
@@ -633,7 +633,7 @@
         },
         "tail": {
             "word": "rodrigo_iafelice_dos_santos",
-            "id": null,
+            "id": 5047,
             "category": "PER"
         },
         "relation": "presidente de",
@@ -649,7 +649,7 @@
         },
         "tail": {
             "word": "sap",
-            "id": null,
+            "id": 5051,
             "category": "ORG"
         },
         "relation": "contou com patroc\u00ednio de",
@@ -665,7 +665,7 @@
         },
         "tail": {
             "word": "clube_agro_e_azul_linhas_a\u00e9reas",
-            "id": null,
+            "id": 5052,
             "category": "ORG"
         },
         "relation": "contou com patroc\u00ednio de",
@@ -681,7 +681,7 @@
         },
         "tail": {
             "word": "clube_agro_e_azul_linhas_a\u00e9reas",
-            "id": null,
+            "id": 5052,
             "category": "ORG"
         },
         "relation": "none",
@@ -697,7 +697,7 @@
         },
         "tail": {
             "word": "am\u00e9rica_latina",
-            "id": null,
+            "id": 4586,
             "category": "PLC"
         },
         "relation": "o maior congresso cooperativista da",
@@ -713,7 +713,7 @@
         },
         "tail": {
             "word": "torq",
-            "id": null,
+            "id": 5062,
             "category": "ORG"
         },
         "relation": "none",
@@ -729,7 +729,7 @@
         },
         "tail": {
             "word": "confebras",
-            "id": null,
+            "id": 5063,
             "category": "ORG"
         },
         "relation": "em parceria com",
@@ -745,7 +745,7 @@
         },
         "tail": {
             "word": "confebras",
-            "id": null,
+            "id": 5063,
             "category": "ORG"
         },
         "relation": "em parceria com",
@@ -761,7 +761,7 @@
         },
         "tail": {
             "word": "florian\u00f3polis",
-            "id": null,
+            "id": 5065,
             "category": "PLC"
         },
         "relation": "em",
@@ -777,7 +777,7 @@
         },
         "tail": {
             "word": "mazieiro",
-            "id": null,
+            "id": 5067,
             "category": "PER"
         },
         "relation": "none",
@@ -793,7 +793,7 @@
         },
         "tail": {
             "word": "bb_seguridade",
-            "id": null,
+            "id": 5079,
             "category": "ORG"
         },
         "relation": "recebeu um aporte de capital no valor de r$_20,2_5_milh\u00f5es_de_reais de",
@@ -809,7 +809,7 @@
         },
         "tail": {
             "word": "banco_do_brasil",
-            "id": null,
+            "id": 4749,
             "category": "ORG"
         },
         "relation": "none",
@@ -825,7 +825,7 @@
         },
         "tail": {
             "word": "banco_do_brasil",
-            "id": null,
+            "id": 4749,
             "category": "ORG"
         },
         "relation": "bra\u00e7o de seguros e previd\u00eancia de",
@@ -841,7 +841,7 @@
         },
         "tail": {
             "word": "bb_corretora_de_seguros",
-            "id": null,
+            "id": 5083,
             "category": "ORG"
         },
         "relation": "assumir\u00e1 participa\u00e7\u00e3o na insurtech ,",
@@ -857,7 +857,7 @@
         },
         "tail": {
             "word": "venture_brasil_central",
-            "id": null,
+            "id": 5092,
             "category": "ORG"
         },
         "relation": ", acaba de receber um aporte de",
@@ -905,7 +905,7 @@
         },
         "tail": {
             "word": "torq",
-            "id": null,
+            "id": 5062,
             "category": "ORG"
         },
         "relation": "none",
@@ -937,7 +937,7 @@
         },
         "tail": {
             "word": "am\u00e9rica_latina",
-            "id": null,
+            "id": 4586,
             "category": "PLC"
         },
         "relation": "none",
@@ -969,7 +969,7 @@
         },
         "tail": {
             "word": "am\u00e9rica_latina",
-            "id": null,
+            "id": 4586,
             "category": "PLC"
         },
         "relation": "none",
@@ -985,7 +985,7 @@
         },
         "tail": {
             "word": "am\u00e9rica_latina",
-            "id": null,
+            "id": 4586,
             "category": "PLC"
         },
         "relation": "none",

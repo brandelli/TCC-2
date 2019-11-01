@@ -51,7 +51,7 @@ class Parser:
         self.convert_src_to_json_files()
 
         # chamada para criação de dicionários: word_to_id e reverse_dict
-        #self.create_word_dicts()
+        self.create_word_dicts()
 
         # chamada para formatação de inputs que serão utilizados pelo modelo
         #self.parse_inputs_for_model()
