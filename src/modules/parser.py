@@ -9,7 +9,7 @@ class Parser:
     word_id = 1
     entity_type_id = 0
     pos_tag_id = 1
-    padding_size = 100
+    padding_size = 150
 
     def __init__(self, config):
         self.config = config
@@ -224,8 +224,8 @@ class Parser:
 
         dict_input_sentences = self.create_sentence_input(word_to_id)
         self.create_entity_input(word_to_id, dict_input_sentences)
-        self.create_pos_tag_input()
-        self.create_word_embeddings_weight()
+        #self.create_pos_tag_input()
+        #self.create_word_embeddings_weight()
         
     
     def create_sentence_input(self, word_to_id):
@@ -284,29 +284,28 @@ class Parser:
         '''
         entities_input = []
         for index, data in enumerate(dataset):
-            print(f'--------------------{index}--------------------------')
             sentence = data.get('sentence')
             head = data.get('head').get('word')
             tail = data.get('tail').get('word')
-            print(f'head: {head}')
-            print(f'tail: {tail}')
             entity_input = []
             list_head = [word_id.get(val) for val in head.split(' ')]
             list_tail = [word_id.get(val) for val in tail.split(' ')]
             input_sentence = input_sentences[index]
             list_head_tuple = [(i, i+len(list_head)) for i in range(len(input_sentence)) if input_sentence[i:i+len(list_head)] == list_head]
             list_tail_tuple = [(i, i+len(list_tail)) for i in range(len(input_sentence)) if input_sentence[i:i+len(list_tail)] == list_tail]
-            
-            print(list_head_tuple)
-            print(list_tail_tuple)
-            print(list_head)
-            print(list_tail)
-            print(input_sentence)
-            print(list_head_tuple[0][0])
-            print(list_head_tuple[0][1])
-            
+            self.include_padding(entity_input)
+            self.mark_entities_in_sentence(entity_input, list_head_tuple)
+            self.mark_entities_in_sentence(entity_input, list_tail_tuple)            
             entities_input.append(entity_input)
+        
         return entities_input
+
+
+    def mark_entities_in_sentence(self, list_sentence, tuples):
+        for tup in tuples:
+            begin, end = tup[0], tup[1]
+            for i in range(begin, end):
+                list_sentence[i] = 1
 
 
     def create_word_dicts(self):
