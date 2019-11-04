@@ -1,6 +1,6 @@
 {
     "parse" : {
-            "parse" : true
+            "parse" : false
     },
 
     "dataset" : {
@@ -20,7 +20,7 @@
     },
 
     "word_embeddings" : {
-        "real"                        : false,
+        "real"                        : true,
         "path"                        : "data/word_embeddings/",
         "example_src"                 : "example/word_embeddings.txt",
         "real_src"                    : "real/word_embeddings.txt",

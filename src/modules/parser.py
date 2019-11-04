@@ -239,8 +239,8 @@ class Parser:
 
         dict_input_sentences = self.create_sentence_input(word_to_id)
         self.create_entity_input(word_to_id, dict_input_sentences)
-        #self.create_pos_tag_input()
-        #self.create_word_embeddings_weight()
+        self.create_pos_tag_input()
+        self.create_word_embeddings_weight()
         
     
     def create_sentence_input(self, word_to_id):
