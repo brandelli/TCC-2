@@ -57,7 +57,7 @@ class Parser:
         self.parse_inputs_for_model()
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
-        #self.create_output_for_model()
+        self.create_output_for_model()
 
 
     def create_pos_tag_input(self):
@@ -133,34 +133,49 @@ class Parser:
         '''
         output_config = self.get_config('output')
         dataset_config = self.get_config('dataset')
+        input_config = self.get_config('input')
+        word_id_config = self.get_config('word_to_id')
+        word_id = file_helper.get_json_file_data(word_id_config.get('path'), word_id_config.get('dict'))
         for dataset_type in self.dataset_types:
             dataset_filename = 'train_json' if dataset_type == 'train' else 'test_json'
+            input_filename = 'train_sentence_input' if dataset_type == 'train' else 'test_sentence_input'
             output_filename = 'train_sentence_output' if dataset_type == 'train' else 'test_sentence_output'
+            input_sentences = file_helper.get_json_file_data(input_config.get('path'), input_config.get(input_filename))
             dataset = file_helper.get_json_file_data(dataset_config.get('path'), dataset_config.get(dataset_filename))
-            sentences_output = self.parse_output_sentence(dataset)
+            sentences_output = self.parse_output_sentence(dataset, word_id, input_sentences)
             file_helper.dict_to_json(output_config.get('path'), output_config.get(output_filename), sentences_output, 4)
 
 
-    def parse_output_sentence(self, dataset):
+    def parse_output_sentence(self, dataset, word_id, input_sentences):
         '''
         Faz o parse do output das sentenças, onde é utilizado um vetor binário com  a seguinte representação:
             0 -> palavra normal (não faz parte do relacionamento)
             1 -> palavra do relacionamento
         '''
+        
         sentences_output = []
-        for data in dataset:
+        for index, data in enumerate(dataset):
             cur_sentence = [0] * self.padding_size
             sentence = data.get('sentence')
-            head = data.get('head').get('word')
-            tail = data.get('tail').get('word')
-            relation = data.get('relation')
-            begin, end = self.extract_relation_from_sentence(sentence, head, tail, relation)
-            fn_lambda = lambda index: 0 if index < begin or index >= end else 1
-            cur_sentence = [fn_lambda(index) for index, _ in enumerate(cur_sentence)]
+            relation_words = data.get('relation')
+            # possivel não haver relacionamento na sentença
+            if relation_words != 'none':
+                relation = [word_id.get(val) for val in data.get('relation').split(' ')]
+                input_sentence = input_sentences[index]
+                list_relations = [(i, i+len(relation)) for i in range(len(input_sentence)) if input_sentence[i:i+len(relation)] == relation]
+                self.mark_relation_in_sentence(cur_sentence, list_relations)
+
             sentences_output.append(cur_sentence)
         
         return sentences_output
     
+
+    def mark_relation_in_sentence(self, sentence, relations):
+        relation = relations[0]
+        begin, end = relation[0], relation[1]
+        for i in range(begin, end):
+            sentence[i] = 1
+
 
     def extract_relation_from_sentence(self, sentence, head, tail, relation):
         '''

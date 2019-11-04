@@ -28,7 +28,7 @@
             "id": 4958,
             "category": "PLC"
         },
-        "relation": "reuniu em",
+        "relation": "reuniu",
         "relation_id": 2
     },
     {
@@ -188,7 +188,7 @@
             "id": 4986,
             "category": "ORG"
         },
-        "relation": " vai reunir em ",
+        "relation": "vai reunir",
         "relation_id": 5
     },
     {
@@ -316,7 +316,7 @@
             "id": 5010,
             "category": "ORG"
         },
-        "relation": "de",
+        "relation": "do",
         "relation_id": 7
     },
     {
@@ -332,7 +332,7 @@
             "id": 5009,
             "category": "PER"
         },
-        "relation": "ceo de",
+        "relation": "ceo do",
         "relation_id": 7
     },
     {
@@ -380,7 +380,7 @@
             "id": 5039,
             "category": "PER"
         },
-        "relation": "pesquisador de",
+        "relation": "pesquisador da",
         "relation_id": 11
     },
     {
@@ -492,7 +492,7 @@
             "id": 5041,
             "category": "PER"
         },
-        "relation": "conselheiro de",
+        "relation": "conselheiro da",
         "relation_id": 11
     },
     {
@@ -636,7 +636,7 @@
             "id": 5044,
             "category": "PER"
         },
-        "relation": "presidente de",
+        "relation": "presidente da",
         "relation_id": 11
     },
     {
@@ -796,7 +796,7 @@
             "id": 5076,
             "category": "ORG"
         },
-        "relation": "recebeu um aporte de capital no valor de r$_20,2_5_milh\u00f5es_de_reais de",
+        "relation": "recebeu um aporte de capital no valor de",
         "relation_id": 17
     },
     {
@@ -828,7 +828,7 @@
             "id": 4747,
             "category": "ORG"
         },
-        "relation": "bra\u00e7o de seguros e previd\u00eancia de",
+        "relation": "bra\u00e7o de seguros e previd\u00eancia do",
         "relation_id": 17
     },
     {
@@ -860,7 +860,7 @@
             "id": 5089,
             "category": "ORG"
         },
-        "relation": ", acaba de receber um aporte de",
+        "relation": "acaba de receber um aporte do",
         "relation_id": 19
     },
     {
@@ -892,7 +892,7 @@
             "id": 5090,
             "category": "ORG"
         },
-        "relation": "gerido por",
+        "relation": "gerido pela",
         "relation_id": 19
     },
     {

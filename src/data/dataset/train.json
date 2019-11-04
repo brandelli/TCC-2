@@ -3937,7 +3937,7 @@
     },
     {
         "sentence_id": null,
-        "sentence": "money 1 o escritor clive_cussler , autor de as aventuras de dirk_pitt , assinou um contrato de us $ 14s com a simon_ & _schuster para a publica\u00e7\u00e3o de dois livros .",
+        "sentence": "money 1 o escritor clive_cussler , autor de as aventuras de dirk_pitt , assinou com contrato de us $ 14s com a simon_ & _schuster para a publica\u00e7\u00e3o de dois livros .",
         "head": {
             "word": "clive_cussler",
             "id": 1254,
@@ -4556,7 +4556,7 @@
             "id": 1612,
             "category": "ORG"
         },
-        "relation": "juntou as lideran\u00e7as de",
+        "relation": "juntou as principais lideran\u00e7as de",
         "relation_id": null
     },
     {
@@ -4572,7 +4572,7 @@
             "id": 1613,
             "category": "ORG"
         },
-        "relation": "juntou as lideran\u00e7as de",
+        "relation": "juntou as principais lideran\u00e7as de",
         "relation_id": null
     },
     {
@@ -5580,7 +5580,7 @@
             "id": 2293,
             "category": "ORG"
         },
-        "relation": "destacou para",
+        "relation": "destacou",
         "relation_id": null
     },
     {
@@ -5852,7 +5852,7 @@
             "id": 2469,
             "category": "PER"
         },
-        "relation": "apresentou cineastas como",
+        "relation": "apresentou",
         "relation_id": null
     },
     {
@@ -5884,7 +5884,7 @@
             "id": 2490,
             "category": "ORG"
         },
-        "relation": "ocupa o 4.\u00ba lugar entre as organiza\u00e7\u00f5es inscritas em",
+        "relation": "ocupa",
         "relation_id": null
     },
     {
@@ -5916,7 +5916,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "seguiu para",
+        "relation": "seguiu",
         "relation_id": null
     },
     {
@@ -6332,7 +6332,7 @@
             "id": 379,
             "category": "PLC"
         },
-        "relation": "pesquisando em",
+        "relation": "pesquisando",
         "relation_id": null
     },
     {
@@ -6396,7 +6396,7 @@
             "id": 2515,
             "category": "PER"
         },
-        "relation": "deve a",
+        "relation": "deve-se",
         "relation_id": null
     },
     {
@@ -6460,7 +6460,7 @@
             "id": 2761,
             "category": "ORG"
         },
-        "relation": "deixou cuidar de os especiais de fim de ano de",
+        "relation": "deixou",
         "relation_id": null
     },
     {
@@ -7516,7 +7516,7 @@
             "id": 3227,
             "category": "ORG"
         },
-        "relation": "elei\u00e7\u00f5es para",
+        "relation": "elei\u00e7\u00f5es",
         "relation_id": null
     },
     {
@@ -7532,7 +7532,7 @@
             "id": 3227,
             "category": "ORG"
         },
-        "relation": "elei\u00e7\u00f5es para",
+        "relation": "elei\u00e7\u00f5es",
         "relation_id": null
     },
     {
@@ -7868,7 +7868,7 @@
             "id": 1625,
             "category": "ORG"
         },
-        "relation": "aproximou- se politicamente de",
+        "relation": "aproximou-se",
         "relation_id": null
     },
     {
@@ -7996,7 +7996,7 @@
             "id": 2019,
             "category": "ORG"
         },
-        "relation": "foi o vencedor de o concurso de set\u00fabal aberto recentemente por a",
+        "relation": "foi o vencedor de o concurso de",
         "relation_id": null
     },
     {
@@ -8156,7 +8156,7 @@
             "id": 3057,
             "category": "ORG"
         },
-        "relation": "primeiro-ministro e presidente de",
+        "relation": "primeiro-ministro",
         "relation_id": null
     },
     {
@@ -8716,7 +8716,7 @@
             "id": 1605,
             "category": "ORG"
         },
-        "relation": "prestando a",
+        "relation": "prestando",
         "relation_id": null
     },
     {
@@ -8748,7 +8748,7 @@
             "id": 3615,
             "category": "PER"
         },
-        "relation": "deve a",
+        "relation": "deve",
         "relation_id": null
     },
     {
@@ -8812,7 +8812,7 @@
             "id": 2941,
             "category": "PLC"
         },
-        "relation": "tem um acervo de imagens de",
+        "relation": "tem um",
         "relation_id": null
     },
     {
@@ -9276,7 +9276,7 @@
             "id": 3416,
             "category": "ORG"
         },
-        "relation": "candidato de",
+        "relation": "candidato",
         "relation_id": null
     },
     {
@@ -9452,7 +9452,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "abre perspectivas em",
+        "relation": "abre perspectivas",
         "relation_id": null
     },
     {
@@ -9628,7 +9628,7 @@
             "id": 1340,
             "category": "PLC"
         },
-        "relation": "tem apoio em",
+        "relation": "tem apoio",
         "relation_id": null
     },
     {
@@ -9724,7 +9724,7 @@
             "id": 3958,
             "category": "PLC"
         },
-        "relation": "\u00e9 ag\u00eancias de viagens de",
+        "relation": "\u00e9",
         "relation_id": null
     },
     {
@@ -10396,7 +10396,7 @@
             "id": 4148,
             "category": "PLC"
         },
-        "relation": "investir em",
+        "relation": "investir",
         "relation_id": null
     },
     {
@@ -10428,7 +10428,7 @@
             "id": 4150,
             "category": "PLC"
         },
-        "relation": "investir em",
+        "relation": "investir",
         "relation_id": null
     },
     {
@@ -10444,7 +10444,7 @@
             "id": 4142,
             "category": "PLC"
         },
-        "relation": "investir em",
+        "relation": "investir",
         "relation_id": null
     },
     {
@@ -11068,7 +11068,7 @@
             "id": 3573,
             "category": "ORG"
         },
-        "relation": "contribuiu com 1.043.00000 enviados para os recursos gerais de a",
+        "relation": "contribuiu com",
         "relation_id": null
     },
     {
@@ -11724,7 +11724,7 @@
             "id": 4426,
             "category": "PER"
         },
-        "relation": "n\u00e3o contatar",
+        "relation": "contatar",
         "relation_id": null
     },
     {
@@ -11788,7 +11788,7 @@
             "id": 3004,
             "category": "PER"
         },
-        "relation": "fundada por",
+        "relation": "fundada",
         "relation_id": null
     },
     {
@@ -11916,7 +11916,7 @@
             "id": 4482,
             "category": "ORG"
         },
-        "relation": "fez os trabalhos de",
+        "relation": "fez",
         "relation_id": null
     },
     {
@@ -12044,7 +12044,7 @@
             "id": 4516,
             "category": "PER"
         },
-        "relation": "s\u00f3cio respons\u00e1vel por",
+        "relation": "s\u00f3cio respons\u00e1vel pela",
         "relation_id": null
     },
     {
@@ -12092,7 +12092,7 @@
             "id": 4526,
             "category": "PER"
         },
-        "relation": "deixou a sociedade de",
+        "relation": "deixou a sociedade do",
         "relation_id": null
     },
     {
@@ -12108,7 +12108,7 @@
             "id": 4532,
             "category": "PER"
         },
-        "relation": "ajudou a fundar em",
+        "relation": "ajudou a fundar",
         "relation_id": null
     },
     {
@@ -12124,7 +12124,7 @@
             "id": 4533,
             "category": "PER"
         },
-        "relation": "ajudou a fundar em",
+        "relation": "ajudou a fundar",
         "relation_id": null
     },
     {
@@ -12140,7 +12140,7 @@
             "id": 4532,
             "category": "PER"
         },
-        "relation": "egressos de",
+        "relation": "egressos do",
         "relation_id": null
     },
     {
@@ -12156,7 +12156,7 @@
             "id": 4533,
             "category": "PER"
         },
-        "relation": "egressos de",
+        "relation": "egressos do",
         "relation_id": null
     },
     {
@@ -12316,7 +12316,7 @@
             "id": 4559,
             "category": "PER"
         },
-        "relation": "cofundador de",
+        "relation": "cofundador do",
         "relation_id": null
     },
     {
@@ -12348,7 +12348,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "anuncia cart\u00e3o pr\u00e9-pago em",
+        "relation": "anuncia cart\u00e3o pr\u00e9-pago",
         "relation_id": null
     },
     {
@@ -12364,7 +12364,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "planeja consolidar polos tecnol\u00f3gicos em",
+        "relation": "planeja consolidar polos tecnol\u00f3gicos",
         "relation_id": null
     },
     {
@@ -12428,7 +12428,7 @@
             "id": 235,
             "category": "PLC"
         },
-        "relation": "nasceu em",
+        "relation": "nasceu",
         "relation_id": null
     },
     {
@@ -12444,7 +12444,7 @@
             "id": 90,
             "category": "PLC"
         },
-        "relation": "cresceu em",
+        "relation": "cresceu",
         "relation_id": null
     },
     {
@@ -12460,7 +12460,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "chegou a",
+        "relation": "chegou",
         "relation_id": null
     },
     {
@@ -12476,7 +12476,7 @@
             "id": 4600,
             "category": "ORG"
         },
-        "relation": "selecionou 20 projetos de fintechs que integrar\u00e3o",
+        "relation": "selecionou",
         "relation_id": null
     },
     {
@@ -12492,7 +12492,7 @@
             "id": 4606,
             "category": "ORG"
         },
-        "relation": "controladora de",
+        "relation": "controladora da",
         "relation_id": null
     },
     {
@@ -12508,7 +12508,7 @@
             "id": 4607,
             "category": "ORG"
         },
-        "relation": "controladora de",
+        "relation": "controladora da",
         "relation_id": null
     },
     {
@@ -12572,7 +12572,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "prepara expans\u00e3o em",
+        "relation": "prepara expans\u00e3o",
         "relation_id": null
     },
     {
@@ -12588,7 +12588,7 @@
             "id": 4618,
             "category": "PER"
         },
-        "relation": "fundadores de",
+        "relation": "fundadores da",
         "relation_id": null
     },
     {
@@ -12604,7 +12604,7 @@
             "id": 4619,
             "category": "PER"
         },
-        "relation": "fundadores de",
+        "relation": "fundadores da",
         "relation_id": null
     },
     {
@@ -12620,7 +12620,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "lan\u00e7ado em",
+        "relation": "lan\u00e7ado",
         "relation_id": null
     },
     {
@@ -12636,7 +12636,7 @@
             "id": 4629,
             "category": "ORG"
         },
-        "relation": "recebe aporte de",
+        "relation": "recebe aporte",
         "relation_id": null
     },
     {
@@ -12668,7 +12668,7 @@
             "id": 4643,
             "category": "PER"
         },
-        "relation": "ex-gerente de ti de",
+        "relation": "ex-gerente de ti do",
         "relation_id": null
     },
     {
@@ -12684,7 +12684,7 @@
             "id": 4643,
             "category": "PER"
         },
-        "relation": "assumir um cargo em",
+        "relation": "assumir um cargo na",
         "relation_id": null
     },
     {
@@ -12700,7 +12700,7 @@
             "id": 4650,
             "category": "ORG"
         },
-        "relation": "\u00e9 parte de o grupo dono de as lojas",
+        "relation": "\u00e9 parte do grupo dono das lojas",
         "relation_id": null
     },
     {
@@ -12748,7 +12748,7 @@
             "id": 4668,
             "category": "ORG"
         },
-        "relation": "fecha parceria com ",
+        "relation": "fecha parceria com",
         "relation_id": null
     },
     {
@@ -12764,7 +12764,7 @@
             "id": 4671,
             "category": "ORG"
         },
-        "relation": "se juntou a",
+        "relation": "se juntou",
         "relation_id": null
     },
     {
@@ -12796,7 +12796,7 @@
             "id": 4683,
             "category": "ORG"
         },
-        "relation": "lan\u00e7ou um marketplace de ",
+        "relation": "lan\u00e7ou um marketplace de",
         "relation_id": null
     },
     {
@@ -12828,7 +12828,7 @@
             "id": 4684,
             "category": "ORG"
         },
-        "relation": "lan\u00e7ou um marketplace de ",
+        "relation": "lan\u00e7ou um marketplace de",
         "relation_id": null
     },
     {
@@ -12844,7 +12844,7 @@
             "id": 4691,
             "category": "ORG"
         },
-        "relation": "uniu a",
+        "relation": "uniu",
         "relation_id": null
     },
     {
@@ -12860,7 +12860,7 @@
             "id": 4692,
             "category": "ORG"
         },
-        "relation": "uniu a",
+        "relation": "uniu",
         "relation_id": null
     },
     {
@@ -12876,7 +12876,7 @@
             "id": 266,
             "category": "PLC"
         },
-        "relation": "sediada em",
+        "relation": "sediada na",
         "relation_id": null
     },
     {
@@ -12956,7 +12956,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "de",
+        "relation": "do",
         "relation_id": null
     },
     {
@@ -12972,7 +12972,7 @@
             "id": 4731,
             "category": "ORG"
         },
-        "relation": "parceiro de",
+        "relation": "parceiro do",
         "relation_id": null
     },
     {
@@ -12988,7 +12988,7 @@
             "id": 4733,
             "category": "ORG"
         },
-        "relation": "empresa de meios de pagamentos de",
+        "relation": "empresa de meios de pagamentos do",
         "relation_id": null
     },
     {
@@ -13020,7 +13020,7 @@
             "id": 4737,
             "category": "PER"
         },
-        "relation": "diretor de tecnologia de",
+        "relation": "diretor de tecnologia do",
         "relation_id": null
     },
     {
@@ -13036,7 +13036,7 @@
             "id": 4740,
             "category": "ORG"
         },
-        "relation": "respons\u00e1vel por",
+        "relation": "respons\u00e1vel pelo",
         "relation_id": null
     },
     {
@@ -13068,7 +13068,7 @@
             "id": 4738,
             "category": "ORG"
         },
-        "relation": "empresa de recupera\u00e7\u00e3o de cr\u00e9dito de",
+        "relation": "empresa de recupera\u00e7\u00e3o de cr\u00e9dito do",
         "relation_id": null
     },
     {
@@ -13084,7 +13084,7 @@
             "id": 4749,
             "category": "ORG"
         },
-        "relation": "dever\u00e3o entrar em",
+        "relation": "dever\u00e3o entrar no",
         "relation_id": null
     },
     {
@@ -13100,7 +13100,7 @@
             "id": 4749,
             "category": "ORG"
         },
-        "relation": "dever\u00e3o entrar em",
+        "relation": "dever\u00e3o entrar no",
         "relation_id": null
     },
     {
@@ -13164,7 +13164,7 @@
             "id": 4516,
             "category": "PER"
         },
-        "relation": "s\u00f3cio respons\u00e1vel por",
+        "relation": "s\u00f3cio respons\u00e1vel pela",
         "relation_id": null
     },
     {
@@ -13212,7 +13212,7 @@
             "id": 4738,
             "category": "ORG"
         },
-        "relation": "espa\u00e7o de fomento ao empreendedorismo tecnol\u00f3gico de",
+        "relation": "espa\u00e7o de fomento ao empreendedorismo tecnol\u00f3gico do",
         "relation_id": null
     },
     {
@@ -13260,7 +13260,7 @@
             "id": 4777,
             "category": "ORG"
         },
-        "relation": "dona de as marcas",
+        "relation": "dona das marcas",
         "relation_id": null
     },
     {
@@ -13276,7 +13276,7 @@
             "id": 4778,
             "category": "ORG"
         },
-        "relation": "dona de as marcas",
+        "relation": "dona das marcas",
         "relation_id": null
     },
     {
@@ -13340,7 +13340,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "em",
+        "relation": "no",
         "relation_id": null
     },
     {
@@ -13372,7 +13372,7 @@
             "id": 4738,
             "category": "ORG"
         },
-        "relation": "credenciadora de cart\u00f5es controlada por",
+        "relation": "credenciadora de cart\u00f5es controlada pelo",
         "relation_id": null
     },
     {
@@ -13404,7 +13404,7 @@
             "id": 857,
             "category": "PLC"
         },
-        "relation": "l\u00edder de",
+        "relation": "l\u00edder do",
         "relation_id": null
     },
     {
@@ -13580,7 +13580,7 @@
             "id": 4606,
             "category": "ORG"
         },
-        "relation": "dona de as redes de lojas",
+        "relation": "dona das redes de lojas",
         "relation_id": null
     },
     {
@@ -13596,7 +13596,7 @@
             "id": 4855,
             "category": "ORG"
         },
-        "relation": "dona de as redes de lojas",
+        "relation": "dona das redes de lojas",
         "relation_id": null
     },
     {
@@ -13612,7 +13612,7 @@
             "id": 4801,
             "category": "ORG"
         },
-        "relation": "fintech de",
+        "relation": "fintech do",
         "relation_id": null
     },
     {
@@ -13660,7 +13660,7 @@
             "id": 4870,
             "category": "ORG"
         },
-        "relation": "fechar a compra de",
+        "relation": "fechar a compra da",
         "relation_id": null
     },
     {
@@ -13692,7 +13692,7 @@
             "id": 4876,
             "category": "ORG"
         },
-        "relation": "utilizar\u00e1 a tecnologia de",
+        "relation": "utilizar\u00e1 a tecnologia da",
         "relation_id": null
     },
     {
@@ -13740,7 +13740,7 @@
             "id": 4882,
             "category": "ORG"
         },
-        "relation": "em colobora\u00e7\u00e3o com",
+        "relation": "em colabora\u00e7\u00e3o com",
         "relation_id": null
     },
     {
@@ -13756,7 +13756,7 @@
             "id": 4886,
             "category": "ORG"
         },
-        "relation": "em colobora\u00e7\u00e3o com",
+        "relation": "em colabora\u00e7\u00e3o com",
         "relation_id": null
     },
     {
@@ -13804,7 +13804,7 @@
             "id": 4897,
             "category": "PER"
         },
-        "relation": "presidente de",
+        "relation": "presidente da",
         "relation_id": null
     },
     {
@@ -13820,7 +13820,7 @@
             "id": 4901,
             "category": "ORG"
         },
-        "relation": "subsidi\u00e1ria de",
+        "relation": "subsidi\u00e1ria do",
         "relation_id": null
     },
     {
@@ -13836,7 +13836,7 @@
             "id": 4899,
             "category": "PER"
         },
-        "relation": "executivo de",
+        "relation": "executivo da",
         "relation_id": null
     },
     {
@@ -13852,7 +13852,7 @@
             "id": 4909,
             "category": "ORG"
         },
-        "relation": "novo nome de",
+        "relation": "novo nome do",
         "relation_id": null
     },
     {
@@ -13868,7 +13868,7 @@
             "id": 4912,
             "category": "ORG"
         },
-        "relation": "programa de",
+        "relation": "programa",
         "relation_id": null
     },
     {
@@ -13916,7 +13916,7 @@
             "id": 4928,
             "category": "PER"
         },
-        "relation": "ceo de",
+        "relation": "ceo da",
         "relation_id": null
     },
     {
@@ -13932,7 +13932,7 @@
             "id": 4928,
             "category": "PER"
         },
-        "relation": "ceo de",
+        "relation": "ceo da",
         "relation_id": null
     },
     {
@@ -13948,7 +13948,7 @@
             "id": 4746,
             "category": "ORG"
         },
-        "relation": "controlado por os s\u00f3cios",
+        "relation": "controlado pelos s\u00f3cios",
         "relation_id": null
     },
     {
@@ -13964,7 +13964,7 @@
             "id": 4747,
             "category": "ORG"
         },
-        "relation": "controlado por os s\u00f3cios",
+        "relation": "controlado pelos s\u00f3cios",
         "relation_id": null
     },
     {
@@ -13996,7 +13996,7 @@
             "id": 1469,
             "category": "PLC"
         },
-        "relation": "maior marca feminina de moda e lingerie de",
+        "relation": "maior marca feminina de moda e lingerie do",
         "relation_id": null
     },
     {
