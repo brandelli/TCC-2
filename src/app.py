@@ -22,13 +22,13 @@ def main():
     config = Config('data/configuration/', 'config.json')
     # executa as principais funções de cada classe, lendo arquivos de entrada e criando o modelo
     parser = run_data_parse(config)
-    #model = run_model(config)
+    model = run_model(config)
 
     # salva as principais informações do dataset
     #create_dataset_info(parser)
 
     # executa chamadas de predict no modelo
-    #predict(model, parser, config)
+    predict(model, parser, config)
 
 def create_dataset_info(parser):
     # numero de cada tipo de entidade presente no dataset

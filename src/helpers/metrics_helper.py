@@ -3,6 +3,8 @@ def get_correct_relations(data):
     for d in data:
         relation = d.get('relation').strip()
         predicted_relation = d.get('predicted_relation').strip()
+        print(f'relation: {relation}')
+        print(f'predicted_relation: {predicted_relation}')
         if relation == predicted_relation:
             count += 1
 
@@ -44,7 +46,13 @@ def get_number_of_relations_predicted(data):
     return count
 
 def get_number_of_relations_in_dataset(data):
-    return len(data)
+    count = 0
+    for d in data:
+        relation = d.get('relation').strip()
+        if relation != '' and relation != 'none':
+            count += 1
+    
+    return count
 
 def get_exact_precision(data):
     correct_relations = get_correct_relations(data)
