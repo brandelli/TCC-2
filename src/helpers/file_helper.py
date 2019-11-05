@@ -87,3 +87,35 @@ def convert_teste_propor_to_csv(original_file_path, new_file_path):
 		writer.writerows(data_list)
 
 	print(f'Finalizou conversão')
+
+
+def json_csv(path, file_name, new_file_name):
+	fields = ['SENTENCE_ID', 'RELATION_ID', 'SENTENCE', 'ARGUMENT_1', 'ARGUMENT_1_CATEGORY', 'RELATION', 'PREDICTED_RELATION', 'ARGUMENT_2', 'ARGUMENT_2_CATEGORY']
+	fields_dict = {
+		'sentence_id' : 'SENTENCE_ID',
+		'relation_id' : 'RELATION_ID',
+		'predicted_relation' : 'PREDICTED_RELATION',
+		'relation' : 'RELATION',
+		'sentence' : 'SENTENCE'
+	}
+	dataset = get_json_file_data(path, file_name)
+	data_list = []
+	for data in dataset:
+		local_dict = {}
+		for key, value in data.items():
+			if key != 'tail' and key != 'head':
+				local_dict[fields_dict.get(key)] = value
+			else:
+				arg = 'ARGUMENT_1' if key == 'head' else 'ARGUMENT_2'
+				cat = f'{arg}_CATEGORY'
+				local_dict[arg] = value.get('word')
+				local_dict[cat] = value.get('category')
+		
+		data_list.append(local_dict)
+	
+	with open(f'{path}{new_file_name}', 'w') as fp:
+		writer = csv.DictWriter(fp, fields, delimiter = '\t')
+		writer.writeheader()
+		writer.writerows(data_list)
+
+	print(f'Finalizou conversão')
