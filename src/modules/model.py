@@ -148,37 +148,37 @@ class Model:
         input_layers = []
         
         # layer de input de word embeddings
-        word_embeddings_input_layer = self.create_input_layer('word_embeddings_input_layer', input_length)
+        word_embeddings_input_layer = self.create_input_layer('entrada_word_embeddings', input_length)
         input_layers.append(word_embeddings_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('word_embedding_layer', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer))
+        embeddings_layers.append(self.create_embedding_layer('camada_de_word_embedding', self.word_embeddings_matrix, input_length, False, word_embeddings_input_layer))
 
         # layer de input de entidades
-        entity_input_layer = self.create_input_layer('entity_input_layer', input_length)
+        entity_input_layer = self.create_input_layer('entrada_posicao_entidades', input_length)
         input_layers.append(entity_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('entity_embedding_layer', self.train_entities_input, input_length, True, entity_input_layer))
+        embeddings_layers.append(self.create_embedding_layer('camada_posicao_entidades', self.train_entities_input, input_length, True, entity_input_layer))
 
         # layer de input de entidades
-        pos_tagged_input_layer = self.create_input_layer('pos_tagged_input_layer', input_length)
+        pos_tagged_input_layer = self.create_input_layer('entrada_pos_tag', input_length)
         input_layers.append(pos_tagged_input_layer)
-        embeddings_layers.append(self.create_embedding_layer('pos_tagged_embedding_layer', self.train_pos_tagged_input, input_length, True, pos_tagged_input_layer))
+        embeddings_layers.append(self.create_embedding_layer('camada_pos_tag', self.train_pos_tagged_input, input_length, True, pos_tagged_input_layer))
         
 
         # layer para concatenar os embeddings do modelo
-        model = self.concatenate_layers('concatenate_embeddings_layer', embeddings_layers)
+        model = self.concatenate_layers('camada_concatenacao', embeddings_layers)
 
         # layer LSTM
-        lstm = self.create_lstm_layer('lstm_layer', input_length, 0.5, True, model)
+        lstm = self.create_lstm_layer('camada_lstm', input_length, 0.5, True, model)
 
         # layer BI-LSTM
-        model = self.create_bidirectional_layer('bi_lstm_layer', lstm, model)
+        model = self.create_bidirectional_layer('camada_bi_lstm', lstm, model)
 
         # layer Flatten
         #model = self.create_flatten_layer('flatten_layer_1', model)
 
-        model = self.create_dense_layer('dense_layer_2', 32, 'relu', model)
+        model = self.create_dense_layer('camada_densa', 32, 'relu', model)
         model = tf.keras.layers.Dropout(0.5)(model)
 
-        output = self.create_time_distributed('time_distributed_layer', 1,'sigmoid', model)
+        output = self.create_time_distributed('camada_de_saida', 1,'sigmoid', model)
 
         # criação do modelo
         model = tf.keras.Model(inputs=input_layers, outputs=output)
