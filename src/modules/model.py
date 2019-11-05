@@ -203,7 +203,7 @@ class Model:
         train_inputs = [self.train_sentences_input]
         train_sentences_output = self.train_sentences_output
         model = self.model
-        history = model.fit(train_inputs, train_sentences_output, epochs=50, verbose=1, batch_size=10)
+        history = model.fit(train_inputs, train_sentences_output, epochs=50, verbose=1, batch_size=3)
         visualization_helper.plot_model_history_graph(history)
         
     
