@@ -48,7 +48,7 @@ class Parser:
         realiza o parse dos arquivos conforme as configurações
         '''
         # chamada para conversão de arquivos originais(txt, tsv) para json
-        #self.convert_src_to_json_files()
+        self.convert_src_to_json_files()
 
         # chamada para criação de dicionários: word_to_id e reverse_dict
         #self.create_word_dicts()
@@ -346,17 +346,17 @@ class Parser:
         Função que realiza a conversão dos arquivos de entrada para json
         '''
         # transforma o arquivo txt de word embeddings em um json
-        self.word_embeddings_to_json()
+        #self.word_embeddings_to_json()
 
         # transforma os arquivos de dataset json
         for dataset_type in self.dataset_types:
             self.dataset_to_json(dataset_type)
 
         # cria um arquivo json com os relacionamentos presentes no dataset de treino
-        self.relation_to_id_json()
+        #self.relation_to_id_json()
 
         # cria im arquivo json com todos os tipos de entidades presente
-        self.entities_types_to_id()
+        #self.entities_types_to_id()
 
 
     def entities_types_to_id(self):
