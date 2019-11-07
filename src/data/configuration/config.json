@@ -1,6 +1,6 @@
 {
     "parse" : {
-            "parse" : false
+            "parse" : true
     },
 
     "dataset" : {

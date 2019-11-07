@@ -155,12 +155,15 @@ class Parser:
         
         sentences_output = []
         for index, data in enumerate(dataset):
+            print(f'------------------- {index} -------------------')
             cur_sentence = [0] * self.padding_size
             sentence = data.get('sentence')
             relation_words = data.get('relation')
             # possivel não haver relacionamento na sentença
             if relation_words != 'none':
+                print(data.get('relation'))
                 relation = [word_id.get(val) for val in data.get('relation').split(' ')]
+                print(relation)
                 input_sentence = input_sentences[index]
                 list_relations = [(i, i+len(relation)) for i in range(len(input_sentence)) if input_sentence[i:i+len(relation)] == relation]
                 self.mark_relation_in_sentence(cur_sentence, list_relations)

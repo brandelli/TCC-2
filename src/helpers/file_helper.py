@@ -63,11 +63,11 @@ def convert_teste_propor_to_csv(original_file_path, new_file_path):
 	sheet = wb.sheet_by_index(0)
 	sheet.cell_value(0, 0)
 	fields = [val for val in sheet.row_values(0)]
+	print(fields)
 	
 	data_list = []
 	for index in range(1, sheet.nrows):
 		local_dict = {}
-		print(len(sheet.row_values(index)))
 		for i, column in enumerate(sheet.row_values(index)):
 			field = fields[i]
 			if i < 2:
@@ -76,6 +76,8 @@ def convert_teste_propor_to_csv(original_file_path, new_file_path):
 				if len(column) == 0:
 					column = 'None'
 			
+			if field == 'SENTENCE':
+				print(f'{column}')
 			local_dict[field] = column
 			
 		data_list.append(local_dict)
