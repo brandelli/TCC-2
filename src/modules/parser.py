@@ -48,13 +48,13 @@ class Parser:
         realiza o parse dos arquivos conforme as configurações
         '''
         # chamada para conversão de arquivos originais(txt, tsv) para json
-        self.convert_src_to_json_files()
+        #self.convert_src_to_json_files()
 
         # chamada para criação de dicionários: word_to_id e reverse_dict
-        self.create_word_dicts()
+        #self.create_word_dicts()
 
         # chamada para formatação de inputs que serão utilizados pelo modelo
-        self.parse_inputs_for_model()
+        #self.parse_inputs_for_model()
 
         # chamada para criar o vetor de output que será utilizado no treino do modelo
         self.create_output_for_model()
