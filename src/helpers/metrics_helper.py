@@ -85,3 +85,61 @@ def get_partial_f_measure(data):
     precision = get_partial_precision(data)
     recall = get_partial_recall(data)
     return (2*precision*recall)/(precision+recall)
+
+def get_total_relations_dataset(data):
+    count = 0
+    for d in data:
+        relation = d.get('RELATION MANUALLY')
+        if relation != 'none':
+            count += 1
+    return count
+
+def get_total_relations_by_approach(data, str_field):
+    count = 0
+    for d in data:
+        relation = d.get(str_field)
+        if relation != 'none' and len(relation) > 0:
+            count += 1
+    return count
+
+def get_rcc(data, str_field):
+    count = 0
+    for d in data:
+        relation = d.get('RELATION MANUALLY').strip()
+        predicted_relation = d.get(str_field).strip()
+        if relation == predicted_relation:
+            count += 1
+
+    return count
+
+def get_rpc(data, str_field):
+    rpc_found = 0
+    count = 0
+    for d in data:
+        relation = d.get('RELATION MANUALLY').strip()
+        predicted_relation = d.get(str_field).strip()
+        if relation != predicted_relation and len(predicted_relation) > 0:
+            rpc = calculate_partially_correct_relation(relation, predicted_relation)
+            count += rpc
+            if rpc > 0:
+                rpc_found += 1
+
+    return rpc_found, count
+
+def get_exact_precision_propor(rcc, ri):
+    return rcc/ri
+
+def get_exact_recall_propor(rcc, rt):
+    return rcc/rt
+
+def get_exact_f_measure_propor(precisao, recall):
+    return (2*precisao*recall)/(precisao+recall)
+
+def get_partial_precision_propor(rcc, rpc, ri):
+    return (rcc + rpc) / ri
+
+def get_partial_recall_propor(rcc, rpc, rt):
+    return (rcc + rpc) / rt
+
+def get_partial_f_measure_propor(precisao, recall):
+    return (2*precisao*recall)/(precisao+recall)
