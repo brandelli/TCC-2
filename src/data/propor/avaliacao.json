@@ -7,8 +7,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "anunciou uma parceria com",
 "PREDICTED_RELATION REDES NEURAIS": "anunciou uma parceria com",
-"PREDICTED_RELATION RelP": "anunciou uma parceria com",
 "PREDICTED_RELATION RelP modificada": "anunciou uma parceria com",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "anunciou uma parceria com",
 "ARGUMENT_2": "cubo_ita\u00fa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -20,8 +20,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "reuniu",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "cuiab\u00e1",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -33,8 +33,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "mato_grosso",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -46,8 +46,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -59,8 +59,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -72,8 +72,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "ita\u00fa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -85,8 +85,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "ita\u00fa",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "ita\u00fa",
 "ARGUMENT_2": "safra",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -98,8 +98,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "ita\u00fa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -111,8 +111,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "ita\u00fa",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "ita\u00fa",
 "ARGUMENT_2": "safra",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -124,8 +124,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "safra",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -137,8 +137,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "agtech",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -150,8 +150,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "vai reunir",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "casa_do_saber",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -163,8 +163,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -176,8 +176,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "banco_central",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -189,8 +189,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "casa_do_saber",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -202,8 +202,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "representante do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "representante do",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -215,8 +215,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fundador de uma das maiores fintechs de cr\u00e9dito do pa\u00eds",
 "PREDICTED_RELATION REDES NEURAIS": "fundador de do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fundador de do",
 "ARGUMENT_2": "sergio_furio",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -228,8 +228,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "de do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de do",
 "ARGUMENT_2": "pa\u00eds",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -241,8 +241,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "mellissa_penteado",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -254,8 +254,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "do",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "do",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "bancoin",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -267,8 +267,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "ceo do",
 "PREDICTED_RELATION REDES NEURAIS": "ceo do",
-"PREDICTED_RELATION RelP": "CEO de",
 "PREDICTED_RELATION RelP modificada": "CEO do",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "CEO do",
 "ARGUMENT_2": "mellissa_penteado",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -280,8 +280,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em parceria com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em parceria com",
 "ARGUMENT_2": "associa\u00e7\u00e3o_brasileira_de_fintechs_ ( abfintechs",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -293,8 +293,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "pela consultoria",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "pela consultoria",
 "ARGUMENT_2": "pwc_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -306,8 +306,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "agrimart",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -319,8 +319,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "pesquisador da",
 "PREDICTED_RELATION REDES NEURAIS": "pesquisador da",
-"PREDICTED_RELATION RelP": "pesquisador de",
 "PREDICTED_RELATION RelP modificada": "pesquisador da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "pesquisador da",
 "ARGUMENT_2": "percival_lucena",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -332,8 +332,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "fernando_martins",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -345,8 +345,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "conselheiro da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "conselheiro da",
 "ARGUMENT_2": "jacto",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -358,8 +358,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "conselheiro da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "conselheiro da",
 "ARGUMENT_2": "agtech",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -371,8 +371,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "conselheiro da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "conselheiro da",
 "ARGUMENT_2": "rodrigo_iafelice_dos_santos",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -384,8 +384,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "presidente da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "presidente da",
 "ARGUMENT_2": "ennexas_agribusiness",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -397,8 +397,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "conselheiro da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "conselheiro da",
 "ARGUMENT_2": "percival_lucena",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -410,8 +410,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "conselheiro da",
 "PREDICTED_RELATION REDES NEURAIS": "conselheiro da",
-"PREDICTED_RELATION RelP": "conselheiro de",
 "PREDICTED_RELATION RelP modificada": "conselheiro da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "conselheiro da",
 "ARGUMENT_2": "fernando_martins",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -423,8 +423,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "agtech",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -436,8 +436,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "rodrigo_iafelice_dos_santos",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -449,8 +449,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "conselheiro presidente da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "conselheiro presidente da",
 "ARGUMENT_2": "ennexas_agribusiness",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -462,8 +462,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "conselheiro da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "conselheiro da",
 "ARGUMENT_2": "percival_lucena",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -475,8 +475,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "conselheiro da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "conselheiro da",
 "ARGUMENT_2": "fernando_martins",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -488,8 +488,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "rodrigo_iafelice_dos_santos",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -501,8 +501,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "presidente da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "presidente da",
 "ARGUMENT_2": "ennexas_agribusiness",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -514,8 +514,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "presidente da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "presidente da",
 "ARGUMENT_2": "percival_lucena",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -527,8 +527,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "da presidente da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "da presidente da",
 "ARGUMENT_2": "fernando_martins",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -540,8 +540,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "presidente da",
 "PREDICTED_RELATION REDES NEURAIS": "presidente da",
-"PREDICTED_RELATION RelP": "presidente de",
 "PREDICTED_RELATION RelP modificada": "presidente da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "presidente da",
 "ARGUMENT_2": "rodrigo_iafelice_dos_santos",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -553,8 +553,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "contou com patroc\u00ednio de",
 "PREDICTED_RELATION REDES NEURAIS": "contou com patroc\u00ednio de",
-"PREDICTED_RELATION RelP": "contou com patroc\u00ednio de",
 "PREDICTED_RELATION RelP modificada": "contou com patroc\u00ednio de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "contou com patroc\u00ednio de",
 "ARGUMENT_2": "sap",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -566,8 +566,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "contou com patroc\u00ednio de",
 "PREDICTED_RELATION REDES NEURAIS": "contou com patroc\u00ednio de",
-"PREDICTED_RELATION RelP": "contou com ",
 "PREDICTED_RELATION RelP modificada": "contou com ",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "contou com ",
 "ARGUMENT_2": "clube_agro_e_azul_linhas_a\u00e9reas",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -579,8 +579,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "patroc\u00ednio",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "patroc\u00ednio",
 "ARGUMENT_2": "clube_agro_e_azul_linhas_a\u00e9reas",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -592,8 +592,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "o maior congresso cooperativista da",
 "PREDICTED_RELATION REDES NEURAIS": "o maior congresso cooperativista da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "o maior congresso cooperativista da",
 "ARGUMENT_2": "am\u00e9rica_latina",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -605,8 +605,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "torq",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -618,8 +618,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em parceria com",
 "PREDICTED_RELATION REDES NEURAIS": "em parceria com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em parceria com",
 "ARGUMENT_2": "confebras",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -631,8 +631,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em parceria com",
 "PREDICTED_RELATION REDES NEURAIS": "em parceria com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em parceria com",
 "ARGUMENT_2": "confebras",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -644,8 +644,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "em",
 "PREDICTED_RELATION RelP modificada": "em",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "florian\u00f3polis",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -657,8 +657,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "mazieiro",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -670,8 +670,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "recebeu um aporte de capital no valor de",
 "PREDICTED_RELATION REDES NEURAIS": "recebeu um",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "recebeu um",
 "ARGUMENT_2": "bb_seguridade",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -683,8 +683,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "de do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de do",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -696,8 +696,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "bra\u00e7o de seguros e previd\u00eancia do",
 "PREDICTED_RELATION REDES NEURAIS": "bra\u00e7o de previd\u00eancia do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "bra\u00e7o de previd\u00eancia do",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -709,8 +709,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "assumir\u00e1 participa\u00e7\u00e3o na insurtech ,",
 "PREDICTED_RELATION REDES NEURAIS": "dar\u00e1 por",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "dar\u00e1 por",
 "ARGUMENT_2": "bb_corretora_de_seguros",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -722,8 +722,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "acaba de receber um aporte do",
 "PREDICTED_RELATION REDES NEURAIS": "receber um aporte do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "receber um aporte do",
 "ARGUMENT_2": "venture_brasil_central",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -735,8 +735,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "gerido pela",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "gerido pela",
 "ARGUMENT_2": "cedro_capital",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -748,8 +748,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "gerido pela",
 "PREDICTED_RELATION REDES NEURAIS": "gerido pela",
-"PREDICTED_RELATION RelP": "gerido por",
 "PREDICTED_RELATION RelP modificada": "gerido pela",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "gerido pela",
 "ARGUMENT_2": "cedro_capital",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -761,8 +761,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "torq",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -774,8 +774,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras )",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -787,8 +787,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "maior congresso cooperativista da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "maior congresso cooperativista da",
 "ARGUMENT_2": "am\u00e9rica_latina",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -800,8 +800,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "confedera\u00e7\u00e3o_brasileira_das_cooperativas_de_cr\u00e9dito_ ( confebras )",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -813,8 +813,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "maior congresso cooperativista da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "maior congresso cooperativista da",
 "ARGUMENT_2": "am\u00e9rica_latina",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -826,8 +826,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "maior congresso cooperativista da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "maior congresso cooperativista da",
 "ARGUMENT_2": "am\u00e9rica_latina",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -839,8 +839,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "zattini",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -852,8 +852,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "beer.com.br",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -865,8 +865,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "vinho_f\u00e1cil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -878,8 +878,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "beer.com.br",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -891,8 +891,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "vinho_f\u00e1cil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -904,8 +904,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "vinho_f\u00e1cil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -917,8 +917,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "like",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "like",
 "ARGUMENT_2": "farmer \u201d",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -930,8 +930,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "faz parte da programa\u00e7\u00e3o do",
 "PREDICTED_RELATION REDES NEURAIS": "faz parte da programa\u00e7\u00e3o do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "faz parte da programa\u00e7\u00e3o do",
 "ARGUMENT_2": "agrobit_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -943,8 +943,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "faz parte da programa\u00e7\u00e3o do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "faz parte da programa\u00e7\u00e3o do",
 "ARGUMENT_2": "agrobit_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -956,8 +956,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "da",
 "PREDICTED_RELATION REDES NEURAIS": "da",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "da",
 "ARGUMENT_2": "francisco_jardim",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -969,8 +969,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "ao in\u00edcio da",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brexit",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -982,8 +982,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "de de hipoteca",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de de hipoteca",
 "ARGUMENT_2": "trussle",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -995,8 +995,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "rec\u00e9m integrante do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "rec\u00e9m integrante do",
 "ARGUMENT_2": "monzo",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1008,8 +1008,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "acredita que a",
 "PREDICTED_RELATION REDES NEURAIS": "acredita que a",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "acredita que a",
 "ARGUMENT_2": "finestra",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1021,8 +1021,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "acredita",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "acredita",
 "ARGUMENT_2": "monzo",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1034,8 +1034,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "acredita que a",
 "PREDICTED_RELATION REDES NEURAIS": "acredita que a",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "acredita que a",
 "ARGUMENT_2": "monzo",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1047,8 +1047,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "truelayer",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1060,8 +1060,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "junto ao",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "instituto_banco_da_periferia",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1073,8 +1073,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "come\u00e7a com um piloto",
 "PREDICTED_RELATION REDES NEURAIS": "com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "com",
 "ARGUMENT_2": "maric\u00e1",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1086,8 +1086,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "come\u00e7a com",
-"PREDICTED_RELATION RelP": "come\u00e7a com um  piloto",
 "PREDICTED_RELATION RelP modificada": "come\u00e7a com um  piloto",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "come\u00e7a com um  piloto",
 "ARGUMENT_2": "maric\u00e1",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1099,8 +1099,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "bras\u00edlia",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1112,8 +1112,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "guilherme_afif_domingos",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1125,8 +1125,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fomento a startups do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fomento a startups do",
 "ARGUMENT_2": "fl\u00e1vio_pripas",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1138,8 +1138,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fundo de investimento que fundou",
 "PREDICTED_RELATION REDES NEURAIS": "fundou",
-"PREDICTED_RELATION RelP": "fundou",
 "PREDICTED_RELATION RelP modificada": "fundou",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fundou",
 "ARGUMENT_2": "cubo",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1151,8 +1151,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fundou o cubo",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fundou o cubo",
 "ARGUMENT_2": "ita\u00fa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1164,8 +1164,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "junto com",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "junto com",
 "PREDICTED_RELATION RelP modificada": "junto com",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "junto com",
 "ARGUMENT_2": "ita\u00fa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1177,8 +1177,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fintech do",
 "PREDICTED_RELATION REDES NEURAIS": "fintech do",
-"PREDICTED_RELATION RelP": "fintech de",
 "PREDICTED_RELATION RelP modificada": "fintech do",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fintech do",
 "ARGUMENT_2": "srm",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1190,8 +1190,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fechou acordo com",
 "PREDICTED_RELATION REDES NEURAIS": "fechou acordo com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fechou acordo com",
 "ARGUMENT_2": "grupo_ipiranga",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1203,8 +1203,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fintech do fechou acordo com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fintech do fechou acordo com",
 "ARGUMENT_2": "grupo_ipiranga",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1216,8 +1216,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "marketplace",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "marketplace",
 "ARGUMENT_2": "b2b",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1229,8 +1229,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "l\u00edder do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "l\u00edder do",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1242,8 +1242,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "marketplace delas l\u00edder do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "marketplace delas l\u00edder do",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1255,8 +1255,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "n\u00e3o \u00e9 aceito por algumas empresas como",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "google_adsense",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1268,8 +1268,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "n\u00e3o \u00e9 aceito por algumas empresas como",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "skrill",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1281,8 +1281,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "n\u00e3o \u00e9 aceito por algumas empresas como",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "neteller",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1294,8 +1294,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "skrill",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1307,8 +1307,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "neteller",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1320,8 +1320,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "neteller",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1333,8 +1333,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "lan\u00e7ou nesta quinta-feira",
 "PREDICTED_RELATION REDES NEURAIS": "para os microempreendedores individuais",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "para os microempreendedores individuais",
 "ARGUMENT_2": "( meis",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1346,8 +1346,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "diretor de neg\u00f3cios da",
 "PREDICTED_RELATION REDES NEURAIS": "diretor de",
-"PREDICTED_RELATION RelP": "diretor de Neg\u00f3cios de",
 "PREDICTED_RELATION RelP modificada": "diretor de Neg\u00f3cios da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "diretor de Neg\u00f3cios da",
 "ARGUMENT_2": "fernando_montanari",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1359,8 +1359,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fintech do grupo",
 "PREDICTED_RELATION REDES NEURAIS": "fintech do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fintech do",
 "ARGUMENT_2": "srm",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1372,8 +1372,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fechou acordo com",
 "PREDICTED_RELATION REDES NEURAIS": "fechou acordo com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fechou acordo com",
 "ARGUMENT_2": "grupo_ipiranga",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1385,8 +1385,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fintech do fechou acordo com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fintech do fechou acordo com",
 "ARGUMENT_2": "grupo_ipiranga",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1398,8 +1398,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "marketplace",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "marketplace",
 "ARGUMENT_2": "b2b",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1411,8 +1411,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "l\u00edder do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "l\u00edder do",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1424,8 +1424,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "marketplace delas l\u00edder do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "marketplace delas l\u00edder do",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1437,8 +1437,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fechar parceria exclusiva",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fechar parceria exclusiva",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1450,8 +1450,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "digital do fechar parceria exclusiva",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "digital do fechar parceria exclusiva",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1463,8 +1463,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "recentemente nomeada uma das mais inovadoras do mundo pela",
 "PREDICTED_RELATION REDES NEURAIS": "inovadoras do fechar parceria exclusiva",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "inovadoras do fechar parceria exclusiva",
 "ARGUMENT_2": "fintech_global",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1476,8 +1476,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "inovadoras do fechar parceria exclusiva",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "inovadoras do fechar parceria exclusiva",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1489,8 +1489,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do fechar parceria exclusiva",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do fechar parceria exclusiva",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1502,8 +1502,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "tem aval",
 "PREDICTED_RELATION REDES NEURAIS": "tem aval do",
-"PREDICTED_RELATION RelP": "tem aval",
 "PREDICTED_RELATION RelP modificada": "tem aval",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "tem aval",
 "ARGUMENT_2": "nubank",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1515,8 +1515,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "monzo",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1528,8 +1528,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "n26",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1541,8 +1541,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "alemanha",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1554,8 +1554,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "n26",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1567,8 +1567,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "alemanha",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1580,8 +1580,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "de",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "alemanha",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1593,8 +1593,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "mostram que",
 "PREDICTED_RELATION REDES NEURAIS": "mostram",
-"PREDICTED_RELATION RelP": "mostram que",
 "PREDICTED_RELATION RelP modificada": "mostram que",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "mostram que",
 "ARGUMENT_2": "youtube",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1606,8 +1606,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "ter sido liquidado pelo",
 "PREDICTED_RELATION REDES NEURAIS": "banc\u00e1rio liquidado",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "banc\u00e1rio liquidado",
 "ARGUMENT_2": "banco_central",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1619,8 +1619,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "empresa de meios de pagamento que tem o bilion\u00e1rio",
 "PREDICTED_RELATION REDES NEURAIS": "de tem o",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de tem o",
 "ARGUMENT_2": "carlos_wizard_martins",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1632,8 +1632,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "acaba de fechar um contrato com a",
 "PREDICTED_RELATION REDES NEURAIS": "fechar um contrato com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fechar um contrato com",
 "ARGUMENT_2": "visa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1645,8 +1645,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "tem fechar um contrato com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "tem fechar um contrato com",
 "ARGUMENT_2": "carlos_wizard_martins",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1658,8 +1658,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "label da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "label da",
 "ARGUMENT_2": "america_latina",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1671,8 +1671,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "alexandre_brito",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1684,8 +1684,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "da",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "hub_fintech",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1697,8 +1697,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "label da ceo da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "label da ceo da",
 "ARGUMENT_2": "america_latina",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -1710,8 +1710,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "ceo da",
 "PREDICTED_RELATION REDES NEURAIS": "ceo da",
-"PREDICTED_RELATION RelP": "CEO de",
 "PREDICTED_RELATION RelP modificada": "CEO da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "CEO da",
 "ARGUMENT_2": "alexandre_brito",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -1723,8 +1723,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "disponibiliza",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "disponibiliza",
 "ARGUMENT_2": "santander",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1736,8 +1736,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "bradesco",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1749,8 +1749,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1762,8 +1762,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_inter",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1775,8 +1775,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "caixa_econ\u00f4mica",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1788,8 +1788,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "bradesco",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1801,8 +1801,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1814,8 +1814,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_inter",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1827,8 +1827,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "caixa_econ\u00f4mica",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1840,8 +1840,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1853,8 +1853,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_inter",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1866,8 +1866,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "caixa_econ\u00f4mica",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1879,8 +1879,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_inter",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1892,8 +1892,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "caixa_econ\u00f4mica",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1905,8 +1905,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "caixa_econ\u00f4mica",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1918,8 +1918,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "a estabelecer seu pr\u00f3prio processo de decis\u00e3o foi a integra\u00e7\u00e3o das fontes de informa\u00e7\u00f5es da",
 "PREDICTED_RELATION REDES NEURAIS": "para",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "para",
 "ARGUMENT_2": "transunion",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1931,8 +1931,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "operar como uma",
 "PREDICTED_RELATION REDES NEURAIS": "operar",
-"PREDICTED_RELATION RelP": "operar como uma",
 "PREDICTED_RELATION RelP modificada": "operar como uma",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "operar como uma",
 "ARGUMENT_2": "sociedade_de_cr\u00e9dito_direto",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1944,8 +1944,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "de acordo com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de acordo com",
 "ARGUMENT_2": "xp",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1957,8 +1957,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "de acordo com adquiriu da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de acordo com adquiriu da",
 "ARGUMENT_2": "olivia",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1970,8 +1970,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "adquiriu uma participa\u00e7\u00e3o minorit\u00e1ria da",
 "PREDICTED_RELATION REDES NEURAIS": "adquiriu da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "adquiriu da",
 "ARGUMENT_2": "olivia",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1983,8 +1983,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "( ntig",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "( ntig",
 "ARGUMENT_2": "eletropaulo",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -1996,8 +1996,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "virar s\u00f3cio do",
 "PREDICTED_RELATION REDES NEURAIS": "cogita virar s\u00f3cio do",
-"PREDICTED_RELATION RelP": "virar s\u00f3cio de",
 "PREDICTED_RELATION RelP modificada": "virar s\u00f3cio do",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "virar s\u00f3cio do",
 "ARGUMENT_2": "neon",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2009,8 +2009,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "parceria com o presidente-executivo do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "parceria com o presidente-executivo do",
 "ARGUMENT_2": "banco_votorantim",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2022,8 +2022,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "far\u00e1 uma parceria com a fintech",
 "PREDICTED_RELATION REDES NEURAIS": "far\u00e1 uma parceria com a fintech",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "far\u00e1 uma parceria com a fintech",
 "ARGUMENT_2": "token",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2035,8 +2035,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "startup que mescla servi\u00e7os de marketplace e rede social aproveita a",
 "PREDICTED_RELATION REDES NEURAIS": "de social aproveita",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de social aproveita",
 "ARGUMENT_2": "campus_party",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2048,8 +2048,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "um dos fundadores da",
 "PREDICTED_RELATION REDES NEURAIS": "um fundadores da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "um fundadores da",
 "ARGUMENT_2": "fernando_lopes",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2061,8 +2061,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "agtech l\u00edder em agricultura digital no",
 "PREDICTED_RELATION REDES NEURAIS": "l\u00edder em agricultura digital no",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "l\u00edder em agricultura digital no",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2074,8 +2074,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "executivo com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "executivo com",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2087,8 +2087,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "executivo com d\u00e9cadas de experi\u00eancia na",
 "PREDICTED_RELATION REDES NEURAIS": "executivo com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "executivo com",
 "ARGUMENT_2": "daniel_bachner",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2100,8 +2100,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "conglomerados banc\u00e1rios do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "conglomerados banc\u00e1rios do",
 "ARGUMENT_2": "pa\u00eds",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2113,8 +2113,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "trabalha em parceria",
-"PREDICTED_RELATION RelP": "atuam em",
 "PREDICTED_RELATION RelP modificada": "atuam em",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "atuam em",
 "ARGUMENT_2": "afrobusiness",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2126,8 +2126,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "trabalha em parceria",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "trabalha em parceria",
 "ARGUMENT_2": "barca",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2139,8 +2139,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "trabalha em parceria",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "trabalha em parceria",
 "ARGUMENT_2": "maria_pimentel",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2152,8 +2152,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "trabalha em parceria",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "trabalha em parceria",
 "ARGUMENT_2": "par\u00e7a_progresso_confec\u00e7\u00f5es",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2165,8 +2165,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "trabalha em parceria",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "jardim_\u00e2ngela",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2178,8 +2178,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "trabalha em parceria",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "trabalha em parceria",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2191,8 +2191,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "barca",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2204,8 +2204,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "maria_pimentel",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2217,8 +2217,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "par\u00e7a_progresso_confec\u00e7\u00f5es",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2230,8 +2230,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em do",
 "ARGUMENT_2": "jardim_\u00e2ngela",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2243,8 +2243,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2256,8 +2256,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "maria_pimentel",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2269,8 +2269,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em da",
 "ARGUMENT_2": "par\u00e7a_progresso_confec\u00e7\u00f5es",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2282,8 +2282,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em do",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "jardim_\u00e2ngela",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2295,8 +2295,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2308,8 +2308,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "de",
 "PREDICTED_RELATION REDES NEURAIS": "em da",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "maria_pimentel",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2321,8 +2321,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "de",
 "PREDICTED_RELATION REDES NEURAIS": "em do",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "jardim_\u00e2ngela",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2334,8 +2334,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2347,8 +2347,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "atuar como",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "atuar como",
 "ARGUMENT_2": "pa\u00eds",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2360,8 +2360,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "e do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "e do",
 "ARGUMENT_2": "paypal",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2373,8 +2373,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "entrega de comida e servi\u00e7os de pagamento de",
 "PREDICTED_RELATION REDES NEURAIS": "startup de entrega de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "startup de entrega de",
 "ARGUMENT_2": "singapura",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2386,8 +2386,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "grab",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2399,8 +2399,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "o maior grupo de varejo da",
 "PREDICTED_RELATION REDES NEURAIS": "o maior grupo de varejo",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "o maior grupo de varejo",
 "ARGUMENT_2": "tail\u00e2ndia",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2412,8 +2412,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "levantou um investimento de",
 "PREDICTED_RELATION REDES NEURAIS": "liderado pela",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "liderado pela",
 "ARGUMENT_2": "didi_chuxing",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2425,8 +2425,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "dos s\u00f3cios",
 "PREDICTED_RELATION REDES NEURAIS": "faz parte do",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "dos",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "dos",
 "ARGUMENT_2": "lucilene_oliveira",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2438,8 +2438,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "dos s\u00f3cios",
 "PREDICTED_RELATION REDES NEURAIS": "faz parte do s\u00f3cios",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "faz parte do s\u00f3cios",
 "ARGUMENT_2": "alexandre_hellis",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2451,8 +2451,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "dos s\u00f3cios",
 "PREDICTED_RELATION REDES NEURAIS": "faz parte do grupo",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "faz parte do grupo",
 "ARGUMENT_2": "oswaldo_prates",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2464,8 +2464,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "nova_york",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2477,8 +2477,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "pagar a conta da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "pagar a conta da",
 "ARGUMENT_2": "amazon",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2490,8 +2490,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "kroger",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2503,8 +2503,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "divis\u00e3o agr\u00edcola da",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "divis\u00e3o agr\u00edcola de",
 "PREDICTED_RELATION RelP modificada": "divis\u00e3o agr\u00edcola da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "divis\u00e3o agr\u00edcola da",
 "ARGUMENT_2": "dowdupont",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2516,8 +2516,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "e agora usar\u00e1 a tecnologia da",
 "PREDICTED_RELATION REDES NEURAIS": "usar\u00e1 tecnologia da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "usar\u00e1 tecnologia da",
 "ARGUMENT_2": "dronedeploy",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2529,8 +2529,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "usar\u00e1 a tecnologia da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "usar\u00e1 a tecnologia da",
 "ARGUMENT_2": "dronedeploy",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2542,8 +2542,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "jo\u00e3o_nogueira",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2555,8 +2555,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "da",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "app\u00f3lice",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2568,8 +2568,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "ceo da",
 "PREDICTED_RELATION REDES NEURAIS": "ceo da",
-"PREDICTED_RELATION RelP": "CEO de",
 "PREDICTED_RELATION RelP modificada": "CEO da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "CEO da",
 "ARGUMENT_2": "jo\u00e3o_nogueira",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2581,8 +2581,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "ceo do planeja comparecer",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "ceo do planeja comparecer",
 "ARGUMENT_2": "david_solomon",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2594,8 +2594,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "cupertino",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2607,8 +2607,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "calif\u00f3rnia",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2620,8 +2620,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "quanto",
 "PREDICTED_RELATION RelP modificada": "quanto",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "quanto",
 "ARGUMENT_2": "worldpay",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2633,8 +2633,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "anunciou",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "samsung_pay",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2646,8 +2646,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "\u00e9 a primeira fintech a juntar-se ao servi\u00e7o de pagamento m\u00f3vel no",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2659,8 +2659,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "iniciativa de",
 "PREDICTED_RELATION RelP modificada": "iniciativa de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "iniciativa de",
 "ARGUMENT_2": "sebrae_de_santa_catarina",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2672,8 +2672,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "chega ao",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "pa\u00eds",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2685,8 +2685,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "estados_unidos",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2698,8 +2698,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "agro \u2019",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2711,8 +2711,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "estados_unidos",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2724,8 +2724,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2737,8 +2737,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "corpora\u00e7\u00e3o do",
 "PREDICTED_RELATION REDES NEURAIS": "corpora\u00e7\u00e3o do",
-"PREDICTED_RELATION RelP": "corpora\u00e7\u00e3o de",
 "PREDICTED_RELATION RelP modificada": "corpora\u00e7\u00e3o do",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "corpora\u00e7\u00e3o do",
 "ARGUMENT_2": "vale_do_sil\u00edcio",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2750,8 +2750,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "rodrigo_ventura",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2763,8 +2763,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "e co-fundador da",
-"PREDICTED_RELATION RelP": "co-fundador de",
 "PREDICTED_RELATION RelP modificada": "co-fundador de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "co-fundador de",
 "ARGUMENT_2": "88i",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2776,8 +2776,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "ceo e co-fundador da",
 "PREDICTED_RELATION REDES NEURAIS": "ceo e co-fundador da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "ceo e co-fundador da",
 "ARGUMENT_2": "rodrigo_ventura",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2789,8 +2789,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "rodrigo_ventura",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2802,8 +2802,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "techstars",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2815,8 +2815,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "bra\u00e7o de inova\u00e7\u00e3o do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "bra\u00e7o de inova\u00e7\u00e3o do",
 "ARGUMENT_2": "barclays",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2828,8 +2828,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "de do barclays",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de do barclays",
 "ARGUMENT_2": "inglaterra",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2841,8 +2841,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "rodrigo_ventura",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2854,8 +2854,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "bra\u00e7o de inova\u00e7\u00e3o do banco",
 "PREDICTED_RELATION REDES NEURAIS": "bra\u00e7o de inova\u00e7\u00e3o do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "bra\u00e7o de inova\u00e7\u00e3o do",
 "ARGUMENT_2": "barclays",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2867,8 +2867,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "bra\u00e7o de do barclays da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "bra\u00e7o de do barclays da",
 "ARGUMENT_2": "inglaterra",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2880,8 +2880,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "bra\u00e7o de inova\u00e7\u00e3o do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "bra\u00e7o de inova\u00e7\u00e3o do",
 "ARGUMENT_2": "rodrigo_ventura",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2893,8 +2893,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "de",
 "PREDICTED_RELATION REDES NEURAIS": "da",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "inglaterra",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2906,8 +2906,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do barclays",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do barclays",
 "ARGUMENT_2": "rodrigo_ventura",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2919,8 +2919,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "decis\u00e3o de expandir para",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "decis\u00e3o de expandir para",
 "ARGUMENT_2": "eua",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2932,8 +2932,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -2945,8 +2945,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "eua",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2958,8 +2958,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "investidora do",
 "PREDICTED_RELATION REDES NEURAIS": "investidora do",
-"PREDICTED_RELATION RelP": "investidora de",
 "PREDICTED_RELATION RelP modificada": "investidora do",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "investidora do",
 "ARGUMENT_2": "kaszek_ventures",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2971,8 +2971,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "ribbit_capital",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -2984,8 +2984,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "investiu",
-"PREDICTED_RELATION RelP": "investiu em",
 "PREDICTED_RELATION RelP modificada": "investiu em",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "investiu em",
 "ARGUMENT_2": "guiabolso",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -2997,8 +2997,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "innoscience",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3010,8 +3010,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3023,8 +3023,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "anunciaram expans\u00e3o para os",
 "PREDICTED_RELATION REDES NEURAIS": "anunciaram expans\u00e3o",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "anunciaram expans\u00e3o",
 "ARGUMENT_2": "estados_unidos",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3036,8 +3036,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "em",
 "PREDICTED_RELATION RelP modificada": "em",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3049,8 +3049,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "gerente geral do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "gerente geral do",
 "ARGUMENT_2": "infomoney",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -3062,8 +3062,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "gerente geral do",
 "PREDICTED_RELATION REDES NEURAIS": "gerente geral do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "gerente geral do",
 "ARGUMENT_2": "eduardo_prota",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -3075,8 +3075,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em",
 "PREDICTED_RELATION REDES NEURAIS": "geral do",
-"PREDICTED_RELATION RelP": "em",
 "PREDICTED_RELATION RelP modificada": "em",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3088,8 +3088,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "trabalhou na",
-"PREDICTED_RELATION RelP": "trabalhou em",
 "PREDICTED_RELATION RelP modificada": "trabalhou em",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "trabalhou em",
 "ARGUMENT_2": "cielo",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3101,8 +3101,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "um pacote de seguro",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "um pacote de seguro",
 "ARGUMENT_2": "europa",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3114,8 +3114,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "que oferece processamento de pagamentos online no",
 "PREDICTED_RELATION REDES NEURAIS": "oferece processamento de pagamentos online",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "oferece processamento de pagamentos online",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3127,8 +3127,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "da parceria",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "da parceria",
 "ARGUMENT_2": "alex_hoffmann",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -3140,8 +3140,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fruto da parceria entre o brasileiro",
 "PREDICTED_RELATION REDES NEURAIS": "da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "da",
 "ARGUMENT_2": "ralf_germer",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -3153,8 +3153,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "mostra o caso de",
 "PREDICTED_RELATION REDES NEURAIS": "mostra de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "mostra de",
 "ARGUMENT_2": "trevor_scherman",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -3166,8 +3166,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "da startup canadense",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "da startup canadense",
 "ARGUMENT_2": "farmer \u2019 s_edge",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3179,8 +3179,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fazendeiro que adotou o sistema da startup canadense",
 "PREDICTED_RELATION REDES NEURAIS": "de da startup canadense",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de da startup canadense",
 "ARGUMENT_2": "trevor_scherman",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -3192,8 +3192,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "hidromaps",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3205,8 +3205,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "lebenlog",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3218,8 +3218,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "lebenlog",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3231,8 +3231,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em parceria com a bandeira",
 "PREDICTED_RELATION REDES NEURAIS": "em parceria com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em parceria com",
 "ARGUMENT_2": "elo",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3244,8 +3244,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em parceria com",
 "PREDICTED_RELATION REDES NEURAIS": "em parceria com cart\u00e3o",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em parceria com cart\u00e3o",
 "ARGUMENT_2": "cateno",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3257,8 +3257,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em parceria com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em parceria com",
 "ARGUMENT_2": "cateno",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3270,8 +3270,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "atua em todo o",
 "PREDICTED_RELATION REDES NEURAIS": "atua em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "atua em",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3283,8 +3283,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "cidade",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "cidade",
 "ARGUMENT_2": "s\u00e3o_jos\u00e9_dos_campos",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3296,8 +3296,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "ericsson",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3309,8 +3309,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "ra\u00edzen",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3322,8 +3322,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "ra\u00edzen",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3335,8 +3335,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "de",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "ita\u00fa_unibanco",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3348,8 +3348,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "empresa de delivery de comida da",
 "PREDICTED_RELATION REDES NEURAIS": "de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "movile",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3361,8 +3361,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "faz parcerias com outras empresas",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "zoop",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3374,8 +3374,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "nestl\u00e9",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3387,8 +3387,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "siemens",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3400,8 +3400,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "incentivar.i",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3413,8 +3413,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "siemens",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3426,8 +3426,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "incentivar.i",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3439,8 +3439,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "incentivar.i",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3452,8 +3452,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "economista-chefe em 2014",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "economista-chefe em 2014",
 "ARGUMENT_2": "bradesco",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3465,8 +3465,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "economista-chefe da em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "economista-chefe da em",
 "ARGUMENT_2": "ita\u00fa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3478,8 +3478,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "economista-chefe da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "economista-chefe da",
 "ARGUMENT_2": "santander",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3491,8 +3491,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "economista-chefe da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "economista-chefe da",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3504,8 +3504,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "economista-chefe da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "economista-chefe da",
 "ARGUMENT_2": "caixa_econ\u00f4mica_federal",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3517,8 +3517,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "economista-chefe da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "economista-chefe da",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3530,8 +3530,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "ita\u00fa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3543,8 +3543,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "o",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "o",
 "ARGUMENT_2": "santander",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3556,8 +3556,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3569,8 +3569,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "caixa_econ\u00f4mica_federal",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3582,8 +3582,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "em",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3595,8 +3595,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "santander",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3608,8 +3608,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3621,8 +3621,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "caixa_econ\u00f4mica_federal",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3634,8 +3634,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3647,8 +3647,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3660,8 +3660,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "caixa_econ\u00f4mica_federal",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3673,8 +3673,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3686,8 +3686,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "caixa_econ\u00f4mica_federal",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3699,8 +3699,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3712,8 +3712,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3725,8 +3725,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "ita\u00fa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3738,8 +3738,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "ita\u00fa",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "ita\u00fa",
 "ARGUMENT_2": "santander",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3751,8 +3751,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "santander",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3764,8 +3764,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "ifood",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3777,8 +3777,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "spotify",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3790,8 +3790,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "uber",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3803,8 +3803,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "neon ''",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3816,8 +3816,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "spotify",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3829,8 +3829,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "uber",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3842,8 +3842,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "neon ''",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3855,8 +3855,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "uber",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3868,8 +3868,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "neon ''",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3881,8 +3881,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "neon ''",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3894,8 +3894,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "disponibilize na",
 "PREDICTED_RELATION REDES NEURAIS": "disponibilize na",
-"PREDICTED_RELATION RelP": "disponibilize em",
 "PREDICTED_RELATION RelP modificada": "disponibilize na",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "disponibilize na",
 "ARGUMENT_2": "nuconta",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3907,8 +3907,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "pretende financiar expans\u00e3o do",
 "PREDICTED_RELATION REDES NEURAIS": "pretende financiar expans\u00e3o",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "pretende financiar expans\u00e3o",
 "ARGUMENT_2": "goldman",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -3920,8 +3920,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "na",
 "PREDICTED_RELATION REDES NEURAIS": "financiar",
-"PREDICTED_RELATION RelP": "em",
 "PREDICTED_RELATION RelP modificada": "na",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "na",
 "ARGUMENT_2": "am\u00e9rica_latina",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3933,8 +3933,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3946,8 +3946,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "rio",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -3959,8 +3959,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "de",
 "PREDICTED_RELATION REDES NEURAIS": "de",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "raphael_klein",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -3972,8 +3972,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "da fam\u00edlia fundadora da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "da fam\u00edlia fundadora da",
 "ARGUMENT_2": "casas_bahia",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -3985,8 +3985,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "da fam\u00edlia fundadora da",
 "PREDICTED_RELATION REDES NEURAIS": "da fam\u00edlia fundadora da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "da fam\u00edlia fundadora da",
 "ARGUMENT_2": "raphael_klein",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -3998,8 +3998,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "essa foi a maior compra da hist\u00f3ria da",
 "PREDICTED_RELATION REDES NEURAIS": "maior compra da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "maior compra da",
 "ARGUMENT_2": "salesforce",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4011,8 +4011,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "faz parceria com",
 "PREDICTED_RELATION REDES NEURAIS": "faz parceria com",
-"PREDICTED_RELATION RelP": "faz parceria com",
 "PREDICTED_RELATION RelP modificada": "faz parceria com",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "faz parceria com",
 "ARGUMENT_2": "rappi",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4024,8 +4024,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "anuncia cart\u00e3o pr\u00e9-pago",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "anuncia cart\u00e3o pr\u00e9-pago",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4037,8 +4037,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fez uma parceria com",
 "PREDICTED_RELATION REDES NEURAIS": "fez uma parceria com",
-"PREDICTED_RELATION RelP": "fez parceria com",
 "PREDICTED_RELATION RelP modificada": "fez parceria com",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fez parceria com",
 "ARGUMENT_2": "rappi",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4050,8 +4050,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "planeja consolidar polos tecnol\u00f3gicos",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "planeja consolidar polos tecnol\u00f3gicos",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4063,8 +4063,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "em parceria com o",
 "PREDICTED_RELATION REDES NEURAIS": "em parceria com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "em parceria com",
 "ARGUMENT_2": "mec",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4076,8 +4076,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "sebrae",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4089,8 +4089,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "como parceiro",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "como parceiro",
 "ARGUMENT_2": "fran\u00e7a",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4102,8 +4102,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "como parceiro",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "como parceiro",
 "ARGUMENT_2": "fran\u00e7a",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4115,8 +4115,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "identificar\u00e1 as demandas de tecnologia em regi\u00f5es do",
 "PREDICTED_RELATION REDES NEURAIS": "identificar\u00e1 as demandas de tecnologia em do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "identificar\u00e1 as demandas de tecnologia em do",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4128,8 +4128,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "luis",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4141,8 +4141,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "passa por neg\u00f3cios na",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "\u00e1sia",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4154,8 +4154,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "filipinas",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4167,8 +4167,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "vietnam",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4180,8 +4180,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "\u00edndia",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4193,8 +4193,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "am\u00e9rica_latina",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4206,8 +4206,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4219,8 +4219,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "mintech",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4232,8 +4232,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fora das sedes principais",
 "PREDICTED_RELATION REDES NEURAIS": "fora das sedes",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fora das sedes",
 "ARGUMENT_2": "eua",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4245,8 +4245,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "na",
 "PREDICTED_RELATION REDES NEURAIS": "das",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "das",
 "ARGUMENT_2": "china",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4258,8 +4258,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "integrar\u00e3o",
 "PREDICTED_RELATION REDES NEURAIS": "selecionou",
-"PREDICTED_RELATION RelP": "integrar\u00e3o",
 "PREDICTED_RELATION RelP modificada": "integrar\u00e3o",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "integrar\u00e3o",
 "ARGUMENT_2": "laborat\u00f3rio_de_inova\u00e7\u00e3o_financeira_e_tecnol\u00f3gicas",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4271,8 +4271,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "israelense",
 "PREDICTED_RELATION REDES NEURAIS": "recebe apoio para",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "recebe apoio para",
 "ARGUMENT_2": "see_tree",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4284,8 +4284,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "see_tree recebe apoio para atuar",
-"PREDICTED_RELATION RelP": "atuar em estivemos em",
 "PREDICTED_RELATION RelP modificada": "atuar em estivemos em",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "atuar em estivemos em",
 "ARGUMENT_2": "agrishow",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4297,8 +4297,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "recebe apoio para atuar",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "recebe apoio para atuar",
 "ARGUMENT_2": "arena_da_inova\u00e7\u00e3o",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4310,8 +4310,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "recebe apoio para atuar",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "recebe apoio para atuar",
 "ARGUMENT_2": "seetree",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4323,8 +4323,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "atuar no",
 "PREDICTED_RELATION REDES NEURAIS": "recebe j\u00e1 atuava no",
-"PREDICTED_RELATION RelP": "atuar em",
 "PREDICTED_RELATION RelP modificada": "atuar no",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "atuar no",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4336,8 +4336,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "recebe apoio para atuar no",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "recebe apoio para atuar no",
 "ARGUMENT_2": "agrishow",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4349,8 +4349,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "recebe apoio para atuar",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "recebe apoio para atuar",
 "ARGUMENT_2": "arena_da_inova\u00e7\u00e3o",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4362,8 +4362,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "recebe apoio para atuar",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "recebe apoio para atuar",
 "ARGUMENT_2": "seetree",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4375,8 +4375,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "atuar no",
 "PREDICTED_RELATION REDES NEURAIS": "para j\u00e1 atuava",
-"PREDICTED_RELATION RelP": "atuar em",
 "PREDICTED_RELATION RelP modificada": "atuar no",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "atuar no",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4388,8 +4388,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "arena_da_inova\u00e7\u00e3o",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4401,8 +4401,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "para",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "para",
 "ARGUMENT_2": "seetree",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4414,8 +4414,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "para j\u00e1 atuava",
-"PREDICTED_RELATION RelP": "estivemos em",
 "PREDICTED_RELATION RelP modificada": "estivemos em",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "estivemos em",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4427,8 +4427,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "para sobre",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "para sobre",
 "ARGUMENT_2": "seetree",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4440,8 +4440,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "j\u00e1 atuava",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "j\u00e1 atuava",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4453,8 +4453,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "j\u00e1 atuava",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "j\u00e1 atuava",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4466,8 +4466,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "a varejista",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "a varejista",
 "ARGUMENT_2": "rappi",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4479,8 +4479,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "( fundador do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "( fundador do",
 "ARGUMENT_2": "peter_thiel",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4492,8 +4492,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fundador do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fundador do",
 "ARGUMENT_2": "paypal",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4505,8 +4505,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fundador do",
 "PREDICTED_RELATION REDES NEURAIS": "fundador do",
-"PREDICTED_RELATION RelP": "fundador de",
 "PREDICTED_RELATION RelP modificada": "fundador do",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fundador do",
 "ARGUMENT_2": "peter_thiel",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4518,8 +4518,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "ampliar neg\u00f3cios na",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "am\u00e9rica",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4531,8 +4531,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "aporte da",
 "PREDICTED_RELATION REDES NEURAIS": "recebe aporte da",
-"PREDICTED_RELATION RelP": "aporte de",
 "PREDICTED_RELATION RelP modificada": "aporte da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "aporte da",
 "ARGUMENT_2": "domo",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4544,8 +4544,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "recebe aporte da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "recebe aporte da",
 "ARGUMENT_2": "invest",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4557,8 +4557,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "mlabs recebe aporte",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "mlabs recebe aporte",
 "ARGUMENT_2": "invest",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4570,8 +4570,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "fecha parceria com",
 "PREDICTED_RELATION REDES NEURAIS": "fecha parceria com",
-"PREDICTED_RELATION RelP": "fecha parceria com",
 "PREDICTED_RELATION RelP modificada": "fecha parceria com",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fecha parceria com",
 "ARGUMENT_2": "c\u00e2mara_de_com\u00e9rcio_brasil_canad\u00e1",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4583,8 +4583,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fecha parceria estreitar as",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fecha parceria estreitar as",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4596,8 +4596,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fecha parceria",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fecha parceria",
 "ARGUMENT_2": "canad\u00e1",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4609,8 +4609,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fecha parceria com estreitar as",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fecha parceria com estreitar as",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4622,8 +4622,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "fecha parceria com estreitar",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fecha parceria com estreitar",
 "ARGUMENT_2": "canad\u00e1",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4635,8 +4635,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4648,8 +4648,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "anunciou hoje uma parceria com a",
 "PREDICTED_RELATION REDES NEURAIS": "parceria com",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "parceria com",
 "ARGUMENT_2": "zestfinance",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4661,8 +4661,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "via_varejo",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4674,8 +4674,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "parceria com gigante do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "parceria com gigante do",
 "ARGUMENT_2": "via_varejo",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4687,8 +4687,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "integrou a plataforma",
 "PREDICTED_RELATION REDES NEURAIS": "integrou",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "integrou",
 "ARGUMENT_2": "csu.digital",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4700,8 +4700,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "csu.cardsystem",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4713,8 +4713,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "de",
 "PREDICTED_RELATION REDES NEURAIS": "da",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "csu.cardsystem",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4726,8 +4726,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "brasil",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4739,8 +4739,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "startup de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "startup de",
 "ARGUMENT_2": "pegaki",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -4752,8 +4752,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "informou nesta",
 "PREDICTED_RELATION REDES NEURAIS": "lan\u00e7ou um marketplace de",
-"PREDICTED_RELATION RelP": "informou em",
 "PREDICTED_RELATION RelP modificada": "informou nesta",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "informou nesta",
 "ARGUMENT_2": "banco_carrefour",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4765,8 +4765,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "banco_carrefour lan\u00e7ou um marketplace de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "banco_carrefour lan\u00e7ou um marketplace de",
 "ARGUMENT_2": "carrefour",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4778,8 +4778,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "lan\u00e7ou um marketplace de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "lan\u00e7ou um marketplace de",
 "ARGUMENT_2": "atacad\u00e3o",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4791,8 +4791,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "lan\u00e7ou um marketplace de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "lan\u00e7ou um marketplace de",
 "ARGUMENT_2": "carrefour",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4804,8 +4804,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "lan\u00e7ou um marketplace de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "lan\u00e7ou um marketplace de",
 "ARGUMENT_2": "atacad\u00e3o",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4817,8 +4817,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "lan\u00e7ou um marketplace de",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "lan\u00e7ou um marketplace de",
 "ARGUMENT_2": "atacad\u00e3o",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4830,8 +4830,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "e fundador da",
-"PREDICTED_RELATION RelP": "fundador de",
 "PREDICTED_RELATION RelP modificada": "fundador de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "fundador de",
 "ARGUMENT_2": "paymee",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4843,8 +4843,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "e fundador da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "e fundador da",
 "ARGUMENT_2": "bruno_maranh\u00e3o",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4856,8 +4856,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "ceo e fundador da",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "ceo e fundador da",
 "ARGUMENT_2": "bruno_maranh\u00e3o",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4869,8 +4869,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "com a ajuda do",
 "PREDICTED_RELATION REDES NEURAIS": "com do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "com do",
 "ARGUMENT_2": "cilia",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4882,8 +4882,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "n26",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4895,8 +4895,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "olivia",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4908,8 +4908,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "lucas_moraes",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4921,8 +4921,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "do",
 "PREDICTED_RELATION REDES NEURAIS": "do grupo",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do grupo",
 "ARGUMENT_2": "erm\u00edrio_de_moraes",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4934,8 +4934,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "tem o",
-"PREDICTED_RELATION RelP": "tem",
 "PREDICTED_RELATION RelP modificada": "tem",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "tem",
 "ARGUMENT_2": "ita\u00fa",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4947,8 +4947,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "tem o ita\u00fa",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "tem o ita\u00fa",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -4960,8 +4960,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do tem",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do tem",
 "ARGUMENT_2": "olivia",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4973,8 +4973,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do tem",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do tem",
 "ARGUMENT_2": "lucas_moraes",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4986,8 +4986,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do grupo tem",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do grupo tem",
 "ARGUMENT_2": "erm\u00edrio_de_moraes",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -4999,8 +4999,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "tem",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "tem",
 "ARGUMENT_2": "banco_do_brasil",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -5012,8 +5012,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "tem o",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "tem o",
 "ARGUMENT_2": "olivia",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -5025,8 +5025,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "tem o",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "tem o",
 "ARGUMENT_2": "lucas_moraes",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -5038,8 +5038,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do tem o",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do tem o",
 "ARGUMENT_2": "erm\u00edrio_de_moraes",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -5051,8 +5051,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "lan\u00e7ou",
 "PREDICTED_RELATION REDES NEURAIS": "lan\u00e7ou",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "lan\u00e7ou",
 "ARGUMENT_2": "s\u00e3o_paulo",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -5064,8 +5064,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "realizou investimentos em duas startups por meio do bra\u00e7o de investimento corporativo",
 "PREDICTED_RELATION REDES NEURAIS": "realizou investimentos em do bra\u00e7o de investimento corporativo",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "realizou investimentos em do bra\u00e7o de investimento corporativo",
 "ARGUMENT_2": "inovabra_ventures",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -5077,8 +5077,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "cofundador do",
 "PREDICTED_RELATION REDES NEURAIS": "cofundador do",
-"PREDICTED_RELATION RelP": "cofundador de",
 "PREDICTED_RELATION RelP modificada": "cofundador do",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "cofundador do",
 "ARGUMENT_2": "david_v\u00e9lez",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -5090,8 +5090,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "mato_grosso_do_sul",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -5103,8 +5103,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "piero_contezini",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -5116,8 +5116,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "asaas",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -5129,8 +5129,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "do",
 "ARGUMENT_2": "fidc",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -5142,8 +5142,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "ceo do",
 "PREDICTED_RELATION REDES NEURAIS": "ceo do",
-"PREDICTED_RELATION RelP": "CEO de",
 "PREDICTED_RELATION RelP modificada": "CEO do",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "CEO do",
 "ARGUMENT_2": "piero_contezini",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -5155,8 +5155,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "pelo",
 "PREDICTED_RELATION REDES NEURAIS": "ceo do",
-"PREDICTED_RELATION RelP": "por",
 "PREDICTED_RELATION RelP modificada": "pelo",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "pelo",
 "ARGUMENT_2": "fidc",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -5168,8 +5168,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "ceo do",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "ceo do",
 "ARGUMENT_2": "piero_contezini",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -5181,8 +5181,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "",
-"PREDICTED_RELATION RelP": "",
 "PREDICTED_RELATION RelP modificada": "",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "",
 "ARGUMENT_2": "f\u00e1bio_cruz",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -5194,8 +5194,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "none",
 "PREDICTED_RELATION REDES NEURAIS": "da",
-"PREDICTED_RELATION RelP": "de",
 "PREDICTED_RELATION RelP modificada": "de",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "de",
 "ARGUMENT_2": "credpago",
 "ARGUMENT_2_CATEGORY": "ORG"
 },
@@ -5207,8 +5207,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "cto da",
 "PREDICTED_RELATION REDES NEURAIS": "cto da",
-"PREDICTED_RELATION RelP": "CTO de",
 "PREDICTED_RELATION RelP modificada": "CTO da",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "CTO da",
 "ARGUMENT_2": "f\u00e1bio_cruz",
 "ARGUMENT_2_CATEGORY": "PER"
 },
@@ -5220,8 +5220,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "seguida pela",
 "PREDICTED_RELATION REDES NEURAIS": "seguida pela",
-"PREDICTED_RELATION RelP": "seguida por",
 "PREDICTED_RELATION RelP modificada": "seguida pela",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "seguida pela",
 "ARGUMENT_2": "regi\u00e3o_sudeste",
 "ARGUMENT_2_CATEGORY": "PLC"
 },
@@ -5233,8 +5233,8 @@
 "ARGUMENT_1_CATEGORY": "ORG",
 "RELATION MANUALLY": "garante ao",
 "PREDICTED_RELATION REDES NEURAIS": "garante ao",
-"PREDICTED_RELATION RelP": "garante a",
 "PREDICTED_RELATION RelP modificada": "garante ao",
+"PREDICTED_RELATION RelP e Redes Neurais Combinadas": "garante ao",
 "ARGUMENT_2": "fidc",
 "ARGUMENT_2_CATEGORY": "ORG"
 }

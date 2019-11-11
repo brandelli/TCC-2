@@ -143,3 +143,41 @@ def get_partial_recall_propor(rcc, rpc, rt):
 
 def get_partial_f_measure_propor(precisao, recall):
     return (2*precisao*recall)/(precisao+recall)
+
+def get_all_metrics(data, str_field):
+    tr = get_total_relations_dataset(data)
+    ri = get_total_relations_by_approach(data, str_field)
+    rcc = get_rcc(data, str_field)
+    rpc, calc_rpc = get_rpc(data, str_field)
+    precisao_exata = get_exact_precision_propor(rcc, ri)
+    recall_exata = get_exact_recall_propor(rcc, tr)
+    f_measure_exata = get_exact_f_measure_propor(precisao_exata, recall_exata)
+    precisao_parcial = get_partial_precision_propor(rcc, calc_rpc, ri)
+    recall_parcial = get_partial_recall_propor(rcc, calc_rpc, tr)
+    f_measure_parcial = get_partial_f_measure_propor(precisao_parcial, recall_parcial)
+
+    return {
+        'tr':tr,
+        'ri':ri,
+        'rcc':rcc,
+        'rpc':rpc,
+        'calc_rpc':calc_rpc,
+        'precisao_exata':precisao_exata,
+        'precisao_parcial':precisao_parcial,
+        'recall_exata':recall_exata,
+        'recall_parcial':recall_parcial,
+        'f_measure_exata':f_measure_exata,
+        'f_measure_parcial':f_measure_parcial
+        }
+
+def print_all_metrics(data, str_field):
+    print(f'-------------- {" ".join(str_field.split(" ")[1:])} -----------------------')
+    print(f'Relacionamentos Identificados: {data.get("ri")}')
+    print(f'Relacionamentos Completamente Corretos: {data.get("rcc")}')
+    print(f'Relacionamentos Parcialmente Corretos: {data.get("rpc")}')
+    print(f'Precisão exata: {data.get("precisao_exata")}')
+    print(f'Recall exata: {data.get("recall_exata")}')
+    print(f'F-measure exata: {data.get("f_measure_exata")}')
+    print(f'Precisão parcial: {data.get("precisao_parcial")}')
+    print(f'Recall parcial: {data.get("recall_parcial")}')
+    print(f'F-measure parcial: {data.get("f_measure_parcial")}')
