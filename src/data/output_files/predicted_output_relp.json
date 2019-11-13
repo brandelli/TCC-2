@@ -122,7 +122,8 @@
         },
         "relation": "de",
         "relation_id": 1,
-        "predicted_relation": "secret\u00e1rio_de_pol\u00edtica_tecnol\u00f3gica_empresarial de"
+        "predicted_relation": "secret\u00e1rio_de_pol\u00edtica_tecnol\u00f3gica_empresarial de",
+        "relp": "none"
     },
     {
         "sentence_id": 12,
@@ -139,7 +140,8 @@
         },
         "relation": "de",
         "relation_id": 2,
-        "predicted_relation": "de"
+        "predicted_relation": "de",
+        "relp": "none"
     },
     {
         "sentence_id": 12,
@@ -1992,7 +1994,8 @@
         },
         "relation": "criou",
         "relation_id": 2,
-        "predicted_relation": "("
+        "predicted_relation": "(",
+        "relp": "none"
     },
     {
         "sentence_id": 289,
@@ -2009,7 +2012,8 @@
         },
         "relation": "(",
         "relation_id": 3,
-        "predicted_relation": "("
+        "predicted_relation": "(",
+        "relp": "none"
     },
     {
         "sentence_id": 294,
@@ -2369,7 +2373,7 @@
         "relation": "apresentou a o p\u00fablico de",
         "relation_id": 1,
         "predicted_relation": "apresentou p\u00fablico de",
-        "relp": "apresentou a o p\u00fablico de",
+        "relp": "apresentou a o p\u00fablico de"
     },
     {
         "sentence_id": 363,
@@ -2567,7 +2571,7 @@
         "relation": "\u00f3rg\u00e3o respons\u00e1vel por a representa\u00e7\u00e3o e encaminhamento cient\u00edfico de os alunos de",
         "relation_id": 1,
         "predicted_relation": "",
-        "relp": "\u00f3rg\u00e3o respons\u00e1vel por a representa\u00e7\u00e3o e encaminhamento cient\u00edfico de os alunos de",
+        "relp": "\u00f3rg\u00e3o respons\u00e1vel por a representa\u00e7\u00e3o e encaminhamento cient\u00edfico de os alunos de"
     },
     {
         "sentence_id": 422,
