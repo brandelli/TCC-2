@@ -2,6 +2,7 @@ from helpers import metrics_helper
 import json
 import csv
 import xlrd
+import xlsxwriter
 
 def dict_to_json(path, file_name, my_data, indent=0):
     '''
@@ -159,4 +160,59 @@ def get_metrics_propor():
 
 	for model in list_models:
 		metrics_helper.print_all_metrics(metrics_helper.get_all_metrics(file_data, model), model)
+
+
+def create_xlsx_from_json():
+	data_file = get_json_file_data('data/output_files/', 'predicted_output_relp.json')
+	workbook = xlsxwriter.Workbook('data/output_files/iberlef_output_relp.xlsx')
+	worksheet = workbook.add_worksheet()
+	row = 0
+	col = 0
+	header = ['sentence_id', 'sentence', 'argument_1', 'argument_1_category','relation', 'relation relp', 'argument_2', 'argument_2_category']
+	for index, val in enumerate(header):
+		worksheet.write(row, index, val)
+
+	for data in data_file:
+		print(data)
+
+	workbook.close()
+
+
+def create_xlsx_for_paper():
+	wb = xlrd.open_workbook('data/propor/avaliacao.xlsx')
+	sheet = wb.sheet_by_index(1)
+	sheet.cell_value(0, 0)
+	fields = [val for val in sheet.row_values(0)]
+	fields_dict = {val:index for index, val in enumerate(sheet.row_values(0))}
+	dict_tabs = {'original':[], 'org': [], 'plc': [], 'per':[]}
+
+	for index in range(1, sheet.nrows):
+		cur_row = sheet.row_values(index)
+		dict_tabs.get('original').append(cur_row)
+		arg_2_cat = cur_row[fields_dict.get('ARGUMENT_2_CATEGORY')]
+		if arg_2_cat == 'ORG':
+			dict_tabs.get('org').append(cur_row)
+		elif arg_2_cat == 'PER':
+			dict_tabs.get('per').append(cur_row)
+		else:
+			dict_tabs.get('plc').append(cur_row)
+	
+	workbook = xlsxwriter.Workbook('data/propor/avaliacao_lrec.xlsx')
+	for key in dict_tabs:
+		worksheet = workbook.add_worksheet(key)
+		for index, field in enumerate(fields):
+			worksheet.write(0, index, field)
+
+		for index_row, row in enumerate(dict_tabs.get(key)):
+			index_row += 1
+			for index_col, col in enumerate(row):
+				 worksheet.write(index_row, index_col, col)
+
+
+	workbook.close()
+
+	
+
+	
+	
 	
