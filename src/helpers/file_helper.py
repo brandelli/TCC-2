@@ -124,9 +124,9 @@ def json_csv(path, file_name, new_file_name):
 
 	print(f'Finalizou conversão')
 
-def convert_avaliacao_propor_json(path, file_name, new_file_name):
+def convert_avaliacao_propor_json(path, file_name, new_file_name, index_sheet=1):
 	wb = xlrd.open_workbook(f'{path}{file_name}')
-	sheet = wb.sheet_by_index(1)
+	sheet = wb.sheet_by_index(index_sheet)
 	sheet.cell_value(0, 0)
 	fields = [val for val in sheet.row_values(0)]
 
@@ -151,11 +151,11 @@ def convert_avaliacao_propor_json(path, file_name, new_file_name):
 	print(f'Finalizou conversão')
 	
 
-def get_metrics_propor():
-	file_data = get_json_file_data('data/propor/', 'avaliacao.json')
+def get_metrics_propor(file_name='avaliacao.json', pair='Total'):
+	file_data = get_json_file_data('data/propor/', file_name)
 	total_relations = metrics_helper.get_total_relations_dataset(file_data)
 	list_models = ['PREDICTED_RELATION REDES NEURAIS', 'PREDICTED_RELATION RelP modificada', 'PREDICTED_RELATION RelP e Redes Neurais Combinadas']
-
+	print(f'---------------------{pair}-----------------------------')
 	print(f'Total de relacionamentos no dataset: {total_relations}')
 
 	for model in list_models:
@@ -212,7 +212,13 @@ def create_xlsx_for_paper():
 	workbook.close()
 
 	
-
-	
+def get_metrics_by_pair_lrec():
+	tabs_list = ['Todas', 'ORG-ORG', 'ORG-PLC', 'ORG-PER']
+	path = 'data/propor/'
+	file_name = 'avaliacao_lrec.xlsx'
+	for index, tab in enumerate(tabs_list):
+		new_file_name = f'avaliacao_lrec_{tab}.json'
+		convert_avaliacao_propor_json(path, file_name, new_file_name, index)
+		get_metrics_propor(new_file_name, tab)
 	
 	
