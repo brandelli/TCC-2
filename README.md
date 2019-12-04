@@ -1,11 +1,33 @@
 # TCC2
 
+**Passos necessários para execução:**
+
+``git clone https://github.com/brandelli/TCC-2``
+
+``cd src``
+
+Crie um ambiente virtual para o python3
+
+``pip install -r requirements.txt``
+
+Faça o download do word embeddings, neste trabalho foi utilizado o GloVe com 50 dimensões do NILC (http://nilc.icmc.usp.br/embeddings).
+
+Coloque o word embeddings na pasta ``data/word_embeddings/real/``, este arquivo não está presente no git devido ao seu tamanho.
+
+Ajuste o arquivo ``data/configuration/config.json``, definindo as etapas que serão realizadas (pré-processamento, treino, teste), os arquivos que vão ser utilizados.
+
+``python app.py``
+
+
+
+### Fontes e Materiais utilizados para o desenvolvimento do TCC
+
 Repositório para organizar os materiais e códigos desenvolvidos durante o TCC2
 * [Repositório TCC 1](https://github.com/brandelli/TCC-1)
 * [Documento do TCC 2](https://www.overleaf.com/read/hkzjkcqxzvdb)
 
 
-### Referencias
+### Referências
 * [IberLEF: Iberian Languages Evaluation Forum](https://sites.google.com/view/iberlef-2019/)
 * [TASS](http://www.sepln.org/workshops/tass/)
 * [tarefa iberlef](http://www.inf.pucrs.br/linatural/wordpress/iberlef-2019/)
